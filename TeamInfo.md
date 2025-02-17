@@ -17,10 +17,10 @@
 
 |   Info      |        Description     |
 | ----------- | ---------------------- |
-|  Title      |       ProjectTitle     |
+|  Title      |Pet Adoption Application|
 | System URL  |      link_to_system    |
 | Video Link  |      link_to_video     |
 
 ## Project Summary
 
-This is a summary of the project!
+This project aims to develop a web application that helps connect potential adopters with available pets in shelters. The platform will allow users to browse adoptable pets, filter them by specific attributes such as species, breed, age, and size, and express interest in adopting them. The goal is to simplify the pet adoption process by providing detailed pet profiles, images, and contact options for shelters.
