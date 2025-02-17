@@ -23,4 +23,4 @@
 
 ## Project Summary
 
-This project aims to develop a web application that helps connect potential adopters with available pets in shelters. The platform will allow users to browse adoptable pets, filter them by specific attributes such as species, breed, age, and size, and express interest in adopting them. The goal is to simplify the pet adoption process by providing detailed pet profiles, images, and contact options for shelters.
+This project aims to develop a web application that helps connect potential adopters with available pets in shelters. The platform will allow users to browse adoptable pets, filter them by specific attributes such as species, breed, age, and size, and express interest in adopting them. The goal is to simplify the pet adoption process by providing detailed pet profiles, images, and contact options for shelters. By providing an intuitive and user-friendly interface, this application will facilitate better connections between potential adopters and shelters. The ability to search, filter, and save favorite pets will improve user engagement, while the inclusion of an inquiry form ensures a seamless communication process with shelters.
