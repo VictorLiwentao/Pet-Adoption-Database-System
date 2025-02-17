@@ -13,20 +13,22 @@ To enhance user experience, we will incorporate the following simple but effecti
 - **Simple Image Carousel**: Displays multiple pet images in an easy-to-navigate format.
 
 ## Usefulness
-This application benefits both shelters and adopters:\n
+This application benefits both shelters and adopters:
 - **Shelters**: Can list and manage adoptable pets, increasing visibility.
 - **Adopters**: Can find pets matching their preferences without visiting multiple shelters.
 - **Comparison to Existing Solutions**: While platforms like Petfinder exist, our app will be more **localized** and include an improved search/filter system.
 
 ## Realness (Data Sources)
-We will use a real dataset of adoptable pets containing details such as:\n
+We will use a real dataset of adoptable pets containing details such as:
 - **Animal ID, Name, Type, Breed, Age, Size, Color, Sex**
 - **Date of Intake, Shelter Details, and Image URL**
 - **Data Format**: CSV file containing structured attributes.
 - **Additional Dataset Possibilities**: We may integrate live pet adoption APIs from shelters.
+- **External Dataset Source**: [Adoptable Pets Dataset](https://catalog.data.gov/dataset/adoptable-pets) - A publicly available dataset with details on adoptable pets, providing additional real-time information.
+
 
 ## Functionality (CRUD & Search)
-The application will include the following features:\n
+The application will include the following features:
 - **Create**: Shelters can add new pet listings.
 - **Read**: Users can view pet profiles.
 - **Update**: Shelters can update pet details (e.g., adoption status).
@@ -40,7 +42,7 @@ A basic UI mockup will include:\n
 - A filtering/search interface.
 
 ## Project Work Distribution
-Each team member will be responsible for:\n
+Each team member will be responsible for:
 - **Frontend Development**: UI design, interactive elements, pet gallery (Tongrui Yu)
 - **Backend Development**: Database management, API integration, CRUD operations (Wentao Li)
 - **Search & Filtering Implementation**: Basic search and filter system (Xin Li)
