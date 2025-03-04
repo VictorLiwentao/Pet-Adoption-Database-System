@@ -96,7 +96,7 @@
 
 #### **Relationships**
 - **Pet → Adoption Request (1 → *)**: A pet can receive multiple adoption requests.
-- **Pet → Pet Category ('*' → 1)**: Each pet belongs to one category.
+- **Pet → Pet Category (1 → 1)**: Each pet belongs to one category.
 - **Pet → Shelter (1 → *)**: A pet can only in one shelter.
 
 ---
