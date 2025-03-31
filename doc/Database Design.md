@@ -2,7 +2,7 @@
 
 ## Part 1
 
-### 1.
+### DDL Commands
 ```
 CREATE TABLE User (
     UserID INT PRIMARY KEY,
