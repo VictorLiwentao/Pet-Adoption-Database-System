@@ -1,5 +1,6 @@
 ## **UML Image**
-![Pet Adoption drawio](https://github.com/user-attachments/assets/21009b7d-ea29-461b-82ec-0b880ad21bcf)
+![Pet Adoption (4)](https://github.com/user-attachments/assets/dbaa610d-6e11-4e71-82ed-6a57d75b99b2)
+
 
 
 ## **Entities and Assumptions**
@@ -17,45 +18,13 @@
 - `Password: VARCHAR(100)` - Hashed password for security.
 - `PhoneNumber: VARCHAR(20)` - Contact number of the user.
 #### **Relationships**
-- **User → Adopter (0 → 1)**: A user may be an adopter or a shelter owner.
-- **User → Shelter Owner (0 → 1)**: A user may be an adopter or a shelter owner.
+- **User → Adoption_Request (0 → *)**: A user may has 0 to many adoption request.
+- **User → Shelter Owner (0 → *)**: A user may has 0 to many shelter.
 
----
-
-### **2. Adopter (Subclass of User)**
-#### **Assumptions**
-- The **Adopter** entity represents users who are interested in adopting pets.
-- It inherits **UserID** from the **User** entity.
-- Each adopter can submit multiple **Adoption Requests**.
-
-#### **Attributes**
-- `AdopterID: INT [FK]` - Unique identifier for the adopter.
-- `UserID: INT [FK]` - Inherited from **User**.
-- `Address: TEXT` - Physical address of the adopter.
-
-#### **Relationships**
-- **Adopter → Adoption Request (1 → *)**: An adopter can submit multiple adoption requests.
-- **Adopter → User (1 → 1)**: A adopter must be an user.
----
-
-### **3. Shelter Owner (Subclass of User)**
-#### **Assumptions**
-- The **Shelter Owner** manages one or more shelters.
-- It inherits **UserID** from **User**.
-- Each shelter owner is responsible for at least **one shelter**.
-
-#### **Attributes**
-- `OwnerID: INT [FK]` - Unique identifier for the shelter owner.
-- `UserID: INT [FK]` - Inherited from **User**.
-- `ShelterID: INT [FK]` - Links to the shelter(s) the owner manages.
-
-#### **Relationships**
-- **Shelter Owner → Shelter (1 → *)**: A shelter owner can manage multiple shelters.
-- **Shelter Owner → User (1 → 1)**: A shelter owner must be an user.
   
 ---
 
-### **4. Shelter**
+### **2. Shelter**
 #### **Assumptions**
 - A **Shelter** represents a pet adoption center that houses multiple pets.
 - Each **Shelter** is managed by exactly **one Shelter Owner**.
@@ -70,15 +39,14 @@
 
 #### **Relationships**
 - **Shelter → Pet (1 → *)**: A shelter houses multiple pets.
-- **Shelter → Shelter Owner (1 → 1)**: A shelter can managed by one Shelter Owner.
+- **Shelter → User (1 → 1)**: A shelter can managed by one Shelter Owner.
 
 ---
 
-### **5. Pet**
+### **3. Pet**
 #### **Assumptions**
 - The **Pet** entity represents animals available for adoption.
 - Each pet belongs to **one Shelter**.
-- Each pet is classified under **one Pet Category**.
 
 #### **Attributes**
 - `PetID: INT [PK]` - Unique identifier for the pet.
@@ -96,16 +64,13 @@
 
 #### **Relationships**
 - **Pet → Adoption Request (1 → *)**: A pet can receive multiple adoption requests.
-- **Pet → Pet Category (1 → 1)**: Each pet belongs to one category.
 - **Pet → Shelter (1 → 1)**: A pet can only in one shelter.
 
 ---
 
-### **6. Adoption Request**
+### **4. Adoption Request**
 #### **Assumptions**
 - The **Adoption Request** entity tracks adoption applications submitted by **Adopters**.
-- Each request links to **one Adopter** and **one Pet**.
-- The **Status** field tracks the approval process.
 
 #### **Attributes**
 - `RequestID: INT [PK]` - Unique identifier for each adoption request.
@@ -115,23 +80,26 @@
 - `Status: ENUM('Pending', 'Approved', 'Rejected')` - Tracks the request status.
 
 #### **Relationships**
-- **Adoption Request → Adopter (1 → 1)**: An adoption request can only be submitted by one adopter
+- **Adoption Request → User (1 → 1)**: An adoption request can only be submitted by one adopter
 - **Adoption Request → Pet (1 → 1)**: An adoption request can only be received by one pet
+- **Adoption Request → Status (1 → 1)**: An adoption request has only one status at a time.
 ---
 
-### **7. Pet Category**
-#### **Assumptions**
-- The **Pet Category** classifies pets based on type, breed, and size.
-- A **Category** can contain multiple pets.
+### **5. Pet Category**
+#### Assumptions
+- The **Status** entity standardizes the possible outcomes of an **Adoption Request**.
 
-#### **Attributes**
-- `CategoryID: INT [PK]` - Unique identifier for the category.
-- `Type: VARCHAR(50)` - Type of pet (e.g., Dog, Cat, Bird).
-- `Breed: VARCHAR(50)` - Specific breed classification.
-- `Size: VARCHAR(20)` - Size category (e.g., Small, Medium, Large).
+- It allows consistent handling and easy updates of request states across the system.
 
-#### **Relationships**
-- **Pet Category → Pet (1 → *)**: A category can contain multiple pets.
+#### Attributes
+- `StatusID: INT [PK]` – Unique identifier for each status.
+
+- `Label: VARCHAR` – Human-readable name for the status (e.g., "Pending", "Approved", "Rejected").
+
+- `Description: TEXT` – Optional detailed explanation of what the status means.
+
+#### Relationships
+- **Status → Adoption Request (1 -> *)**: A single status can be assigned to many adoption requests.
 
 ---
 
@@ -159,11 +127,57 @@ This ensures:
 
 ## **Relational Schema (Logical Design)**
 ```
-User(UserID: INT [PK], Name: VARCHAR(50), Email: VARCHAR(50), Password: VARCHAR(100), PhoneNumber: VARCHAR(20))
-Adopter(AdopterID: INT [PK], UserID: INT [FK to User.UserID], Address: TEXT)
-ShelterOwner(OwnerID: INT [PK], UserID: INT [FK to User.UserID], ShelterID: INT [FK to Shelter.ShelterID])
-Shelter(ShelterID: INT [PK], Name: VARCHAR(50), Location: VARCHAR(100), Email: VARCHAR(50), PhoneNumber: VARCHAR(20))
-Pet(PetID: INT [PK], ShelterID: INT [FK to Shelter.ShelterID], CategoryID: INT [FK to PetCategory.CategoryID], Name: VARCHAR(50), Type: VARCHAR(20), Breed: VARCHAR(50), Age: INT, Size: VARCHAR(20), Color: VARCHAR(50), Sex: VARCHAR(10), ImageURL: VARCHAR(200), DateOfIntake: DATE)
-AdoptionRequest(RequestID: INT [PK], AdopterID: INT [FK to Adopter.AdopterID], PetID: INT [FK to Pet.PetID], RequestDate: DATE, Status: ENUM('Pending', 'Approved', 'Rejected'))
-PetCategory(CategoryID: INT [PK], Type: VARCHAR(50), Breed: VARCHAR(50), Size: VARCHAR(20))
+User(
+  UserID: INT [PK],
+  Name: VARCHAR(50),
+  Email: VARCHAR(50) UNIQUE,
+  Password: VARCHAR(100),
+  PhoneNumber: VARCHAR(20)
+)
+
+Shelter(
+  ShelterID: INT [PK],
+  Name: VARCHAR(50),
+  Location: VARCHAR(100),
+  Email: VARCHAR(50) UNIQUE,
+  PhoneNumber: VARCHAR(20),
+  UserID: INT [FK to User.UserID]
+)
+
+PetCategory(
+  CategoryID: INT [PK],
+  Type: VARCHAR(50),
+  Breed: VARCHAR(50),
+  Size: VARCHAR(20)
+)
+
+Pet(
+  PetID: INT [PK],
+  ShelterID: INT [FK to Shelter.ShelterID],
+  CategoryID: INT [FK to PetCategory.CategoryID],
+  Name: VARCHAR(50),
+  Type: VARCHAR(20),
+  Breed: VARCHAR(50),
+  Age: INT,
+  Size: VARCHAR(20),
+  Color: VARCHAR(50),
+  Sex: VARCHAR(10),
+  ImageURL: VARCHAR(200),
+  DateOfIntake: DATE
+)
+
+Status(
+  StatusID: INT [PK],
+  Label: VARCHAR(20),
+  Description: TEXT
+)
+
+AdoptionRequest(
+  RequestID: INT [PK],
+  UserID: INT [FK to User.UserID],
+  PetID: INT [FK to Pet.PetID],
+  RequestDate: DATE,
+  StatusID: INT [FK to Status.StatusID]
+)
+
 ```
