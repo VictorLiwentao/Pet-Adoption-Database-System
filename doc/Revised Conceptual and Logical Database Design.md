@@ -51,7 +51,6 @@
 #### **Attributes**
 - `PetID: INT [PK]` - Unique identifier for the pet.
 - `ShelterID: INT [FK]` - Links to the shelter where the pet is housed.
-- `CategoryID: INT [FK]` - Links to the category the pet belongs to.
 - `Name: VARCHAR(50)` - Name of the pet.
 - `Type: VARCHAR(20)` - Type of pet (e.g., Dog, Cat).
 - `Breed: VARCHAR(50)` - Breed of the pet.
@@ -85,7 +84,7 @@
 - **Adoption Request → Status (1 → 1)**: An adoption request has only one status at a time.
 ---
 
-### **5. Pet Category**
+### **5. Status**
 #### Assumptions
 - The **Status** entity standardizes the possible outcomes of an **Adoption Request**.
 
@@ -144,17 +143,9 @@ Shelter(
   UserID: INT [FK to User.UserID]
 )
 
-PetCategory(
-  CategoryID: INT [PK],
-  Type: VARCHAR(50),
-  Breed: VARCHAR(50),
-  Size: VARCHAR(20)
-)
-
 Pet(
   PetID: INT [PK],
   ShelterID: INT [FK to Shelter.ShelterID],
-  CategoryID: INT [FK to PetCategory.CategoryID],
   Name: VARCHAR(50),
   Type: VARCHAR(20),
   Breed: VARCHAR(50),
