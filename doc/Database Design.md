@@ -279,28 +279,71 @@ ORDER BY DaysInShelter DESC, LatestRecordDate ASC;
 P.S. Because some pets may not have vaccination records, they are null. these are the first targets to be considered for needing vaccinations.
 
 ## Part 2
-### 2. Indexes Used:
-```
-CREATE INDEX idx_past_user ON PastAdoptionRecord(UserID);
-CREATE INDEX idx_adopt_user ON AdoptionRequest(UserID);
-```
-Key Execution Plan Metrics:
+### Since the minimum requirement is 4 advanced queries. We are indexing with query 2 4 and 6.
+### 2.
 
-Join Strategy: Nested Loop
+Without Index
 
-Join Index Usage:
+Stream cost: 693
+![image](https://github.com/user-attachments/assets/753b8ffa-99da-4a81-8f97-3bd471a6ac3c)
 
-past: Covering index scan on idx_past_user
 
-ar: Covering index lookup on idx_adopt_user
+With Index idx_past_user ON PastAdoptionRecord(UserID)
 
-## Without Index:
-![image](https://github.com/user-attachments/assets/984447b9-c5fe-4d9f-940c-72e0475721ce)
-## With Index:
-![image](https://github.com/user-attachments/assets/92a32af0-8ffe-4bb4-a0b0-7ffb127548f9)
-From the EXPLAIN ANALYZE results, we can clearly see that the cost of the Stream results node decreased when indexes were used. Specifically, the cost dropped from `1090` (without indexes) to `987` (with indexes).
-The Stream results node represents the final stage where the total result set is streamed back to the client after all joins, filtering, and aggregation are completed. Therefore, its cost essentially reflects the overall cost of the entire query execution.
-This drop in cost confirms that adding indexes on UserID in PastAdoptionRecord and AdoptionRequest significantly improved the performance of the query by reducing join overhead and speeding up data retrieval.
+Stream cost: 693
+![image](https://github.com/user-attachments/assets/9dd8b8d4-4b21-483e-8bd0-25aff293fe58)
+
+
+With Index idx_ar_user ON AdoptionRequest(UserID)
+
+Stream cost: 986
+![image](https://github.com/user-attachments/assets/89a003a4-5c60-4811-a909-628fc0024950)
+
+
+With Index idx_ar_user_status_date ON AdoptionRequest(UserID, Status, RequestDate)
+
+Stream cost: 1089
+![image](https://github.com/user-attachments/assets/16965035-6c5a-40e5-864c-c00cdb6c3902)
+
+Default (no additional index): 
+
+Stream results cost: 693
+
+Covering index scan on past: cost=78.5
+
+In the default plan, the system relies on the primary key index of User, but not on any optimized index for past.UserID. This means although it performs an index scan on past, it may require accessing more rows than necessary and possibly referencing disk pages for non-covered columns.
+
+
+Design 1: CREATE INDEX idx_past_user ON PastAdoptionRecord(UserID);
+
+Stream results cost: 693
+
+Covering index scan on past using idx_past_user: cost=79.2
+
+The stream cost stays unchanged, indicating that the index didn’t alter the higher-level join and aggregation operations. However, the cost of scanning past slightly increased from 78.5 to 79.2, despite using a user-defined index.
+
+This is likely due to:
+
+The optimizer choosing the covering index idx_past_user, which may have less clustering benefit or worse row order compared to the table’s internal index or clustered PK.
+
+Or due to more indirect lookup needed (if the covering index is not clustered and additional lookups are needed for non-indexed fields).
+
+Design 2: CREATE INDEX idx_ar_user ON AdoptionRequest(UserID);
+
+Stream results cost: 986
+
+Covering index scan on past using default UserID: cost=78.5
+
+Here, we see that stream results cost increases, possibly because the overall join ordering changed due to the optimizer preferring to access AdoptionRequest earlier or more aggressively — affecting the nested loop structure. However, the index on past is still the default and not affected, so its scan cost remains stable.
+
+Design 3: CREATE INDEX idx_ar_user_status_date ON AdoptionRequest(UserID, Status, RequestDate); 
+Stream results cost: 1089 
+
+Covering index scan on past using default UserID: cost=78.5
+
+This confirms a trade-off: although this composite index helps complex queries with filtering, in this case the extra index complexity might slightly increase cost or alter the join path, raising the stream result cost. The scan on past again remains unaffected since no new index was created on that table.
+
+Justification: The covering index scan cost on past is minimally impacted by indexing unless the new index substantially changes clustering or access pattern. The stream results cost, however, is sensitive to the entire execution plan, including join order, join algorithm, and index presence across multiple tables. Adding idx_past_user did not reduce stream cost, and even slightly increased index scan cost — possibly due to the nature of the index or the storage engine’s access path decisions. Meanwhile, adding indexes to AdoptionRequest increased stream costs as the optimizer restructured the joins. Thus, for this query, indexing past.UserID offers minor benefits or even minor drawbacks, while indexing AdoptionRequest affects global plan structure — useful for filtered queries, but not necessarily optimal for simple aggregation.
 
 ### 3. 
 Without Indexing: 1352
@@ -313,19 +356,27 @@ With Indexing idx_adoption_shelter_type: 1352
 ![image](https://github.com/user-attachments/assets/8552bb84-8417-4d91-88a6-989369be2e6d)
 
 ### 4.
-Without Index: 541 & 541
+Without Index
+
+Nested Loop inner join cost: 541 & 541
 ![image](https://github.com/user-attachments/assets/1dfed07b-1bbb-4e80-ac3c-fb3a5f38d9e3)
 
 
-With Index idx_pet_type ON pet(type): 167 & 169
+With Index idx_pet_type ON pet(type)
+
+Nested Loop inner join cost: 167 & 169
 ![image](https://github.com/user-attachments/assets/e94054fa-089f-4727-9d88-0c641dab3bba)
 
 
-With Index idx_pet_type_age ON pet(type, age): 322 & 370
+With Index idx_pet_type_age ON pet(type, age)
+
+Nested Loop inner join cost: 322 & 370
 ![image](https://github.com/user-attachments/assets/fd57e4d7-c65a-44ec-97a1-d1990222c7f8)
 
 
-With Index idx_pet_type ON pet(type) & idx_Shelter_name on Shelter(name) & idx_ar_status on AdoptionRequest(status): 562 & 562
+With Index idx_pet_type ON pet(type) & idx_Shelter_name on Shelter(name) & idx_ar_status on AdoptionRequest(status)
+
+Nested Loop inner join cost: 562 & 562
 ![image](https://github.com/user-attachments/assets/c7b04181-8b93-4e40-9acd-01fa6214d62f)
 Default (no additional index): The query relied on a full table scan for filtering Pet.Type and Age, leading to high actual times and row scans in both branches of the UNION. It also performed a full lookup in AdoptionRequest for each pet when checking for pending or approved requests.
 
@@ -333,7 +384,7 @@ Design 1: CREATE INDEX idx_pet_type ON Pet(Type); This index helps filter pets b
 
 Design 2: CREATE INDEX idx_pet_type_age ON Pet(Type, Age); This compound index significantly improves filtering because it allows the engine to quickly find pets that match both type and age conditions (Type = 'Cat' AND Age >= 10, Type = 'Dog' AND Age > 8). The execution plan shows a switch to an index range scan, leading to reduced cost and execution time in both UNION branches.
 
-Design 3CREATE INDEX idx_pet_type ON Pet(Type); CREATE INDEX idx_Shelter_name ON Shelter(Name); CREATE INDEX idx_ar_status ON AdoptionRequest(Status); This setup introduces an index on Shelter.Name, which is used only for SELECT and GROUP BY, and one on AdoptionRequest.Status, which helps the subquery filter requests with Status IN ('Pending', 'Approved'). While this adds benefit by slightly speeding up the subquery evaluation, it doesn't help filtering Pet by Age, and the use of a separate idx_pet_type is not as powerful as idx_pet_type_age. As a result, although the total actual execution time is better than the default and Design 1, it's slightly worse than Design 2.
+Design 3: CREATE INDEX idx_pet_type ON Pet(Type); CREATE INDEX idx_Shelter_name ON Shelter(Name); CREATE INDEX idx_ar_status ON AdoptionRequest(Status); This setup introduces an index on Shelter.Name, which is used only for SELECT and GROUP BY, and one on AdoptionRequest.Status, which helps the subquery filter requests with Status IN ('Pending', 'Approved'). While this adds benefit by slightly speeding up the subquery evaluation, it doesn't help filtering Pet by Age, and the use of a separate idx_pet_type is not as powerful as idx_pet_type_age. As a result, although the total actual execution time is better than the default and Design 1, it's slightly worse than Design 2.
 
 Justification: Among the three indexing strategies, Design 2 (idx_pet_type_age) is the most effective because it directly targets the most selective and frequently used filtering criteria in the query: Pet.Type and Pet.Age. This index reduces the number of scanned rows dramatically through an efficient index range scan, and it performs better than single-column indexes or unrelated composite indexes. While additional indexes like idx_ar_status or idx_Shelter_name contribute minor benefits, they don't address the primary performance bottleneck. This analysis shows the importance of designing compound indexes that match the query’s WHERE clause conditions as closely as possible.
 
