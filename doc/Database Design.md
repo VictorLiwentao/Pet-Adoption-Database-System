@@ -313,16 +313,52 @@ With Indexing idx_adoption_shelter_type: 1352
 ![image](https://github.com/user-attachments/assets/8552bb84-8417-4d91-88a6-989369be2e6d)
 
 ### 4.
-Without Indexing: 2.6
-![image](https://github.com/user-attachments/assets/93ec8e54-97d7-445e-97aa-4786ac783b05)
+Without Index: 541 & 541
+![image](https://github.com/user-attachments/assets/1dfed07b-1bbb-4e80-ac3c-fb3a5f38d9e3)
 
-With Indexing idx_pet_shelter_join : 2.6
-![image](https://github.com/user-attachments/assets/f38673de-e82e-4257-b489-fd1b709404d5)
 
-With Indexing idx_pet_type_age : 2.6
-![image](https://github.com/user-attachments/assets/eb9c6f44-d134-469d-80c0-0d8ff4ca2640)
+With Index idx_pet_type ON pet(type): 167 & 169
+![image](https://github.com/user-attachments/assets/e94054fa-089f-4727-9d88-0c641dab3bba)
 
-With Indexing idx_adoption_status_pid : 2.6
-![image](https://github.com/user-attachments/assets/6844d38d-bdee-4ea0-8fcd-0e729e3abd36)
+
+With Index idx_pet_type_age ON pet(type, age): 322 & 370
+![image](https://github.com/user-attachments/assets/fd57e4d7-c65a-44ec-97a1-d1990222c7f8)
+
+
+With Index idx_pet_type ON pet(type) & idx_Shelter_name on Shelter(name) & idx_ar_status on AdoptionRequest(status): 562 & 562
+![image](https://github.com/user-attachments/assets/c7b04181-8b93-4e40-9acd-01fa6214d62f)
+Default (no additional index): The query relied on a full table scan for filtering Pet.Type and Age, leading to high actual times and row scans in both branches of the UNION. It also performed a full lookup in AdoptionRequest for each pet when checking for pending or approved requests.
+
+Design 1: CREATE INDEX idx_pet_type ON Pet(Type); This index helps filter pets by type (Cat or Dog) efficiently. However, since the Age column is not included, the database still scans over all pets of the given type to apply the age filter. As seen in the execution plan, it slightly reduces the cost but doesn't optimize fully.
+
+Design 2: CREATE INDEX idx_pet_type_age ON Pet(Type, Age); This compound index significantly improves filtering because it allows the engine to quickly find pets that match both type and age conditions (Type = 'Cat' AND Age >= 10, Type = 'Dog' AND Age > 8). The execution plan shows a switch to an index range scan, leading to reduced cost and execution time in both UNION branches.
+
+Design 3CREATE INDEX idx_pet_type ON Pet(Type); CREATE INDEX idx_Shelter_name ON Shelter(Name); CREATE INDEX idx_ar_status ON AdoptionRequest(Status); This setup introduces an index on Shelter.Name, which is used only for SELECT and GROUP BY, and one on AdoptionRequest.Status, which helps the subquery filter requests with Status IN ('Pending', 'Approved'). While this adds benefit by slightly speeding up the subquery evaluation, it doesn't help filtering Pet by Age, and the use of a separate idx_pet_type is not as powerful as idx_pet_type_age. As a result, although the total actual execution time is better than the default and Design 1, it's slightly worse than Design 2.
+
+Justification: Among the three indexing strategies, Design 2 (idx_pet_type_age) is the most effective because it directly targets the most selective and frequently used filtering criteria in the query: Pet.Type and Pet.Age. This index reduces the number of scanned rows dramatically through an efficient index range scan, and it performs better than single-column indexes or unrelated composite indexes. While additional indexes like idx_ar_status or idx_Shelter_name contribute minor benefits, they don't address the primary performance bottleneck. This analysis shows the importance of designing compound indexes that match the query’s WHERE clause conditions as closely as possible.
 
 ### 5.
+
+
+### 6. 
+Without Index: 24413
+![9777528d5f2b168556705e2c3f01867](https://github.com/user-attachments/assets/2fdbe482-20b6-46b0-91ec-8fd14fa222f4)
+
+With Index idx_mr_petid_date ON MedicalRecord(PetID, Date DESC): 24473
+![29e9a9253057cfc4bcb4cb53610ba28](https://github.com/user-attachments/assets/0ac4e0ae-bf96-4c50-a159-cddb30db5e33)
+
+With Index idx_mr_petid_maxdate ON MedicalRecord(PetID, Date): 24398
+![90bcf0141314f0d53b3d4b61ff28eb8](https://github.com/user-attachments/assets/f613febf-5406-4beb-89d0-c31712477277)
+
+With Index idx_pet_petid ON Pet(PetID) & idx_latestmr_petid ON MedicalRecord(PetID): 24418
+![5fe4d8bdce0a069a7c5c6e4364a9fc7](https://github.com/user-attachments/assets/0aca1af9-c76a-4659-b55a-154d0cdd2128)
+
+Default (no additional index): The query performs multiple nested loop joins and scans without any support from indexes. As shown in the first screenshot, the inner join operations over MedicalRecord and the grouping step had higher costs and longer execution times due to full table scans.
+
+Design 1: CREATE INDEX idx_mr_petid_date ON MedicalRecord(PetID, Date DESC); This composite index directly supports both the join condition and the MAX(Date) grouping. It improves performance significantly by enabling index skip scans for grouping and minimizing lookup cost. This is evident in the reduced materialization and group aggregate cost seen in the second screenshot.
+
+Design 2: CREATE INDEX idx_mr_petid_maxdate ON MedicalRecord(PetID, Date); This design aims to support the deduplication and join logic for finding the latest records more directly. It also enables the system to use a covering index for the materialized subquery. However, it shows slightly higher cost and execution time for the grouping phase than the previous index, possibly due to less optimization support for skip scans during aggregation.
+
+Design 3: CREATE INDEX idx_pet_petid ON Pet(PetID); CREATE INDEX idx_latestmr_petid ON MedicalRecord(PetID); Functionally identical to the first custom index but created under a different name to test consistency. Performance remained nearly the same, confirming that the structure of the index matters more than the label.
+
+Justification: Among all designs, the composite index (PetID, Date) consistently provided the best balance between efficient lookup and aggregation. It enabled covering index scans and skip scans, which reduced the overhead of joining and grouping in nested subqueries. This improvement is particularly noticeable given the relatively large size of the MedicalRecord table. Indexing PetID alone would not suffice because the optimizer would still need to search through all rows with the same PetID to find the max Date. Adding Date as a secondary column allows the optimizer to use tree-structured lookups and skip scans more effectively. This case highlights how a well-designed composite index can drastically reduce query cost and execution time in multi-level nested queries.
