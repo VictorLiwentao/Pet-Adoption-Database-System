@@ -277,3 +277,52 @@ ORDER BY DaysInShelter DESC, LatestRecordDate ASC;
 ![image](https://github.com/user-attachments/assets/d47ea8e0-aa0e-4e32-958b-4bc2f9117a63)
 
 P.S. Because some pets may not have vaccination records, they are null. these are the first targets to be considered for needing vaccinations.
+
+## Part 2
+### 2. Indexes Used:
+```
+CREATE INDEX idx_past_user ON PastAdoptionRecord(UserID);
+CREATE INDEX idx_adopt_user ON AdoptionRequest(UserID);
+```
+Key Execution Plan Metrics:
+
+Join Strategy: Nested Loop
+
+Join Index Usage:
+
+past: Covering index scan on idx_past_user
+
+ar: Covering index lookup on idx_adopt_user
+
+## Without Index:
+![image](https://github.com/user-attachments/assets/984447b9-c5fe-4d9f-940c-72e0475721ce)
+## With Index:
+![image](https://github.com/user-attachments/assets/92a32af0-8ffe-4bb4-a0b0-7ffb127548f9)
+From the EXPLAIN ANALYZE results, we can clearly see that the cost of the Stream results node decreased when indexes were used. Specifically, the cost dropped from `1090` (without indexes) to `987` (with indexes).
+The Stream results node represents the final stage where the total result set is streamed back to the client after all joins, filtering, and aggregation are completed. Therefore, its cost essentially reflects the overall cost of the entire query execution.
+This drop in cost confirms that adding indexes on UserID in PastAdoptionRecord and AdoptionRequest significantly improved the performance of the query by reducing join overhead and speeding up data retrieval.
+
+### 3. 
+Without Indexing: 1352
+![image](https://github.com/user-attachments/assets/1387af45-a1f7-4ba7-93cc-085787b0e525)
+With Indexing idx_adoption_pet: 1352
+![image](https://github.com/user-attachments/assets/d9feeb42-e459-4289-b9be-b671817e00c1)
+With Indexing idx_adoption_multi: 1352
+![image](https://github.com/user-attachments/assets/5f520d4c-29a1-4881-a07c-ba795f5776b3)
+With Indexing idx_adoption_shelter_type: 1352
+![image](https://github.com/user-attachments/assets/8552bb84-8417-4d91-88a6-989369be2e6d)
+
+### 4.
+Without Indexing: 2.6
+![image](https://github.com/user-attachments/assets/93ec8e54-97d7-445e-97aa-4786ac783b05)
+
+With Indexing idx_pet_shelter_join : 2.6
+![image](https://github.com/user-attachments/assets/f38673de-e82e-4257-b489-fd1b709404d5)
+
+With Indexing idx_pet_type_age : 2.6
+![image](https://github.com/user-attachments/assets/eb9c6f44-d134-469d-80c0-0d8ff4ca2640)
+
+With Indexing idx_adoption_status_pid : 2.6
+![image](https://github.com/user-attachments/assets/6844d38d-bdee-4ea0-8fcd-0e729e3abd36)
+
+### 5.
