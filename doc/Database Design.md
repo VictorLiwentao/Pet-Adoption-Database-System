@@ -198,7 +198,78 @@ AND NOT EXISTS (
     )
 GROUP BY S.ShelterID, S.Name, P.Type)
 
-ORDER BY AvailablePetCount DESC
+ORDER BY AvailablePetCount DESC;
 ```
 ### Result:
 ![image](https://github.com/user-attachments/assets/c3c7b541-302c-4169-b159-a74db818855f)
+
+### 5 
+### Purpose of the Query
+The goal of this query is to identify users who exhibit potentially problematic adoption request behavior, such as submitting a high number of recent requests or having more rejected than approved requests overall. It also returns how many of their requests were approved and how many were rejected.
+
+### Real-world Impact
+This query is valuable for platform administrators and shelter managers who want to:
+
+Detect users who may be abusing or misunderstanding the adoption request process.
+
+Flag accounts for review if the user is overly aggressive with requests (e.g., submitting > 4 in a month).
+
+Spot users who are consistently denied, which may indicate compatibility issues or system misuse.
+
+Provide customer support or educational outreach to users struggling to complete the adoption process.
+
+This can help maintain the integrity of the platform and improve the quality of the adoption matching system.
+
+### SQL Concepts Used
+`Join Multiple Relations + Aggregation via GROUP BY + Subqueries that cannot be easily replaced by a join`
+### SQL Code
+```
+SELECT u.UserID, u.Name, u.Email, stats.ApprovedCount,stats.RejectedCount
+FROM User u
+JOIN (
+    SELECT UserID,SUM(CASE WHEN Status = 'Approved' THEN 1 ELSE 0 END) AS ApprovedCount,SUM(CASE WHEN Status = 'Rejected' THEN 1 ELSE 0 END) AS RejectedCount
+    FROM AdoptionRequest
+    GROUP BY UserID
+    HAVING (SUM(CASE WHEN RequestDate >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) THEN 1 ELSE 0 END) > 4)
+        OR
+        (COUNT(*) >= 2AND SUM(CASE WHEN Status = 'Rejected' THEN 1 ELSE 0 END) > SUM(CASE WHEN Status = 'Approved' THEN 1 ELSE 0 END))
+) AS stats ON u.UserID = stats.UserID
+ORDER BY stats.RejectedCount DESC;
+```
+### Result:
+![image](https://github.com/user-attachments/assets/491a8cfd-970a-4946-b366-2b01d487bd74)
+
+### 6
+### Purpose of the Query
+The goal of this query is to display how long each pet has been in the shelter and show the details of their most recent medical record (if any). It calculates the number of days each pet has stayed in the shelter and joins that with the latest veterinary record available for that pet.
+
+### Real-world Impact
+This query is highly useful for shelter staff and administrators because it:
+
+Helps identify pets that have been in the shelter the longest, who may need prioritization in marketing or adoption efforts.
+
+Displays each pet’s most recent medical history, allowing for quick access to important health information without manually browsing through multiple records.
+
+Supports veterinary planning and adoption readiness assessment, especially for animals with outdated or missing medical records.
+
+Can be used to create dashboards highlighting pets overdue for medical updates or shelter exit strategies.
+
+### SQL Concepts Used
+`Join Multiple Relations + Aggregation via GROUP BY + Subqueries that cannot be easily replaced by a join`
+### SQL Code
+```
+SELECT p.PetID, p.Name AS PetName,p.DateOfIntake, DATEDIFF(CURDATE(), p.DateOfIntake) AS DaysInShelter, latestMR.LatestRecordDate, latestMR.Description, latestMR.VetName
+FROM Pet p
+LEFT JOIN (
+    SELECT m1.PetID,m1.Date AS LatestRecordDate,m1.Description,m1.VetName
+    FROM MedicalRecord m1
+    JOIN (
+        SELECT PetID, MAX(Date) AS MaxDate
+        FROM MedicalRecord
+        GROUP BY PetID
+    ) m2 ON m1.PetID = m2.PetID AND m1.Date = m2.MaxDate
+) AS latestMR ON p.PetID = latestMR.PetID
+ORDER BY DaysInShelter DESC, LatestRecordDate ASC;
+```
+### Result:
+![image](https://github.com/user-attachments/assets/d47ea8e0-aa0e-4e32-958b-4bc2f9117a63)
