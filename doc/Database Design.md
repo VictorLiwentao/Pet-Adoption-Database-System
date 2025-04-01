@@ -151,3 +151,54 @@ ORDER BY s.ShelterID, RequestsForType DESC;
 ```
 ### Result:
 ![image](https://github.com/user-attachments/assets/02a0890a-6f91-438c-ad82-a55f67abd14a)
+
+### 4.
+### Purpose of the Query
+The goal of this query is to identify shelters that currently have senior cats (age ≥ 10) or senior dogs (age > 8) available for adoption, and to rank these shelters by the number of such pets. Only pets not currently involved in pending or approved adoption requests are included.
+
+### Real-world Impact
+This query is especially valuable for helping shelters promote the adoption of senior animals, who often face longer shelter stays. It allows:
+
+Animal welfare advocates to prioritize outreach to shelters with the largest number of senior pets.
+
+Shelters to identify surplus of elderly pets and create targeted campaigns (e.g., "Adopt a Senior Pet Week").
+
+System admins to generate real-time dashboards showing available high-priority animals (those aging and still unclaimed).
+
+It also supports humane decision-making by spotlighting pets who are most in need of placement.
+### SQL Concepts Used
+`Join Multiple Relations + SET Operators + Aggregation via GROUP BY + Subqueries that cannot be easily replaced by a join`
+### SQL Code
+```
+(SELECT S.ShelterID, S.Name AS ShelterName, P.Type AS PetType, COUNT(P.PetID) AS AvailablePetCount
+FROM Shelter S
+JOIN Pet P ON S.ShelterID = P.ShelterID
+WHERE P.Type = 'Cat'
+AND P.Age >= 10
+AND NOT EXISTS (
+        SELECT 1
+        FROM AdoptionRequest AR
+        WHERE AR.PetID = P.PetID
+          AND AR.Status IN ('Pending', 'Approved')
+    )
+GROUP BY S.ShelterID, S.Name, P.Type)
+
+UNION
+
+(SELECT S.ShelterID, S.Name AS ShelterName, P.Type AS PetType, COUNT(P.PetID) AS AvailablePetCount
+FROM Shelter S
+JOIN Pet P ON S.ShelterID = P.ShelterID
+WHERE P.Type = 'Dog'
+AND P.Age > 8
+AND NOT EXISTS (
+        SELECT 1
+        FROM AdoptionRequest AR
+        WHERE AR.PetID = P.PetID
+          AND AR.Status IN ('Pending', 'Approved')
+    )
+GROUP BY S.ShelterID, S.Name, P.Type)
+
+ORDER BY AvailablePetCount DESC
+```
+### Result:
+![image](https://github.com/user-attachments/assets/c3c7b541-302c-4169-b159-a74db818855f)
