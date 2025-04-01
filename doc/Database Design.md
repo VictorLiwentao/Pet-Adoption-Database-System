@@ -273,3 +273,5 @@ ORDER BY DaysInShelter DESC, LatestRecordDate ASC;
 ```
 ### Result:
 ![image](https://github.com/user-attachments/assets/d47ea8e0-aa0e-4e32-958b-4bc2f9117a63)
+
+P.S. Because some pets may not have vaccination records, they are null. these are the first targets to be considered for needing vaccinations.
