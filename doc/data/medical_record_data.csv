@@ -1,0 +1,3851 @@
+RecordID,PetID,Date,Description,VetName
+1,3,2022-03-06,Surgery Follow-up,Brian Vincent
+2,6,2021-04-06,Spay/Neuter Surgery,Kristen Aguilar
+3,6,2022-06-18,Injury Treatment,Heather Brown
+4,6,2022-12-29,Vaccination,Monica Wagner
+5,8,2023-04-04,Annual Checkup,Shane Santiago
+6,8,2022-07-14,Spay/Neuter Surgery,Brent Goodman
+7,8,2021-05-21,Vaccination,Mary Ramirez
+8,9,2024-01-12,Dental Cleaning,Toni Diaz
+9,9,2024-11-21,Spay/Neuter Surgery,Scott Mason
+10,9,2024-11-13,Dental Cleaning,Franklin Warren
+11,12,2023-08-30,Surgery Follow-up,Michael Dominguez
+12,12,2021-12-14,Dental Cleaning,Scott Greene
+13,13,2022-11-09,Injury Treatment,Wayne Holland DVM
+14,15,2021-06-22,Surgery Follow-up,Sara Hall
+15,19,2021-03-07,Spay/Neuter Surgery,Harold Bryant
+16,20,2024-10-26,Ear Infection,Matthew Williams
+17,20,2024-08-22,X-ray,Amy Barnes
+18,20,2024-07-23,Annual Checkup,Bailey Holmes
+19,23,2021-06-30,X-ray,David Hurst
+20,23,2024-08-04,Blood Test,Briana Carroll
+21,23,2024-05-08,Blood Test,Melanie Flynn
+22,26,2022-02-28,Ear Infection,Joshua Rodriguez
+23,28,2024-12-21,Annual Checkup,Grace Holmes
+24,28,2023-11-08,Annual Checkup,Zachary Myers
+25,32,2021-09-03,Spay/Neuter Surgery,Morgan Ramirez
+26,32,2022-12-29,Skin Allergy Treatment,Anna Jenkins
+27,32,2024-08-07,Skin Allergy Treatment,Mary Clark
+28,33,2023-04-27,Injury Treatment,Jennifer Gates
+29,37,2023-08-11,Spay/Neuter Surgery,Tracy May
+30,37,2024-09-07,Ear Infection,Megan Kirby
+31,38,2021-05-08,Dental Cleaning,Kim Martin
+32,38,2023-10-12,Blood Test,Sharon Reed
+33,38,2021-08-21,Injury Treatment,Abigail Escobar
+34,39,2023-10-03,Ear Infection,Michael Gonzalez
+35,45,2021-01-21,Skin Allergy Treatment,Julie Rodriguez
+36,45,2024-03-22,Surgery Follow-up,Amanda Golden
+37,45,2023-08-06,Dental Cleaning,David Jackson
+38,47,2024-11-01,Spay/Neuter Surgery,Mark Nelson
+39,47,2023-04-28,Ear Infection,Madison Huang
+40,47,2023-01-26,Skin Allergy Treatment,Barbara Hudson
+41,49,2023-03-21,Dental Cleaning,Alicia Oconnell
+42,49,2023-11-03,Dental Cleaning,Ashley Williamson
+43,50,2022-01-03,Spay/Neuter Surgery,Shelley Miller
+44,50,2022-11-18,Annual Checkup,Jonathan Miller
+45,50,2023-07-09,Injury Treatment,Ricky Price
+46,53,2021-08-15,Dental Cleaning,Laurie Henderson
+47,53,2024-08-24,Ear Infection,Rebecca Stewart
+48,53,2023-04-18,Dental Cleaning,Sandra Smith
+49,54,2024-11-28,Vaccination,Harold Ortiz
+50,54,2022-01-14,Injury Treatment,Eric Doyle
+51,54,2023-06-29,Surgery Follow-up,Jennifer Hudson
+52,55,2022-07-02,Surgery Follow-up,Thomas Wilkinson
+53,55,2024-07-19,Skin Allergy Treatment,Kathryn Espinoza
+54,56,2021-01-15,Dental Cleaning,Meagan Pratt
+55,59,2021-07-22,Dental Cleaning,Andrew Mccoy
+56,59,2023-05-01,Annual Checkup,Alejandro Bell
+57,59,2023-10-04,X-ray,Erin Russell
+58,62,2021-08-14,Skin Allergy Treatment,Jeremy Barnes
+59,62,2023-07-30,Ear Infection,John Mckinney
+60,64,2023-04-20,Spay/Neuter Surgery,Devin Martin
+61,64,2023-08-24,Surgery Follow-up,Jordan Campbell
+62,64,2024-05-26,Spay/Neuter Surgery,Anne Poole
+63,65,2022-06-16,Injury Treatment,Lauren Ross
+64,65,2022-08-16,Vaccination,Sharon Rivera
+65,65,2022-01-04,Dental Cleaning,Andrew Wilson
+66,66,2023-06-15,Dental Cleaning,Casey Murphy
+67,66,2022-09-20,Injury Treatment,Benjamin Martin
+68,67,2023-01-03,Surgery Follow-up,Cheryl Barajas
+69,68,2023-12-21,Spay/Neuter Surgery,Susan Harris
+70,69,2023-09-21,Ear Infection,Vickie Cross
+71,69,2021-03-18,Dental Cleaning,Alexis Harris
+72,69,2024-07-05,Surgery Follow-up,Lisa Hughes
+73,72,2021-05-02,Injury Treatment,Kyle Choi
+74,74,2022-07-11,Dental Cleaning,Dale Smith
+75,76,2024-12-12,Annual Checkup,Anna Tanner
+76,76,2022-02-21,Surgery Follow-up,Margaret Walker
+77,78,2021-05-13,Annual Checkup,Douglas Romero
+78,78,2021-01-09,Spay/Neuter Surgery,Randall Hurley
+79,79,2023-03-27,X-ray,Dale Warner
+80,79,2024-08-16,Dental Cleaning,Carlos Rose
+81,81,2023-01-29,Ear Infection,Nicholas Chan
+82,81,2022-02-11,Spay/Neuter Surgery,Shannon Coffey DVM
+83,81,2024-02-19,Skin Allergy Treatment,Anthony Hansen
+84,82,2022-05-26,Annual Checkup,Raymond Hendrix
+85,83,2023-04-11,X-ray,Kristie Galvan
+86,83,2023-02-12,Spay/Neuter Surgery,Randall Taylor
+87,85,2023-05-28,Blood Test,Monica Parks
+88,85,2021-03-08,Blood Test,Charles Foster Jr.
+89,85,2024-11-09,Blood Test,Tracy Hoover
+90,90,2024-01-20,Spay/Neuter Surgery,David Cowan
+91,90,2023-06-15,Surgery Follow-up,Mary Lewis
+92,90,2023-07-22,Annual Checkup,James Mitchell
+93,91,2023-10-01,X-ray,Victoria Huff
+94,91,2021-04-09,X-ray,Julia Mcmahon
+95,91,2022-12-27,Surgery Follow-up,Gregory Wilson
+96,92,2021-09-02,X-ray,Amy Austin
+97,92,2024-01-10,Ear Infection,Michael Hicks
+98,92,2024-08-06,X-ray,Jordan Stephens
+99,93,2024-06-18,Surgery Follow-up,Aaron Haney
+100,93,2021-05-03,Dental Cleaning,Ashley Harvey DDS
+101,96,2023-10-09,Dental Cleaning,James White
+102,96,2023-09-17,Annual Checkup,Timothy Frey
+103,96,2023-07-22,Vaccination,Terry Martinez
+104,98,2023-01-30,Skin Allergy Treatment,Jake Holden
+105,98,2022-09-26,Blood Test,Karen Lopez
+106,98,2022-01-01,Surgery Follow-up,Tim Williams
+107,107,2024-07-29,Injury Treatment,Valerie Gibson
+108,107,2022-01-14,Ear Infection,Stephen House
+109,108,2022-01-17,Ear Infection,John Jacobson
+110,108,2021-11-07,Vaccination,Jill Patterson
+111,108,2023-11-26,X-ray,Wesley Leblanc
+112,109,2022-02-13,Blood Test,Jennifer Kramer
+113,115,2024-07-31,Surgery Follow-up,Kim Weber
+114,119,2021-11-17,Vaccination,Marie Lopez
+115,123,2023-09-19,Blood Test,Adrian Parsons
+116,123,2021-03-25,Ear Infection,Karen Clark
+117,124,2024-04-30,Skin Allergy Treatment,Jill Rodriguez
+118,124,2021-08-25,Vaccination,Jeremy Romero
+119,124,2024-04-28,X-ray,Alexis Long
+120,127,2024-07-22,X-ray,Reginald Morales
+121,127,2022-04-01,Injury Treatment,Janet Moore
+122,127,2024-04-07,Annual Checkup,Chelsea Harris
+123,128,2022-08-05,Annual Checkup,Joseph Brown
+124,128,2022-02-26,Blood Test,Emily Holmes
+125,129,2024-12-31,Blood Test,Henry Little
+126,129,2021-11-13,Surgery Follow-up,Tyrone Gray MD
+127,131,2021-08-22,Ear Infection,Brandon Lopez
+128,131,2021-01-01,Blood Test,Leslie Hudson
+129,131,2023-08-30,Vaccination,Tonya Foster
+130,133,2022-04-17,Skin Allergy Treatment,Benjamin Barton
+131,133,2022-11-07,Dental Cleaning,David Chavez
+132,133,2024-12-20,Blood Test,Bonnie Brown
+133,134,2024-06-18,Injury Treatment,Mr. Preston Clark
+134,134,2022-01-17,Dental Cleaning,Martin Bryant
+135,134,2023-11-23,X-ray,Brooke Mitchell
+136,137,2024-06-04,Ear Infection,Madison Yates
+137,137,2022-12-22,Annual Checkup,Leon Vargas
+138,137,2024-07-25,Skin Allergy Treatment,Kevin Cervantes
+139,138,2021-07-19,X-ray,Barbara Hammond
+140,138,2024-04-27,Vaccination,Veronica Wilson
+141,143,2022-03-05,Blood Test,Christopher Valdez
+142,147,2023-10-18,Dental Cleaning,Eric Brown
+143,147,2022-06-07,Surgery Follow-up,Joshua Walker
+144,147,2022-09-16,Dental Cleaning,Timothy Wilkerson
+145,149,2024-06-05,Surgery Follow-up,Richard Whitney
+146,150,2024-11-13,Skin Allergy Treatment,John Perry
+147,151,2021-12-30,Ear Infection,Francisco Walker
+148,151,2024-09-01,Injury Treatment,Danielle Dean
+149,151,2023-07-02,Injury Treatment,Jacob Curtis
+150,152,2024-11-07,Ear Infection,Kyle Martin
+151,153,2023-01-10,Spay/Neuter Surgery,Nicole Horton
+152,153,2021-01-16,Vaccination,Stephanie Johnston
+153,153,2023-08-14,Skin Allergy Treatment,Sara Castaneda
+154,156,2022-05-04,Ear Infection,Sean Fernandez
+155,156,2022-10-23,Annual Checkup,Curtis Gonzalez
+156,160,2023-04-26,Blood Test,Wayne Gonzalez
+157,161,2021-08-09,Ear Infection,Kevin Wilson
+158,162,2022-05-23,Annual Checkup,Priscilla Foster
+159,162,2021-07-25,Vaccination,James Castillo
+160,163,2021-02-24,Surgery Follow-up,Brett Jimenez
+161,163,2023-07-23,Ear Infection,Diana Wolfe
+162,163,2024-01-08,X-ray,Tamara Gilmore
+163,166,2022-04-01,Ear Infection,Craig Williams
+164,167,2021-07-19,Skin Allergy Treatment,Justin Suarez
+165,167,2024-12-18,Blood Test,Sonya Wilson
+166,167,2023-10-10,Vaccination,Samuel Cisneros
+167,169,2022-08-02,X-ray,Joseph Miller
+168,170,2022-08-05,X-ray,Jessica Barnes
+169,170,2022-07-24,Annual Checkup,Timothy Hughes
+170,171,2021-07-11,Surgery Follow-up,Jonathan Clayton
+171,171,2023-08-14,Surgery Follow-up,Frederick Mccall
+172,172,2023-07-03,Vaccination,Sarah Martinez
+173,172,2022-04-02,Injury Treatment,John Howard
+174,175,2022-12-30,Dental Cleaning,William Harris
+175,176,2022-09-09,Dental Cleaning,Douglas Ruiz
+176,176,2023-06-16,X-ray,Heidi Moreno
+177,177,2023-04-24,Annual Checkup,Alexandra Myers
+178,177,2023-07-27,Ear Infection,Crystal Giles
+179,177,2022-04-14,Injury Treatment,Kara Green
+180,181,2021-11-12,Injury Treatment,Laura Green MD
+181,181,2021-05-13,Dental Cleaning,Jeffrey Sherman
+182,181,2022-10-05,Blood Test,Paul Smith
+183,183,2021-07-26,Spay/Neuter Surgery,Mr. Eddie Allen
+184,183,2023-03-03,Spay/Neuter Surgery,Jillian Stewart
+185,183,2021-03-18,Spay/Neuter Surgery,Victoria George
+186,185,2023-01-29,Skin Allergy Treatment,Amanda Booth
+187,185,2024-03-24,Spay/Neuter Surgery,Paula Cross
+188,186,2024-11-06,Skin Allergy Treatment,Phillip Miller
+189,186,2021-07-04,Injury Treatment,Amy Carlson
+190,186,2024-01-27,Dental Cleaning,Donald Tran
+191,188,2022-09-05,Surgery Follow-up,Dylan Garcia
+192,188,2022-09-15,X-ray,Sara Allen
+193,194,2024-06-08,Skin Allergy Treatment,Shannon Wilson
+194,194,2023-04-29,Injury Treatment,Marcus Mcdonald
+195,194,2024-06-09,Dental Cleaning,Krystal Fitzgerald
+196,196,2024-11-14,Surgery Follow-up,Lisa Keller
+197,196,2021-05-22,Vaccination,Nathan Smith
+198,196,2024-03-27,Surgery Follow-up,Cheyenne Crawford
+199,197,2022-11-06,Surgery Follow-up,Christopher Watson
+200,197,2023-02-21,Skin Allergy Treatment,Randy Lester
+201,197,2021-01-24,Spay/Neuter Surgery,Mary Kirk
+202,199,2024-04-18,Annual Checkup,Billy Torres
+203,199,2022-03-09,Ear Infection,Logan Bridges
+204,200,2024-05-27,Spay/Neuter Surgery,John Thomas
+205,200,2024-10-10,Ear Infection,Patricia Chapman
+206,200,2024-12-16,Skin Allergy Treatment,Kirsten Buchanan
+207,201,2021-04-22,Blood Test,James Jones
+208,202,2024-09-20,Injury Treatment,Larry Wheeler
+209,202,2024-08-31,Skin Allergy Treatment,Bridget Swanson
+210,205,2024-03-17,Skin Allergy Treatment,Anna Bowman
+211,205,2021-08-30,Injury Treatment,John Holloway
+212,205,2022-08-10,Injury Treatment,Troy Underwood
+213,207,2021-09-02,Ear Infection,Jaclyn Ballard
+214,207,2021-04-29,Skin Allergy Treatment,Katie Richardson
+215,207,2021-11-12,X-ray,Stephanie Smith
+216,209,2024-09-06,Dental Cleaning,Elizabeth Young
+217,209,2023-02-02,Blood Test,Timothy Taylor
+218,209,2023-08-07,Ear Infection,Erik Castaneda
+219,211,2024-07-20,Ear Infection,Andrea Davis
+220,211,2023-09-19,Surgery Follow-up,Danny Murphy
+221,211,2022-06-22,Ear Infection,James Arroyo
+222,212,2024-03-14,Ear Infection,Elizabeth Hudson
+223,212,2022-01-09,Skin Allergy Treatment,Michelle Choi
+224,212,2024-01-23,X-ray,Alexander Hebert
+225,215,2023-11-07,Blood Test,Brian Simmons
+226,218,2022-08-18,Vaccination,Amy King
+227,218,2023-04-19,Blood Test,Brandi Villarreal
+228,218,2022-08-23,Spay/Neuter Surgery,David Torres
+229,221,2023-01-09,X-ray,Hayden Munoz
+230,221,2021-09-23,Blood Test,Anthony Lopez
+231,221,2023-06-28,Blood Test,Lori Bowen
+232,223,2024-12-29,Annual Checkup,Stephanie Martin
+233,225,2023-08-01,Annual Checkup,Dr. Ann Johnson
+234,226,2022-09-24,Spay/Neuter Surgery,Glenn Larson
+235,226,2022-01-26,Spay/Neuter Surgery,Cory Morgan
+236,229,2022-03-11,Annual Checkup,Brenda Hawkins
+237,229,2024-10-02,Surgery Follow-up,Timothy Donaldson
+238,229,2024-07-05,Surgery Follow-up,Dominique Davis
+239,231,2023-10-10,Ear Infection,Joe Jordan
+240,231,2022-01-10,Surgery Follow-up,Jane Deleon
+241,232,2021-10-31,Surgery Follow-up,Devin Mills
+242,232,2023-07-15,X-ray,Aaron Ayers
+243,232,2024-08-31,Skin Allergy Treatment,Maria James
+244,233,2023-06-15,Vaccination,Dana Holmes
+245,233,2023-01-30,Dental Cleaning,Ryan Torres
+246,235,2023-10-22,Spay/Neuter Surgery,Melinda Case
+247,235,2022-08-10,Ear Infection,Hunter Wiggins
+248,235,2021-11-03,Vaccination,Rebecca Jenkins
+249,238,2024-08-18,X-ray,Paul Moran
+250,239,2024-11-20,Skin Allergy Treatment,Ryan Wright
+251,244,2022-10-16,Surgery Follow-up,Melissa Scott
+252,244,2024-04-10,Injury Treatment,Kevin Mccormick
+253,246,2021-11-16,Annual Checkup,Miss Brittany Stewart
+254,246,2024-07-08,Skin Allergy Treatment,David Carr
+255,246,2023-08-15,Dental Cleaning,Matthew Gamble
+256,247,2024-02-02,Spay/Neuter Surgery,Rebecca Green
+257,247,2022-11-17,Blood Test,Evan Small
+258,247,2021-04-14,X-ray,Molly Elliott
+259,249,2023-04-19,Injury Treatment,Terri Edwards
+260,249,2022-02-06,Surgery Follow-up,Angelica Ramirez
+261,249,2022-11-03,Vaccination,Kelly Evans
+262,251,2023-02-18,Ear Infection,Austin Baker
+263,251,2024-12-18,Vaccination,Terry Russell
+264,252,2024-03-14,Spay/Neuter Surgery,Alexandra Lucas
+265,254,2021-08-11,Dental Cleaning,Nicole Jimenez
+266,254,2023-06-18,Spay/Neuter Surgery,Laura Valencia
+267,254,2021-03-23,Blood Test,Andrew Pena
+268,255,2024-07-22,Blood Test,Michael Baker
+269,256,2022-11-24,Surgery Follow-up,Susan Hunt
+270,256,2024-03-27,Ear Infection,David Williams
+271,258,2021-12-28,Vaccination,Donald Frank
+272,259,2021-03-21,Blood Test,Kimberly Johnson
+273,259,2023-07-30,Spay/Neuter Surgery,Kendra Wallace
+274,260,2024-12-03,Ear Infection,Marcus Solomon
+275,260,2024-06-16,Spay/Neuter Surgery,Javier Poole
+276,260,2021-05-29,Skin Allergy Treatment,Daniel Hicks
+277,262,2024-11-05,Annual Checkup,Noah Mcintyre
+278,262,2023-10-11,Ear Infection,Jason Sanchez
+279,266,2021-09-28,Spay/Neuter Surgery,Becky Smith
+280,266,2023-02-20,Surgery Follow-up,Stephen Schmidt
+281,267,2021-02-03,Spay/Neuter Surgery,Zachary Johnson
+282,271,2023-10-01,Vaccination,Diana Sanchez
+283,271,2023-03-10,Vaccination,Melissa Shaw
+284,271,2024-05-26,Skin Allergy Treatment,Mrs. Robin Gordon
+285,273,2024-04-04,Injury Treatment,Elizabeth Noble
+286,273,2022-07-27,Injury Treatment,Melissa Brown
+287,274,2021-10-11,Injury Treatment,Brian Dominguez
+288,274,2021-08-15,Vaccination,Sherri Potter
+289,275,2023-08-26,Vaccination,Anthony Kelly
+290,279,2023-10-18,Injury Treatment,Anthony Morton
+291,279,2024-12-21,Skin Allergy Treatment,Anna Houston
+292,280,2023-06-08,Annual Checkup,Kelly Gross
+293,283,2024-11-24,Annual Checkup,Jason Williams
+294,283,2024-02-09,Surgery Follow-up,Marie Christian
+295,283,2023-10-13,Annual Checkup,Alex Horn
+296,285,2021-12-03,Vaccination,April Holt
+297,286,2022-05-06,Injury Treatment,Alexander Wilson
+298,286,2024-03-25,Ear Infection,Kathryn Williams
+299,286,2021-04-06,Vaccination,Brian Bonilla
+300,289,2021-11-29,Surgery Follow-up,Angela Powell
+301,289,2024-05-19,Ear Infection,Richard Singh
+302,291,2021-08-08,Blood Test,Karen Jones
+303,291,2022-03-07,Injury Treatment,Kayla Mcgee
+304,294,2022-01-18,Skin Allergy Treatment,Barbara Smith
+305,294,2022-07-24,Ear Infection,Brenda Ortega
+306,294,2021-02-05,Surgery Follow-up,Kimberly Flores
+307,295,2022-09-30,Dental Cleaning,Vanessa Newton
+308,295,2021-05-12,Annual Checkup,Bryce Patel
+309,295,2024-03-21,Injury Treatment,Sarah Henry
+310,296,2023-10-20,Dental Cleaning,Mr. Johnathan Steele
+311,297,2024-04-17,Blood Test,Jordan Campbell
+312,297,2021-04-05,Annual Checkup,Cynthia Lewis
+313,298,2022-10-16,Vaccination,Jeffrey Murphy
+314,298,2022-07-23,Spay/Neuter Surgery,Rachel Lawson
+315,299,2021-09-13,Vaccination,Jill Ward
+316,301,2021-03-26,X-ray,John Carter
+317,301,2021-10-24,Dental Cleaning,Matthew Marshall
+318,301,2023-10-12,Vaccination,Victoria Palmer
+319,303,2022-02-02,Dental Cleaning,Melissa Jones
+320,304,2023-08-27,Spay/Neuter Surgery,Charles Brown
+321,304,2021-12-30,Ear Infection,Martin Odom
+322,306,2021-08-17,Blood Test,Tracy Parsons
+323,306,2021-06-22,Surgery Follow-up,Brenda Taylor
+324,308,2022-04-16,Spay/Neuter Surgery,Roy Schroeder
+325,308,2021-10-01,Spay/Neuter Surgery,Stacy Scott
+326,309,2021-07-01,Vaccination,Daniel Brown
+327,312,2023-11-23,Injury Treatment,Tara Fletcher
+328,314,2021-08-23,Spay/Neuter Surgery,Laura Anderson
+329,315,2023-05-05,Annual Checkup,Manuel Dominguez III
+330,315,2022-01-16,Dental Cleaning,Kimberly Hardy
+331,316,2022-01-29,Ear Infection,Kyle Roberts
+332,316,2022-11-08,X-ray,Mrs. Karen Kennedy
+333,317,2022-08-28,Blood Test,Andrew Ross
+334,317,2024-01-27,Injury Treatment,Karen Smith
+335,317,2024-03-16,Dental Cleaning,Tammy Lopez
+336,318,2023-08-24,X-ray,Olivia Norris
+337,318,2021-09-05,Dental Cleaning,Courtney Webb
+338,318,2021-06-07,Spay/Neuter Surgery,Theodore Andrews
+339,320,2022-06-27,Annual Checkup,Tina Neal
+340,320,2021-01-22,Surgery Follow-up,Madison Jackson
+341,320,2023-03-04,Surgery Follow-up,Dawn Smith
+342,321,2022-05-07,Injury Treatment,Lori Smith
+343,321,2024-06-03,Blood Test,Laura Torres
+344,323,2022-01-31,Spay/Neuter Surgery,Amy Morris
+345,325,2022-11-23,Blood Test,Anna Osborne
+346,325,2022-12-05,Surgery Follow-up,Steven Brown
+347,325,2023-03-05,Blood Test,Stephen Atkinson
+348,326,2022-05-24,Blood Test,Grant Joseph
+349,326,2021-07-20,Blood Test,Christopher Holloway
+350,326,2023-05-22,Spay/Neuter Surgery,Brian Gregory
+351,328,2021-03-19,Ear Infection,Alexander Robinson
+352,328,2024-10-13,Dental Cleaning,Kimberly Lloyd
+353,329,2024-03-24,Surgery Follow-up,Brandy Johnson
+354,329,2022-11-05,Surgery Follow-up,Julie Flynn
+355,329,2024-06-14,Ear Infection,Krista Gonzales
+356,333,2023-09-03,Ear Infection,Mary Black
+357,333,2021-12-16,Injury Treatment,Nicole Walker
+358,335,2021-01-14,Ear Infection,Amanda Casey
+359,335,2021-01-02,Injury Treatment,Jennifer Jimenez
+360,336,2021-08-04,Blood Test,Jonathan Ortiz
+361,336,2022-10-02,X-ray,Erin Rice
+362,337,2021-09-27,Dental Cleaning,Courtney Myers
+363,337,2022-04-21,Dental Cleaning,John Jones
+364,337,2022-05-19,Injury Treatment,Kyle Shepherd
+365,338,2021-07-30,X-ray,Lisa Sanford
+366,339,2022-10-23,Ear Infection,Laura Martin
+367,340,2021-08-27,Annual Checkup,William Mack
+368,340,2021-06-29,Vaccination,Dr. Monica Jordan DVM
+369,340,2024-06-16,X-ray,Tanya Leblanc
+370,341,2021-10-31,Annual Checkup,Joshua Davis
+371,341,2023-03-19,Injury Treatment,Ricky Hudson
+372,343,2021-06-10,Spay/Neuter Surgery,Joseph Morrison
+373,343,2024-01-07,Ear Infection,Michelle Williams
+374,343,2021-09-05,Ear Infection,Megan Smith
+375,344,2022-10-21,Dental Cleaning,Karen Wilson
+376,346,2024-04-29,Surgery Follow-up,Matthew Lee
+377,346,2023-01-29,Spay/Neuter Surgery,Jimmy Francis
+378,348,2023-12-24,Injury Treatment,Jerry Andrade
+379,349,2021-11-13,Skin Allergy Treatment,Linda Travis
+380,351,2022-08-08,Dental Cleaning,Justin Porter
+381,351,2021-02-25,Surgery Follow-up,Christian Savage
+382,351,2024-04-07,Ear Infection,Cheryl Davis
+383,352,2024-08-16,Dental Cleaning,John Wood
+384,353,2022-09-02,Skin Allergy Treatment,Jonathan Wolfe
+385,353,2024-01-13,Injury Treatment,Stacey King
+386,356,2024-06-20,Annual Checkup,Stacey Hawkins
+387,356,2022-12-18,Injury Treatment,Jennifer Meza
+388,358,2021-05-07,Annual Checkup,Catherine Miller
+389,358,2024-04-28,Blood Test,Nicholas Cunningham
+390,359,2024-05-27,Spay/Neuter Surgery,Tyler Lucas
+391,360,2021-02-14,Ear Infection,Kyle Jackson
+392,360,2021-03-03,Injury Treatment,Tracy Goodwin
+393,360,2023-12-19,Annual Checkup,Ashley Fritz
+394,361,2023-06-11,Skin Allergy Treatment,Amanda Shannon
+395,362,2022-11-11,Injury Treatment,Jodi Villarreal
+396,364,2021-06-03,Skin Allergy Treatment,Katherine Lopez
+397,365,2021-01-06,Blood Test,Jason Rogers
+398,365,2024-05-06,Skin Allergy Treatment,Christina Webb
+399,367,2023-05-05,Vaccination,James Burton
+400,369,2024-12-18,Dental Cleaning,Stephen Benson
+401,371,2022-12-19,Injury Treatment,Edward Fernandez
+402,371,2021-01-25,X-ray,Corey Clark
+403,371,2022-09-11,Annual Checkup,James Willis
+404,373,2022-05-24,Blood Test,David Stephens
+405,373,2024-01-15,Annual Checkup,Katherine Meyer
+406,374,2021-11-14,Dental Cleaning,Marie Bowen
+407,376,2021-11-18,Injury Treatment,Devin Mack
+408,376,2023-05-08,Injury Treatment,Lisa Nguyen
+409,376,2021-02-14,Annual Checkup,Lindsay Robinson
+410,377,2024-03-28,Vaccination,Elizabeth Cisneros
+411,377,2023-09-13,Blood Test,Rachel Sanchez
+412,379,2022-03-08,Vaccination,Linda Cox
+413,380,2021-05-04,Injury Treatment,Cindy Lowery
+414,381,2023-03-01,Dental Cleaning,Robert Mitchell
+415,381,2022-09-28,Surgery Follow-up,Angela Kelly
+416,382,2024-10-24,Blood Test,Christopher Graham
+417,383,2021-07-01,Spay/Neuter Surgery,John Watson
+418,383,2021-03-10,Skin Allergy Treatment,Zachary Cross
+419,383,2024-04-09,Surgery Follow-up,Monica Ayala
+420,384,2021-09-23,Skin Allergy Treatment,Thomas Henderson
+421,384,2022-07-12,Spay/Neuter Surgery,Jill Lawrence
+422,384,2021-10-25,Surgery Follow-up,Jennifer Barajas
+423,385,2024-04-23,Vaccination,Donald Wilson
+424,385,2023-09-21,Blood Test,Susan Vasquez
+425,385,2022-10-31,Annual Checkup,Brian Wilkins
+426,388,2024-05-06,Spay/Neuter Surgery,Travis Thompson
+427,388,2023-07-10,Vaccination,Angela Wilkinson
+428,388,2023-03-08,Skin Allergy Treatment,Olivia Greene
+429,392,2021-11-21,Skin Allergy Treatment,Dr. Sara Cohen
+430,392,2023-06-14,X-ray,Sierra Wright
+431,393,2024-01-05,Dental Cleaning,Daniel Gonzales
+432,393,2022-04-02,Surgery Follow-up,Rachel Murphy
+433,393,2021-10-26,Skin Allergy Treatment,Richard Frederick
+434,394,2023-09-09,X-ray,Eric Duke
+435,399,2022-11-28,Skin Allergy Treatment,Dr. Susan Torres
+436,400,2021-09-08,Annual Checkup,Miss Katie Doyle
+437,400,2022-09-23,Surgery Follow-up,Christina Graham
+438,402,2023-04-29,Vaccination,Brittany Jones
+439,402,2023-12-08,Injury Treatment,Michelle Contreras
+440,403,2021-10-07,Dental Cleaning,Eric Martin
+441,403,2021-03-28,Dental Cleaning,Ethan Harris
+442,404,2023-10-27,Ear Infection,Stephanie Young
+443,408,2024-01-14,Blood Test,Mackenzie Sims
+444,409,2022-02-06,Spay/Neuter Surgery,Maria Brock DDS
+445,410,2024-01-23,Annual Checkup,Morgan Powell
+446,410,2022-10-12,Injury Treatment,Wesley Davidson
+447,410,2023-12-18,Spay/Neuter Surgery,Jack Baldwin
+448,412,2023-11-18,Annual Checkup,Teresa Cochran
+449,412,2024-02-13,Spay/Neuter Surgery,Elizabeth Mckay
+450,412,2022-10-05,Ear Infection,Amber Ross
+451,415,2023-12-10,Surgery Follow-up,Heather Stone
+452,415,2021-06-01,Dental Cleaning,Brianna Williams
+453,415,2023-07-04,Skin Allergy Treatment,Sheila Sexton
+454,416,2024-11-04,Surgery Follow-up,Kelsey Jackson
+455,416,2021-12-11,Dental Cleaning,Rebecca Webb
+456,416,2022-11-04,Injury Treatment,Michelle Nelson
+457,419,2024-04-18,X-ray,Courtney Hamilton
+458,419,2021-10-27,Annual Checkup,Shane Estrada
+459,425,2022-05-24,Blood Test,Michael Cooper
+460,425,2021-07-10,Blood Test,Andrew Rodriguez
+461,428,2023-08-14,Spay/Neuter Surgery,Sheila Porter
+462,428,2022-05-29,Dental Cleaning,Victoria Rogers
+463,429,2024-09-01,Dental Cleaning,Stephanie Powers
+464,429,2021-09-10,Spay/Neuter Surgery,David Moore
+465,430,2023-06-08,Spay/Neuter Surgery,Kelsey Oliver
+466,430,2023-09-01,Blood Test,Charles Edwards
+467,431,2022-05-24,Ear Infection,David Day
+468,432,2023-10-15,Spay/Neuter Surgery,Peter Rose
+469,434,2024-09-06,X-ray,Jennifer Rice
+470,434,2023-07-13,X-ray,Cory Clark
+471,435,2023-12-13,Spay/Neuter Surgery,Cathy Flores
+472,436,2021-07-05,Spay/Neuter Surgery,Anna Warren
+473,436,2024-07-04,Surgery Follow-up,Tina Browning
+474,436,2024-11-24,Dental Cleaning,John Davis
+475,443,2022-09-05,Vaccination,Jessica Jones
+476,443,2023-12-29,Vaccination,David Fisher
+477,446,2022-10-16,Annual Checkup,David Williams
+478,446,2022-10-28,Vaccination,Douglas Thomas
+479,446,2023-04-21,Vaccination,Michael Johnston
+480,447,2021-02-01,X-ray,Wesley Le
+481,448,2021-11-29,Surgery Follow-up,David Williams
+482,449,2024-07-27,Ear Infection,Nicholas Rodriguez
+483,449,2021-03-05,Surgery Follow-up,Brittany Daniels
+484,453,2022-08-13,Injury Treatment,Thomas Warner
+485,453,2023-01-05,Skin Allergy Treatment,Michael Brown
+486,453,2024-06-07,Vaccination,Richard Goodman
+487,456,2023-03-30,Dental Cleaning,Laurie Wilson
+488,456,2023-07-21,Blood Test,Robert Anderson
+489,456,2024-12-17,Skin Allergy Treatment,Miss Stephanie Burgess
+490,457,2023-10-13,Surgery Follow-up,Sarah Kemp
+491,457,2021-11-30,Blood Test,Sylvia Gamble
+492,458,2022-05-15,X-ray,Dylan Mccarthy
+493,460,2021-07-24,Annual Checkup,Kenneth James
+494,460,2023-11-03,Ear Infection,Kevin Hanson
+495,461,2024-03-20,Skin Allergy Treatment,Christopher Mcguire
+496,461,2024-10-03,Ear Infection,Natalie Keller
+497,464,2021-11-08,Vaccination,Caleb Harris
+498,464,2022-03-27,Vaccination,Mark Foster
+499,464,2022-08-13,Skin Allergy Treatment,William Evans
+500,467,2024-05-27,Surgery Follow-up,Jeffrey Powell
+501,467,2022-12-09,Blood Test,Sarah Robertson
+502,467,2022-09-08,Blood Test,Jacob Spence
+503,468,2023-12-28,Vaccination,Kevin Salazar
+504,469,2023-08-29,Annual Checkup,Robert Vaughn
+505,470,2023-04-20,Injury Treatment,Renee Anderson
+506,470,2023-06-17,Ear Infection,Shannon Bautista
+507,471,2021-01-05,Blood Test,Erica Williams
+508,471,2023-04-02,Surgery Follow-up,Mark Ward
+509,471,2024-12-29,Spay/Neuter Surgery,Carl Martinez
+510,472,2023-11-27,X-ray,Miguel Gonzalez
+511,472,2023-03-02,Dental Cleaning,Desiree Hunter
+512,473,2022-02-10,X-ray,Tiffany Wilson
+513,473,2023-12-31,Vaccination,Kimberly Floyd
+514,473,2023-04-28,Dental Cleaning,Timothy Graham
+515,474,2022-02-24,Dental Cleaning,Shawn Simmons
+516,475,2021-02-07,Surgery Follow-up,Elaine Diaz
+517,475,2023-08-09,Skin Allergy Treatment,Anthony Manning
+518,475,2024-08-10,Vaccination,Brittney Garcia
+519,477,2024-10-22,X-ray,Jessica Williams
+520,477,2024-08-31,Ear Infection,Robert Torres
+521,479,2022-09-02,Ear Infection,Donna Underwood
+522,479,2022-04-26,Injury Treatment,Maria Cannon
+523,480,2024-04-12,Surgery Follow-up,Linda Smith
+524,482,2022-09-12,Vaccination,Teresa Barnes
+525,482,2024-01-11,Blood Test,Brian Tate
+526,483,2024-02-24,Skin Allergy Treatment,Vanessa Nichols
+527,483,2021-12-22,Dental Cleaning,Kenneth Thompson
+528,483,2023-03-30,Surgery Follow-up,Aaron Spence
+529,485,2024-09-05,Blood Test,Veronica Knight
+530,485,2024-07-12,Annual Checkup,Stephanie Pierce
+531,490,2021-07-14,Dental Cleaning,Shaun Gilbert
+532,491,2023-10-26,Dental Cleaning,Kevin Harvey
+533,491,2021-09-12,Dental Cleaning,Jorge Herman
+534,491,2024-03-20,Vaccination,Lisa Evans
+535,494,2023-05-02,Blood Test,Christian Roy
+536,494,2021-07-27,Injury Treatment,Tyler Baker
+537,500,2021-02-09,Annual Checkup,Clinton Larsen
+538,500,2023-03-25,X-ray,Julie Cox
+539,502,2021-10-09,Annual Checkup,Catherine Perez
+540,502,2021-06-13,Blood Test,April Williams
+541,502,2022-09-14,Surgery Follow-up,Dr. Christina Gaines
+542,503,2021-07-07,Ear Infection,Monica Moss
+543,503,2023-05-03,Dental Cleaning,Katrina Cooper
+544,503,2021-04-06,Spay/Neuter Surgery,Jo Lopez
+545,504,2023-08-24,Vaccination,Amy Lozano
+546,504,2021-08-22,Surgery Follow-up,Mike Peterson
+547,504,2024-04-08,X-ray,Johnny Marshall
+548,505,2023-05-13,Skin Allergy Treatment,Michelle Adams
+549,505,2023-10-02,Blood Test,Shannon Wheeler
+550,505,2022-10-29,Annual Checkup,Kenneth Glenn
+551,507,2024-09-23,Annual Checkup,Dominique Pearson
+552,507,2022-08-12,Ear Infection,Curtis Barr
+553,511,2021-10-21,Injury Treatment,Steven Martin
+554,511,2021-01-12,Skin Allergy Treatment,Mary Henderson
+555,511,2022-01-09,X-ray,Brian Townsend
+556,512,2024-03-18,Blood Test,Kevin Sanders
+557,512,2022-08-19,Ear Infection,Kaitlyn Moss
+558,515,2022-06-14,Dental Cleaning,Clarence Miller III
+559,515,2023-06-30,Spay/Neuter Surgery,Angela Nelson
+560,517,2023-03-07,Vaccination,Melissa Melendez
+561,518,2022-04-06,Skin Allergy Treatment,Nathan Collins
+562,518,2023-09-07,Blood Test,Courtney Clark
+563,519,2022-03-14,X-ray,Robert Johnson
+564,520,2023-04-03,Vaccination,Mr. Jay Ashley
+565,520,2021-03-10,Spay/Neuter Surgery,Lisa Doyle
+566,524,2024-08-23,Vaccination,Sherry Miller
+567,526,2023-05-11,X-ray,John Sexton
+568,526,2022-03-26,Dental Cleaning,Craig Proctor
+569,527,2022-10-21,Annual Checkup,Kendra Jones
+570,527,2022-08-01,Ear Infection,Brittany Donaldson
+571,529,2021-06-28,Blood Test,Timothy Lee MD
+572,529,2024-01-31,X-ray,Mr. David Willis
+573,529,2022-02-17,Skin Allergy Treatment,David Morrow
+574,530,2021-10-25,Dental Cleaning,Kyle Anderson
+575,531,2022-03-08,Dental Cleaning,Karen Navarro
+576,532,2022-12-05,Ear Infection,Trevor Carter
+577,533,2021-10-26,Vaccination,Michael Mayo
+578,533,2021-12-18,Annual Checkup,William Davis
+579,537,2021-09-02,Dental Cleaning,Alicia Fuller
+580,537,2021-10-25,Skin Allergy Treatment,Tyler Jefferson
+581,539,2021-06-07,Injury Treatment,Jonathan Castillo
+582,539,2024-02-14,X-ray,Robin Carson
+583,539,2024-05-27,Skin Allergy Treatment,Kathryn Galvan
+584,541,2022-07-01,X-ray,Brandon Mills
+585,542,2023-09-06,Spay/Neuter Surgery,Laurie Spears
+586,545,2022-01-15,Injury Treatment,Justin Chen
+587,546,2021-02-23,Blood Test,Sylvia Morris
+588,546,2021-01-21,Skin Allergy Treatment,Mr. Richard Allen
+589,548,2021-04-02,Injury Treatment,Mr. Carl Snyder
+590,552,2024-02-15,Surgery Follow-up,Benjamin Miller
+591,553,2021-10-03,Vaccination,Michael Robles
+592,553,2022-01-22,Annual Checkup,Jill Perez MD
+593,554,2021-09-23,Vaccination,Amy Taylor
+594,556,2022-06-03,Skin Allergy Treatment,Nicole Hart
+595,556,2023-02-25,Skin Allergy Treatment,Joseph Elliott
+596,558,2024-08-25,Ear Infection,Jordan Robinson
+597,558,2024-08-24,Injury Treatment,Mary Ellis
+598,558,2021-08-16,Injury Treatment,Matthew Elliott
+599,559,2023-12-05,Skin Allergy Treatment,Brittany Wallace
+600,559,2023-05-30,Blood Test,Amanda Gutierrez
+601,560,2021-01-23,X-ray,Barbara Rodriguez
+602,560,2023-06-30,Spay/Neuter Surgery,Lee Lam
+603,560,2023-09-02,Injury Treatment,Amanda Hendricks
+604,562,2022-12-28,Annual Checkup,Emily Barry
+605,565,2023-02-07,Surgery Follow-up,Tracy Benjamin
+606,565,2024-03-27,X-ray,Brittany Gonzalez
+607,569,2023-05-02,Injury Treatment,Jacqueline Schmidt
+608,569,2023-08-07,X-ray,Mr. John Lee
+609,569,2022-11-17,Spay/Neuter Surgery,Christine Diaz
+610,571,2024-04-24,Vaccination,Lauren Long
+611,571,2021-05-20,X-ray,Jennifer Burgess
+612,571,2023-09-14,Blood Test,Jessica Duran
+613,574,2023-09-20,Annual Checkup,Terry West
+614,574,2024-11-07,Spay/Neuter Surgery,Olivia Richard
+615,574,2022-08-03,Blood Test,Makayla Butler
+616,575,2023-01-09,Blood Test,Robert Rios
+617,575,2024-02-29,Skin Allergy Treatment,Rodney Bender
+618,577,2023-11-20,Annual Checkup,Hunter Phillips
+619,578,2024-04-10,Vaccination,Elizabeth Clark
+620,578,2023-05-01,Annual Checkup,Amy White
+621,578,2021-10-04,Vaccination,Rhonda Black
+622,582,2023-03-27,Vaccination,Sandra Dyer
+623,584,2022-12-04,Annual Checkup,John Mcgee
+624,587,2023-06-23,Blood Test,Brittany Cohen
+625,587,2024-04-04,Blood Test,Gregory Huffman
+626,589,2024-01-30,Spay/Neuter Surgery,Jennifer Fuller
+627,589,2023-10-07,Injury Treatment,Nancy Morris
+628,589,2024-06-24,Spay/Neuter Surgery,Kelly Medina
+629,590,2023-10-04,Annual Checkup,Michelle Mitchell
+630,592,2023-08-22,Skin Allergy Treatment,Erin Walsh
+631,592,2023-02-26,Annual Checkup,Gabriela Stewart
+632,592,2022-10-03,Dental Cleaning,Angela Rogers
+633,593,2023-11-05,Annual Checkup,John Mercado
+634,594,2024-03-07,Surgery Follow-up,Diana Herrera
+635,594,2024-09-27,Blood Test,Jennifer Carpenter
+636,595,2021-06-14,Injury Treatment,Patricia Harris
+637,595,2022-08-23,Skin Allergy Treatment,Samuel Adams
+638,595,2021-04-30,Skin Allergy Treatment,Peter Khan
+639,598,2021-01-30,Ear Infection,Wendy Robinson
+640,598,2021-10-11,Dental Cleaning,Gina Small
+641,600,2024-01-28,Vaccination,Todd Clark
+642,600,2022-04-03,Vaccination,Steven Pena
+643,600,2024-10-06,Skin Allergy Treatment,Kelsey Porter
+644,607,2022-11-16,Annual Checkup,Justin Combs
+645,607,2023-11-30,Blood Test,Mrs. Brooke Fuentes
+646,607,2021-11-27,Blood Test,Vanessa Williams
+647,609,2022-12-11,Surgery Follow-up,Johnny Green
+648,609,2024-03-12,X-ray,Thomas Owens
+649,610,2022-07-08,Spay/Neuter Surgery,Teresa Porter
+650,610,2021-01-27,Spay/Neuter Surgery,Michael Morales
+651,615,2023-07-02,Ear Infection,Brian Cardenas
+652,615,2021-11-08,Blood Test,Rachel Casey
+653,619,2024-10-17,Ear Infection,Brett Sweeney
+654,619,2021-04-12,Vaccination,Matthew Tyler
+655,620,2022-12-26,Blood Test,James Francis
+656,620,2022-10-13,Injury Treatment,Tyler Patel
+657,623,2024-05-08,Ear Infection,Dillon Lewis
+658,623,2024-01-15,Injury Treatment,Laura Miller
+659,623,2022-12-01,Annual Checkup,Christine Schroeder
+660,628,2024-03-18,Dental Cleaning,Jose Reese
+661,630,2023-06-28,Spay/Neuter Surgery,James Good
+662,630,2022-10-12,X-ray,Kathy Tran
+663,630,2021-04-09,Dental Cleaning,Christopher Miller
+664,632,2022-09-27,X-ray,Steven Bell
+665,632,2023-10-10,X-ray,Samantha Rodriguez
+666,633,2021-07-06,Blood Test,Candace Scott
+667,633,2022-10-21,X-ray,Ellen Thomas
+668,636,2021-11-14,Vaccination,Jason Romero
+669,636,2022-05-07,Spay/Neuter Surgery,Linda Castillo
+670,636,2021-04-08,Surgery Follow-up,Corey Silva
+671,638,2021-01-05,Skin Allergy Treatment,Justin Thompson
+672,643,2021-09-18,Annual Checkup,Michelle Mcclain
+673,643,2023-02-02,X-ray,Joel Keller
+674,644,2021-01-16,Dental Cleaning,Mary Crawford DDS
+675,645,2022-12-17,Injury Treatment,James Gomez
+676,645,2021-01-16,Vaccination,Daniel Dillon
+677,648,2022-12-21,Skin Allergy Treatment,Dawn Stone
+678,648,2024-03-24,Skin Allergy Treatment,Michael House
+679,649,2023-02-03,Surgery Follow-up,Erin Berger
+680,650,2022-06-13,Injury Treatment,Larry Nguyen
+681,650,2021-08-29,Surgery Follow-up,Darin Shannon
+682,650,2022-06-20,Spay/Neuter Surgery,Kathleen Vaughn
+683,651,2022-10-09,Annual Checkup,Rebecca Cross
+684,651,2023-08-08,Spay/Neuter Surgery,Mr. John Perez MD
+685,651,2021-09-04,X-ray,Jamie Roberts
+686,652,2024-07-06,Skin Allergy Treatment,Ronald Hardy
+687,652,2021-01-09,Surgery Follow-up,Brandon Thomas
+688,653,2022-01-06,Blood Test,Stephanie Long
+689,653,2024-01-20,Ear Infection,Justin Lee
+690,653,2022-08-20,Surgery Follow-up,Christopher Smith
+691,655,2022-03-27,Blood Test,Madison Brown
+692,656,2021-05-26,Blood Test,Dale Petty
+693,656,2022-05-08,Dental Cleaning,Jamie Strickland
+694,657,2024-03-10,Vaccination,Brenda Ellis
+695,657,2021-03-27,Skin Allergy Treatment,James Webb
+696,657,2024-08-04,Injury Treatment,James Jones
+697,658,2021-05-13,Skin Allergy Treatment,Christina Miller
+698,658,2021-07-27,Vaccination,Tim Lara
+699,658,2021-10-30,Annual Checkup,Daniel Hawkins
+700,659,2022-08-06,Blood Test,Kelly Massey
+701,660,2022-07-02,Dental Cleaning,Leslie Vargas
+702,660,2023-05-21,Blood Test,James Hurst
+703,660,2021-08-23,X-ray,Brandon Wagner
+704,664,2023-10-05,Surgery Follow-up,Dr. Amy Martin DDS
+705,666,2023-04-09,X-ray,Marc Small
+706,666,2023-06-16,Dental Cleaning,Mrs. Tracy Norton
+707,666,2022-04-08,Skin Allergy Treatment,Chase Arnold
+708,668,2022-03-16,Surgery Follow-up,Michael Berger
+709,668,2023-05-28,Dental Cleaning,Morgan Welch
+710,668,2021-04-03,Annual Checkup,Scott Hall
+711,670,2023-07-27,Ear Infection,Megan Leon
+712,671,2022-01-21,Vaccination,Tammie Harding
+713,671,2022-06-03,X-ray,Emily Aguilar
+714,671,2023-03-13,Dental Cleaning,Alan Richards
+715,674,2023-06-22,Spay/Neuter Surgery,Christina Smith
+716,674,2021-06-12,Annual Checkup,Cassandra Farrell
+717,674,2024-12-02,Dental Cleaning,Joseph Bradford
+718,678,2022-08-27,Blood Test,Brandi Arnold
+719,678,2023-08-09,Surgery Follow-up,Dr. Jeffrey Clayton Jr.
+720,679,2024-11-25,Injury Treatment,Laura Stein
+721,679,2024-06-21,Blood Test,Reginald Burns
+722,679,2021-09-29,Annual Checkup,Ashley Hart
+723,681,2023-06-04,Surgery Follow-up,Jessica Floyd
+724,681,2023-09-17,Surgery Follow-up,Daniel Church
+725,682,2023-05-12,X-ray,William Armstrong
+726,682,2023-06-26,Spay/Neuter Surgery,Joseph Peters
+727,683,2024-06-17,Vaccination,David Elliott
+728,683,2022-10-19,Blood Test,Ryan Herrera
+729,683,2021-12-28,Surgery Follow-up,Cory Garcia
+730,684,2023-01-26,Surgery Follow-up,Jamie Allen
+731,684,2024-05-09,Surgery Follow-up,Brianna Diaz
+732,684,2022-08-12,Blood Test,Julie Bean
+733,685,2022-09-06,Spay/Neuter Surgery,Jeffrey Morris
+734,686,2022-07-16,Spay/Neuter Surgery,Diana Ball
+735,686,2023-08-10,Skin Allergy Treatment,Debbie Miles
+736,687,2023-09-01,Annual Checkup,Patricia Rice
+737,687,2024-07-21,Skin Allergy Treatment,Lisa Navarro
+738,687,2023-06-09,Spay/Neuter Surgery,Debra Lee
+739,688,2023-04-09,Surgery Follow-up,Blake Mccullough
+740,690,2024-09-27,Skin Allergy Treatment,Timothy Marquez
+741,692,2021-12-18,Annual Checkup,Michael Bryan
+742,692,2024-02-27,Blood Test,Christina Ewing
+743,695,2024-03-27,Injury Treatment,Cameron Taylor
+744,695,2021-10-18,Skin Allergy Treatment,Kelly Lucero
+745,695,2024-02-12,Dental Cleaning,Scott Malone
+746,696,2023-02-26,Spay/Neuter Surgery,Rachel Espinoza
+747,696,2023-03-01,Vaccination,Travis Gomez
+748,700,2024-02-06,Blood Test,Manuel Martin
+749,700,2024-12-30,Surgery Follow-up,Karen Lucas
+750,703,2023-08-25,Annual Checkup,Natalie Owens
+751,703,2021-02-12,Skin Allergy Treatment,Jo Sanchez
+752,703,2023-03-07,Ear Infection,Catherine Carlson
+753,706,2024-11-17,Injury Treatment,William Schmitt
+754,706,2024-06-03,Surgery Follow-up,Joshua Brown
+755,706,2021-05-19,Injury Treatment,Lisa Avila
+756,710,2021-03-11,Annual Checkup,Kristine Robinson
+757,710,2022-11-21,Injury Treatment,Ryan Williams
+758,711,2023-05-07,Skin Allergy Treatment,Megan Graves
+759,711,2022-08-07,Surgery Follow-up,Danielle Williams
+760,713,2023-04-26,Vaccination,Derrick Rivera
+761,715,2022-12-20,Dental Cleaning,Lisa Reid
+762,715,2021-09-26,Blood Test,David Peterson
+763,715,2022-12-07,Annual Checkup,Stacey White
+764,716,2021-07-07,Skin Allergy Treatment,James Sanchez
+765,717,2023-08-01,Surgery Follow-up,Sabrina Townsend
+766,718,2021-11-17,Ear Infection,Elizabeth Davis
+767,723,2021-03-03,Ear Infection,Eric Abbott
+768,723,2024-05-23,Annual Checkup,Daniel Dorsey
+769,724,2023-09-13,Ear Infection,Kimberly Anderson
+770,724,2023-10-08,Blood Test,Jonathan West
+771,726,2021-09-24,Ear Infection,Stephanie Carson
+772,726,2024-05-16,Vaccination,Ashley Bradshaw
+773,727,2022-07-10,Injury Treatment,Anthony Brown
+774,727,2021-08-20,Ear Infection,Martha Hill
+775,727,2022-03-18,Annual Checkup,Kenneth George
+776,731,2021-04-13,Annual Checkup,Heather Spencer
+777,733,2023-05-30,Vaccination,Preston Howe
+778,733,2021-06-25,Dental Cleaning,Oscar Robinson
+779,734,2021-03-18,Injury Treatment,Austin Russell
+780,735,2021-04-19,Skin Allergy Treatment,Rachel Taylor
+781,736,2024-04-06,Vaccination,John Henderson
+782,736,2024-07-10,Dental Cleaning,Eric Morgan
+783,737,2024-05-12,Ear Infection,Jonathan Gibson
+784,737,2024-03-27,X-ray,Tracy Martin
+785,737,2021-10-25,Dental Cleaning,Debbie Grant
+786,740,2022-07-16,Annual Checkup,Alicia Ramirez
+787,740,2022-01-06,Vaccination,Kimberly Flowers
+788,744,2024-11-15,X-ray,James Nelson
+789,744,2023-02-14,Dental Cleaning,Kevin Mitchell
+790,744,2023-02-13,Surgery Follow-up,Kathleen Wilson
+791,745,2022-01-08,Spay/Neuter Surgery,Mark Walsh
+792,745,2021-04-16,Surgery Follow-up,Shaun Guzman
+793,745,2022-12-21,Spay/Neuter Surgery,David Campbell
+794,747,2022-07-31,Surgery Follow-up,Stacy Goodwin
+795,747,2024-08-13,Annual Checkup,Joshua Padilla
+796,748,2024-07-10,Spay/Neuter Surgery,Carrie Moore
+797,749,2024-05-29,Skin Allergy Treatment,William Garcia Jr.
+798,749,2021-09-02,Dental Cleaning,Matthew Scott
+799,749,2022-02-19,Spay/Neuter Surgery,Terry Jenkins
+800,750,2022-08-08,X-ray,Louis Gray
+801,750,2022-01-14,Surgery Follow-up,Brandi Cox
+802,751,2021-02-19,Annual Checkup,Mrs. Connie Chavez
+803,754,2023-08-14,Injury Treatment,George Martin
+804,754,2023-06-15,Spay/Neuter Surgery,Tiffany Sanders
+805,754,2024-12-08,X-ray,Jonathan Zamora
+806,755,2022-04-17,Ear Infection,Jake Gonzalez
+807,755,2024-08-21,Surgery Follow-up,Robert White
+808,755,2021-01-09,Skin Allergy Treatment,Jimmy Robinson
+809,758,2024-09-17,Annual Checkup,Terri Williams
+810,758,2022-04-02,Blood Test,Russell Kelley
+811,759,2024-04-12,Surgery Follow-up,Elizabeth Baker
+812,759,2022-07-17,Injury Treatment,Jonathan Diaz
+813,759,2022-05-23,Dental Cleaning,Christopher Curry
+814,763,2021-02-16,X-ray,Michael Madden
+815,763,2024-04-16,Injury Treatment,Michelle Thomas
+816,765,2021-10-11,X-ray,Angel Aguilar
+817,765,2024-07-09,Blood Test,Hayley Ayala
+818,765,2023-07-17,Vaccination,Jeffrey Davis
+819,768,2024-11-16,Ear Infection,Pamela Fletcher
+820,769,2024-02-21,Blood Test,Luis Smith
+821,769,2021-06-02,Ear Infection,Elizabeth Dalton
+822,779,2024-12-11,Spay/Neuter Surgery,Justin Price
+823,782,2024-06-13,Ear Infection,Andrew Roberson
+824,782,2022-09-02,X-ray,Thomas Davis
+825,782,2024-10-25,Skin Allergy Treatment,Rodney Hill
+826,783,2024-03-22,Blood Test,Scott Berry
+827,784,2021-11-26,Ear Infection,William Hernandez
+828,784,2022-09-02,Skin Allergy Treatment,Kevin Jacobs
+829,785,2024-11-15,Vaccination,Rhonda Collins
+830,789,2021-05-18,Vaccination,Kelly Hobbs
+831,790,2022-02-12,Vaccination,Ms. Kristina Smith
+832,791,2024-04-08,Injury Treatment,Sean Martin
+833,791,2024-12-05,Spay/Neuter Surgery,Jennifer Reynolds
+834,791,2022-11-23,Surgery Follow-up,Kathleen Flores
+835,792,2022-05-06,X-ray,Kayla Ramsey
+836,796,2022-10-05,Blood Test,Amanda Roth
+837,796,2021-06-20,Dental Cleaning,Karen Wright
+838,796,2023-07-17,X-ray,Kevin Johnson
+839,798,2024-07-05,Blood Test,Jason Davis
+840,798,2022-12-06,Spay/Neuter Surgery,Cody Andrews
+841,799,2022-11-06,X-ray,Robert Mercado
+842,804,2022-05-27,Vaccination,Matthew Brown
+843,805,2023-03-09,Blood Test,Rachel Gillespie
+844,805,2024-12-21,Injury Treatment,Austin Johnston
+845,807,2022-09-25,Spay/Neuter Surgery,Kelly Mendez
+846,807,2024-02-10,Annual Checkup,Philip Taylor
+847,807,2022-08-01,Surgery Follow-up,Jeffrey Lopez
+848,808,2022-12-21,Blood Test,Lisa Roberson
+849,808,2023-02-01,Annual Checkup,Jason Lewis
+850,809,2023-03-31,Skin Allergy Treatment,Tracy Keller
+851,809,2023-09-12,Skin Allergy Treatment,Angela Perez
+852,812,2023-10-07,Skin Allergy Treatment,John Henderson
+853,812,2021-06-20,Spay/Neuter Surgery,Jeanette Williams
+854,812,2024-09-06,Surgery Follow-up,Paula Abbott
+855,813,2024-08-06,Vaccination,Sherri Kane
+856,813,2024-05-30,Blood Test,Steven Short
+857,813,2024-04-18,Ear Infection,William Vasquez
+858,814,2024-06-20,X-ray,Beth Ballard
+859,814,2022-11-25,Blood Test,Kim Massey
+860,814,2021-03-05,Injury Treatment,Peter Thompson
+861,817,2024-04-04,Skin Allergy Treatment,Scott Moore
+862,817,2024-06-16,Skin Allergy Treatment,Marcus Smith
+863,817,2023-08-17,Blood Test,Wayne Fuller
+864,820,2024-01-09,Skin Allergy Treatment,Joann Barron
+865,820,2021-10-24,Spay/Neuter Surgery,Tiffany Miller
+866,820,2023-03-18,Ear Infection,James Wilson
+867,821,2024-06-19,Annual Checkup,Sarah Booth
+868,824,2024-01-21,Ear Infection,Jeffery Reeves
+869,824,2022-12-28,Blood Test,Mr. Marvin Gray
+870,824,2023-12-22,X-ray,Krystal Frazier
+871,825,2022-12-12,Surgery Follow-up,Brandon Davis
+872,826,2022-12-04,Spay/Neuter Surgery,Sarah Jones
+873,826,2021-07-30,Injury Treatment,Mary Sullivan
+874,827,2021-09-14,Skin Allergy Treatment,Michelle Le
+875,827,2023-12-25,Injury Treatment,William Davis
+876,830,2024-04-15,Surgery Follow-up,Timothy Howell
+877,830,2021-12-25,Skin Allergy Treatment,Kyle Rodriguez
+878,830,2023-02-10,Vaccination,Trevor Webb
+879,835,2021-10-07,X-ray,Laura Sanchez
+880,835,2023-08-08,X-ray,Julie Brown
+881,839,2021-03-21,Vaccination,Alexis Hernandez
+882,842,2024-10-27,Skin Allergy Treatment,Howard Smith
+883,843,2022-09-08,Surgery Follow-up,Natasha Keith
+884,843,2024-06-24,Injury Treatment,Blake Dickerson
+885,844,2024-02-24,Vaccination,Stephanie Chavez
+886,846,2022-07-06,Vaccination,Tracy Murphy
+887,847,2023-04-12,X-ray,Timothy Hill
+888,847,2022-06-19,Spay/Neuter Surgery,Karen Morris
+889,848,2022-10-01,Spay/Neuter Surgery,Jacob Carr
+890,848,2021-06-01,Vaccination,Dustin Guzman
+891,849,2024-06-23,Ear Infection,Amy Hill
+892,850,2021-01-27,Spay/Neuter Surgery,Katherine Anderson
+893,850,2023-11-06,Skin Allergy Treatment,Ryan Curtis
+894,850,2021-05-04,X-ray,Lindsay Ramirez
+895,851,2022-11-02,Surgery Follow-up,Frances Gillespie
+896,854,2022-04-17,Blood Test,John Cole
+897,855,2021-07-23,Surgery Follow-up,Angel Hernandez
+898,855,2022-12-10,X-ray,Wesley Rivera
+899,858,2022-11-20,Dental Cleaning,Alexandra Scott
+900,858,2023-02-14,Ear Infection,Miss Kimberly Oliver
+901,858,2024-11-11,Blood Test,Timothy Foley
+902,859,2024-12-05,Annual Checkup,Amanda Campbell
+903,859,2021-06-11,Vaccination,Catherine Marsh
+904,859,2021-12-20,Ear Infection,Megan Washington
+905,862,2021-10-22,Vaccination,Jessica Bradshaw
+906,862,2023-03-31,Vaccination,Billy Gonzalez
+907,863,2023-07-18,Spay/Neuter Surgery,William Carlson
+908,863,2022-05-06,Surgery Follow-up,Tonya Lee
+909,864,2021-11-22,Injury Treatment,Kayla Diaz
+910,865,2023-08-09,Skin Allergy Treatment,Mary Potter
+911,865,2022-05-07,Surgery Follow-up,Latoya Flowers
+912,867,2021-11-07,Ear Infection,Herbert Cox
+913,867,2023-06-01,Surgery Follow-up,Michael Rodriguez
+914,871,2023-10-14,Annual Checkup,Ronnie Roberts
+915,874,2024-12-02,Injury Treatment,James Sanchez
+916,875,2023-06-01,Ear Infection,Henry Rodriguez
+917,875,2021-06-13,Spay/Neuter Surgery,Mary Jackson
+918,875,2022-08-21,Injury Treatment,Denise Snow
+919,876,2022-05-15,X-ray,Mr. Steven Hernandez
+920,876,2024-11-09,Ear Infection,Matthew Perkins
+921,877,2023-04-22,Annual Checkup,Katherine Jacobs
+922,882,2022-03-07,Injury Treatment,Joanne Anderson
+923,882,2023-01-08,Injury Treatment,Howard Moore
+924,882,2023-08-17,Skin Allergy Treatment,David Aguilar
+925,884,2022-08-06,Ear Infection,Melanie Glover
+926,884,2021-10-23,Spay/Neuter Surgery,Richard Cunningham
+927,884,2024-11-01,Vaccination,Cassidy Huang
+928,886,2021-01-17,Vaccination,Michael Cole
+929,887,2024-02-16,Annual Checkup,Tony Bell
+930,887,2022-08-25,Blood Test,Mrs. Amy Alexander
+931,889,2021-06-12,Ear Infection,Cody Burns
+932,889,2024-12-15,Spay/Neuter Surgery,Steven Lester
+933,891,2021-06-27,Injury Treatment,Joshua Velazquez
+934,893,2021-09-20,X-ray,Steven Richardson
+935,893,2022-11-22,Dental Cleaning,Mary Bryan
+936,893,2023-10-27,Surgery Follow-up,Jose Rios
+937,894,2023-02-03,Injury Treatment,Kaitlin Chen
+938,894,2021-04-28,Surgery Follow-up,Timothy Bailey
+939,894,2023-03-26,X-ray,Edward Jackson
+940,896,2022-03-26,Dental Cleaning,Zoe Ellis
+941,896,2023-09-06,Ear Infection,Mr. Danny Nguyen
+942,898,2024-01-31,Dental Cleaning,Eric Bryant
+943,900,2021-03-17,X-ray,Carol Smith
+944,900,2021-12-05,Annual Checkup,Wesley Miller
+945,901,2024-08-11,Skin Allergy Treatment,Pamela Fox
+946,901,2023-09-02,Surgery Follow-up,Linda Williamson
+947,901,2024-03-16,Spay/Neuter Surgery,Brent Hudson
+948,903,2021-11-09,Spay/Neuter Surgery,Abigail Crane
+949,903,2021-03-12,Surgery Follow-up,Sarah Mcclure
+950,904,2023-02-17,Ear Infection,Brandon Young
+951,905,2021-05-12,Annual Checkup,Catherine Walsh
+952,908,2021-06-03,X-ray,Paul Watkins
+953,911,2021-04-20,Ear Infection,Joe Thompson
+954,913,2021-10-10,Surgery Follow-up,Zachary Anderson
+955,913,2023-06-05,Annual Checkup,Michael Johns
+956,913,2023-09-11,Blood Test,Stephanie Page
+957,916,2022-01-23,Injury Treatment,Tamara Johnson
+958,916,2023-03-10,Dental Cleaning,Jennifer Oconnor
+959,917,2024-01-08,Surgery Follow-up,Destiny Hale
+960,918,2023-12-13,Dental Cleaning,Johnathan Brown
+961,918,2022-04-09,Skin Allergy Treatment,Travis Olsen
+962,919,2023-06-03,Vaccination,Johnathan Reed
+963,921,2023-04-23,Ear Infection,Jessica Mathews
+964,921,2021-06-22,Surgery Follow-up,Dennis Hall
+965,921,2021-05-19,Skin Allergy Treatment,Gerald Carr
+966,922,2023-03-22,Surgery Follow-up,Norma Fisher
+967,924,2024-02-21,X-ray,David Bryan
+968,924,2024-11-24,Annual Checkup,Patricia Morrow
+969,924,2022-11-20,Ear Infection,Gabrielle Smith
+970,927,2022-03-17,Spay/Neuter Surgery,Jacob Moreno
+971,928,2024-07-03,Annual Checkup,Jerry Camacho
+972,928,2023-01-26,Blood Test,Jonathan Mccall
+973,929,2022-08-03,X-ray,Tanner Peters
+974,930,2023-08-07,Spay/Neuter Surgery,Walter Schneider MD
+975,930,2023-05-25,Annual Checkup,Kristen Ross
+976,931,2021-12-27,Ear Infection,Jessica Hartman
+977,932,2024-03-04,Blood Test,Joseph Simmons
+978,932,2023-01-28,Annual Checkup,Duane Carr
+979,938,2022-09-18,Injury Treatment,Thomas Graves
+980,938,2022-07-02,Spay/Neuter Surgery,Michele Vargas
+981,938,2024-01-28,Annual Checkup,Kevin Mccarthy
+982,941,2022-07-21,Vaccination,Joel Peters
+983,941,2021-11-12,Annual Checkup,Douglas Stevenson
+984,941,2024-05-09,Spay/Neuter Surgery,Shawn Woods
+985,943,2022-08-14,Ear Infection,Amanda Mcfarland
+986,943,2022-01-23,Vaccination,Vincent Brooks
+987,943,2022-06-07,Skin Allergy Treatment,Nicholas Alvarez
+988,947,2022-11-09,Dental Cleaning,Xavier Mckay
+989,947,2023-02-13,Surgery Follow-up,Adam Harris
+990,947,2022-01-21,Vaccination,Jason Howard
+991,948,2023-06-02,Ear Infection,Kyle Lindsey
+992,949,2022-12-26,Ear Infection,Vincent Gray
+993,949,2022-02-14,Spay/Neuter Surgery,Mr. Robert Ortiz
+994,949,2023-09-19,Ear Infection,David Byrd
+995,950,2021-03-14,X-ray,Christine Long
+996,950,2023-02-01,Spay/Neuter Surgery,Dakota Sullivan
+997,951,2024-03-07,Blood Test,Walter Vance
+998,951,2022-01-12,Ear Infection,Patricia Sosa
+999,952,2022-02-11,Annual Checkup,Christian Scott
+1000,952,2024-12-09,Ear Infection,Kevin Bush
+1001,952,2023-08-05,X-ray,Charles Yoder
+1002,954,2024-01-21,Ear Infection,David Romero
+1003,955,2022-01-31,Annual Checkup,Jason Hill
+1004,957,2024-02-23,Surgery Follow-up,William Wright
+1005,957,2021-01-11,Surgery Follow-up,Richard Mueller
+1006,964,2024-05-01,Spay/Neuter Surgery,Derek Taylor
+1007,965,2021-03-24,Vaccination,Gregory Johnson
+1008,966,2023-12-08,Surgery Follow-up,Shelly Brown
+1009,967,2022-01-13,Vaccination,Amber Golden
+1010,967,2021-12-10,Dental Cleaning,Lisa Pratt
+1011,969,2024-01-29,Blood Test,Mary Cook
+1012,973,2022-08-26,Dental Cleaning,Michael Perez
+1013,973,2022-05-13,Injury Treatment,Nichole Rodriguez
+1014,975,2024-10-28,Vaccination,Rebecca Short
+1015,976,2021-09-28,Dental Cleaning,Carl Kane
+1016,976,2022-12-27,Injury Treatment,Kenneth Richardson
+1017,981,2023-12-26,Ear Infection,Stephanie Jenkins
+1018,981,2024-09-16,Vaccination,Mr. Ryan Smith
+1019,981,2021-12-06,Vaccination,Cassandra Ortiz
+1020,983,2022-10-02,Skin Allergy Treatment,Janice Walker
+1021,983,2022-03-22,Vaccination,Sean Scott
+1022,990,2022-02-24,Spay/Neuter Surgery,John Smith
+1023,991,2022-03-15,Annual Checkup,John Anderson
+1024,991,2021-03-12,Annual Checkup,James Kelley
+1025,992,2022-11-08,Dental Cleaning,Christopher Rogers
+1026,993,2023-10-19,X-ray,Luke Craig
+1027,993,2023-01-12,Vaccination,Andre Carpenter
+1028,994,2023-08-20,Skin Allergy Treatment,Cody Williams
+1029,994,2023-10-26,Dental Cleaning,Daniel Sanford
+1030,995,2022-03-07,Injury Treatment,Jennifer Murphy
+1031,998,2022-07-15,Skin Allergy Treatment,Mr. Dennis Armstrong PhD
+1032,998,2024-10-21,Ear Infection,Dustin Fernandez
+1033,1000,2024-10-13,Surgery Follow-up,Michael Atkinson
+1034,1000,2024-09-13,Spay/Neuter Surgery,Jerry Meyers
+1035,1000,2023-03-01,Vaccination,Peter Roberts
+1036,1001,2021-08-31,Spay/Neuter Surgery,Lori Hawkins
+1037,1002,2024-10-28,Spay/Neuter Surgery,David Anderson
+1038,1002,2022-07-29,Spay/Neuter Surgery,Daniel Harrison
+1039,1002,2024-05-05,Vaccination,Seth Anderson Jr.
+1040,1005,2021-06-16,Dental Cleaning,Mary Brown
+1041,1005,2022-03-06,Blood Test,Paul Morrow
+1042,1006,2024-10-17,Skin Allergy Treatment,Michael Horton
+1043,1011,2024-02-19,Annual Checkup,Justin Tran
+1044,1012,2024-10-06,Blood Test,Whitney Mclaughlin
+1045,1013,2022-05-14,Dental Cleaning,Jenna Grant
+1046,1013,2021-02-25,Ear Infection,David Smith
+1047,1013,2023-02-04,Blood Test,Daniel Powell
+1048,1014,2021-08-04,X-ray,Emily Heath
+1049,1014,2024-10-14,Injury Treatment,Jerome Nelson
+1050,1014,2023-04-03,Ear Infection,Bailey Williams
+1051,1015,2024-01-05,Spay/Neuter Surgery,Michael Fields
+1052,1020,2024-01-11,Dental Cleaning,Melissa Moore
+1053,1020,2022-10-25,Annual Checkup,Russell Ruiz
+1054,1020,2021-11-17,Skin Allergy Treatment,Kelly Thomas
+1055,1025,2024-01-21,Surgery Follow-up,Alexandra Hendricks
+1056,1027,2023-09-02,Surgery Follow-up,Renee Phillips
+1057,1029,2023-07-20,Annual Checkup,Justin Allen
+1058,1029,2023-10-14,Surgery Follow-up,Monica Ramos
+1059,1030,2021-09-27,Ear Infection,Brandon Johnson
+1060,1030,2024-03-09,X-ray,Cynthia Gomez
+1061,1031,2021-07-01,Vaccination,Alexis Pope
+1062,1034,2024-01-24,Dental Cleaning,Tracey Wells
+1063,1034,2022-06-07,Skin Allergy Treatment,Amy Baker
+1064,1035,2023-03-15,Spay/Neuter Surgery,Heather Olsen
+1065,1035,2024-12-02,Vaccination,Tracy Juarez
+1066,1037,2023-02-07,Surgery Follow-up,Wesley Conway
+1067,1040,2021-05-30,X-ray,William Martinez
+1068,1040,2023-11-13,Injury Treatment,Miss Maria Watson
+1069,1041,2022-07-21,Dental Cleaning,Suzanne Turner
+1070,1041,2021-12-12,X-ray,Gary Dorsey
+1071,1041,2024-07-12,Injury Treatment,Andrew Smith
+1072,1043,2024-10-08,Spay/Neuter Surgery,Alexander Kennedy
+1073,1043,2021-06-02,Vaccination,Kevin Baker
+1074,1043,2023-02-25,Annual Checkup,Michael Moody
+1075,1047,2021-02-09,X-ray,Kimberly Ramos
+1076,1047,2022-04-14,Vaccination,Molly Potter
+1077,1047,2021-10-26,X-ray,Patrick Richardson
+1078,1048,2021-10-18,Blood Test,Kristy Huber
+1079,1048,2023-03-17,Skin Allergy Treatment,Robert Anderson
+1080,1048,2022-04-28,X-ray,Justin Ruiz
+1081,1049,2022-02-23,Surgery Follow-up,Joshua Smith
+1082,1049,2022-09-22,Ear Infection,Claire Reid
+1083,1049,2024-02-25,Dental Cleaning,Shane Palmer
+1084,1051,2022-05-06,Dental Cleaning,Christian Hernandez
+1085,1051,2023-04-26,Ear Infection,Emily Fitzgerald
+1086,1053,2022-05-02,Spay/Neuter Surgery,Michelle Scott
+1087,1053,2022-05-04,Injury Treatment,Jennifer Evans
+1088,1054,2023-05-31,X-ray,Savannah Gill
+1089,1057,2021-03-04,X-ray,Donna Ortiz
+1090,1057,2022-07-17,Annual Checkup,Timothy Brewer
+1091,1057,2021-08-12,Vaccination,Ana Diaz
+1092,1058,2024-11-24,Dental Cleaning,Brenda Stephenson
+1093,1058,2021-03-30,Vaccination,Carrie Walsh
+1094,1058,2024-12-29,Annual Checkup,Grace Young
+1095,1060,2022-03-13,Spay/Neuter Surgery,Catherine Norman
+1096,1060,2021-02-16,Ear Infection,Jeff Gibson
+1097,1060,2021-03-17,Blood Test,Cassie Torres
+1098,1061,2022-04-11,Skin Allergy Treatment,Jeffrey Griffin MD
+1099,1061,2022-01-20,Skin Allergy Treatment,Dean Smith
+1100,1061,2024-08-15,Skin Allergy Treatment,Janice Baird
+1101,1062,2024-08-11,Blood Test,Marcus Brewer
+1102,1062,2023-05-13,Surgery Follow-up,Michael Nolan
+1103,1068,2024-04-08,Blood Test,Kevin Roberts
+1104,1068,2021-10-06,Injury Treatment,Cynthia Thompson
+1105,1068,2023-02-20,Skin Allergy Treatment,Stephen Pratt
+1106,1069,2022-12-13,Injury Treatment,Donna Newman
+1107,1069,2022-03-20,Surgery Follow-up,Joshua Thompson
+1108,1069,2024-11-06,Spay/Neuter Surgery,Elizabeth Abbott
+1109,1070,2024-09-26,Blood Test,Melanie Hanna
+1110,1070,2021-02-14,Skin Allergy Treatment,Mariah Costa
+1111,1071,2024-12-11,Spay/Neuter Surgery,Trevor Schaefer
+1112,1071,2022-07-30,Blood Test,Michael Berry
+1113,1073,2023-05-15,Ear Infection,Randy Phillips
+1114,1073,2024-04-07,Vaccination,Victor Sullivan
+1115,1074,2021-05-07,X-ray,Amanda Chavez
+1116,1074,2023-04-18,Surgery Follow-up,Connie Spence
+1117,1077,2021-07-05,Skin Allergy Treatment,Elizabeth Keith
+1118,1077,2023-06-26,Dental Cleaning,Caroline Thompson
+1119,1077,2023-10-10,Ear Infection,Amanda Smith
+1120,1081,2023-03-18,Annual Checkup,Ms. Beverly Park
+1121,1081,2021-11-29,Annual Checkup,Paul Wagner
+1122,1081,2022-06-02,Annual Checkup,Zachary Jones
+1123,1092,2024-05-03,Annual Checkup,Caitlin Robertson
+1124,1092,2023-04-14,Ear Infection,Ricardo Kelly
+1125,1092,2021-07-02,X-ray,Misty Ortiz
+1126,1094,2022-11-04,Vaccination,Heather Lang
+1127,1094,2021-02-20,Spay/Neuter Surgery,Kyle Livingston
+1128,1094,2022-02-22,Blood Test,Kelly Harris
+1129,1095,2024-02-02,Ear Infection,Jason Rubio
+1130,1095,2021-07-28,Blood Test,Steven Powers
+1131,1096,2022-01-12,Annual Checkup,Michael Brown
+1132,1098,2021-04-15,Ear Infection,Sabrina Mitchell
+1133,1098,2021-03-12,Dental Cleaning,Laura Hill MD
+1134,1098,2022-07-24,Ear Infection,Sarah Adams
+1135,1100,2023-03-05,Skin Allergy Treatment,Susan Bailey
+1136,1100,2021-09-05,Blood Test,Mason Martinez
+1137,1102,2023-07-11,Skin Allergy Treatment,Caleb Riggs
+1138,1103,2023-07-12,Ear Infection,Bradley Kim
+1139,1103,2021-07-28,Skin Allergy Treatment,Sara Garcia
+1140,1103,2022-12-26,Injury Treatment,Brianna Olsen
+1141,1106,2023-08-10,Skin Allergy Treatment,Scott Ruiz
+1142,1106,2023-09-14,Injury Treatment,Howard Smith
+1143,1107,2022-10-09,X-ray,Justin Stein
+1144,1107,2023-09-30,Injury Treatment,Megan Young
+1145,1107,2021-07-22,Annual Checkup,Donald Dunlap
+1146,1114,2024-03-04,Surgery Follow-up,Debra Cantrell
+1147,1114,2022-02-11,Spay/Neuter Surgery,Stephanie Moore
+1148,1115,2022-09-19,Dental Cleaning,Susan Petty
+1149,1116,2021-10-24,Skin Allergy Treatment,Mark Osborn
+1150,1116,2024-09-22,Spay/Neuter Surgery,Chad Black
+1151,1116,2021-09-13,Injury Treatment,Jill Peterson
+1152,1121,2024-04-26,Ear Infection,Rachel Gardner
+1153,1121,2021-07-06,X-ray,Ronald Murphy
+1154,1121,2022-01-23,Skin Allergy Treatment,Heidi Stewart
+1155,1123,2023-02-26,Annual Checkup,Brent Martinez
+1156,1125,2021-09-22,Vaccination,Barbara Chambers
+1157,1125,2022-05-09,Annual Checkup,Gabrielle Brown
+1158,1126,2022-10-01,Skin Allergy Treatment,Michelle Allen
+1159,1129,2023-03-27,Vaccination,Erica Gilmore
+1160,1129,2023-09-24,Spay/Neuter Surgery,Michael Morrison
+1161,1132,2022-02-22,Annual Checkup,Melissa Schmidt
+1162,1132,2021-06-03,Vaccination,Alexander Stanton
+1163,1132,2024-04-08,Ear Infection,Sarah Allen
+1164,1135,2021-12-03,Ear Infection,Danielle Henry
+1165,1136,2023-02-28,Skin Allergy Treatment,Sarah Harrington
+1166,1136,2021-01-09,Injury Treatment,Mason Fritz
+1167,1136,2022-03-18,Surgery Follow-up,Chelsea King
+1168,1137,2023-03-29,Ear Infection,Mark Figueroa
+1169,1137,2021-10-25,Surgery Follow-up,Connie Rodriguez
+1170,1140,2024-02-09,Dental Cleaning,Troy Fuller
+1171,1140,2023-10-03,Injury Treatment,Lisa Johnson
+1172,1146,2023-08-31,Blood Test,Hannah Walker
+1173,1147,2021-05-09,Annual Checkup,Christopher Parks
+1174,1150,2021-05-25,Injury Treatment,Troy Gibson
+1175,1150,2022-06-26,Dental Cleaning,Cheryl Hernandez
+1176,1150,2024-02-20,Skin Allergy Treatment,Stephen Roach
+1177,1152,2023-03-04,X-ray,Nicholas Simmons
+1178,1152,2023-01-20,Dental Cleaning,Brian Huerta
+1179,1152,2023-03-15,Skin Allergy Treatment,Stephanie Howell
+1180,1153,2024-01-19,X-ray,Mary Maxwell
+1181,1153,2023-12-09,Injury Treatment,Heather Johnson
+1182,1153,2023-12-06,X-ray,Eugene Matthews
+1183,1156,2024-05-26,Injury Treatment,Nancy Moore
+1184,1156,2021-06-30,X-ray,Kristi Cruz
+1185,1165,2024-05-10,X-ray,Sarah Jones
+1186,1165,2021-10-26,Spay/Neuter Surgery,Jonathan Sims
+1187,1165,2024-12-19,Blood Test,Michael Williams
+1188,1171,2024-01-05,Skin Allergy Treatment,Michelle Owens
+1189,1171,2021-11-19,Ear Infection,Chris Meyer
+1190,1175,2023-10-29,Ear Infection,Christopher Obrien
+1191,1175,2024-11-11,Vaccination,Michael Dean
+1192,1177,2021-12-23,X-ray,Paul Coffey
+1193,1177,2023-04-15,Skin Allergy Treatment,Christopher Lee
+1194,1177,2021-05-24,Blood Test,Sarah Espinoza
+1195,1178,2024-07-02,Ear Infection,Terry Hatfield
+1196,1178,2021-10-26,Vaccination,Charles Wright
+1197,1179,2024-05-02,Ear Infection,Rhonda Scott
+1198,1180,2024-10-13,Ear Infection,Sharon Brown
+1199,1180,2022-08-29,Blood Test,Christina Rodriguez
+1200,1180,2023-02-12,Skin Allergy Treatment,John Cole
+1201,1182,2021-05-28,Ear Infection,Sonya Griffin
+1202,1182,2024-11-10,Surgery Follow-up,Morgan Nelson
+1203,1182,2022-03-21,X-ray,Mary Clay
+1204,1183,2024-08-21,Blood Test,Jamie Thompson
+1205,1183,2023-07-23,Surgery Follow-up,Megan Williams
+1206,1184,2024-09-26,Dental Cleaning,Katherine Estrada
+1207,1186,2024-07-11,Surgery Follow-up,Jesse Gibson
+1208,1186,2023-01-25,Annual Checkup,Mr. Joshua Brown DVM
+1209,1188,2022-11-28,Vaccination,Kendra Wiley
+1210,1192,2024-06-27,Spay/Neuter Surgery,Jose Thomas
+1211,1192,2022-04-02,Surgery Follow-up,Deanna Davis MD
+1212,1194,2021-08-13,X-ray,James Hill
+1213,1194,2024-04-24,Skin Allergy Treatment,Jason Browning
+1214,1194,2021-12-02,Dental Cleaning,Donna Jackson
+1215,1198,2023-11-06,Surgery Follow-up,Sean Dyer
+1216,1199,2022-11-26,Dental Cleaning,Kim Navarro
+1217,1200,2023-09-25,Vaccination,Christina Zuniga
+1218,1200,2022-07-13,Vaccination,Seth Mccormick
+1219,1200,2022-10-26,Spay/Neuter Surgery,Christopher Hardy
+1220,1201,2021-02-24,Spay/Neuter Surgery,Michael Kirk
+1221,1201,2024-06-08,Blood Test,Russell Miller
+1222,1201,2022-09-16,Skin Allergy Treatment,David Rogers
+1223,1203,2021-05-09,Skin Allergy Treatment,Jordan Gordon
+1224,1203,2021-05-17,Dental Cleaning,Jacob Walker
+1225,1204,2024-05-02,Skin Allergy Treatment,Molly Conner
+1226,1208,2024-01-08,Annual Checkup,Sarah Wallace
+1227,1208,2022-11-04,Blood Test,Samuel Evans
+1228,1208,2021-03-31,Ear Infection,James Mayer
+1229,1209,2023-02-02,Ear Infection,Jeffrey Taylor
+1230,1209,2021-07-28,Skin Allergy Treatment,Randy Marshall
+1231,1211,2021-02-01,Annual Checkup,Amy Saunders
+1232,1211,2022-06-30,Injury Treatment,Jennifer Patterson
+1233,1211,2021-08-15,Spay/Neuter Surgery,Juan Spears
+1234,1212,2021-02-11,X-ray,Jose Torres
+1235,1212,2024-04-17,Blood Test,Lisa Smith
+1236,1213,2021-12-25,X-ray,William Humphrey
+1237,1213,2024-02-14,Dental Cleaning,Jacqueline Cohen
+1238,1213,2021-03-18,Injury Treatment,Monica Anderson
+1239,1214,2024-09-14,Injury Treatment,Mr. Brian Brown II
+1240,1217,2021-06-01,Spay/Neuter Surgery,Stephanie Martinez
+1241,1217,2021-10-13,Annual Checkup,Jason Wallace
+1242,1217,2023-10-26,Blood Test,Patricia Howard
+1243,1220,2022-10-19,Blood Test,Stephen Miller
+1244,1220,2022-11-16,Skin Allergy Treatment,Christine Collins
+1245,1220,2021-11-05,Surgery Follow-up,Eric Wilson
+1246,1222,2021-10-18,Surgery Follow-up,Lindsey Lopez
+1247,1222,2021-06-22,X-ray,Randall Weber
+1248,1222,2023-03-21,Surgery Follow-up,Laura Nelson
+1249,1226,2021-07-17,Injury Treatment,Ronnie Cruz
+1250,1227,2023-05-03,Spay/Neuter Surgery,Andrew Price
+1251,1227,2023-07-05,Vaccination,Steven Bishop
+1252,1228,2022-03-26,Blood Test,Debra Hess
+1253,1229,2024-06-08,Surgery Follow-up,Kristen Hayes
+1254,1229,2023-05-03,Vaccination,Ian White
+1255,1230,2021-11-06,Blood Test,Karen Brown
+1256,1230,2023-12-22,X-ray,Laura Owens
+1257,1231,2022-07-22,Ear Infection,Adrian Sutton Jr.
+1258,1232,2022-08-18,X-ray,Barbara Howard
+1259,1232,2023-07-31,Blood Test,Kelly Russell
+1260,1232,2021-11-05,Dental Cleaning,George Carr
+1261,1234,2022-07-29,Spay/Neuter Surgery,Dana Owens
+1262,1234,2023-04-07,Skin Allergy Treatment,Catherine Chen
+1263,1235,2024-04-14,Ear Infection,Austin Romero
+1264,1239,2022-09-24,Blood Test,Elijah Fernandez
+1265,1240,2024-02-19,Blood Test,John Brown
+1266,1240,2022-07-19,Blood Test,James Paul
+1267,1240,2023-10-16,Spay/Neuter Surgery,Kathleen Cervantes
+1268,1243,2023-08-17,Surgery Follow-up,Jeffrey Baxter
+1269,1244,2023-12-06,Annual Checkup,Kristen Alvarez
+1270,1244,2022-07-24,Ear Infection,Amanda Howard
+1271,1244,2023-05-06,Blood Test,Katherine Kane
+1272,1246,2023-05-25,Annual Checkup,Jeremy Gonzalez
+1273,1246,2021-02-05,Annual Checkup,Lee Kemp
+1274,1247,2021-12-26,Annual Checkup,Christopher Martin
+1275,1247,2024-06-22,Surgery Follow-up,Nicole Obrien
+1276,1247,2023-12-13,Spay/Neuter Surgery,Heather Ingram
+1277,1250,2023-01-03,Injury Treatment,Randy Boyd
+1278,1251,2023-09-20,Surgery Follow-up,Allen Hicks
+1279,1251,2022-08-13,X-ray,Victor Davenport
+1280,1251,2022-03-29,Surgery Follow-up,Marcus Roth
+1281,1252,2021-06-14,X-ray,Teresa Foster
+1282,1252,2022-03-25,Skin Allergy Treatment,Bryan Johnson
+1283,1252,2024-03-14,X-ray,David Jordan
+1284,1256,2023-12-25,X-ray,Nicole Taylor
+1285,1256,2022-09-12,Spay/Neuter Surgery,James Booth
+1286,1256,2022-09-16,Skin Allergy Treatment,Anthony Baker
+1287,1257,2022-04-17,Surgery Follow-up,Deborah Reilly
+1288,1260,2023-12-04,Surgery Follow-up,Gary Lucero
+1289,1261,2021-11-23,Blood Test,Sally Wilson
+1290,1261,2024-09-04,Spay/Neuter Surgery,David Hobbs
+1291,1262,2023-02-05,Injury Treatment,Ian Collins
+1292,1262,2022-09-19,Spay/Neuter Surgery,Nathan York
+1293,1262,2024-10-28,Annual Checkup,Amy Hart
+1294,1264,2022-05-02,Surgery Follow-up,Michelle Stewart
+1295,1264,2021-09-28,Vaccination,Jasmine Gonzalez
+1296,1265,2024-07-12,Surgery Follow-up,James Evans
+1297,1267,2023-04-14,Surgery Follow-up,Patrick Cain
+1298,1268,2023-01-20,Surgery Follow-up,Gregory Espinoza
+1299,1268,2022-11-17,Annual Checkup,Amy Tucker
+1300,1268,2022-07-09,Ear Infection,Derrick Herrera
+1301,1271,2024-02-20,Skin Allergy Treatment,Megan Brown
+1302,1272,2021-06-10,Spay/Neuter Surgery,Cheryl Mclean
+1303,1272,2022-04-01,Skin Allergy Treatment,Joshua Edwards
+1304,1274,2021-12-07,Annual Checkup,Rose Ramos
+1305,1275,2021-09-23,Annual Checkup,Holly Wang
+1306,1275,2021-09-25,Skin Allergy Treatment,Timothy Simon
+1307,1280,2024-07-16,Surgery Follow-up,Melissa Peterson
+1308,1282,2023-06-19,Annual Checkup,Maria Davis
+1309,1282,2022-12-13,Dental Cleaning,Kimberly Harris
+1310,1283,2021-10-15,Blood Test,James West
+1311,1283,2023-01-31,Blood Test,Brianna Perry
+1312,1283,2023-10-10,Vaccination,Barbara Hamilton
+1313,1286,2021-09-28,Surgery Follow-up,James Hale
+1314,1290,2022-04-19,Surgery Follow-up,Donald Scott
+1315,1292,2021-08-14,Skin Allergy Treatment,Margaret Campbell
+1316,1293,2024-08-20,Surgery Follow-up,Sherry Schwartz
+1317,1298,2021-02-01,X-ray,Brandy Reed
+1318,1298,2023-01-01,X-ray,Shawn Montgomery
+1319,1300,2022-03-05,X-ray,Yolanda Roberts
+1320,1300,2021-06-02,Spay/Neuter Surgery,Mr. Mark Mann
+1321,1301,2023-05-06,X-ray,Sandra Williams
+1322,1301,2021-07-17,X-ray,Amanda Greer
+1323,1301,2021-04-01,Dental Cleaning,Cathy Berger
+1324,1302,2023-12-01,Skin Allergy Treatment,Christina Russell
+1325,1303,2023-01-08,X-ray,Kenneth Clark MD
+1326,1303,2024-10-09,Ear Infection,Debbie Miller
+1327,1303,2022-04-10,Annual Checkup,Sarah Gould
+1328,1304,2023-06-28,Skin Allergy Treatment,Donald Vasquez
+1329,1304,2021-04-19,Surgery Follow-up,Eric Rodriguez
+1330,1306,2023-06-12,Surgery Follow-up,Beth Johnson
+1331,1306,2021-11-17,Surgery Follow-up,Allison Williams
+1332,1306,2024-08-13,Vaccination,Benjamin Mccann
+1333,1307,2022-09-25,Injury Treatment,Joshua Smith
+1334,1307,2021-09-11,Skin Allergy Treatment,Edward Phillips
+1335,1311,2022-01-08,Dental Cleaning,Catherine Huber
+1336,1312,2023-03-12,X-ray,Nancy Scott
+1337,1312,2023-09-02,Surgery Follow-up,Courtney Woodard
+1338,1312,2024-12-09,Ear Infection,Michael Soto
+1339,1313,2021-04-23,Spay/Neuter Surgery,Andrew Harrison
+1340,1313,2023-04-07,Vaccination,Jose Carter
+1341,1313,2024-09-04,Skin Allergy Treatment,Julie Carlson
+1342,1315,2023-01-25,Ear Infection,Elizabeth Fletcher
+1343,1315,2022-01-05,Surgery Follow-up,Casey Riley
+1344,1315,2022-09-03,Annual Checkup,Christine Jones
+1345,1317,2022-06-12,Injury Treatment,Zachary Williams
+1346,1318,2021-10-06,Skin Allergy Treatment,Benjamin Avery
+1347,1321,2021-06-26,Surgery Follow-up,Henry Castaneda
+1348,1323,2022-09-11,Spay/Neuter Surgery,Mary Alexander
+1349,1323,2022-11-12,Vaccination,David Farrell
+1350,1324,2023-12-31,Dental Cleaning,Lisa Reid
+1351,1325,2021-04-25,Dental Cleaning,Denise Bell
+1352,1326,2021-02-01,Annual Checkup,Vincent Nguyen
+1353,1326,2023-04-12,Ear Infection,Robert Perez
+1354,1326,2022-01-12,Surgery Follow-up,Greg Sanchez
+1355,1327,2024-07-24,Spay/Neuter Surgery,Brian Cruz
+1356,1327,2022-05-06,Ear Infection,Brooke Lee
+1357,1328,2022-07-13,Injury Treatment,Jacob Hernandez
+1358,1328,2021-02-09,Spay/Neuter Surgery,Caroline Wilson
+1359,1329,2024-07-09,Annual Checkup,Jo Gutierrez
+1360,1329,2024-04-09,Ear Infection,Jason Walker
+1361,1329,2023-03-01,Spay/Neuter Surgery,Amber Prince
+1362,1330,2022-10-29,Surgery Follow-up,Joshua Moore
+1363,1330,2022-05-01,Injury Treatment,Catherine Evans
+1364,1330,2022-05-14,X-ray,Shane Fox
+1365,1334,2022-06-02,Surgery Follow-up,Ryan Callahan
+1366,1334,2023-04-06,Skin Allergy Treatment,Patricia Robinson
+1367,1334,2021-05-01,Dental Cleaning,Amanda Thornton
+1368,1335,2023-01-21,Dental Cleaning,Matthew Hudson
+1369,1335,2021-09-20,Ear Infection,Jordan Long
+1370,1339,2021-05-01,Dental Cleaning,Eric Price
+1371,1339,2021-02-10,Surgery Follow-up,Brandon Estes DDS
+1372,1339,2024-11-12,Vaccination,Angela Hudson
+1373,1346,2024-04-19,Vaccination,William Smith
+1374,1346,2021-03-01,Spay/Neuter Surgery,Sara Downs
+1375,1346,2022-10-18,Ear Infection,Angelica Phillips PhD
+1376,1347,2024-01-08,Dental Cleaning,Maurice Mitchell
+1377,1347,2024-07-31,Dental Cleaning,Bryan Lewis
+1378,1347,2024-11-07,Vaccination,Monica Mendoza
+1379,1348,2022-12-23,Skin Allergy Treatment,Nathan Smith
+1380,1348,2024-03-07,Dental Cleaning,Margaret Reid
+1381,1349,2022-01-05,Annual Checkup,Jeffrey Williams
+1382,1349,2022-11-18,Injury Treatment,Mr. Richard Reilly DDS
+1383,1350,2021-03-21,Vaccination,Ashley Johns
+1384,1350,2022-11-30,Ear Infection,Christopher Moody
+1385,1350,2024-05-10,Ear Infection,James Lewis
+1386,1352,2023-12-26,Ear Infection,Jodi Lawson
+1387,1352,2022-08-14,X-ray,Christian Nash
+1388,1352,2021-02-15,Vaccination,Melvin Hughes
+1389,1355,2021-08-22,Spay/Neuter Surgery,Dakota Johnson
+1390,1356,2021-03-14,Dental Cleaning,Brian Webb
+1391,1356,2023-08-27,Injury Treatment,Mark Duke
+1392,1356,2024-12-14,Ear Infection,Jonathan Wilson
+1393,1358,2024-10-08,Injury Treatment,Melissa Cabrera
+1394,1358,2024-08-18,Annual Checkup,Tina Merritt
+1395,1359,2022-12-03,Injury Treatment,Samantha Warren
+1396,1360,2022-10-30,Vaccination,George Miller
+1397,1360,2024-02-17,Vaccination,Christopher Lowe
+1398,1361,2023-04-26,Dental Cleaning,Thomas Fox
+1399,1363,2023-05-07,Surgery Follow-up,Richard Butler
+1400,1363,2023-12-11,Spay/Neuter Surgery,Debbie Murray
+1401,1364,2022-06-04,Blood Test,Nathan Rodriguez
+1402,1365,2022-12-08,Injury Treatment,William Clark
+1403,1367,2023-11-18,Injury Treatment,Emily Watkins
+1404,1369,2023-04-10,Skin Allergy Treatment,Benjamin Hall PhD
+1405,1369,2022-07-02,Vaccination,Brian Norman
+1406,1369,2021-08-04,Vaccination,Anna Woods
+1407,1370,2024-09-27,Annual Checkup,Linda Charles
+1408,1371,2022-03-12,Spay/Neuter Surgery,Michael Munoz
+1409,1377,2024-03-22,Injury Treatment,Kevin Arias
+1410,1377,2021-04-06,Blood Test,Maurice Rodriguez
+1411,1378,2022-04-30,Vaccination,Kara Taylor
+1412,1378,2021-04-25,Skin Allergy Treatment,Luis Kelly
+1413,1378,2022-08-12,Injury Treatment,Stephanie Montoya DVM
+1414,1382,2022-01-26,Annual Checkup,Lori Garcia
+1415,1382,2021-07-01,Blood Test,Audrey Carrillo
+1416,1383,2023-03-23,Spay/Neuter Surgery,Madeline Johnson
+1417,1383,2021-08-24,Vaccination,Katherine Harrington
+1418,1383,2021-01-11,Dental Cleaning,Robin Booth
+1419,1384,2022-03-13,Injury Treatment,Brent Watson
+1420,1384,2023-10-24,Vaccination,Stephanie Palmer
+1421,1385,2024-11-20,Blood Test,Rhonda Anderson
+1422,1386,2021-12-13,Skin Allergy Treatment,Janet Hood
+1423,1386,2021-11-19,Blood Test,Laura Cruz
+1424,1387,2024-01-13,X-ray,Blake Mullins
+1425,1387,2023-10-02,Spay/Neuter Surgery,Courtney Dodson
+1426,1388,2021-06-28,Injury Treatment,Peter Jones
+1427,1388,2021-10-22,Injury Treatment,George Ramirez
+1428,1388,2023-06-10,Ear Infection,Scott Williams
+1429,1389,2023-11-29,Vaccination,Angel Gonzalez
+1430,1389,2022-08-17,Spay/Neuter Surgery,Kristina Davis
+1431,1389,2024-06-09,Spay/Neuter Surgery,Jessica Torres
+1432,1390,2022-06-13,Spay/Neuter Surgery,David Wilkinson
+1433,1391,2021-12-03,Annual Checkup,Matthew Booth
+1434,1391,2024-06-13,Annual Checkup,Kevin Taylor
+1435,1392,2022-05-27,Skin Allergy Treatment,Robert Alexander
+1436,1393,2024-01-25,Vaccination,Travis Hernandez PhD
+1437,1394,2024-10-16,Injury Treatment,Martin Ballard
+1438,1394,2022-03-14,Annual Checkup,Ashley Flores
+1439,1394,2021-06-26,Vaccination,Joseph Summers DDS
+1440,1395,2021-11-04,X-ray,Tracy Morales
+1441,1395,2022-01-26,Annual Checkup,Rhonda Cisneros
+1442,1396,2022-06-29,Ear Infection,Christine Schultz
+1443,1396,2024-05-12,Annual Checkup,Jonathon Taylor
+1444,1397,2021-10-18,Ear Infection,Bryan Wall
+1445,1397,2022-07-14,Skin Allergy Treatment,Peter Parker
+1446,1399,2021-07-26,Blood Test,Mario Kent
+1447,1399,2024-05-27,Annual Checkup,Ann James
+1448,1399,2021-10-22,Skin Allergy Treatment,Kelly Hall
+1449,1403,2023-07-08,Injury Treatment,Colleen Henderson
+1450,1403,2022-08-28,Dental Cleaning,Joseph Smith
+1451,1404,2022-10-31,Vaccination,Laura Park
+1452,1404,2024-09-21,Dental Cleaning,Ashley King
+1453,1404,2023-07-21,X-ray,Sherry Dudley
+1454,1406,2024-01-23,Injury Treatment,Jamie Rich
+1455,1407,2024-12-05,Ear Infection,Melissa Hughes
+1456,1407,2022-11-14,Skin Allergy Treatment,Tony Christensen
+1457,1408,2024-09-09,Injury Treatment,Stephanie Nelson
+1458,1408,2024-02-04,X-ray,Matthew Terry
+1459,1409,2024-10-27,Ear Infection,Miranda Phillips
+1460,1411,2021-03-05,Injury Treatment,Amanda Johnston
+1461,1411,2021-10-15,Blood Test,Paul Ruiz
+1462,1411,2022-03-08,Injury Treatment,Mr. Chad Gentry
+1463,1413,2021-09-23,Ear Infection,Richard Taylor
+1464,1413,2024-08-18,Ear Infection,Amber Newton
+1465,1419,2022-02-28,Blood Test,David Moore
+1466,1419,2023-02-02,Annual Checkup,Tyler Rocha
+1467,1420,2021-01-22,Annual Checkup,Brooke Smith
+1468,1424,2022-03-22,Annual Checkup,Jacob Vega
+1469,1424,2023-03-03,Ear Infection,Harold Thomas
+1470,1425,2021-03-10,Vaccination,Ryan Henry
+1471,1426,2021-11-06,Skin Allergy Treatment,Tammy Cain
+1472,1426,2023-06-24,Blood Test,Patricia Holt
+1473,1430,2022-04-23,Vaccination,Robert Michael
+1474,1430,2022-05-31,Skin Allergy Treatment,Levi Pham
+1475,1430,2022-07-15,Spay/Neuter Surgery,Lynn Davis
+1476,1436,2024-02-21,Surgery Follow-up,Michael Bell
+1477,1436,2022-11-12,Vaccination,Tracey Smith
+1478,1436,2021-02-03,Vaccination,Patrick Rodriguez
+1479,1439,2022-06-05,Ear Infection,Michael Day
+1480,1440,2022-08-10,Annual Checkup,Jessica Griffin
+1481,1443,2021-12-27,X-ray,Anthony Johnson
+1482,1443,2021-07-10,Dental Cleaning,Jennifer Norton
+1483,1444,2021-01-26,Dental Cleaning,Daniel Lewis
+1484,1446,2021-03-01,Surgery Follow-up,Melinda Hodges
+1485,1447,2022-07-12,Spay/Neuter Surgery,Sharon Mcneil
+1486,1451,2024-04-25,Vaccination,Lori Gutierrez
+1487,1451,2022-11-28,Surgery Follow-up,James Francis
+1488,1451,2024-01-04,Annual Checkup,Matthew Hernandez
+1489,1454,2022-11-03,Vaccination,Gary Clark
+1490,1454,2021-06-30,Vaccination,David Wright
+1491,1454,2024-07-04,Vaccination,John Weaver
+1492,1455,2022-07-27,Vaccination,Amanda Rios
+1493,1455,2024-03-10,Dental Cleaning,Pamela Guzman
+1494,1455,2022-08-10,Surgery Follow-up,Kayla Navarro
+1495,1457,2021-10-30,Ear Infection,Kathryn Henry
+1496,1457,2024-06-16,X-ray,Jeffrey King
+1497,1457,2024-02-09,Blood Test,James Riley
+1498,1458,2023-02-27,Injury Treatment,Gregory Martinez
+1499,1458,2023-06-28,Injury Treatment,Ashley Anderson
+1500,1458,2021-08-10,Dental Cleaning,Nathan Scott
+1501,1459,2021-08-28,Injury Treatment,Michelle Warren
+1502,1460,2024-10-02,Ear Infection,Jared Haynes
+1503,1460,2024-01-25,Spay/Neuter Surgery,Denise Underwood
+1504,1460,2023-09-08,Ear Infection,Paul Bailey
+1505,1461,2023-05-11,X-ray,Scott Jacobs
+1506,1465,2024-09-19,X-ray,Shaun Cochran
+1507,1465,2023-01-29,Surgery Follow-up,Jessica Simmons
+1508,1465,2024-02-14,Dental Cleaning,Mark May
+1509,1466,2021-02-22,Spay/Neuter Surgery,Megan Curtis
+1510,1466,2021-04-04,Ear Infection,Ryan Cordova
+1511,1466,2024-04-25,Vaccination,David Barnes
+1512,1467,2024-11-26,Surgery Follow-up,Rachel Marks
+1513,1467,2024-04-29,X-ray,Jennifer Anderson
+1514,1467,2024-12-01,Surgery Follow-up,Jonathan Nicholson
+1515,1472,2021-01-17,Injury Treatment,Ronald Miller
+1516,1472,2023-08-31,Vaccination,David Stevens
+1517,1472,2024-08-07,Annual Checkup,William Mason
+1518,1474,2023-06-04,Surgery Follow-up,Stephanie Watson
+1519,1474,2021-09-01,Vaccination,Brooke Harvey
+1520,1478,2021-08-08,Spay/Neuter Surgery,Andrea Tyler
+1521,1478,2021-11-15,Surgery Follow-up,Andrea Bender
+1522,1479,2024-03-07,Injury Treatment,Sonia Burns
+1523,1479,2023-03-29,X-ray,Ariana Keith
+1524,1480,2021-08-10,Ear Infection,Samantha Mcbride
+1525,1480,2022-09-04,Ear Infection,Mr. Jared Green Jr.
+1526,1480,2021-02-08,Injury Treatment,Veronica West
+1527,1482,2023-12-27,Spay/Neuter Surgery,Amber Mcdaniel
+1528,1482,2022-02-18,Ear Infection,Chad Hughes
+1529,1482,2022-07-17,Injury Treatment,Amanda Holt
+1530,1483,2023-06-06,Injury Treatment,Jose Jones
+1531,1484,2023-08-28,Ear Infection,Heather Carson
+1532,1487,2023-04-14,Injury Treatment,Mr. Philip Young DDS
+1533,1487,2022-10-30,Ear Infection,Shannon Young
+1534,1487,2023-11-24,Skin Allergy Treatment,Roger Pugh
+1535,1488,2023-05-23,Ear Infection,Rebekah Bond
+1536,1490,2024-03-06,Skin Allergy Treatment,Henry Dean
+1537,1490,2022-01-19,Ear Infection,Elizabeth Hughes
+1538,1491,2024-07-15,Injury Treatment,Dana Vega
+1539,1491,2022-11-14,Skin Allergy Treatment,Jamie Holland
+1540,1491,2024-09-12,Surgery Follow-up,Luis Shea DDS
+1541,1494,2023-03-20,Vaccination,Janet Adams
+1542,1495,2023-11-11,Annual Checkup,Chelsea Dawson
+1543,1495,2023-09-25,Surgery Follow-up,Stephanie Everett
+1544,1495,2021-11-29,Injury Treatment,John Lee
+1545,1497,2024-05-08,Annual Checkup,Ashley Russell
+1546,1497,2021-02-27,X-ray,Miguel Berry
+1547,1499,2024-02-03,X-ray,Kayla Lara
+1548,1499,2021-05-25,X-ray,Megan Zamora
+1549,1501,2022-09-10,Spay/Neuter Surgery,Rodney Hall
+1550,1504,2023-12-03,Dental Cleaning,Michelle Roach
+1551,1505,2022-06-23,Skin Allergy Treatment,Tracy Rich
+1552,1505,2024-08-20,Injury Treatment,Trevor Nguyen
+1553,1510,2022-09-18,Dental Cleaning,Amanda Cox
+1554,1510,2021-12-22,Dental Cleaning,James Summers
+1555,1510,2021-05-22,Injury Treatment,Steven Nicholson
+1556,1511,2022-03-21,Injury Treatment,John Barnes
+1557,1513,2022-04-15,Spay/Neuter Surgery,Scott Vega
+1558,1513,2022-11-28,Annual Checkup,Amanda Gentry
+1559,1513,2021-08-26,Spay/Neuter Surgery,Andrew Jacobs
+1560,1514,2023-05-22,Spay/Neuter Surgery,Dr. Deborah Williams DDS
+1561,1514,2024-10-03,Skin Allergy Treatment,Thomas Castaneda
+1562,1514,2022-07-17,Ear Infection,Jorge Burgess
+1563,1516,2023-10-01,Vaccination,Samantha Lynch
+1564,1517,2023-09-30,Vaccination,James Murray
+1565,1517,2021-07-31,X-ray,Mary Gilbert
+1566,1522,2024-06-23,Surgery Follow-up,Jennifer Gaines
+1567,1522,2023-05-29,Vaccination,Mark Peterson
+1568,1522,2024-09-27,Injury Treatment,Angela Ortega
+1569,1524,2024-02-27,Blood Test,Matthew Gill
+1570,1524,2021-10-07,Ear Infection,Christy Parrish
+1571,1524,2022-05-02,Ear Infection,Keith Wilkins
+1572,1528,2022-03-24,Skin Allergy Treatment,Matthew Martin
+1573,1531,2024-08-17,Injury Treatment,Jacqueline Martin
+1574,1533,2023-02-15,Skin Allergy Treatment,Sean Perkins
+1575,1538,2022-08-18,Vaccination,Christian Jones
+1576,1538,2022-08-06,Skin Allergy Treatment,Darlene Garcia
+1577,1538,2022-04-30,X-ray,Eric Terry
+1578,1541,2021-06-05,Spay/Neuter Surgery,Elizabeth Cook
+1579,1542,2021-01-06,Skin Allergy Treatment,Jessica Wolf
+1580,1542,2024-08-16,X-ray,Janet Gross DVM
+1581,1542,2024-12-17,Blood Test,Randy Thompson
+1582,1544,2022-12-20,Spay/Neuter Surgery,Betty Taylor
+1583,1544,2021-04-10,Spay/Neuter Surgery,Susan Davenport
+1584,1544,2023-08-08,Skin Allergy Treatment,Jonathan Pitts
+1585,1545,2021-08-14,Skin Allergy Treatment,James Miller
+1586,1545,2024-05-01,Surgery Follow-up,Thomas Rodriguez
+1587,1545,2022-09-25,Dental Cleaning,Holly Stuart
+1588,1547,2021-11-03,Skin Allergy Treatment,Carl Jones
+1589,1547,2022-08-31,Blood Test,David Simmons
+1590,1548,2023-10-17,Skin Allergy Treatment,Jacob Rodriguez
+1591,1550,2024-09-26,Spay/Neuter Surgery,Greg Mcbride
+1592,1550,2021-05-20,Blood Test,Michelle Gray
+1593,1551,2023-10-19,Skin Allergy Treatment,Ryan Pitts
+1594,1552,2021-10-08,Skin Allergy Treatment,Christopher Fuller
+1595,1552,2023-05-22,Ear Infection,Andrea Smith
+1596,1553,2023-11-06,Vaccination,Amanda Wood
+1597,1555,2022-05-21,Vaccination,Adriana Lopez
+1598,1555,2023-04-22,Surgery Follow-up,Amy Ware
+1599,1557,2024-08-02,Skin Allergy Treatment,Susan Jensen
+1600,1557,2024-04-25,Vaccination,Erika Crosby
+1601,1558,2022-01-17,Ear Infection,Candice Flores
+1602,1558,2023-04-24,Blood Test,Lori Reyes
+1603,1559,2024-09-09,Blood Test,Jimmy Chan
+1604,1559,2023-02-03,Injury Treatment,Robert Martin
+1605,1560,2021-05-04,Skin Allergy Treatment,Susan Rowland
+1606,1561,2024-05-16,Blood Test,Daniel Vargas
+1607,1561,2022-08-15,Injury Treatment,Monica Dennis
+1608,1565,2021-07-04,Blood Test,Jessica Clark
+1609,1569,2023-07-06,Dental Cleaning,Antonio Mcgee
+1610,1569,2022-03-13,Vaccination,Tammy Tran
+1611,1569,2023-11-29,Annual Checkup,Garrett Potter
+1612,1573,2024-05-16,Blood Test,Angela Mitchell
+1613,1573,2024-03-20,Surgery Follow-up,Lisa Mcmahon
+1614,1573,2021-08-14,Ear Infection,Tim Greer
+1615,1575,2021-10-07,Surgery Follow-up,Kevin Wu
+1616,1576,2023-03-18,Dental Cleaning,Renee Leon
+1617,1576,2023-10-31,Dental Cleaning,Cheryl Campbell
+1618,1576,2022-01-15,Surgery Follow-up,Vincent Thompson
+1619,1577,2022-01-03,Dental Cleaning,Whitney Crosby MD
+1620,1578,2024-05-16,Injury Treatment,Marcia Walsh
+1621,1578,2024-05-22,Dental Cleaning,Edward Morrow
+1622,1578,2024-03-07,Injury Treatment,Rebecca Bonilla
+1623,1580,2024-08-16,Injury Treatment,Tiffany Cabrera
+1624,1580,2021-04-03,Ear Infection,Carrie Vazquez
+1625,1583,2024-08-19,Spay/Neuter Surgery,Tonya Gentry
+1626,1583,2021-12-04,Surgery Follow-up,Mason Wolfe
+1627,1583,2021-06-15,Dental Cleaning,Patricia Warner
+1628,1586,2023-07-07,Spay/Neuter Surgery,Jason Clark
+1629,1586,2024-07-01,Ear Infection,Carol Hayes
+1630,1586,2024-06-11,Annual Checkup,Jill Harris
+1631,1590,2021-01-04,Spay/Neuter Surgery,Andrea Tucker
+1632,1590,2021-07-06,Surgery Follow-up,Eric Reyes
+1633,1590,2024-11-29,Spay/Neuter Surgery,Marvin Gomez
+1634,1591,2023-04-19,Annual Checkup,Denise Porter
+1635,1591,2024-06-01,Blood Test,Sarah Sullivan
+1636,1591,2021-05-29,Surgery Follow-up,Holly Jones
+1637,1592,2021-12-30,Vaccination,Dr. Alyssa Wallace
+1638,1592,2023-10-22,Vaccination,Angel Mercado
+1639,1593,2023-12-04,Dental Cleaning,Taylor Perez
+1640,1595,2021-12-12,Surgery Follow-up,Alexander Stewart
+1641,1595,2024-12-11,Dental Cleaning,Felicia Pearson
+1642,1595,2022-04-25,Blood Test,Robert Johnson
+1643,1597,2023-01-29,Skin Allergy Treatment,James Martinez
+1644,1601,2022-06-09,Blood Test,Pam Burke
+1645,1606,2023-12-16,Dental Cleaning,William Johnston
+1646,1606,2021-04-28,Annual Checkup,Stephanie Delgado
+1647,1606,2023-11-26,Skin Allergy Treatment,Donald Santos
+1648,1610,2023-01-25,Skin Allergy Treatment,Diana Pena
+1649,1610,2021-11-23,Ear Infection,Stephanie King
+1650,1610,2024-05-02,Blood Test,Matthew Parker
+1651,1616,2024-09-24,Spay/Neuter Surgery,Elizabeth Adams
+1652,1616,2023-05-15,Injury Treatment,Dustin Parker
+1653,1617,2024-04-25,Annual Checkup,Justin Allen
+1654,1617,2022-01-07,Spay/Neuter Surgery,Dustin George
+1655,1617,2023-09-05,X-ray,Jennifer Phillips
+1656,1623,2022-05-02,Ear Infection,Julia Simmons
+1657,1623,2024-08-08,Ear Infection,Christopher Mcclain
+1658,1623,2023-12-16,X-ray,Ashley Thomas
+1659,1625,2023-12-07,X-ray,Jessica Boyer
+1660,1628,2022-10-17,Vaccination,Kendra Herrera
+1661,1628,2022-02-07,Skin Allergy Treatment,Steven Ritter
+1662,1628,2022-10-28,Vaccination,Dawn Juarez
+1663,1629,2024-10-12,Dental Cleaning,Jonathan Massey
+1664,1630,2024-03-22,Injury Treatment,Jeanette Hernandez
+1665,1630,2024-07-18,Ear Infection,Evan Hubbard
+1666,1630,2024-12-21,Blood Test,Melissa Miller
+1667,1635,2023-01-16,X-ray,Bryan Collins
+1668,1635,2022-12-23,Surgery Follow-up,Adam Mills
+1669,1636,2021-03-06,Injury Treatment,Patrick Watkins
+1670,1639,2022-12-30,Spay/Neuter Surgery,Amanda Brown
+1671,1640,2024-08-08,Spay/Neuter Surgery,Christina Johnson
+1672,1640,2022-02-08,Injury Treatment,Natasha Mclaughlin
+1673,1640,2023-01-10,Annual Checkup,Nathaniel Lynn
+1674,1643,2022-10-25,Vaccination,Terry Morton
+1675,1643,2023-06-07,Vaccination,Grace Dickerson
+1676,1644,2022-10-04,Dental Cleaning,Catherine Diaz
+1677,1644,2022-04-19,Ear Infection,Carly Richard
+1678,1646,2021-09-14,Injury Treatment,Nancy Bell
+1679,1646,2022-05-24,Spay/Neuter Surgery,Crystal Ruiz
+1680,1649,2021-05-20,Spay/Neuter Surgery,Douglas Rice
+1681,1649,2022-12-17,Spay/Neuter Surgery,Allison Hobbs DDS
+1682,1649,2022-10-31,Dental Cleaning,Gary Silva
+1683,1653,2024-12-04,Injury Treatment,Stephanie Sanders
+1684,1653,2021-02-20,Skin Allergy Treatment,Andrew Gray
+1685,1653,2023-04-11,Surgery Follow-up,Elizabeth Thomas
+1686,1660,2021-01-04,Dental Cleaning,Terry Mcdonald
+1687,1660,2021-04-22,X-ray,Todd Jackson
+1688,1660,2021-06-07,Injury Treatment,Audrey Alvarez
+1689,1661,2024-05-28,Injury Treatment,Kelly Mason
+1690,1664,2024-03-31,Annual Checkup,Danny Calderon
+1691,1665,2023-03-09,Blood Test,Lauren Garcia
+1692,1665,2023-03-26,Dental Cleaning,Lori Bryant
+1693,1667,2021-09-17,Injury Treatment,Jessica Allison
+1694,1668,2024-11-01,Injury Treatment,Karen Lee
+1695,1668,2021-12-07,Dental Cleaning,Edward Terry
+1696,1670,2022-02-22,Blood Test,Samuel Johnson
+1697,1670,2024-12-11,Annual Checkup,Curtis Stokes
+1698,1671,2023-08-28,Skin Allergy Treatment,Robin Dominguez
+1699,1675,2023-06-16,Vaccination,Christopher Rodriguez
+1700,1675,2022-09-20,Annual Checkup,Tara James
+1701,1678,2022-07-27,Skin Allergy Treatment,Isaac Grimes
+1702,1678,2021-05-21,Spay/Neuter Surgery,Brittany Beck
+1703,1681,2021-06-18,Vaccination,Samantha Rivera
+1704,1681,2021-10-08,Vaccination,Scott Ward
+1705,1681,2021-01-16,Skin Allergy Treatment,Amy Ruiz
+1706,1682,2022-12-06,Skin Allergy Treatment,Steven Oconnor
+1707,1682,2021-03-22,Skin Allergy Treatment,Nicole Walker
+1708,1684,2024-08-13,Vaccination,Tyler Mcknight
+1709,1684,2023-09-08,Blood Test,Joseph Hubbard
+1710,1687,2023-08-17,Blood Test,Joseph Spencer
+1711,1687,2023-03-24,Skin Allergy Treatment,Shane Payne Jr.
+1712,1688,2021-03-28,Dental Cleaning,Laura Little
+1713,1692,2021-06-21,Vaccination,Heather Ayers
+1714,1692,2023-03-11,Spay/Neuter Surgery,Anne Owens
+1715,1692,2021-12-11,Annual Checkup,Paul Russell
+1716,1694,2021-03-13,Vaccination,Sarah Haynes
+1717,1694,2023-05-22,Skin Allergy Treatment,Lee Santana
+1718,1695,2024-09-17,Annual Checkup,Denise Roach
+1719,1695,2022-09-23,Dental Cleaning,Debbie Brown
+1720,1696,2021-07-24,Surgery Follow-up,Roberta Davidson
+1721,1696,2021-02-08,Injury Treatment,Courtney Berg
+1722,1696,2022-08-20,Spay/Neuter Surgery,Susan Finley
+1723,1697,2023-09-29,Skin Allergy Treatment,John Reyes
+1724,1697,2022-03-30,Vaccination,Angela Weber
+1725,1698,2024-12-20,Spay/Neuter Surgery,Christine Cooper
+1726,1698,2022-12-23,Injury Treatment,Thomas Johnson
+1727,1698,2022-03-01,Skin Allergy Treatment,Mark Mcdonald
+1728,1702,2023-03-24,Annual Checkup,Mrs. Lauren Lopez
+1729,1702,2021-07-04,Surgery Follow-up,Kimberly Miles
+1730,1702,2023-12-29,Spay/Neuter Surgery,Belinda Cole
+1731,1708,2024-09-20,Injury Treatment,Ryan Miller
+1732,1708,2023-12-17,Skin Allergy Treatment,Ruth Rojas
+1733,1708,2021-05-27,Injury Treatment,Michael Brown
+1734,1709,2022-06-29,Surgery Follow-up,Anthony Garcia
+1735,1709,2022-03-12,Ear Infection,Daniel Conway
+1736,1709,2023-09-27,Injury Treatment,Mary Powell
+1737,1712,2023-12-27,Skin Allergy Treatment,Jamie Dawson
+1738,1713,2021-01-12,X-ray,Sean Walker
+1739,1714,2023-06-06,Skin Allergy Treatment,Edward Greene
+1740,1717,2023-02-05,Injury Treatment,Julie Peterson
+1741,1717,2023-09-13,Surgery Follow-up,Gloria King
+1742,1717,2024-10-13,Annual Checkup,Larry Robinson
+1743,1718,2021-01-14,Surgery Follow-up,Kathryn Martinez
+1744,1718,2023-11-08,Spay/Neuter Surgery,Kirk Webb
+1745,1718,2022-06-24,Injury Treatment,Brian Watkins
+1746,1720,2024-02-01,Dental Cleaning,Tiffany Mclaughlin
+1747,1720,2023-01-04,Injury Treatment,Colleen Orozco
+1748,1720,2022-05-28,Ear Infection,Ann Hernandez
+1749,1722,2024-08-28,Annual Checkup,Stacy Hubbard
+1750,1722,2021-09-18,Vaccination,Katelyn Campbell
+1751,1722,2024-05-26,Spay/Neuter Surgery,Mr. Jeffrey Taylor MD
+1752,1730,2024-04-07,Ear Infection,Courtney Delgado
+1753,1732,2023-03-31,Vaccination,Daniel Ellis
+1754,1732,2021-01-04,Annual Checkup,Gregory Sullivan
+1755,1732,2024-11-15,Vaccination,Jerry Baker
+1756,1733,2023-08-10,Spay/Neuter Surgery,Sydney Stephens
+1757,1733,2021-02-19,Surgery Follow-up,Jonathan Werner
+1758,1733,2021-06-20,Spay/Neuter Surgery,Taylor Taylor
+1759,1734,2024-05-01,Annual Checkup,Zachary Wise
+1760,1734,2023-04-25,Vaccination,Randall Osborn
+1761,1734,2022-07-06,Annual Checkup,Kurt Hall
+1762,1735,2023-06-08,X-ray,Lynn Pearson
+1763,1737,2021-06-24,Injury Treatment,Keith Bowman
+1764,1739,2023-06-26,Dental Cleaning,Michael Wilson
+1765,1742,2023-11-03,Dental Cleaning,Mrs. Nicole Wells
+1766,1742,2023-03-05,Annual Checkup,Kathryn Howard
+1767,1742,2024-11-26,Skin Allergy Treatment,Mackenzie Woodard
+1768,1744,2024-01-17,Spay/Neuter Surgery,Brian Pearson
+1769,1744,2022-08-07,Annual Checkup,Sherri Powell
+1770,1744,2024-02-06,Spay/Neuter Surgery,Reginald Ferguson
+1771,1745,2024-11-25,Injury Treatment,William Bell
+1772,1746,2024-08-18,Annual Checkup,Norma Lin
+1773,1746,2022-01-25,Blood Test,Michael Olson
+1774,1746,2024-02-02,Dental Cleaning,Jennifer White
+1775,1747,2021-12-22,Ear Infection,Arthur Hale
+1776,1750,2023-12-18,Dental Cleaning,Terry Jenkins
+1777,1750,2022-02-04,Injury Treatment,Debra West
+1778,1752,2022-10-09,Ear Infection,Stephen Cordova
+1779,1752,2021-11-04,Dental Cleaning,Christopher Wilson
+1780,1754,2023-11-15,X-ray,Cheryl Jackson
+1781,1758,2023-05-02,Skin Allergy Treatment,Isaac Vazquez
+1782,1758,2021-09-05,Dental Cleaning,Andrew Sims MD
+1783,1758,2021-07-04,Blood Test,Ashley Caldwell DDS
+1784,1761,2024-09-26,X-ray,Thomas Mccullough
+1785,1761,2024-07-07,Ear Infection,Carlos Jones
+1786,1762,2021-04-26,Surgery Follow-up,Patricia Oconnor
+1787,1762,2021-01-31,Dental Cleaning,Amanda Ballard
+1788,1765,2024-04-05,Injury Treatment,Alexander Williams
+1789,1765,2024-05-04,Vaccination,Grace Bowman
+1790,1765,2024-09-07,Surgery Follow-up,Monica Cobb
+1791,1766,2022-07-11,Spay/Neuter Surgery,Jacqueline Miles
+1792,1768,2023-09-12,Surgery Follow-up,Donna Myers
+1793,1768,2023-09-07,Skin Allergy Treatment,Kimberly Whitaker
+1794,1773,2024-07-29,Dental Cleaning,Monica Watson
+1795,1774,2022-08-28,Annual Checkup,Rhonda Brown
+1796,1774,2024-03-07,Surgery Follow-up,Michael Smith
+1797,1775,2024-10-08,Annual Checkup,Erik Mccann
+1798,1775,2023-10-09,Annual Checkup,Brian Huffman
+1799,1779,2024-01-06,Annual Checkup,Beverly Jenkins
+1800,1780,2022-11-22,Annual Checkup,Rodney Medina
+1801,1780,2023-03-29,Injury Treatment,Ricky Ray
+1802,1781,2022-11-09,Surgery Follow-up,Shannon Palmer
+1803,1781,2022-05-28,Skin Allergy Treatment,Kyle May
+1804,1783,2024-01-15,Vaccination,Connie Cruz
+1805,1784,2024-03-22,Blood Test,Brandon Brown
+1806,1784,2022-12-19,Spay/Neuter Surgery,Michael Walker
+1807,1786,2024-11-22,X-ray,Seth Anderson
+1808,1786,2024-07-22,Annual Checkup,Pamela Henderson
+1809,1786,2022-04-27,Spay/Neuter Surgery,Brenda Marquez
+1810,1788,2023-12-03,Annual Checkup,Paul Patterson
+1811,1794,2021-10-14,Dental Cleaning,Thomas Mcbride
+1812,1794,2022-04-01,Injury Treatment,Rebecca Andrews
+1813,1794,2024-07-18,Skin Allergy Treatment,Todd Velasquez
+1814,1795,2024-10-16,Dental Cleaning,Tiffany Davenport
+1815,1795,2021-07-27,Spay/Neuter Surgery,Donna Stevenson
+1816,1797,2022-07-30,Surgery Follow-up,Marvin Warren
+1817,1797,2023-04-07,X-ray,Eric Campbell
+1818,1798,2021-05-06,Ear Infection,Heather Kelly
+1819,1799,2021-09-05,Vaccination,Barbara Cannon
+1820,1799,2023-09-27,Ear Infection,Nathan Brock
+1821,1803,2023-12-09,Skin Allergy Treatment,John Leach DDS
+1822,1803,2022-04-07,Vaccination,Wendy Page
+1823,1803,2021-03-22,Dental Cleaning,John Williams
+1824,1804,2021-10-28,Vaccination,Gregory Garcia
+1825,1804,2021-06-14,Surgery Follow-up,Amy Peck
+1826,1805,2021-09-07,Ear Infection,Vanessa Ramos
+1827,1805,2021-11-29,Vaccination,Elizabeth Davis
+1828,1805,2021-07-25,Blood Test,Stephanie Grant
+1829,1806,2021-11-30,Skin Allergy Treatment,Sharon Garcia
+1830,1806,2022-06-06,Spay/Neuter Surgery,Mindy Gutierrez
+1831,1811,2024-05-17,Annual Checkup,Daniel Sherman
+1832,1817,2022-04-19,Skin Allergy Treatment,Stephanie Gallegos
+1833,1818,2024-07-12,X-ray,Samuel Zimmerman
+1834,1818,2022-12-04,Surgery Follow-up,Sydney Frey
+1835,1819,2022-09-02,Ear Infection,Andrew Richard
+1836,1826,2022-07-01,Ear Infection,James Landry MD
+1837,1826,2022-09-15,Dental Cleaning,Rachel Patel
+1838,1826,2023-01-01,Dental Cleaning,Dr. Zachary Lee
+1839,1827,2021-07-23,Dental Cleaning,Stacey Craig
+1840,1827,2024-08-10,Surgery Follow-up,David Lewis
+1841,1828,2023-04-17,Injury Treatment,Mrs. Amy King
+1842,1830,2021-09-10,Surgery Follow-up,Matthew Gomez
+1843,1830,2021-07-26,Dental Cleaning,Michael Duncan
+1844,1830,2024-06-07,Skin Allergy Treatment,Micheal Arnold
+1845,1831,2024-04-23,Ear Infection,Matthew Chandler
+1846,1833,2023-06-30,Skin Allergy Treatment,Judith Clark
+1847,1834,2024-05-03,Spay/Neuter Surgery,Dana Solis
+1848,1834,2022-03-30,Ear Infection,James Carter
+1849,1836,2024-05-25,Spay/Neuter Surgery,Michael Vasquez
+1850,1836,2021-01-25,Dental Cleaning,Joseph Richardson
+1851,1839,2023-09-11,Annual Checkup,Brianna Adkins
+1852,1839,2022-09-04,Blood Test,Manuel Price
+1853,1839,2024-05-15,Skin Allergy Treatment,Kristin Bryant
+1854,1841,2021-09-02,X-ray,Jennifer Hayes
+1855,1841,2021-01-18,Skin Allergy Treatment,Margaret Williams
+1856,1842,2024-06-11,Vaccination,Philip Mitchell
+1857,1842,2023-04-25,Skin Allergy Treatment,Tonya Harding
+1858,1842,2022-12-09,Annual Checkup,Sarah Burns
+1859,1843,2023-04-21,Dental Cleaning,Lori Martin
+1860,1845,2022-04-21,Vaccination,Alexander Spence
+1861,1845,2023-09-01,Annual Checkup,Nicole Garcia
+1862,1846,2023-08-04,Injury Treatment,Karen Perez
+1863,1848,2022-02-06,Dental Cleaning,Jose Moore
+1864,1848,2024-12-08,Ear Infection,John Payne
+1865,1848,2022-07-05,Blood Test,Kelsey Rios
+1866,1850,2023-06-21,Blood Test,Bryan Cox
+1867,1850,2024-01-07,Vaccination,Tami Herrera
+1868,1851,2022-02-28,Dental Cleaning,Elizabeth Sanders
+1869,1852,2021-08-26,Blood Test,Michelle Martinez
+1870,1852,2023-12-14,Spay/Neuter Surgery,Brian Barrera
+1871,1853,2023-02-04,Blood Test,Brett Mora
+1872,1854,2023-06-21,Vaccination,Sandra Marquez
+1873,1855,2022-04-04,Dental Cleaning,Amber King
+1874,1855,2023-06-06,Ear Infection,Thomas Rivera
+1875,1855,2023-05-24,Injury Treatment,Jeffrey Pham
+1876,1856,2024-12-13,Annual Checkup,Mark Mason
+1877,1856,2023-04-07,Ear Infection,Jodi Jones
+1878,1856,2024-01-04,Surgery Follow-up,Deborah Kidd
+1879,1857,2023-08-03,Spay/Neuter Surgery,Hannah Dixon
+1880,1857,2022-01-09,X-ray,Jordan Smith
+1881,1857,2023-01-21,Injury Treatment,Samuel Williams
+1882,1858,2022-03-04,Injury Treatment,John Scott
+1883,1858,2022-10-27,Dental Cleaning,Dr. Heather Smith
+1884,1858,2024-11-29,Skin Allergy Treatment,Steven Washington
+1885,1861,2023-07-23,Skin Allergy Treatment,Cole Price
+1886,1861,2021-12-30,Spay/Neuter Surgery,Mrs. Laura Pugh
+1887,1861,2024-06-25,Ear Infection,Justin Marquez
+1888,1862,2023-08-25,Blood Test,Danielle Brown
+1889,1862,2021-08-07,Vaccination,Whitney Carter
+1890,1862,2021-06-07,Vaccination,Andrew Smith
+1891,1864,2023-11-28,Blood Test,Jennifer Franklin
+1892,1865,2023-04-11,X-ray,Mark Ryan
+1893,1865,2021-08-06,Spay/Neuter Surgery,Brandon Baker
+1894,1866,2021-12-13,Surgery Follow-up,Robert Rojas
+1895,1866,2023-02-22,Blood Test,Alec Olson
+1896,1868,2021-11-12,Ear Infection,Penny Chavez
+1897,1868,2022-09-02,Vaccination,Joan Robbins
+1898,1868,2021-12-18,Vaccination,Debbie Arnold
+1899,1870,2021-02-03,Vaccination,Danielle Russell
+1900,1874,2021-01-09,X-ray,Larry Cummings
+1901,1874,2021-05-30,X-ray,Tyler Stephens
+1902,1875,2023-01-20,Skin Allergy Treatment,Zachary Harris
+1903,1876,2024-10-04,Ear Infection,Jeffrey Jones
+1904,1877,2024-01-22,Annual Checkup,Raymond Johnson
+1905,1878,2021-10-04,Injury Treatment,Jacob Miller
+1906,1878,2024-01-07,Surgery Follow-up,Ryan Hernandez
+1907,1878,2023-05-08,Surgery Follow-up,Frank Bonilla
+1908,1880,2024-01-21,Skin Allergy Treatment,Rhonda Hall
+1909,1882,2023-07-18,Annual Checkup,Steven Guerra
+1910,1882,2021-07-26,Ear Infection,Megan Sanchez
+1911,1883,2024-02-16,Blood Test,Alvin Brown
+1912,1883,2024-04-10,Spay/Neuter Surgery,Nichole Roberts
+1913,1883,2023-07-10,Spay/Neuter Surgery,Christopher Davis
+1914,1889,2022-08-07,Surgery Follow-up,Jason Mercado
+1915,1889,2023-01-27,X-ray,Ronald Morgan Jr.
+1916,1889,2021-01-08,Vaccination,Mr. Thomas West
+1917,1890,2022-02-16,X-ray,Christopher Taylor
+1918,1893,2023-12-11,Annual Checkup,Kevin Miller
+1919,1893,2024-07-12,Blood Test,Richard Orr
+1920,1894,2023-02-17,Blood Test,Elizabeth Holloway
+1921,1896,2022-04-02,Dental Cleaning,Karen Bowman
+1922,1896,2023-06-05,Blood Test,Robert Ritter
+1923,1898,2021-04-03,Surgery Follow-up,Lonnie Martinez
+1924,1898,2024-03-01,Blood Test,Elizabeth Roman
+1925,1899,2024-04-22,Injury Treatment,Derek Stewart
+1926,1899,2022-02-02,Vaccination,Emily Mathis
+1927,1901,2021-01-28,Blood Test,Ruben Gay
+1928,1901,2023-05-21,Annual Checkup,Elizabeth Taylor
+1929,1901,2023-05-01,Surgery Follow-up,Shawn Adams
+1930,1902,2021-07-05,Vaccination,Mr. David King PhD
+1931,1902,2022-12-31,Surgery Follow-up,Matthew Boyd
+1932,1904,2021-01-18,Injury Treatment,William Bishop
+1933,1907,2022-11-03,Annual Checkup,Kristen Smith
+1934,1907,2024-03-11,Ear Infection,Tammy Morales
+1935,1908,2022-07-24,Injury Treatment,Alison Johnson
+1936,1908,2024-01-23,Ear Infection,Brooke Rodgers
+1937,1913,2024-10-01,Blood Test,Jordan Ortiz
+1938,1913,2022-09-29,Ear Infection,Jennifer Black
+1939,1913,2021-01-11,Skin Allergy Treatment,Michael Silva
+1940,1915,2024-07-18,Annual Checkup,Martha Martinez
+1941,1915,2023-12-14,Skin Allergy Treatment,Jacob King
+1942,1920,2022-05-16,Skin Allergy Treatment,John Orr
+1943,1923,2024-10-24,Annual Checkup,Carrie Ortiz
+1944,1923,2024-08-12,Injury Treatment,Guy Alvarado
+1945,1925,2023-03-18,Blood Test,Abigail Roman MD
+1946,1925,2023-12-26,Surgery Follow-up,Sherry Washington
+1947,1925,2021-11-02,Blood Test,Andrew Vazquez
+1948,1927,2024-05-06,Ear Infection,Loretta Garcia
+1949,1930,2023-11-07,Blood Test,Jennifer Clark
+1950,1930,2021-02-09,Ear Infection,Tara Walker
+1951,1934,2022-04-02,Blood Test,Mr. James Fields Jr.
+1952,1934,2021-08-08,Ear Infection,Breanna Williams
+1953,1934,2021-12-30,Dental Cleaning,Micheal Alexander
+1954,1935,2023-01-29,Ear Infection,Charles Flores
+1955,1935,2021-04-26,Surgery Follow-up,Debra Leonard
+1956,1937,2022-11-11,Skin Allergy Treatment,Randy Smith
+1957,1937,2022-10-18,Spay/Neuter Surgery,Dr. Christopher Jones
+1958,1937,2023-12-09,Blood Test,Edward Ramirez
+1959,1940,2021-10-21,Annual Checkup,Danielle Owens
+1960,1941,2023-07-14,Ear Infection,Timothy Guerra
+1961,1946,2022-06-04,Injury Treatment,Nicole Shelton
+1962,1951,2024-11-18,Ear Infection,Jeff Smith
+1963,1951,2021-10-05,Blood Test,Francisco Torres
+1964,1952,2023-09-22,Spay/Neuter Surgery,Robert Caldwell
+1965,1953,2021-04-21,Skin Allergy Treatment,Kimberly Silva
+1966,1953,2021-11-14,Injury Treatment,Daniel Lloyd
+1967,1953,2022-03-20,Dental Cleaning,Lauren Orozco
+1968,1954,2024-09-06,Annual Checkup,Kristina Logan
+1969,1954,2022-10-14,X-ray,Darin Gallegos
+1970,1954,2022-06-14,Vaccination,Steve Mack
+1971,1955,2021-12-07,Blood Test,Natalie Norman
+1972,1955,2021-10-07,Annual Checkup,Steven Tucker
+1973,1955,2023-09-20,Blood Test,Jerry Day
+1974,1957,2021-03-30,Surgery Follow-up,Spencer Turner
+1975,1957,2021-09-17,Ear Infection,Pamela Adams
+1976,1958,2024-08-25,Ear Infection,Adam Perkins
+1977,1958,2022-09-17,Vaccination,Denise Chung
+1978,1961,2024-04-02,Ear Infection,Monica Evans
+1979,1961,2023-05-15,Dental Cleaning,Troy Becker
+1980,1963,2022-04-01,Injury Treatment,Suzanne Li
+1981,1963,2022-10-23,Surgery Follow-up,Ms. Robin Cline
+1982,1966,2024-01-24,Blood Test,Robert Morales
+1983,1968,2022-01-16,Injury Treatment,Amber Cummings
+1984,1968,2022-11-23,Ear Infection,Heidi Conway
+1985,1968,2021-04-01,Blood Test,David Castillo
+1986,1970,2021-01-26,Annual Checkup,Mario Fisher
+1987,1970,2022-12-14,Injury Treatment,Leslie Booker
+1988,1973,2024-06-01,Skin Allergy Treatment,Claudia Cruz
+1989,1973,2022-09-11,Injury Treatment,Daniel Simmons
+1990,1974,2022-09-17,Annual Checkup,Matthew Zhang
+1991,1976,2021-12-26,Surgery Follow-up,Lisa Lucas
+1992,1976,2022-06-13,Annual Checkup,Jeffrey Cox
+1993,1976,2023-02-24,Ear Infection,Elizabeth Walls
+1994,1977,2021-09-04,Vaccination,Heather Jones
+1995,1978,2021-05-11,Blood Test,Susan Daniel
+1996,1978,2023-01-01,Spay/Neuter Surgery,Jeffrey Robinson
+1997,1979,2022-09-05,Annual Checkup,Misty Ferrell
+1998,1982,2022-03-07,Dental Cleaning,Kenneth Fields
+1999,1982,2023-03-28,Spay/Neuter Surgery,Tiffany Little
+2000,1982,2024-04-20,Spay/Neuter Surgery,Anthony Grimes
+2001,1984,2022-05-31,Annual Checkup,Karen Thomas
+2002,1984,2023-04-11,Vaccination,Stephen Smith
+2003,1984,2023-11-23,Skin Allergy Treatment,Matthew Ford
+2004,1985,2024-06-17,Ear Infection,Nathaniel Edwards
+2005,1987,2021-02-25,Ear Infection,Crystal Jennings
+2006,1988,2021-05-31,Vaccination,Ryan Smith
+2007,1988,2024-09-27,Skin Allergy Treatment,Kimberly Anderson
+2008,1989,2021-07-12,X-ray,Barry Adams
+2009,1989,2022-12-29,Ear Infection,Andrew King
+2010,1989,2024-05-02,Blood Test,Brian Wilson
+2011,1990,2021-10-11,X-ray,Cory Martinez
+2012,1990,2022-08-02,Annual Checkup,Brittany Schultz
+2013,1990,2022-04-16,Skin Allergy Treatment,Barbara Robinson
+2014,1991,2021-05-31,X-ray,Brittney James
+2015,1991,2024-08-27,Skin Allergy Treatment,Cory Pace
+2016,1991,2022-06-01,Blood Test,Lori Wolf
+2017,1992,2022-10-19,X-ray,Brandon Smith
+2018,1992,2021-12-28,Surgery Follow-up,Phillip Campos
+2019,1992,2024-07-31,Vaccination,Zachary Garcia
+2020,1994,2021-03-30,Dental Cleaning,John Baldwin
+2021,1994,2024-07-31,X-ray,Christopher Schmitt
+2022,1994,2024-01-13,Annual Checkup,Colin Ware
+2023,1997,2021-07-14,Spay/Neuter Surgery,Carl Mason
+2024,1997,2024-01-13,Spay/Neuter Surgery,Bianca Benson
+2025,2005,2021-03-08,Blood Test,Phillip King
+2026,2006,2024-12-25,Skin Allergy Treatment,Megan Garrison
+2027,2006,2024-07-23,Ear Infection,James Hayes
+2028,2006,2023-06-28,Skin Allergy Treatment,Michael Schmidt
+2029,2009,2023-06-24,Vaccination,Tiffany Johnson
+2030,2010,2023-04-21,X-ray,Scott Keith
+2031,2010,2023-08-29,Vaccination,Jade French
+2032,2010,2023-09-06,Spay/Neuter Surgery,Steve Alexander
+2033,2012,2024-12-14,Vaccination,Margaret Morales
+2034,2015,2022-02-20,Dental Cleaning,Heather Campbell
+2035,2015,2022-02-26,Surgery Follow-up,Debra Smith
+2036,2015,2023-06-05,Surgery Follow-up,Jeff Bell
+2037,2016,2021-08-20,X-ray,Frank Dawson
+2038,2016,2023-02-26,Annual Checkup,David Rojas
+2039,2017,2023-08-26,Blood Test,Angela Nelson
+2040,2017,2023-04-20,Blood Test,Heather Barr
+2041,2018,2022-11-15,Annual Checkup,Adam Brock
+2042,2019,2022-04-07,Surgery Follow-up,Tiffany Mills
+2043,2020,2024-10-27,Injury Treatment,Karen Owen
+2044,2020,2022-10-03,Blood Test,Ashley Martinez
+2045,2020,2021-03-29,Annual Checkup,Stephanie Jackson
+2046,2023,2022-02-04,Injury Treatment,Richard Larson
+2047,2024,2024-12-15,Surgery Follow-up,Samantha White
+2048,2024,2021-11-28,Blood Test,Sandra Lee
+2049,2025,2023-01-18,X-ray,Lindsey Price
+2050,2025,2024-10-04,Spay/Neuter Surgery,Dr. Diane Cox
+2051,2026,2023-04-14,Vaccination,John Hamilton
+2052,2028,2022-09-12,Vaccination,Mike Hall
+2053,2028,2022-02-21,Skin Allergy Treatment,Kimberly Wong
+2054,2030,2021-05-05,Annual Checkup,Melissa Silva
+2055,2036,2022-01-28,X-ray,Angela Grant
+2056,2036,2021-08-01,Annual Checkup,Edward Glenn
+2057,2036,2021-03-08,Injury Treatment,Rebecca Medina
+2058,2037,2022-10-07,Surgery Follow-up,Joshua Flores
+2059,2037,2022-12-02,Injury Treatment,Zachary Robinson
+2060,2037,2024-09-19,Spay/Neuter Surgery,Carrie Butler MD
+2061,2040,2024-04-16,Annual Checkup,Steven Collins
+2062,2046,2023-05-30,Spay/Neuter Surgery,Sonia Johnson
+2063,2049,2024-08-25,Annual Checkup,Shelby Hawkins
+2064,2051,2023-10-21,Vaccination,Jason Smith
+2065,2051,2021-10-21,Injury Treatment,Taylor Hampton
+2066,2051,2024-11-14,Spay/Neuter Surgery,Brandon Washington
+2067,2055,2022-01-13,X-ray,Andrea Townsend
+2068,2055,2024-02-29,Ear Infection,Jessica Ferguson
+2069,2057,2021-07-19,Blood Test,Jimmy Johnson
+2070,2057,2021-08-21,X-ray,Megan Brennan
+2071,2057,2022-04-16,Blood Test,Sarah Davis
+2072,2058,2022-01-23,Skin Allergy Treatment,Matthew Dorsey
+2073,2058,2022-08-09,Surgery Follow-up,Michael Martinez
+2074,2059,2024-09-26,Dental Cleaning,Paula Moore
+2075,2061,2022-10-02,Vaccination,Douglas Parker
+2076,2061,2023-07-03,Injury Treatment,Catherine Rose
+2077,2062,2024-01-08,Dental Cleaning,Kim Lee
+2078,2062,2024-06-26,Annual Checkup,Jennifer Gallagher
+2079,2062,2024-10-14,Spay/Neuter Surgery,David Alvarado
+2080,2067,2022-04-10,Spay/Neuter Surgery,Erika Vincent
+2081,2070,2021-07-02,Spay/Neuter Surgery,Michelle Reed
+2082,2070,2021-12-31,Skin Allergy Treatment,Jessica Washington
+2083,2072,2022-03-31,Ear Infection,David Harris
+2084,2072,2024-11-15,Dental Cleaning,Elizabeth Ward
+2085,2072,2023-11-06,Skin Allergy Treatment,Debra Hernandez
+2086,2073,2021-06-04,Annual Checkup,Lori Mitchell
+2087,2075,2024-07-18,Injury Treatment,Phillip Davis
+2088,2078,2023-02-22,Dental Cleaning,Jessica Warren
+2089,2084,2022-12-22,Skin Allergy Treatment,Shannon Sharp
+2090,2086,2022-08-24,Surgery Follow-up,John Burke
+2091,2086,2021-12-15,Ear Infection,Andrew Day
+2092,2087,2024-06-24,Annual Checkup,Stephen Lee
+2093,2088,2021-12-18,Blood Test,Jason Jones
+2094,2088,2023-04-04,Spay/Neuter Surgery,Hailey Patterson
+2095,2090,2021-08-16,Injury Treatment,Dale Franklin
+2096,2090,2021-12-15,Vaccination,Marvin Freeman
+2097,2090,2024-07-12,Dental Cleaning,Casey Thomas
+2098,2091,2024-11-01,Vaccination,Taylor Reynolds
+2099,2091,2024-02-20,Skin Allergy Treatment,Jesus Mccormick
+2100,2092,2024-01-05,Skin Allergy Treatment,Kevin Barker
+2101,2092,2023-06-30,Vaccination,Adam Owens
+2102,2094,2024-05-14,Skin Allergy Treatment,Laura Price DDS
+2103,2099,2023-07-03,Blood Test,Marcus Johnson
+2104,2101,2024-10-18,Skin Allergy Treatment,Christopher Reyes
+2105,2101,2021-10-29,Spay/Neuter Surgery,Morgan Perez
+2106,2105,2021-06-25,Skin Allergy Treatment,Tammy Murphy
+2107,2105,2022-09-03,Dental Cleaning,Anthony Smith
+2108,2106,2024-11-18,Annual Checkup,Alejandro Henson
+2109,2108,2023-03-31,Injury Treatment,Natalie Watson
+2110,2108,2022-10-13,X-ray,Thomas Hood
+2111,2108,2024-05-12,Vaccination,Christopher Yoder
+2112,2109,2024-12-31,X-ray,Terry Brooks
+2113,2109,2022-05-01,Ear Infection,Joshua Bowen
+2114,2109,2024-11-14,Vaccination,Tim Larson
+2115,2112,2024-04-04,Dental Cleaning,Patrick Fernandez
+2116,2113,2024-05-05,Spay/Neuter Surgery,Justin Ware
+2117,2113,2021-11-15,Annual Checkup,Bruce Jones
+2118,2113,2023-11-27,Blood Test,Annette Stewart
+2119,2115,2022-02-17,Spay/Neuter Surgery,Nicholas Smith
+2120,2118,2024-07-10,X-ray,Stephanie Valenzuela
+2121,2122,2022-03-25,Injury Treatment,Jason Francis III
+2122,2122,2024-08-04,X-ray,Susan Hernandez
+2123,2122,2023-02-01,X-ray,Aaron Huff
+2124,2123,2024-08-25,Dental Cleaning,Elizabeth Lopez
+2125,2123,2021-04-28,Dental Cleaning,Karl Nguyen
+2126,2123,2022-04-12,Injury Treatment,Patricia Mitchell
+2127,2124,2022-02-23,Annual Checkup,Mary Henson
+2128,2124,2023-09-19,X-ray,Sarah Curry
+2129,2124,2022-05-16,Injury Treatment,Diana Bowen
+2130,2126,2024-12-23,Ear Infection,Timothy Drake
+2131,2126,2021-09-11,Injury Treatment,William Lyons
+2132,2127,2022-05-29,Ear Infection,James Jackson
+2133,2129,2024-07-13,Annual Checkup,Chelsey Mccall
+2134,2134,2022-06-16,Dental Cleaning,Debbie Schroeder
+2135,2135,2022-01-16,Spay/Neuter Surgery,Christopher Frank
+2136,2139,2024-08-25,Vaccination,Emily Williams
+2137,2139,2021-12-07,Blood Test,Jessica Fernandez
+2138,2141,2021-01-05,Vaccination,Brad Price
+2139,2146,2024-01-21,Injury Treatment,Russell Solomon
+2140,2147,2021-05-01,Annual Checkup,Sean Young
+2141,2147,2023-11-25,Vaccination,Johnny Alexander
+2142,2148,2022-04-13,Skin Allergy Treatment,Thomas Hunt
+2143,2148,2022-08-30,Spay/Neuter Surgery,Jose Paul
+2144,2149,2022-04-12,Spay/Neuter Surgery,Rita Booth
+2145,2149,2021-12-04,Vaccination,Brandon Hart
+2146,2151,2024-03-20,Dental Cleaning,Richard Phillips Jr.
+2147,2151,2022-05-27,X-ray,Alicia French
+2148,2151,2023-03-23,Surgery Follow-up,Donna Lopez
+2149,2154,2021-09-22,Spay/Neuter Surgery,Candace Thomas
+2150,2154,2023-08-28,Injury Treatment,Bryan Terrell
+2151,2154,2024-03-12,X-ray,Eric Walters
+2152,2155,2024-01-15,Injury Treatment,Ana Todd
+2153,2155,2024-07-22,Blood Test,Kristen Johnson
+2154,2156,2024-10-30,Annual Checkup,Jessica Lewis
+2155,2156,2023-03-15,Injury Treatment,Dr. Brittany Scott
+2156,2157,2021-02-03,Spay/Neuter Surgery,Julia Evans
+2157,2157,2024-06-18,Ear Infection,Thomas Anderson
+2158,2161,2023-09-15,Injury Treatment,Darlene Wilkinson
+2159,2162,2021-02-24,Ear Infection,Mark Flores
+2160,2162,2024-01-17,Spay/Neuter Surgery,Robert Chavez
+2161,2163,2024-02-25,Vaccination,Stephen Cross
+2162,2163,2021-03-03,X-ray,Zachary Jones
+2163,2163,2021-09-29,X-ray,Amy Johnson
+2164,2164,2023-04-10,Injury Treatment,Mary Barnes
+2165,2164,2021-11-18,Skin Allergy Treatment,Shannon Morgan
+2166,2165,2023-02-24,Vaccination,Joshua Good
+2167,2165,2021-01-30,Ear Infection,Cynthia Ortiz
+2168,2167,2024-09-29,X-ray,Peter Kim
+2169,2167,2024-02-23,Spay/Neuter Surgery,William Martin
+2170,2167,2023-01-16,Spay/Neuter Surgery,Kathy Bowman
+2171,2169,2021-04-21,X-ray,Theresa Black
+2172,2169,2022-03-31,Ear Infection,Vanessa Baker
+2173,2169,2022-05-16,Surgery Follow-up,Matthew Gibbs
+2174,2172,2022-12-17,X-ray,Debra Mercer
+2175,2172,2023-10-30,Injury Treatment,Craig Wade
+2176,2177,2022-11-19,Skin Allergy Treatment,Allison Smith
+2177,2177,2022-09-27,Spay/Neuter Surgery,Sean Lewis
+2178,2183,2023-11-23,Skin Allergy Treatment,Zachary Park
+2179,2184,2023-08-22,Skin Allergy Treatment,Kimberly Lara
+2180,2185,2021-10-03,Blood Test,Lisa Mitchell
+2181,2191,2021-03-07,Surgery Follow-up,Rodney Rivera
+2182,2193,2022-06-01,Dental Cleaning,Joseph Montgomery
+2183,2193,2023-02-07,Blood Test,Scott Parker
+2184,2193,2021-09-01,Ear Infection,Kirsten Smith
+2185,2195,2023-09-16,Ear Infection,Jessica Riddle
+2186,2195,2021-12-15,Injury Treatment,Dwayne Sims
+2187,2195,2022-09-13,Skin Allergy Treatment,Justin Silva
+2188,2196,2021-05-22,X-ray,Paul Garrett
+2189,2196,2022-02-18,Surgery Follow-up,Nicole Sanchez
+2190,2197,2022-07-17,Dental Cleaning,Maria Ali
+2191,2197,2023-04-15,Dental Cleaning,Nancy Carter
+2192,2202,2023-12-12,Surgery Follow-up,John Davis
+2193,2202,2024-11-10,Spay/Neuter Surgery,Robert Daniels
+2194,2202,2022-07-11,Blood Test,Henry Rangel
+2195,2205,2024-08-31,Skin Allergy Treatment,Victoria Smith
+2196,2205,2023-08-31,Injury Treatment,Robin Williams
+2197,2205,2023-12-01,Vaccination,Shane Odonnell
+2198,2207,2021-11-07,Vaccination,William Rivera
+2199,2209,2021-05-04,Ear Infection,Eric Carr
+2200,2209,2024-08-02,Annual Checkup,Michael Warren
+2201,2209,2021-10-12,Spay/Neuter Surgery,Leah Martinez
+2202,2210,2023-11-11,Dental Cleaning,Kimberly Ewing
+2203,2210,2023-09-15,Dental Cleaning,Angel Decker
+2204,2210,2022-06-06,Injury Treatment,Daniel Mason
+2205,2211,2021-01-30,Surgery Follow-up,Jason Mcintosh
+2206,2211,2023-03-09,X-ray,Brittany Hernandez
+2207,2211,2024-04-19,X-ray,Kristen Williams
+2208,2213,2021-05-17,Vaccination,Steven Harris
+2209,2213,2023-10-10,Vaccination,Michael Aguilar MD
+2210,2214,2022-02-10,Ear Infection,Steven Mendez
+2211,2218,2022-06-08,Spay/Neuter Surgery,Angel Golden
+2212,2218,2022-12-14,Annual Checkup,Louis Franklin
+2213,2219,2022-10-12,Vaccination,Joshua Thompson
+2214,2220,2023-10-31,Spay/Neuter Surgery,David Rodriguez
+2215,2222,2022-10-18,Skin Allergy Treatment,Taylor Sanchez
+2216,2222,2022-04-01,Injury Treatment,Brittany Cohen
+2217,2222,2023-01-27,Surgery Follow-up,Dr. Patty George
+2218,2224,2023-01-09,Dental Cleaning,Andrew Matthews
+2219,2224,2021-04-20,Surgery Follow-up,Valerie Williams
+2220,2226,2021-09-26,Spay/Neuter Surgery,Dr. Chelsea Jenkins DDS
+2221,2228,2022-12-31,Dental Cleaning,Scott Fields
+2222,2229,2022-03-23,Ear Infection,Matthew Davis
+2223,2229,2021-02-23,Dental Cleaning,Mr. Gerald Snow
+2224,2229,2023-03-01,Injury Treatment,Joseph Davis
+2225,2233,2022-04-17,Vaccination,Joel Foster
+2226,2233,2021-09-12,Ear Infection,Michelle Jacobs
+2227,2233,2024-11-16,Dental Cleaning,Lindsey Wong
+2228,2234,2023-05-05,Injury Treatment,Heather Garcia
+2229,2236,2021-05-09,X-ray,Monica Fletcher
+2230,2239,2024-05-25,Spay/Neuter Surgery,Brenda Riggs
+2231,2239,2022-02-24,Skin Allergy Treatment,Edward Garcia
+2232,2241,2021-10-18,Blood Test,Edward Montgomery
+2233,2241,2024-01-17,Ear Infection,Lisa Anderson
+2234,2241,2022-11-27,Dental Cleaning,Charles Hart
+2235,2243,2024-12-04,X-ray,Kelly Chavez
+2236,2243,2022-01-05,Vaccination,Joshua Anderson
+2237,2243,2021-10-10,Surgery Follow-up,Courtney Harmon
+2238,2244,2022-09-21,Injury Treatment,Carrie Smith
+2239,2246,2024-09-15,X-ray,Lisa Huerta
+2240,2246,2023-07-16,Blood Test,Theodore Walker
+2241,2246,2023-08-24,Surgery Follow-up,Megan Morgan
+2242,2250,2023-01-01,Skin Allergy Treatment,Loretta Smith
+2243,2250,2023-09-04,Annual Checkup,Nicholas Juarez
+2244,2251,2022-02-18,Spay/Neuter Surgery,Brittney Hardin
+2245,2252,2024-02-04,Vaccination,Timothy Reyes
+2246,2252,2022-07-21,Annual Checkup,Clinton Cruz
+2247,2254,2022-07-10,Spay/Neuter Surgery,Marie Campbell
+2248,2256,2024-07-31,Dental Cleaning,Matthew Lee
+2249,2256,2024-10-14,Annual Checkup,Carol Bennett
+2250,2256,2024-04-15,Injury Treatment,Jason Cruz
+2251,2257,2022-09-17,Vaccination,Megan Jackson
+2252,2258,2022-06-16,Vaccination,Emily Martin
+2253,2259,2023-11-29,Skin Allergy Treatment,Melvin Trujillo
+2254,2263,2022-11-29,Skin Allergy Treatment,Matthew Taylor
+2255,2263,2021-09-10,Annual Checkup,Erica Johnson
+2256,2266,2023-04-05,Blood Test,Mark Trevino
+2257,2266,2023-10-12,Surgery Follow-up,Christopher Mayer
+2258,2266,2021-01-01,Dental Cleaning,Joshua Weaver
+2259,2267,2024-03-25,Ear Infection,Nathan Reynolds
+2260,2267,2023-12-08,Injury Treatment,Linda Clark
+2261,2267,2024-03-26,Dental Cleaning,Cynthia Morris
+2262,2268,2023-12-29,Dental Cleaning,Rita Martinez
+2263,2268,2021-01-12,Spay/Neuter Surgery,Bryce Shelton MD
+2264,2270,2023-08-08,Annual Checkup,Zachary Contreras
+2265,2270,2021-03-28,Injury Treatment,Jaime Jordan
+2266,2270,2024-07-08,Dental Cleaning,Joshua Heath
+2267,2273,2023-07-12,X-ray,Daniel Barnes
+2268,2273,2023-03-17,Skin Allergy Treatment,Zachary Russell
+2269,2276,2021-06-07,X-ray,Lisa Dalton
+2270,2277,2023-04-16,Skin Allergy Treatment,Susan Thompson
+2271,2277,2024-11-28,Spay/Neuter Surgery,Faith Smith
+2272,2281,2023-04-23,Blood Test,Loretta Malone
+2273,2282,2022-10-05,Dental Cleaning,Michele Rodriguez
+2274,2284,2022-04-26,Skin Allergy Treatment,Sandra Becker
+2275,2284,2024-04-21,Blood Test,James Lester
+2276,2287,2024-11-09,X-ray,Mr. Craig Le
+2277,2289,2023-05-29,Ear Infection,Amanda Santos
+2278,2289,2024-03-12,Dental Cleaning,Darryl Coleman
+2279,2289,2021-01-29,X-ray,Phillip Oliver
+2280,2291,2023-04-21,Vaccination,Jennifer Horton
+2281,2291,2022-07-08,Blood Test,Dennis Giles
+2282,2291,2022-04-12,Ear Infection,Tanner Best
+2283,2295,2021-10-10,Spay/Neuter Surgery,Cathy Morgan
+2284,2295,2021-02-02,Spay/Neuter Surgery,Danielle Barnett
+2285,2300,2021-08-25,Blood Test,Rebecca Stephens
+2286,2302,2022-05-16,Surgery Follow-up,Nichole Jones
+2287,2302,2022-03-25,X-ray,Kristopher Harvey
+2288,2304,2022-06-20,Surgery Follow-up,Bryan Hughes
+2289,2304,2023-03-26,Blood Test,Deborah Church
+2290,2305,2024-04-07,X-ray,Jennifer Hunter
+2291,2305,2024-03-30,Annual Checkup,Joseph Smith
+2292,2308,2024-05-08,Ear Infection,Melinda Pruitt
+2293,2308,2024-12-20,Annual Checkup,Madison Davis
+2294,2308,2023-03-22,Dental Cleaning,Jacob Miller
+2295,2325,2021-05-21,Ear Infection,Katie Estrada
+2296,2327,2024-03-05,Vaccination,Justin Collins
+2297,2327,2022-11-19,X-ray,Sherry Wilkins
+2298,2330,2024-12-22,Injury Treatment,Stephen Braun
+2299,2332,2021-06-04,Blood Test,Vickie Hernandez
+2300,2332,2024-07-05,X-ray,Regina Wilson
+2301,2332,2024-10-18,Spay/Neuter Surgery,Tracy Mendoza
+2302,2333,2021-10-04,Blood Test,Kevin Houston
+2303,2334,2022-04-12,Ear Infection,William Arnold
+2304,2335,2023-04-05,Surgery Follow-up,Courtney Knox
+2305,2335,2022-03-11,Surgery Follow-up,Carlos Marshall
+2306,2336,2022-12-05,Dental Cleaning,Michael Lin
+2307,2336,2022-09-11,Ear Infection,Mary Mcguire
+2308,2337,2024-09-03,Vaccination,Robert Deleon
+2309,2339,2024-05-10,Vaccination,Tammy Smith
+2310,2339,2023-04-23,Dental Cleaning,Pamela Thompson
+2311,2342,2021-09-05,Skin Allergy Treatment,Dr. Lisa Wilson
+2312,2342,2021-12-15,Skin Allergy Treatment,Philip Gay
+2313,2342,2021-04-14,Vaccination,David Allen
+2314,2345,2021-08-21,Skin Allergy Treatment,Mandy Schmidt
+2315,2345,2021-06-08,Spay/Neuter Surgery,Tina Lambert
+2316,2348,2024-03-23,Injury Treatment,Jamie Anderson
+2317,2349,2022-04-26,Injury Treatment,Garrett Lopez
+2318,2349,2021-11-06,Surgery Follow-up,Cynthia Butler
+2319,2350,2021-01-25,Spay/Neuter Surgery,Tanya Nelson
+2320,2351,2023-12-26,Ear Infection,Gregory Calhoun
+2321,2352,2023-04-26,Injury Treatment,Courtney Brown
+2322,2354,2024-04-07,Dental Cleaning,Kristen Hernandez
+2323,2354,2022-01-29,Ear Infection,Brandon Mccullough
+2324,2358,2021-11-25,Dental Cleaning,Mary Mccann
+2325,2358,2023-01-15,Annual Checkup,Chelsea Caldwell
+2326,2358,2023-09-07,X-ray,Joseph Bates
+2327,2361,2023-02-26,Blood Test,Laura Davenport
+2328,2362,2022-04-17,Ear Infection,William Watkins
+2329,2362,2023-08-31,Ear Infection,Samantha Lewis
+2330,2362,2021-12-09,Injury Treatment,Michael Phillips
+2331,2363,2024-09-03,Spay/Neuter Surgery,Ann Thomas
+2332,2363,2022-09-21,Spay/Neuter Surgery,Nancy Goodman
+2333,2363,2023-04-07,Ear Infection,Kenneth Johnson
+2334,2367,2022-05-25,Skin Allergy Treatment,Jackie Kemp
+2335,2370,2023-06-26,Skin Allergy Treatment,Allison Reyes
+2336,2370,2023-09-20,Blood Test,Megan Shelton
+2337,2373,2022-11-25,Spay/Neuter Surgery,Carl Joseph
+2338,2373,2021-02-22,Annual Checkup,Jonathan Patterson
+2339,2373,2022-12-01,Surgery Follow-up,Michelle Monroe
+2340,2375,2021-03-01,Vaccination,Jonathan Miranda
+2341,2375,2022-10-09,Vaccination,Kevin Pope
+2342,2376,2022-07-10,Dental Cleaning,Kelly Bell
+2343,2376,2021-10-29,Surgery Follow-up,Ashley Carney
+2344,2376,2024-05-17,Dental Cleaning,Mrs. Nicole Espinoza
+2345,2377,2022-05-17,Surgery Follow-up,Michael Smith
+2346,2377,2022-04-28,Annual Checkup,Michelle Hale
+2347,2378,2024-06-08,Spay/Neuter Surgery,Michael Harmon
+2348,2378,2022-10-08,Dental Cleaning,Ethan Gilbert
+2349,2379,2021-05-08,Injury Treatment,Vincent Marsh
+2350,2380,2022-03-11,Dental Cleaning,Ms. Shelia Harris
+2351,2381,2021-01-17,Skin Allergy Treatment,Felicia Gates
+2352,2381,2024-07-21,Annual Checkup,Veronica Brown
+2353,2381,2022-07-04,Annual Checkup,Amanda Williams
+2354,2383,2021-01-03,Injury Treatment,James Preston
+2355,2385,2024-11-19,Annual Checkup,Cynthia Gomez
+2356,2385,2023-01-31,Surgery Follow-up,Lauren Roberts
+2357,2389,2023-07-17,Blood Test,Tracy Shea
+2358,2389,2021-12-22,Surgery Follow-up,Jessica Willis
+2359,2390,2023-01-20,Annual Checkup,Brian Jacobs
+2360,2390,2022-02-01,Blood Test,Juan Byrd
+2361,2390,2024-05-16,Spay/Neuter Surgery,Jose Blake
+2362,2391,2021-06-17,Skin Allergy Treatment,Ryan Jackson
+2363,2392,2023-06-01,Skin Allergy Treatment,Michelle Garrett
+2364,2393,2021-10-04,Injury Treatment,Amy Nash
+2365,2393,2022-08-05,Surgery Follow-up,Kelsey Rogers
+2366,2393,2021-01-27,X-ray,Michael Reid
+2367,2394,2022-08-02,Injury Treatment,Mark Robinson
+2368,2394,2024-01-07,Annual Checkup,Allison Kaiser
+2369,2394,2022-06-21,Spay/Neuter Surgery,Joseph Schmitt Jr.
+2370,2395,2022-09-28,Ear Infection,Casey Harris
+2371,2395,2022-12-30,Blood Test,Jennifer White
+2372,2395,2023-10-11,Ear Infection,Dr. John Gates
+2373,2396,2021-01-19,Skin Allergy Treatment,Stephanie Wright
+2374,2396,2023-07-18,Spay/Neuter Surgery,Mrs. Elizabeth Fitzpatrick
+2375,2400,2023-12-12,Annual Checkup,James Robertson
+2376,2400,2024-05-19,Blood Test,Mark Smith
+2377,2403,2022-11-15,Dental Cleaning,Kyle Ingram
+2378,2403,2024-09-05,Skin Allergy Treatment,Shaun Orozco
+2379,2403,2021-11-01,Dental Cleaning,Andrea Conner
+2380,2411,2022-10-26,Dental Cleaning,Charles Beck
+2381,2412,2022-04-11,Vaccination,Julie White
+2382,2413,2023-11-01,Blood Test,Leslie Newman
+2383,2413,2024-03-11,Spay/Neuter Surgery,Susan Mcclure
+2384,2418,2024-07-22,Annual Checkup,Carla Reese
+2385,2418,2023-05-23,Annual Checkup,Mark Landry
+2386,2418,2023-11-05,X-ray,Diana Nguyen
+2387,2419,2021-10-26,Spay/Neuter Surgery,Bryan Miller
+2388,2420,2021-08-31,Spay/Neuter Surgery,Stephanie Phillips
+2389,2420,2023-08-08,Annual Checkup,Victoria Short
+2390,2420,2024-04-02,Dental Cleaning,Rebecca Walker
+2391,2425,2022-05-13,Injury Treatment,Kevin Miller
+2392,2427,2024-12-31,Annual Checkup,Bernard Sanchez
+2393,2427,2022-11-06,Ear Infection,Victor Garcia
+2394,2428,2021-04-19,Injury Treatment,Lisa Jones
+2395,2428,2024-04-24,Blood Test,Daniel Moore
+2396,2429,2022-03-27,X-ray,Ashley Williams
+2397,2429,2021-03-13,Annual Checkup,Ronald Esparza
+2398,2429,2021-10-21,Ear Infection,James Parker
+2399,2433,2021-10-24,Spay/Neuter Surgery,Heather Johnson
+2400,2437,2022-07-20,Injury Treatment,Kimberly Smith
+2401,2440,2021-03-19,Dental Cleaning,Anna Wilson
+2402,2440,2024-10-23,X-ray,Christopher Beard
+2403,2442,2024-10-02,Spay/Neuter Surgery,Sarah Warren
+2404,2442,2021-04-19,Vaccination,Brittany Santos
+2405,2443,2023-11-29,Surgery Follow-up,Dr. Kelly Brooks
+2406,2443,2022-04-25,Vaccination,Travis Mooney
+2407,2443,2023-08-30,Vaccination,Kathy Murillo
+2408,2446,2022-05-03,Skin Allergy Treatment,Hannah Wright
+2409,2446,2021-10-13,Ear Infection,Amy Petty
+2410,2448,2022-11-09,Skin Allergy Treatment,Dr. Renee Miller DVM
+2411,2450,2024-04-15,Vaccination,Rebecca Green
+2412,2450,2023-06-09,Blood Test,Joshua White
+2413,2451,2023-03-18,Annual Checkup,James Long
+2414,2452,2022-03-11,Dental Cleaning,Christopher Thomas
+2415,2452,2024-03-20,Spay/Neuter Surgery,Brian Pacheco
+2416,2452,2024-07-19,Surgery Follow-up,Gregory Tucker
+2417,2458,2023-12-03,Annual Checkup,Mrs. Misty Hall
+2418,2463,2022-03-28,Ear Infection,Connor Andrews
+2419,2463,2022-01-05,Skin Allergy Treatment,Becky Johnston
+2420,2463,2024-10-01,Ear Infection,Timothy Henry
+2421,2464,2021-05-26,Skin Allergy Treatment,Christopher Rogers
+2422,2465,2024-12-14,Dental Cleaning,Amy Diaz
+2423,2465,2023-01-15,Blood Test,Kristin Hogan
+2424,2465,2024-09-23,Annual Checkup,Carlos Bates
+2425,2466,2023-10-08,Blood Test,Dr. Kelly Price DDS
+2426,2466,2021-04-13,X-ray,Claire Johnson
+2427,2471,2024-12-01,X-ray,Larry Howard
+2428,2471,2024-06-28,Surgery Follow-up,Jose Brown
+2429,2474,2021-03-25,Ear Infection,Kathy Montoya
+2430,2474,2023-04-04,Surgery Follow-up,Lisa Gomez
+2431,2476,2024-03-16,Dental Cleaning,Lauren Peterson
+2432,2476,2024-07-18,Dental Cleaning,Lindsey Murray
+2433,2476,2024-04-06,Surgery Follow-up,Bruce Carter
+2434,2477,2024-06-11,X-ray,Wyatt Valdez
+2435,2478,2021-12-09,Surgery Follow-up,Steven Gonzalez
+2436,2480,2022-09-25,Vaccination,Bonnie Williams
+2437,2480,2022-08-25,Skin Allergy Treatment,Thomas Carpenter
+2438,2482,2022-08-28,Spay/Neuter Surgery,Brandon Perez
+2439,2485,2021-08-22,X-ray,Carolyn Avila
+2440,2488,2023-08-16,Annual Checkup,Frank Marshall
+2441,2488,2024-11-02,Vaccination,Victoria Allen
+2442,2489,2021-07-28,X-ray,Jennifer Jackson
+2443,2489,2023-12-18,Blood Test,Sarah Mitchell
+2444,2492,2023-03-02,Injury Treatment,Heather Shaffer
+2445,2494,2023-03-17,Vaccination,Gregory Hobbs
+2446,2498,2021-12-24,Spay/Neuter Surgery,Cynthia White
+2447,2498,2024-07-21,Blood Test,Mary Sanchez
+2448,2501,2022-07-30,Dental Cleaning,Jacqueline Nichols
+2449,2501,2023-08-12,Blood Test,Jordan Khan
+2450,2508,2022-11-24,Vaccination,Timothy Marshall
+2451,2509,2021-04-08,Injury Treatment,Melanie Mcdonald
+2452,2510,2021-11-15,Injury Treatment,Robert Martin
+2453,2510,2023-06-24,Skin Allergy Treatment,Stephanie Stephens
+2454,2510,2022-08-06,Ear Infection,Mary Bauer
+2455,2512,2022-12-20,Ear Infection,Gregory Sanchez
+2456,2512,2021-05-07,Injury Treatment,Ashley Taylor
+2457,2512,2022-02-13,X-ray,Ann Todd
+2458,2514,2024-01-16,Spay/Neuter Surgery,Rebecca Williams
+2459,2514,2022-01-16,Vaccination,Ray Johnson
+2460,2514,2022-08-29,Spay/Neuter Surgery,Amanda Allison
+2461,2515,2023-04-12,Ear Infection,Jacqueline Jones
+2462,2516,2023-05-01,X-ray,Kelsey Wilson
+2463,2516,2021-01-11,Dental Cleaning,Diane Bailey
+2464,2516,2023-09-28,Annual Checkup,Jeffrey Gonzales
+2465,2518,2022-03-07,Skin Allergy Treatment,Michelle Shelton
+2466,2520,2022-03-07,X-ray,Kenneth Knapp
+2467,2520,2022-07-05,Injury Treatment,Andrea Stewart
+2468,2523,2024-07-14,Skin Allergy Treatment,James Boyd Jr.
+2469,2523,2024-03-10,Ear Infection,Joshua Blake
+2470,2523,2022-08-25,Annual Checkup,Kelsey Stewart
+2471,2525,2022-03-02,Annual Checkup,Kathleen Jones
+2472,2525,2023-06-30,Surgery Follow-up,Sue Dixon
+2473,2525,2022-02-19,Vaccination,Zachary Long
+2474,2526,2021-06-16,Dental Cleaning,Christopher Wong
+2475,2528,2024-04-10,Blood Test,Samuel Booth
+2476,2528,2021-05-17,Annual Checkup,Danielle Evans
+2477,2530,2024-06-04,Blood Test,Edward Buckley
+2478,2531,2024-07-19,Surgery Follow-up,Todd Oconnor
+2479,2531,2021-09-22,Ear Infection,Erin Green
+2480,2531,2024-08-08,Skin Allergy Treatment,Jennifer Willis
+2481,2540,2022-03-25,Vaccination,Kristen Rodriguez
+2482,2540,2022-06-29,Surgery Follow-up,Kristen Parker
+2483,2540,2021-02-08,Vaccination,Angela Mcclain
+2484,2545,2023-12-02,Surgery Follow-up,Richard Martinez
+2485,2547,2022-06-18,Surgery Follow-up,Tina Gates
+2486,2551,2022-11-26,Surgery Follow-up,Luis Curry
+2487,2551,2022-01-17,Surgery Follow-up,David Randolph
+2488,2553,2022-09-25,Surgery Follow-up,Nicole Gonzalez
+2489,2556,2023-02-08,Injury Treatment,Russell Allen
+2490,2556,2022-07-09,Spay/Neuter Surgery,Craig Todd
+2491,2556,2022-02-02,Dental Cleaning,Jacqueline Brown
+2492,2559,2021-04-16,Annual Checkup,Alejandro Salazar
+2493,2559,2023-03-02,Blood Test,Sarah Lin
+2494,2559,2023-09-20,Annual Checkup,Lindsay Wade
+2495,2561,2022-02-27,Vaccination,David Warren
+2496,2561,2022-11-10,Surgery Follow-up,Shelby Gordon
+2497,2561,2021-07-30,Ear Infection,Charles Lewis
+2498,2564,2024-09-29,Annual Checkup,Christina Wright
+2499,2564,2022-08-19,Annual Checkup,George Cummings
+2500,2564,2023-10-26,Spay/Neuter Surgery,Taylor Garcia
+2501,2565,2023-12-16,Spay/Neuter Surgery,Jennifer Walls
+2502,2565,2023-01-02,Spay/Neuter Surgery,Michael Lane
+2503,2565,2021-11-08,Ear Infection,Rebecca Foster
+2504,2566,2024-06-08,Skin Allergy Treatment,Seth Garcia
+2505,2566,2022-11-14,Blood Test,Jacob Ellis
+2506,2566,2021-04-18,Annual Checkup,Nicholas Baldwin
+2507,2569,2021-11-27,Injury Treatment,Joann Crosby MD
+2508,2570,2022-09-30,Vaccination,Benjamin Fleming
+2509,2572,2023-01-14,Dental Cleaning,Jose Schmitt
+2510,2572,2024-05-28,Spay/Neuter Surgery,Richard Mcintosh
+2511,2572,2021-03-11,Ear Infection,Matthew Thompson
+2512,2574,2021-02-04,X-ray,Jasmine Stokes
+2513,2574,2024-02-11,X-ray,Jessica Rodriguez
+2514,2574,2024-12-23,Ear Infection,Kevin Fields
+2515,2575,2024-04-02,Skin Allergy Treatment,Ray Hanson
+2516,2575,2022-04-01,Vaccination,Carrie Carson
+2517,2575,2023-10-21,Annual Checkup,Christopher Smith
+2518,2581,2021-12-18,Blood Test,Daniel Randolph DDS
+2519,2582,2022-11-21,Annual Checkup,Kevin Howard
+2520,2582,2021-01-07,Injury Treatment,Julie Kelly
+2521,2584,2021-05-12,Ear Infection,Christopher Robinson
+2522,2584,2021-08-19,Dental Cleaning,Keith Romero
+2523,2585,2022-07-12,X-ray,Mr. Timothy Rogers III
+2524,2585,2021-03-10,Skin Allergy Treatment,Mark Williams
+2525,2585,2024-03-21,Dental Cleaning,Kyle Nelson
+2526,2586,2023-04-22,Injury Treatment,Matthew Johnson
+2527,2586,2024-06-04,X-ray,Jamie Taylor
+2528,2589,2023-09-05,Ear Infection,Angela Murphy
+2529,2594,2023-01-26,Dental Cleaning,David Walsh
+2530,2594,2021-11-25,Skin Allergy Treatment,Dale Hart
+2531,2598,2022-06-08,Surgery Follow-up,Gregory Hendrix
+2532,2598,2022-09-03,Vaccination,Melissa Mcpherson
+2533,2598,2023-02-13,Dental Cleaning,Jose Thomas
+2534,2600,2021-11-27,Spay/Neuter Surgery,Adrienne Richardson
+2535,2601,2022-09-26,Ear Infection,Paul Page
+2536,2602,2021-02-06,Blood Test,Bruce Ford
+2537,2602,2022-06-29,Spay/Neuter Surgery,Alexandra Kelly
+2538,2606,2021-11-28,Vaccination,Raymond Walker
+2539,2608,2022-01-04,Vaccination,Jon Hall
+2540,2608,2024-05-23,Spay/Neuter Surgery,Sandra Campbell
+2541,2609,2021-12-30,Injury Treatment,Paul Hooper
+2542,2613,2022-10-29,Annual Checkup,David Obrien
+2543,2613,2022-05-16,Vaccination,Keith Diaz
+2544,2613,2024-07-30,Blood Test,Andrew Simpson
+2545,2615,2021-06-23,Spay/Neuter Surgery,Thomas Cook
+2546,2615,2024-08-21,Vaccination,Ernest Barrera
+2547,2616,2021-09-04,Injury Treatment,Jessica Macdonald
+2548,2616,2021-04-20,Dental Cleaning,Steven Thompson
+2549,2617,2023-12-02,Surgery Follow-up,John White
+2550,2617,2021-03-01,X-ray,Amy Davis
+2551,2617,2023-07-11,Surgery Follow-up,Edward Burton
+2552,2619,2023-08-13,X-ray,Lindsey Herrera
+2553,2620,2022-12-17,Injury Treatment,Jason Kennedy
+2554,2620,2021-05-14,Injury Treatment,Beth Shelton
+2555,2620,2023-09-09,Spay/Neuter Surgery,Victoria Villarreal
+2556,2621,2022-03-02,Dental Cleaning,Jonathan Schwartz
+2557,2623,2024-03-21,X-ray,Stanley Benjamin
+2558,2623,2022-04-02,Surgery Follow-up,Ebony Collier
+2559,2623,2023-08-03,X-ray,Taylor Mack
+2560,2625,2021-12-25,Injury Treatment,Maria Morgan
+2561,2626,2023-12-21,Skin Allergy Treatment,Erica Hernandez
+2562,2626,2021-11-18,Surgery Follow-up,Brandy Lozano
+2563,2626,2023-08-18,Spay/Neuter Surgery,Dennis Phillips
+2564,2627,2023-04-01,X-ray,Terry White
+2565,2633,2021-10-19,Dental Cleaning,Jason Bell
+2566,2635,2021-07-25,X-ray,Courtney Dawson
+2567,2636,2022-11-30,Annual Checkup,Austin Wang
+2568,2636,2023-11-06,Ear Infection,Paul Malone
+2569,2640,2024-07-30,Vaccination,Jennifer Barber
+2570,2640,2021-04-23,Injury Treatment,Paul Ballard
+2571,2640,2021-08-22,Blood Test,Danielle Gonzalez
+2572,2641,2023-02-06,Spay/Neuter Surgery,Madison Long
+2573,2641,2021-02-14,Skin Allergy Treatment,Pamela Turner
+2574,2641,2024-01-10,Surgery Follow-up,Kristen Wood
+2575,2642,2022-02-22,Surgery Follow-up,Holly Long
+2576,2643,2023-06-17,Dental Cleaning,Ebony Clark
+2577,2645,2022-08-05,Vaccination,Heather Wagner
+2578,2645,2021-07-14,Surgery Follow-up,Nicole Kidd
+2579,2646,2021-02-27,Injury Treatment,James Quinn
+2580,2646,2021-10-29,Vaccination,Michael Simmons
+2581,2648,2022-05-04,Annual Checkup,Shelby Hardy
+2582,2650,2021-12-06,Ear Infection,Derrick Bell
+2583,2650,2023-02-18,Surgery Follow-up,Julie Allen
+2584,2650,2022-02-28,Spay/Neuter Surgery,Samuel Chen
+2585,2651,2023-04-13,Vaccination,Juan Perez
+2586,2651,2021-03-02,Spay/Neuter Surgery,Jerry Curry
+2587,2654,2021-07-23,Blood Test,Shane Anderson
+2588,2654,2024-12-12,Spay/Neuter Surgery,Melissa Johnson
+2589,2654,2021-02-02,Surgery Follow-up,Lawrence Smith
+2590,2658,2023-12-30,Annual Checkup,Kimberly Bell
+2591,2660,2022-03-01,Dental Cleaning,Vanessa Hall
+2592,2661,2023-03-08,Injury Treatment,Michael Davis
+2593,2661,2024-07-28,Surgery Follow-up,Jason Martinez
+2594,2661,2022-03-10,Dental Cleaning,Michael Mason
+2595,2662,2021-07-15,Annual Checkup,Fred Calderon MD
+2596,2663,2024-12-22,Injury Treatment,Donna Briggs
+2597,2663,2022-03-18,X-ray,Daniel Lopez
+2598,2665,2021-04-09,X-ray,Melanie Hood
+2599,2665,2022-07-13,Vaccination,Veronica Palmer
+2600,2665,2023-04-08,Injury Treatment,Eddie Mitchell
+2601,2666,2022-05-20,Blood Test,Edward Stark
+2602,2666,2021-03-06,Injury Treatment,Elizabeth Hill
+2603,2666,2023-10-12,Dental Cleaning,Angela Brown
+2604,2668,2023-11-24,X-ray,Christopher Garcia
+2605,2668,2021-02-05,Dental Cleaning,Corey Baker
+2606,2668,2022-08-16,Blood Test,Lisa Hoffman
+2607,2669,2024-07-25,Injury Treatment,Colleen Fisher
+2608,2669,2022-05-13,X-ray,Krystal Rowe
+2609,2672,2022-02-04,Injury Treatment,Julie Delgado
+2610,2672,2023-08-09,Spay/Neuter Surgery,Randy Lee
+2611,2674,2021-11-08,Ear Infection,Melissa Hamilton
+2612,2674,2022-06-29,Spay/Neuter Surgery,Maureen Cole
+2613,2674,2021-10-31,Spay/Neuter Surgery,Anthony Cox
+2614,2678,2024-11-20,Vaccination,Anthony Diaz
+2615,2678,2022-01-14,Spay/Neuter Surgery,Phillip Avila
+2616,2678,2023-08-24,Annual Checkup,Andrew Berry
+2617,2679,2021-09-15,Skin Allergy Treatment,Lee Hampton
+2618,2680,2021-05-28,Vaccination,Tiffany Armstrong
+2619,2680,2022-06-03,Dental Cleaning,Dr. Paul Mason
+2620,2680,2022-11-20,Spay/Neuter Surgery,Dana Gutierrez
+2621,2681,2024-11-16,Spay/Neuter Surgery,Andrew Smith
+2622,2681,2022-11-10,Annual Checkup,Gary Robinson
+2623,2682,2021-07-13,X-ray,Dr. Cassandra Nelson MD
+2624,2682,2022-05-03,Vaccination,Robert Schmidt
+2625,2682,2024-06-24,Vaccination,Timothy Mckinney
+2626,2684,2022-09-19,Blood Test,Christopher Wright
+2627,2684,2022-03-27,Dental Cleaning,David Duran
+2628,2685,2023-05-01,Vaccination,Zachary Trevino
+2629,2685,2024-11-10,Blood Test,Jeremy Heath
+2630,2687,2022-11-30,Skin Allergy Treatment,Anna Mcdaniel
+2631,2687,2023-09-29,Spay/Neuter Surgery,John Gallagher
+2632,2687,2024-09-28,Skin Allergy Treatment,Russell Burns
+2633,2689,2022-09-23,X-ray,Elizabeth Anderson
+2634,2689,2021-08-11,Blood Test,Catherine Meyers
+2635,2689,2021-01-22,Skin Allergy Treatment,Thomas Spencer
+2636,2691,2022-11-22,Vaccination,Philip Fisher
+2637,2691,2024-08-10,Surgery Follow-up,Jeffrey Lewis
+2638,2696,2023-04-02,Injury Treatment,Ronald Burton
+2639,2696,2023-07-22,Dental Cleaning,Cynthia Johnson
+2640,2699,2024-04-13,Ear Infection,Craig Horton
+2641,2700,2021-12-02,Vaccination,James Robles
+2642,2700,2022-05-27,Blood Test,Shannon Hall
+2643,2701,2022-01-17,Blood Test,Gregory Gomez
+2644,2705,2024-05-07,Injury Treatment,John Murphy
+2645,2705,2021-12-19,Spay/Neuter Surgery,William Everett
+2646,2705,2023-05-31,Ear Infection,Sherri Austin
+2647,2706,2021-12-28,Ear Infection,Dawn Ramirez
+2648,2708,2024-10-28,Ear Infection,Michael Carpenter
+2649,2708,2021-07-06,Blood Test,Francis Erickson
+2650,2713,2021-04-24,Spay/Neuter Surgery,Nathan Gutierrez
+2651,2713,2023-08-14,Spay/Neuter Surgery,Gina Phillips
+2652,2713,2024-02-27,X-ray,Victoria Key
+2653,2716,2022-09-26,Surgery Follow-up,Amanda Anderson
+2654,2716,2021-10-08,Annual Checkup,Richard Wallace
+2655,2716,2024-12-30,Blood Test,Joseph Ray
+2656,2717,2022-07-17,Annual Checkup,Megan Barton MD
+2657,2718,2022-02-26,Blood Test,Paul Shaw
+2658,2718,2021-02-26,Annual Checkup,Cameron Lopez
+2659,2718,2022-12-22,Ear Infection,Tom Miller
+2660,2722,2023-12-28,Blood Test,Matthew Murphy
+2661,2725,2024-11-27,Annual Checkup,Christopher Diaz
+2662,2726,2024-02-09,Blood Test,Grace Martinez
+2663,2726,2022-03-17,Spay/Neuter Surgery,Sharon Cherry
+2664,2729,2024-04-19,Annual Checkup,Matthew Hammond
+2665,2729,2024-08-30,Skin Allergy Treatment,Susan Lee
+2666,2730,2023-02-11,Dental Cleaning,Jamie Glover
+2667,2730,2021-11-17,Vaccination,Victoria Carlson
+2668,2730,2024-10-05,Skin Allergy Treatment,Jodi Walton
+2669,2732,2021-04-29,Dental Cleaning,Daniel Townsend
+2670,2732,2022-01-07,Annual Checkup,Melanie Sims
+2671,2732,2021-12-23,Blood Test,Phillip Saunders
+2672,2738,2023-02-04,Blood Test,Regina Smith
+2673,2741,2022-01-11,Annual Checkup,Christopher Williams
+2674,2742,2021-10-19,Annual Checkup,Tara Ramos
+2675,2742,2024-04-28,Spay/Neuter Surgery,Derek Singleton
+2676,2742,2023-07-07,Vaccination,Greg Macdonald
+2677,2743,2021-05-13,Dental Cleaning,Danny Gates II
+2678,2743,2023-05-29,Injury Treatment,Loretta Kerr
+2679,2743,2021-04-11,Ear Infection,Jared Meyers
+2680,2744,2024-08-28,Dental Cleaning,Harold Joseph
+2681,2744,2024-01-12,Spay/Neuter Surgery,Robin Burns
+2682,2747,2024-08-29,Vaccination,Sharon Hernandez
+2683,2748,2023-12-08,Ear Infection,Troy Santos
+2684,2749,2024-05-14,Injury Treatment,Lorraine Davis
+2685,2749,2024-12-15,Blood Test,Jerry Reed
+2686,2749,2023-11-18,Dental Cleaning,John Gonzalez
+2687,2751,2021-05-18,Dental Cleaning,Sandra Joseph
+2688,2751,2021-07-19,Dental Cleaning,Mariah Rangel
+2689,2751,2021-10-24,X-ray,Denise Hughes
+2690,2758,2021-02-05,Skin Allergy Treatment,Bryan Parrish
+2691,2759,2023-01-17,Surgery Follow-up,Karen Martin
+2692,2760,2023-04-25,Annual Checkup,Amber Smith
+2693,2764,2021-04-18,Skin Allergy Treatment,Autumn Vasquez
+2694,2766,2023-01-05,Dental Cleaning,Anna Yang
+2695,2766,2023-05-16,X-ray,Katherine Miles
+2696,2767,2023-09-21,Spay/Neuter Surgery,Andre Gonzales
+2697,2767,2023-02-08,Dental Cleaning,Misty Greene
+2698,2767,2022-07-11,Ear Infection,Justin Rodriguez
+2699,2768,2023-11-12,Surgery Follow-up,Katherine Wallace DVM
+2700,2768,2021-08-23,Vaccination,Nicole Rogers
+2701,2769,2022-01-06,Injury Treatment,Lindsey Jackson MD
+2702,2769,2022-01-25,X-ray,Richard Stephens
+2703,2770,2021-01-17,Spay/Neuter Surgery,Robert Robinson
+2704,2770,2023-05-21,Skin Allergy Treatment,Lauren Ruiz
+2705,2770,2023-09-24,X-ray,Brianna Olsen
+2706,2771,2021-08-18,Ear Infection,Bruce Golden
+2707,2771,2022-06-27,Dental Cleaning,Lauren Weaver
+2708,2771,2023-05-28,Dental Cleaning,Daniel Reid
+2709,2772,2024-01-11,Injury Treatment,Isabella Owens
+2710,2778,2022-08-02,X-ray,Jon Harris
+2711,2778,2021-01-27,Blood Test,Jose Huff
+2712,2778,2021-10-28,Annual Checkup,Stephen Hensley
+2713,2779,2024-02-13,Surgery Follow-up,Michael Harmon
+2714,2779,2022-10-23,Surgery Follow-up,Andrea Mitchell
+2715,2779,2023-04-03,Ear Infection,Danielle Barnes
+2716,2780,2023-07-20,Ear Infection,Amy Wells
+2717,2781,2023-11-15,X-ray,Stacy Jackson
+2718,2781,2021-01-13,Dental Cleaning,Randy Shaffer
+2719,2783,2022-11-12,Ear Infection,Justin Jackson
+2720,2783,2021-11-19,Injury Treatment,Michael Simmons
+2721,2783,2023-01-02,Surgery Follow-up,Taylor Williams
+2722,2784,2024-11-07,Injury Treatment,Debra Carlson
+2723,2786,2022-07-02,Blood Test,Stephen Ford
+2724,2787,2024-10-11,Annual Checkup,Tracie Johnson
+2725,2787,2021-03-30,Vaccination,Paul Murray
+2726,2787,2021-05-29,X-ray,Stacie Miller
+2727,2788,2024-05-01,Spay/Neuter Surgery,Jeremy Pratt
+2728,2792,2023-11-02,Ear Infection,Xavier Taylor
+2729,2792,2022-07-31,Surgery Follow-up,Selena Kelly
+2730,2794,2024-11-02,X-ray,John Hays
+2731,2794,2023-05-10,Skin Allergy Treatment,April Blair
+2732,2794,2021-06-21,Vaccination,Johnny Lee Jr.
+2733,2795,2023-05-09,Spay/Neuter Surgery,Cory Jenkins
+2734,2795,2022-11-04,Skin Allergy Treatment,Matthew James
+2735,2797,2021-07-15,Annual Checkup,Matthew Gregory
+2736,2800,2022-02-02,Ear Infection,Jeremy Sellers
+2737,2800,2023-08-09,Vaccination,Frances Rush
+2738,2800,2023-02-01,Dental Cleaning,Jason Morgan DVM
+2739,2801,2023-08-07,Injury Treatment,Amanda Brooks
+2740,2801,2024-08-01,X-ray,Donald Cole
+2741,2801,2022-08-01,Blood Test,Jennifer Schmitt
+2742,2803,2024-10-21,Skin Allergy Treatment,Paul Hood
+2743,2805,2021-03-12,Blood Test,Stacie Fields
+2744,2805,2022-05-15,Dental Cleaning,Edward Mendez
+2745,2807,2024-08-05,Surgery Follow-up,Sandra Peterson
+2746,2807,2024-09-17,Blood Test,James Lambert
+2747,2807,2024-05-02,Annual Checkup,Carla Cuevas
+2748,2808,2024-06-28,Skin Allergy Treatment,Angela Griffin
+2749,2808,2021-09-24,Annual Checkup,Mandy Davis
+2750,2813,2022-03-19,Blood Test,Kyle Blanchard
+2751,2813,2021-10-12,Vaccination,Theresa Sparks
+2752,2813,2024-08-03,Vaccination,Lisa Carter
+2753,2817,2024-09-28,Injury Treatment,Jennifer Garcia
+2754,2817,2024-02-04,Ear Infection,Heather King
+2755,2818,2024-06-09,Dental Cleaning,Ryan Santos
+2756,2818,2023-10-24,Skin Allergy Treatment,Maria Vargas
+2757,2819,2024-08-26,Injury Treatment,Molly Clements
+2758,2819,2024-03-10,X-ray,Joseph Austin
+2759,2819,2023-02-28,Annual Checkup,Doris Green
+2760,2820,2022-08-14,Skin Allergy Treatment,Charles Stevens
+2761,2820,2023-07-27,X-ray,Timothy Patel
+2762,2821,2024-07-26,Vaccination,Mr. Keith Anderson
+2763,2821,2021-05-05,X-ray,Michael Hanson
+2764,2823,2022-06-28,Dental Cleaning,Wayne Kelly
+2765,2823,2022-02-21,Surgery Follow-up,Sarah Sandoval
+2766,2823,2024-10-02,Ear Infection,Walter Butler
+2767,2824,2024-12-07,Annual Checkup,Lindsey Williams
+2768,2824,2021-09-27,X-ray,Phillip Adams
+2769,2826,2022-04-23,Blood Test,Julie Pittman
+2770,2826,2021-11-17,Spay/Neuter Surgery,Sarah Mckee
+2771,2826,2022-02-01,Blood Test,Shelly Roberson
+2772,2829,2021-03-20,Blood Test,Lauren Rodgers
+2773,2833,2022-03-30,Vaccination,Wanda Summers
+2774,2833,2023-04-21,Skin Allergy Treatment,Kimberly Burton
+2775,2833,2022-03-01,Ear Infection,Lucas Cannon DVM
+2776,2834,2022-08-13,Ear Infection,Ruth Jones
+2777,2834,2022-09-08,Spay/Neuter Surgery,Joseph Parker
+2778,2835,2024-06-08,X-ray,Linda Duffy
+2779,2836,2022-06-05,Blood Test,Gregory Nguyen
+2780,2836,2021-05-06,X-ray,Laura White
+2781,2838,2024-05-25,Vaccination,Matthew Charles
+2782,2839,2022-11-13,Annual Checkup,James Johnson
+2783,2839,2021-11-18,Injury Treatment,Mary Collins
+2784,2841,2021-09-19,Ear Infection,Bradley Yoder
+2785,2841,2022-10-29,Annual Checkup,Stephanie Mann
+2786,2842,2023-11-06,Ear Infection,Kristina Mills
+2787,2842,2024-12-02,X-ray,Jennifer Rios
+2788,2843,2021-07-27,Skin Allergy Treatment,Annette Mccarty
+2789,2843,2023-12-05,Surgery Follow-up,Dawn Russell
+2790,2844,2022-10-25,Injury Treatment,Deborah Reynolds
+2791,2844,2022-07-28,Blood Test,Alexis Martinez
+2792,2846,2024-03-31,Blood Test,Robert Freeman
+2793,2846,2022-06-28,Injury Treatment,Karen Hughes
+2794,2847,2022-07-28,Surgery Follow-up,Crystal Jones
+2795,2847,2023-12-09,Surgery Follow-up,Denise Combs
+2796,2847,2023-02-05,Surgery Follow-up,Michael Schroeder
+2797,2848,2021-12-23,Skin Allergy Treatment,Joe Steele
+2798,2848,2022-06-13,Annual Checkup,Karen Strickland
+2799,2848,2024-07-13,Spay/Neuter Surgery,Monica Petty
+2800,2849,2023-05-09,Annual Checkup,Zachary Nelson
+2801,2849,2021-03-27,Injury Treatment,Patrick Weber
+2802,2849,2023-02-03,Spay/Neuter Surgery,Samantha Madden
+2803,2852,2022-06-05,Skin Allergy Treatment,Darren Kelly
+2804,2852,2024-05-28,Spay/Neuter Surgery,Richard Perez
+2805,2853,2021-10-01,Surgery Follow-up,Joyce Moore
+2806,2853,2021-05-12,Annual Checkup,Nicole Blevins
+2807,2853,2023-03-26,X-ray,Jeremy Bowers
+2808,2854,2023-10-23,Injury Treatment,Annette Case
+2809,2854,2024-06-16,X-ray,Scott Freeman
+2810,2857,2022-07-26,Blood Test,Jessica Mendez
+2811,2857,2023-08-08,Skin Allergy Treatment,Richard Smith
+2812,2859,2024-11-04,X-ray,Taylor Crosby
+2813,2859,2022-06-20,X-ray,David Marshall
+2814,2859,2023-02-08,Spay/Neuter Surgery,Paul Jones
+2815,2861,2022-11-25,Blood Test,Karen Hayes
+2816,2861,2023-03-07,Spay/Neuter Surgery,Ryan Campos
+2817,2861,2022-11-14,Injury Treatment,Amy Lambert
+2818,2862,2022-11-12,X-ray,Joshua Patterson
+2819,2862,2022-03-06,Annual Checkup,Philip Davis
+2820,2862,2023-10-22,Ear Infection,Nicholas Lewis
+2821,2863,2023-04-16,Blood Test,Timothy West
+2822,2863,2024-02-14,Skin Allergy Treatment,Stephanie Trujillo
+2823,2863,2024-10-15,Surgery Follow-up,Mr. Matthew Myers DDS
+2824,2864,2022-12-13,Vaccination,Emily Murray
+2825,2864,2023-04-02,Surgery Follow-up,Jeanette Mcgee
+2826,2864,2022-12-09,Ear Infection,Jessica Martin
+2827,2865,2023-02-18,Annual Checkup,Danielle Morris
+2828,2865,2023-08-16,Ear Infection,Mrs. Dawn Douglas
+2829,2867,2023-01-28,X-ray,Carol Wilson
+2830,2868,2021-09-16,Blood Test,Adam Baker
+2831,2868,2021-04-17,Ear Infection,Mary Hall
+2832,2868,2024-06-06,Vaccination,Adriana Simmons
+2833,2871,2024-11-23,Injury Treatment,Jennifer Armstrong
+2834,2872,2022-08-15,Annual Checkup,Chase Cruz
+2835,2873,2021-08-16,Surgery Follow-up,Steve Rose
+2836,2873,2022-04-14,Vaccination,Luis Moore
+2837,2873,2022-01-27,Blood Test,Brady Turner
+2838,2875,2024-01-13,X-ray,Timothy Vasquez
+2839,2875,2022-11-19,Injury Treatment,Joshua Wilson
+2840,2879,2021-04-24,Blood Test,Ashley Klein
+2841,2881,2024-10-23,X-ray,Kristen Adkins
+2842,2885,2021-07-12,Dental Cleaning,Brandi Hebert
+2843,2885,2023-02-05,Surgery Follow-up,Chad Hahn
+2844,2885,2023-03-20,Spay/Neuter Surgery,Sarah Pope
+2845,2886,2024-11-20,X-ray,Eric Rose
+2846,2886,2021-11-05,Annual Checkup,Dawn Patel
+2847,2886,2021-04-11,Spay/Neuter Surgery,Kathleen Martin
+2848,2887,2021-11-16,Dental Cleaning,Amy Barnett
+2849,2887,2024-08-20,Surgery Follow-up,Christopher Weiss
+2850,2887,2024-01-22,Skin Allergy Treatment,Jodi Sanchez
+2851,2889,2023-01-27,X-ray,Nicholas Robinson
+2852,2893,2021-10-02,Blood Test,Lisa Adams
+2853,2893,2023-12-01,Skin Allergy Treatment,James Bowman
+2854,2893,2022-05-31,Injury Treatment,Robert Martin
+2855,2894,2024-05-07,Spay/Neuter Surgery,Heather Wagner
+2856,2894,2021-11-19,Vaccination,Crystal Martin
+2857,2894,2021-03-06,Blood Test,Stanley Benson
+2858,2898,2023-07-16,Blood Test,Amy Briggs
+2859,2898,2023-10-04,Dental Cleaning,Emily Byrd
+2860,2898,2023-09-28,Dental Cleaning,Lisa Glass
+2861,2899,2021-08-26,Surgery Follow-up,Mr. Aaron Reese
+2862,2899,2021-10-12,Vaccination,Angel Webb
+2863,2899,2021-12-25,Surgery Follow-up,Tracey Mclaughlin
+2864,2900,2022-02-21,Surgery Follow-up,Mark Olson
+2865,2902,2021-11-21,Skin Allergy Treatment,Barbara Davis
+2866,2902,2022-11-10,Surgery Follow-up,Ms. Lisa Stein
+2867,2902,2022-04-20,Skin Allergy Treatment,Steven Case
+2868,2906,2024-03-23,Dental Cleaning,Amanda Knight
+2869,2906,2021-10-16,Blood Test,Christine Warren
+2870,2906,2021-02-12,X-ray,Sarah Harris
+2871,2908,2022-05-08,X-ray,Gregory Mccarthy
+2872,2912,2022-04-06,Vaccination,Diane Vega DDS
+2873,2912,2024-11-13,Blood Test,Morgan Lee
+2874,2913,2024-05-22,Skin Allergy Treatment,Michael Ellison
+2875,2913,2023-10-16,Blood Test,Angela Miller
+2876,2913,2024-12-07,Ear Infection,Rebecca Novak
+2877,2917,2024-03-26,Skin Allergy Treatment,Sean Ashley
+2878,2917,2023-07-01,Skin Allergy Treatment,Brandi Goodwin
+2879,2918,2021-06-02,Injury Treatment,Steven Macias
+2880,2920,2024-02-09,Ear Infection,Mrs. Carla Castillo
+2881,2920,2022-12-22,Dental Cleaning,Devin Walker
+2882,2920,2023-08-10,Dental Cleaning,Elizabeth Hernandez
+2883,2922,2023-01-05,Skin Allergy Treatment,Dana Hicks
+2884,2922,2023-05-11,Surgery Follow-up,Darryl Brooks
+2885,2924,2021-08-12,X-ray,Duane Dominguez
+2886,2924,2021-05-21,Dental Cleaning,Tracy Carter
+2887,2924,2024-10-10,Skin Allergy Treatment,Anna Walker
+2888,2928,2024-11-10,Ear Infection,Jeff Mendoza
+2889,2928,2024-04-24,Spay/Neuter Surgery,Jason Campos
+2890,2930,2024-07-30,Blood Test,Mary Ramirez
+2891,2930,2022-09-02,Dental Cleaning,Adam Gonzalez
+2892,2930,2023-09-13,Annual Checkup,Brooke Wilson
+2893,2934,2024-09-27,Surgery Follow-up,John Morrison
+2894,2936,2022-10-30,Vaccination,Christine Marshall
+2895,2939,2024-05-27,Skin Allergy Treatment,Robert Perez
+2896,2940,2021-05-27,Annual Checkup,Brian Edwards
+2897,2941,2024-04-18,Spay/Neuter Surgery,Ellen Brown
+2898,2941,2021-08-20,Dental Cleaning,Michael Garcia
+2899,2942,2022-12-24,Blood Test,Christian Miller
+2900,2943,2021-10-21,Blood Test,Harold Parks
+2901,2943,2022-09-21,X-ray,Laura Wilson
+2902,2944,2021-03-20,Vaccination,Veronica Kerr
+2903,2944,2022-07-22,Vaccination,Christopher Herring
+2904,2946,2021-11-26,X-ray,Barbara Shelton
+2905,2946,2024-10-31,Blood Test,Nicholas Page
+2906,2948,2024-10-24,Dental Cleaning,Chase Khan
+2907,2949,2021-09-17,Ear Infection,Tanya Hall
+2908,2949,2021-01-26,Ear Infection,Dr. Rebecca Blair
+2909,2950,2022-03-07,Surgery Follow-up,Melissa Smith
+2910,2955,2022-01-25,Annual Checkup,Linda Anderson
+2911,2955,2022-04-15,Dental Cleaning,Heidi Martin
+2912,2955,2021-08-29,X-ray,Debra Lee
+2913,2956,2022-08-05,Injury Treatment,Mark Phillips
+2914,2956,2024-01-11,Vaccination,Perry Carroll
+2915,2956,2022-11-15,X-ray,James Fields
+2916,2958,2021-03-29,Ear Infection,Olivia Lucas
+2917,2958,2023-12-21,X-ray,Brian Harris
+2918,2961,2022-10-26,Injury Treatment,Diana Lyons
+2919,2961,2023-03-24,X-ray,Gregory Booth
+2920,2961,2023-04-07,Ear Infection,Tracy Guzman
+2921,2965,2023-11-19,Surgery Follow-up,Steven Lloyd
+2922,2968,2024-05-12,Surgery Follow-up,Mark Jackson
+2923,2969,2023-09-28,X-ray,David Austin
+2924,2969,2023-05-14,Injury Treatment,Andrew Collins
+2925,2969,2022-03-26,Injury Treatment,Christopher Horton
+2926,2971,2023-05-07,X-ray,Julie Cannon
+2927,2971,2021-12-25,Annual Checkup,Sally Moran
+2928,2971,2024-06-02,Skin Allergy Treatment,Lawrence Hernandez
+2929,2972,2022-12-27,Dental Cleaning,James Mccoy
+2930,2972,2024-11-20,Blood Test,Kristin Vaughan
+2931,2972,2021-09-04,Spay/Neuter Surgery,Anna Shea
+2932,2974,2022-12-17,Dental Cleaning,Amanda Payne
+2933,2974,2022-08-02,Ear Infection,Angela Neal
+2934,2974,2023-02-03,Skin Allergy Treatment,Michael Allen
+2935,2976,2022-09-28,Annual Checkup,Sierra Lam
+2936,2976,2024-01-06,Skin Allergy Treatment,Jeffrey Hunt
+2937,2976,2024-04-20,Surgery Follow-up,Hannah Mack
+2938,2981,2022-01-14,Skin Allergy Treatment,Alex Harper
+2939,2981,2023-10-31,Ear Infection,Ann Jackson
+2940,2982,2023-10-26,Dental Cleaning,Alexander Golden
+2941,2983,2022-09-02,Dental Cleaning,Laura Crane
+2942,2983,2024-01-18,Dental Cleaning,Paula Maldonado
+2943,2983,2022-01-16,Surgery Follow-up,Jeremy Johnson
+2944,2988,2023-03-14,Ear Infection,Seth Ramos
+2945,2988,2021-09-25,Dental Cleaning,Kenneth Gordon
+2946,2988,2024-05-04,Vaccination,Kenneth Ayers
+2947,2990,2024-09-09,Vaccination,Debra Fisher
+2948,2990,2021-09-19,Skin Allergy Treatment,Barbara Hunter
+2949,2990,2023-12-17,Vaccination,Angela Delgado
+2950,2991,2023-07-20,Blood Test,Erica Lee
+2951,2991,2022-07-10,Blood Test,Ashley White
+2952,2992,2024-02-29,Injury Treatment,Christopher Abbott
+2953,2992,2024-05-25,Spay/Neuter Surgery,Tim Bowman II
+2954,2993,2021-01-24,Vaccination,Chelsea Adams
+2955,2993,2023-05-20,X-ray,Spencer Pruitt
+2956,2993,2022-03-02,Skin Allergy Treatment,Christopher Sanchez
+2957,2994,2022-01-23,Skin Allergy Treatment,Teresa Garcia
+2958,2994,2023-08-19,Dental Cleaning,Stephen Hernandez
+2959,2995,2023-10-29,Annual Checkup,Crystal Smith
+2960,2995,2023-10-31,Ear Infection,Dr. Marissa Velez
+2961,2998,2021-06-08,Surgery Follow-up,Jonathan Foster
+2962,2998,2021-05-19,Skin Allergy Treatment,Patricia Gomez
+2963,2998,2022-05-14,Blood Test,Kristin Fox
+2964,2999,2024-08-01,Dental Cleaning,Brittany Johnson
+2965,3006,2021-07-04,Annual Checkup,Lindsey Smith
+2966,3007,2021-06-07,X-ray,Nicholas Winters
+2967,3007,2021-09-12,Surgery Follow-up,Sarah Chandler
+2968,3011,2023-09-06,Surgery Follow-up,Jacob Perez
+2969,3012,2022-04-22,Spay/Neuter Surgery,Patricia Williams
+2970,3012,2023-03-16,Blood Test,Vernon Washington
+2971,3012,2024-10-14,Annual Checkup,Melissa Warner
+2972,3013,2021-12-14,Spay/Neuter Surgery,April Jones
+2973,3013,2021-09-01,Blood Test,Devin Hartman
+2974,3014,2022-02-20,Ear Infection,Haley Gray
+2975,3014,2022-10-27,Ear Infection,Lisa Martinez
+2976,3015,2023-11-11,Ear Infection,Michelle Lopez
+2977,3015,2021-11-10,Spay/Neuter Surgery,Raymond Obrien
+2978,3015,2023-01-19,Injury Treatment,Diana Chavez
+2979,3016,2022-12-20,Spay/Neuter Surgery,Matthew Larson
+2980,3017,2021-02-04,Blood Test,Melissa Wang
+2981,3017,2024-04-11,Skin Allergy Treatment,Tamara Lowery
+2982,3017,2021-10-19,Injury Treatment,Matthew Vaughn
+2983,3019,2021-09-24,Skin Allergy Treatment,Patrick Perry
+2984,3019,2023-08-21,Spay/Neuter Surgery,Christian Williams
+2985,3019,2023-04-06,Annual Checkup,Steven Thomas
+2986,3021,2023-08-27,Vaccination,Thomas Bautista
+2987,3021,2021-12-04,Spay/Neuter Surgery,Sydney Castro
+2988,3024,2024-04-24,Spay/Neuter Surgery,Jennifer Johnson
+2989,3027,2023-05-22,Skin Allergy Treatment,Desiree Riley
+2990,3027,2024-04-03,Dental Cleaning,Mr. Caleb Williamson
+2991,3027,2022-11-01,Ear Infection,Thomas Thomas
+2992,3031,2023-01-06,Injury Treatment,Vincent Avery
+2993,3032,2024-01-20,Dental Cleaning,Scott Nelson
+2994,3032,2024-05-08,Skin Allergy Treatment,Vanessa Lee
+2995,3032,2024-07-25,Annual Checkup,Troy Martinez
+2996,3036,2021-05-26,Vaccination,Mary Bennett
+2997,3038,2022-07-06,Blood Test,Adriana Nelson
+2998,3038,2024-11-19,Vaccination,Christopher Fisher
+2999,3040,2023-07-24,Ear Infection,Jordan Hicks
+3000,3040,2021-01-05,Ear Infection,Kayla Rodriguez
+3001,3041,2021-06-19,Surgery Follow-up,Christopher Diaz
+3002,3042,2022-07-07,Vaccination,Ross Higgins
+3003,3043,2022-08-15,Injury Treatment,Leah Farrell
+3004,3043,2021-03-13,Vaccination,Zachary Barron
+3005,3047,2022-05-19,X-ray,Tamara Adams
+3006,3047,2021-04-01,Vaccination,Megan Gill
+3007,3048,2021-11-03,Skin Allergy Treatment,Eric Henderson
+3008,3048,2021-03-11,Annual Checkup,Ann Johnson
+3009,3048,2023-06-10,Surgery Follow-up,Richard Bowen
+3010,3052,2024-08-13,Dental Cleaning,Miguel Arnold
+3011,3052,2023-08-15,Annual Checkup,Logan Morales
+3012,3054,2023-02-26,X-ray,Jordan Walker
+3013,3060,2022-04-20,Ear Infection,Penny Vaughan
+3014,3060,2024-03-31,Spay/Neuter Surgery,Martin Bennett
+3015,3061,2021-03-03,Ear Infection,Melissa Johnson
+3016,3061,2022-04-24,Spay/Neuter Surgery,Paul Coleman
+3017,3063,2024-12-15,Surgery Follow-up,George Rivera
+3018,3063,2021-10-01,Dental Cleaning,Vicki Powell
+3019,3065,2024-11-13,Injury Treatment,Andrew Alvarez
+3020,3066,2021-11-03,Dental Cleaning,Kelly Wallace
+3021,3066,2021-05-19,Dental Cleaning,Taylor Burns
+3022,3067,2024-01-14,Injury Treatment,Barbara George
+3023,3068,2024-04-24,Vaccination,Paul Ware
+3024,3068,2024-04-10,X-ray,David Reeves
+3025,3070,2023-01-15,Skin Allergy Treatment,Robert Dudley
+3026,3070,2023-04-29,Annual Checkup,Stacy Anthony
+3027,3070,2023-11-06,Annual Checkup,Charles Howell
+3028,3072,2021-08-03,Skin Allergy Treatment,Amy Cole
+3029,3074,2024-01-19,Blood Test,Nicholas Chandler
+3030,3077,2024-02-15,Skin Allergy Treatment,Mark Parker
+3031,3077,2024-03-19,Injury Treatment,Kelli Yang
+3032,3077,2023-02-28,Annual Checkup,Holly Roberson
+3033,3079,2024-02-19,Vaccination,Amanda Barrett
+3034,3079,2022-12-23,Dental Cleaning,David Buchanan
+3035,3081,2023-11-08,X-ray,Brenda Sutton
+3036,3081,2024-07-24,Blood Test,Matthew Johnson
+3037,3081,2022-11-29,Blood Test,Marc Brown
+3038,3083,2021-06-26,Spay/Neuter Surgery,William Bryant
+3039,3083,2021-05-23,X-ray,Sara Frazier DDS
+3040,3083,2024-07-03,Dental Cleaning,Chase Dyer
+3041,3084,2024-03-24,Vaccination,Jason Shelton
+3042,3086,2022-07-23,Ear Infection,Robert Phillips
+3043,3089,2023-07-08,Annual Checkup,Christopher Weaver
+3044,3090,2022-06-29,Skin Allergy Treatment,Danielle Hurley
+3045,3090,2024-09-26,Dental Cleaning,Krista Jacobs
+3046,3092,2023-10-12,Annual Checkup,Jeffrey Fletcher
+3047,3093,2021-03-19,Blood Test,Peter Hurley
+3048,3093,2022-02-08,Spay/Neuter Surgery,Wayne Elliott
+3049,3093,2021-06-27,Dental Cleaning,Dana Matthews
+3050,3094,2022-11-11,Surgery Follow-up,Tamara Snow
+3051,3097,2023-01-12,Dental Cleaning,Dr. Steven Sharp
+3052,3098,2021-03-24,Spay/Neuter Surgery,Mark Hines
+3053,3101,2021-03-26,Spay/Neuter Surgery,Amanda White
+3054,3101,2021-02-02,Dental Cleaning,Lisa Ross
+3055,3102,2024-06-30,Vaccination,Timothy Miller
+3056,3102,2024-03-07,Surgery Follow-up,Gregory Martin
+3057,3102,2022-10-08,Annual Checkup,Matthew Moody
+3058,3105,2023-05-27,Annual Checkup,Timothy Nichols
+3059,3105,2021-09-09,Spay/Neuter Surgery,Rachel Smith
+3060,3106,2021-06-25,Dental Cleaning,Zachary Williams
+3061,3107,2021-09-19,X-ray,Mrs. Sherry Walker DDS
+3062,3108,2024-09-11,Injury Treatment,Donna Brady
+3063,3108,2022-05-22,Blood Test,Nathan Palmer
+3064,3109,2023-11-30,Dental Cleaning,Troy Moore
+3065,3109,2023-08-30,Ear Infection,Blake Rose
+3066,3109,2022-12-04,Blood Test,Brianna Bailey
+3067,3112,2023-09-18,Dental Cleaning,Laura Thomas
+3068,3113,2023-08-19,Spay/Neuter Surgery,Lynn Cruz
+3069,3113,2023-02-06,Spay/Neuter Surgery,Lori Scott
+3070,3113,2023-06-06,X-ray,Amy Noble
+3071,3115,2022-02-11,Injury Treatment,Joseph Thompson
+3072,3115,2021-09-21,Surgery Follow-up,Stephen Ross
+3073,3115,2022-11-01,Annual Checkup,Melissa Washington
+3074,3117,2022-08-16,Ear Infection,Monica Simon
+3075,3117,2024-07-08,Annual Checkup,Amanda Woods
+3076,3117,2022-05-29,Ear Infection,Kimberly Estrada
+3077,3118,2022-12-11,Spay/Neuter Surgery,Kayla Mccarthy
+3078,3118,2023-10-13,X-ray,David Jensen
+3079,3118,2021-09-27,Dental Cleaning,Michelle Wright
+3080,3122,2024-04-19,Blood Test,William Hodges
+3081,3124,2023-08-31,Skin Allergy Treatment,Joseph Clark
+3082,3127,2021-01-09,Blood Test,Alisha Clark
+3083,3129,2024-10-07,X-ray,Shannon Mendez
+3084,3129,2022-06-24,Surgery Follow-up,Jeff Coleman
+3085,3129,2024-07-04,Dental Cleaning,Stephanie Taylor
+3086,3131,2022-06-12,Vaccination,Scott Perry
+3087,3131,2021-09-04,Blood Test,Anthony Bridges
+3088,3131,2024-02-20,Annual Checkup,Lauren Guerrero
+3089,3132,2024-11-12,Vaccination,Raymond Rodriguez
+3090,3132,2023-09-17,X-ray,Adam Willis
+3091,3132,2022-08-10,X-ray,Bryan Stephens
+3092,3135,2021-04-08,Dental Cleaning,Katherine Werner
+3093,3135,2022-08-09,Spay/Neuter Surgery,Elizabeth Moore
+3094,3136,2024-11-25,Spay/Neuter Surgery,Amanda Jones
+3095,3136,2022-05-27,Ear Infection,James Lewis
+3096,3136,2023-12-26,Spay/Neuter Surgery,Robert Lee
+3097,3137,2023-04-11,Annual Checkup,Alexandra Rangel
+3098,3137,2024-08-04,Surgery Follow-up,Kelsey Morales
+3099,3138,2024-05-18,Spay/Neuter Surgery,Rebecca Carter
+3100,3138,2024-11-24,Spay/Neuter Surgery,Christopher Gonzalez
+3101,3141,2021-03-01,Dental Cleaning,Jessica Larson
+3102,3141,2022-08-18,Dental Cleaning,Dustin Michael
+3103,3141,2021-07-26,Vaccination,Chris Hall
+3104,3142,2024-12-07,X-ray,Howard Johnson
+3105,3142,2021-08-20,Spay/Neuter Surgery,Katie Lee
+3106,3143,2022-09-30,Ear Infection,Carol Hampton
+3107,3144,2022-04-07,Spay/Neuter Surgery,Duane Marsh
+3108,3146,2024-06-20,Injury Treatment,Jennifer Hall
+3109,3146,2023-06-10,Blood Test,Justin Reed
+3110,3147,2024-10-27,Dental Cleaning,Gregory Waters
+3111,3147,2024-04-07,Skin Allergy Treatment,Jamie Snyder
+3112,3147,2023-08-29,Dental Cleaning,John Hughes
+3113,3149,2024-10-12,Skin Allergy Treatment,Lisa Buck
+3114,3149,2023-10-22,Skin Allergy Treatment,Dan Robbins
+3115,3150,2023-08-01,Blood Test,Seth Pierce
+3116,3150,2024-03-17,Blood Test,Nancy Nichols
+3117,3154,2021-11-25,Ear Infection,Eric Freeman
+3118,3154,2021-02-22,Blood Test,Amy Coleman
+3119,3154,2023-03-30,Annual Checkup,Erik Wilkerson
+3120,3156,2021-09-15,Annual Checkup,Gina Greer
+3121,3156,2022-08-01,Skin Allergy Treatment,Julie Jenkins
+3122,3156,2021-08-15,Surgery Follow-up,Sandra Adams
+3123,3161,2022-11-14,Ear Infection,Patricia Wagner
+3124,3161,2022-01-29,Surgery Follow-up,Nicole Wallace
+3125,3161,2021-09-14,Ear Infection,Paul Mcconnell
+3126,3170,2023-07-17,Blood Test,Paul Hayes
+3127,3174,2021-03-02,Blood Test,Christopher Reynolds
+3128,3175,2023-10-01,Surgery Follow-up,Jessica Mcdowell
+3129,3175,2024-08-21,Dental Cleaning,Amanda Lopez
+3130,3178,2024-02-14,Ear Infection,Mitchell Beard
+3131,3180,2021-11-09,Blood Test,April Johnson
+3132,3182,2021-10-23,Ear Infection,David Taylor
+3133,3182,2023-05-14,Ear Infection,Nicholas Martinez
+3134,3183,2021-05-18,Skin Allergy Treatment,Stacey Davis
+3135,3185,2023-10-10,Blood Test,Autumn Mann
+3136,3185,2021-12-20,Injury Treatment,Michael Lawrence
+3137,3185,2021-08-16,Blood Test,Connie Reynolds
+3138,3186,2024-01-05,Skin Allergy Treatment,Nancy Nixon
+3139,3188,2022-04-03,Dental Cleaning,Wanda Lyons
+3140,3189,2024-04-26,Injury Treatment,Natasha Yoder
+3141,3189,2021-07-26,Spay/Neuter Surgery,Rachel Jackson
+3142,3189,2021-01-21,Ear Infection,Andrea Martinez
+3143,3191,2021-08-03,Injury Treatment,Nicholas Koch
+3144,3196,2024-02-08,Vaccination,Jennifer Hubbard
+3145,3196,2022-07-19,Blood Test,Jonathan Hughes
+3146,3198,2022-03-16,X-ray,Kimberly Gilmore
+3147,3199,2023-12-20,Annual Checkup,Daniel Lewis
+3148,3199,2024-09-05,Skin Allergy Treatment,George Benjamin
+3149,3200,2021-08-05,Annual Checkup,Shane Clark
+3150,3200,2021-08-31,Annual Checkup,Jeffrey Roberts
+3151,3200,2022-06-23,Annual Checkup,Janet Bryant
+3152,3201,2022-12-06,Vaccination,Dustin Johnson
+3153,3201,2023-01-31,Annual Checkup,Jacob Williams
+3154,3201,2022-03-12,Vaccination,Lawrence Carroll
+3155,3203,2021-07-14,Vaccination,Lawrence Gilmore
+3156,3205,2024-01-10,Surgery Follow-up,Anthony Williams
+3157,3206,2021-11-19,Blood Test,Amanda Edwards
+3158,3207,2024-07-22,X-ray,Sean Williams
+3159,3208,2021-12-28,X-ray,Gina Dean
+3160,3209,2021-08-29,Ear Infection,Jamie Young
+3161,3209,2023-01-19,Dental Cleaning,Rebecca Haynes
+3162,3211,2023-10-08,Annual Checkup,Robert Mclean
+3163,3211,2022-04-03,Ear Infection,Eddie Morrison
+3164,3215,2023-12-19,X-ray,Tina Hendrix
+3165,3216,2023-12-25,Dental Cleaning,Christine Parrish
+3166,3216,2023-06-28,Blood Test,Elizabeth Nelson
+3167,3216,2023-07-28,Injury Treatment,Lauren Leblanc
+3168,3218,2023-09-27,Dental Cleaning,Elizabeth Gray
+3169,3219,2024-10-06,Spay/Neuter Surgery,Carol Hansen
+3170,3220,2023-10-28,Vaccination,Patricia Reilly
+3171,3221,2024-08-03,Blood Test,Thomas Shannon
+3172,3221,2024-11-16,Annual Checkup,William Walker
+3173,3222,2024-03-30,Dental Cleaning,Jose Hughes
+3174,3224,2024-04-11,Blood Test,Alison Aguilar DVM
+3175,3224,2024-01-25,Vaccination,Jennifer King
+3176,3226,2024-07-12,Ear Infection,John Williams PhD
+3177,3226,2022-07-04,Blood Test,Jenny Ellis
+3178,3226,2024-06-02,Vaccination,James Kelley
+3179,3227,2024-03-22,X-ray,Christine Jones
+3180,3227,2023-04-11,Blood Test,Ryan Johnson
+3181,3227,2024-05-11,Ear Infection,James Boone
+3182,3229,2023-02-24,Injury Treatment,Misty Larson
+3183,3231,2023-08-02,Injury Treatment,Ashley Peters
+3184,3232,2021-12-26,Dental Cleaning,John Wallace
+3185,3232,2023-07-01,Skin Allergy Treatment,Eugene Parsons
+3186,3232,2023-08-22,Vaccination,Jose Krueger
+3187,3233,2023-07-27,Surgery Follow-up,Margaret Gordon
+3188,3233,2021-08-24,Injury Treatment,Stephanie Montgomery
+3189,3233,2022-07-01,Skin Allergy Treatment,Steve Heath
+3190,3234,2021-09-02,Vaccination,Charles Rogers
+3191,3234,2022-09-14,Surgery Follow-up,Ms. Sandra Martin
+3192,3238,2024-11-05,Vaccination,Jane Galloway
+3193,3239,2022-06-22,Skin Allergy Treatment,Danielle Peters
+3194,3241,2021-11-04,Annual Checkup,Leah Orr
+3195,3241,2023-06-10,Spay/Neuter Surgery,Keith Maynard
+3196,3241,2022-11-15,Spay/Neuter Surgery,Jessica Gill
+3197,3245,2024-05-24,Injury Treatment,Matthew Wright
+3198,3245,2021-10-09,Blood Test,Jessica Brown
+3199,3245,2021-01-10,X-ray,Kara Roberson
+3200,3246,2023-05-19,Injury Treatment,Dana Walker
+3201,3248,2023-05-14,Ear Infection,Lindsey Williamson
+3202,3248,2023-03-26,Spay/Neuter Surgery,Sharon King
+3203,3250,2022-04-24,X-ray,Brenda Lopez
+3204,3250,2023-03-14,Injury Treatment,Matthew Russell
+3205,3250,2021-11-15,Ear Infection,Erika Graham
+3206,3251,2021-04-20,X-ray,Mario Roman
+3207,3251,2021-06-22,Surgery Follow-up,Charles Russo
+3208,3251,2021-07-29,Surgery Follow-up,Albert Garcia
+3209,3252,2021-01-14,Spay/Neuter Surgery,Sandra Mason
+3210,3252,2021-10-10,Skin Allergy Treatment,Evan West
+3211,3252,2021-07-29,Ear Infection,Jessica Hayden
+3212,3253,2023-01-11,Annual Checkup,Chris Turner
+3213,3253,2023-12-22,Ear Infection,John Hanson
+3214,3254,2021-10-20,Annual Checkup,Shelby Hampton
+3215,3259,2022-07-14,Surgery Follow-up,Paula Oneal
+3216,3259,2021-06-21,Vaccination,Angel Green
+3217,3261,2023-08-04,Vaccination,Gregory Chandler
+3218,3262,2023-05-27,X-ray,Melanie Francis
+3219,3263,2022-06-25,Ear Infection,Glenn Thompson
+3220,3263,2022-10-08,Annual Checkup,Monica Gross
+3221,3263,2024-03-24,Ear Infection,Christy Watson
+3222,3264,2023-11-07,Vaccination,James Reyes
+3223,3264,2024-06-22,Ear Infection,Christopher Wong
+3224,3265,2021-12-10,Vaccination,Nancy Taylor
+3225,3265,2024-03-20,Dental Cleaning,Ann Lyons
+3226,3265,2021-04-21,Surgery Follow-up,Timothy Lucas
+3227,3267,2024-07-15,Surgery Follow-up,Tracy Weber
+3228,3267,2024-05-06,Dental Cleaning,Jessica Carter
+3229,3269,2023-07-09,Blood Test,Joe Mcbride
+3230,3269,2021-07-17,X-ray,Emily Beasley
+3231,3269,2022-11-03,X-ray,Gina Pena
+3232,3270,2021-05-30,Annual Checkup,Laura Moore
+3233,3271,2022-02-13,Spay/Neuter Surgery,Mary Morgan
+3234,3271,2024-04-02,Ear Infection,Courtney Wolfe
+3235,3271,2021-02-20,Skin Allergy Treatment,Mrs. Cheryl Davidson
+3236,3272,2022-11-16,Surgery Follow-up,Bryan Harrell
+3237,3278,2023-07-01,Spay/Neuter Surgery,Dr. Alexander Wood
+3238,3279,2022-06-14,Spay/Neuter Surgery,Tamara Garcia
+3239,3279,2024-11-10,Surgery Follow-up,Rhonda Robinson
+3240,3281,2021-05-20,Dental Cleaning,Jose Foley
+3241,3281,2023-08-22,Vaccination,Roberto Gardner
+3242,3281,2022-09-25,Ear Infection,Kenneth Thomas
+3243,3283,2023-02-11,Annual Checkup,Katelyn Fox
+3244,3287,2021-04-17,Dental Cleaning,Thomas Coffey
+3245,3290,2022-07-20,Blood Test,David Wright
+3246,3290,2021-03-27,Ear Infection,Hayden Pineda
+3247,3291,2021-08-18,Ear Infection,Whitney Lloyd
+3248,3292,2023-09-06,Annual Checkup,James Todd
+3249,3292,2022-11-05,Injury Treatment,Gregory Contreras
+3250,3292,2023-11-05,Blood Test,Christopher Phillips
+3251,3294,2021-09-29,Annual Checkup,John Moore
+3252,3297,2024-06-08,Skin Allergy Treatment,Thomas Lopez
+3253,3297,2024-08-07,Vaccination,Patrick Velazquez
+3254,3300,2022-10-21,Spay/Neuter Surgery,Angel White
+3255,3300,2021-12-07,Skin Allergy Treatment,Mrs. Vanessa Ellis
+3256,3300,2022-09-21,Annual Checkup,Cynthia Miller
+3257,3301,2022-11-15,Ear Infection,Gary Johnson
+3258,3302,2024-03-24,Blood Test,Janet Baker
+3259,3302,2023-11-02,Surgery Follow-up,Curtis Braun
+3260,3303,2023-04-12,Spay/Neuter Surgery,Kimberly Walker
+3261,3304,2021-07-09,Surgery Follow-up,Scott Gonzalez
+3262,3304,2021-08-06,Vaccination,Patricia Nolan
+3263,3304,2021-08-28,Skin Allergy Treatment,Jennifer Brown
+3264,3305,2024-07-19,Skin Allergy Treatment,Michael Long
+3265,3305,2021-07-08,Surgery Follow-up,Jeffery Hart
+3266,3306,2021-04-18,X-ray,Paul Ortiz
+3267,3307,2021-06-15,Annual Checkup,Daniel Haynes
+3268,3308,2021-10-01,Annual Checkup,Christopher Delacruz
+3269,3308,2024-12-13,Blood Test,James Mooney
+3270,3309,2022-11-25,Skin Allergy Treatment,Amber Page
+3271,3309,2022-05-09,X-ray,Paul Reid
+3272,3309,2023-05-21,Annual Checkup,Michael Frank
+3273,3315,2023-02-17,Dental Cleaning,Timothy Matthews
+3274,3315,2023-12-26,Skin Allergy Treatment,Jennifer Ramirez
+3275,3315,2022-11-25,Surgery Follow-up,Zachary Olson
+3276,3316,2024-08-11,Spay/Neuter Surgery,Eddie Willis
+3277,3317,2021-08-12,Spay/Neuter Surgery,Francisco Owens
+3278,3317,2024-06-01,X-ray,Katie Hill
+3279,3319,2021-04-23,Skin Allergy Treatment,Jennifer Reeves
+3280,3321,2022-04-04,Vaccination,Michael Rodriguez
+3281,3321,2022-07-19,Spay/Neuter Surgery,Alexander Coleman
+3282,3322,2023-03-22,Injury Treatment,Debbie Evans
+3283,3322,2024-04-03,Annual Checkup,Emily Barry
+3284,3324,2024-01-05,Annual Checkup,Rose Lee
+3285,3324,2023-05-10,Surgery Follow-up,Ruben Chang
+3286,3324,2021-10-15,Skin Allergy Treatment,Cristian Thompson
+3287,3328,2024-05-27,Annual Checkup,Diana Alexander
+3288,3328,2023-02-27,Surgery Follow-up,Paul Smith
+3289,3332,2023-08-14,Ear Infection,Catherine Brooks
+3290,3334,2024-08-17,Surgery Follow-up,James Holmes
+3291,3335,2023-03-18,X-ray,John Smith
+3292,3335,2023-04-13,Ear Infection,David Barajas
+3293,3338,2021-04-27,Surgery Follow-up,Shannon Hernandez
+3294,3338,2022-01-05,Annual Checkup,Yolanda Gutierrez
+3295,3340,2024-06-01,Spay/Neuter Surgery,Debbie Rosario
+3296,3341,2022-02-16,Blood Test,Charles Thomas
+3297,3341,2021-03-25,Ear Infection,Brittany King
+3298,3345,2022-04-16,Vaccination,Lisa Adams
+3299,3352,2023-07-26,Ear Infection,Aaron Burnett Jr.
+3300,3352,2021-03-04,Injury Treatment,Michael Morton
+3301,3355,2024-10-17,Ear Infection,Brittany Hart
+3302,3355,2023-07-02,Spay/Neuter Surgery,Dustin Middleton
+3303,3355,2023-10-31,Vaccination,Barbara Dean
+3304,3359,2022-03-23,Dental Cleaning,Jonathan Anderson
+3305,3359,2023-06-11,Surgery Follow-up,Willie Rivera
+3306,3360,2022-04-08,Blood Test,Nicole Barton
+3307,3361,2021-06-23,X-ray,Justin Hatfield
+3308,3361,2021-03-23,Blood Test,Sherry Armstrong
+3309,3361,2024-11-16,Spay/Neuter Surgery,Hector Lee
+3310,3362,2022-09-01,Dental Cleaning,Peggy Singh
+3311,3362,2021-01-03,Blood Test,John Drake
+3312,3364,2024-02-12,Annual Checkup,Samantha Graham DDS
+3313,3364,2024-09-09,X-ray,Ashley Graham
+3314,3364,2022-12-05,Injury Treatment,Julian Brooks
+3315,3365,2023-06-07,X-ray,Robin Marshall
+3316,3365,2023-09-28,Spay/Neuter Surgery,Mr. Robert Strickland
+3317,3365,2023-04-07,X-ray,Kenneth Holt
+3318,3366,2021-05-15,Injury Treatment,Christy Rivers
+3319,3366,2023-08-10,Blood Test,Susan Thomas
+3320,3367,2021-05-30,Vaccination,Jennifer Stout
+3321,3367,2022-05-27,Ear Infection,Deborah Herrera
+3322,3367,2023-11-25,Blood Test,Emma Terry
+3323,3368,2021-06-11,Surgery Follow-up,Jennifer Castaneda
+3324,3371,2024-01-23,Blood Test,Rodney Tate
+3325,3371,2022-08-11,Surgery Follow-up,Michele Trevino
+3326,3375,2024-08-31,Ear Infection,Virginia Dunn
+3327,3375,2024-02-04,Annual Checkup,Peter Brown
+3328,3375,2022-08-06,Ear Infection,Erica Patterson
+3329,3377,2022-07-23,Blood Test,Don Moran
+3330,3377,2024-03-12,Vaccination,Norma Mckee
+3331,3381,2024-03-10,Annual Checkup,Nicole Hoffman
+3332,3381,2024-07-26,X-ray,William Riley
+3333,3381,2023-02-10,Blood Test,Devin Rivas
+3334,3385,2022-12-08,Injury Treatment,Aaron Rivas
+3335,3386,2023-06-25,Annual Checkup,Jessica Reed
+3336,3386,2021-06-03,Dental Cleaning,Shannon Wood
+3337,3387,2024-10-31,Annual Checkup,Brandon Young
+3338,3387,2024-05-17,Dental Cleaning,Jessica Henry
+3339,3388,2021-08-10,Skin Allergy Treatment,Dalton Bryant
+3340,3388,2022-08-23,Dental Cleaning,Carlos Henry
+3341,3389,2022-10-02,Dental Cleaning,Erica Meyers
+3342,3390,2021-11-22,Skin Allergy Treatment,Max Day
+3343,3390,2024-08-02,X-ray,Patrick Ferrell
+3344,3390,2021-11-10,X-ray,Connie Pitts
+3345,3393,2023-03-30,Blood Test,Michael Armstrong
+3346,3393,2021-11-03,Dental Cleaning,David Cook
+3347,3393,2024-06-28,Spay/Neuter Surgery,Jasmine Murphy
+3348,3396,2024-01-16,Skin Allergy Treatment,Jacob Hernandez
+3349,3396,2021-02-10,Annual Checkup,Austin Logan
+3350,3397,2023-10-21,X-ray,Zachary Jones
+3351,3397,2022-12-08,X-ray,Brandon Sexton
+3352,3398,2021-09-21,Ear Infection,Chris Harris
+3353,3398,2023-12-19,Dental Cleaning,Emily Miller
+3354,3398,2023-06-19,Ear Infection,Kristina Campbell
+3355,3400,2023-01-29,Annual Checkup,Ryan Walter
+3356,3400,2023-06-23,Dental Cleaning,Madison Clark
+3357,3402,2021-01-05,Spay/Neuter Surgery,Laura Diaz MD
+3358,3402,2023-07-11,Surgery Follow-up,Roger Church
+3359,3403,2021-07-27,Dental Cleaning,Christopher Fischer
+3360,3403,2024-05-30,Injury Treatment,Miguel Lamb
+3361,3403,2023-03-18,Spay/Neuter Surgery,Jeffery Patel
+3362,3405,2021-07-06,Surgery Follow-up,Zachary Baker
+3363,3407,2024-02-28,Surgery Follow-up,James Stokes
+3364,3407,2021-03-01,Vaccination,Sarah Anderson
+3365,3407,2023-06-12,Ear Infection,Scott Vega
+3366,3410,2023-09-28,Dental Cleaning,Kelly Guzman
+3367,3413,2021-02-18,Injury Treatment,Ms. Kayla Nichols
+3368,3415,2024-04-04,Annual Checkup,Francisco Johnson
+3369,3415,2022-07-11,Surgery Follow-up,Charles Cummings
+3370,3417,2021-09-23,Ear Infection,Lauren Hayden
+3371,3417,2024-11-29,Injury Treatment,Bradley Riley
+3372,3418,2024-03-26,Annual Checkup,Michael Reyes
+3373,3418,2021-10-15,Skin Allergy Treatment,Mandy Johnson
+3374,3420,2023-02-15,Injury Treatment,Charles Gonzalez
+3375,3420,2021-06-27,Injury Treatment,Gregory Pittman
+3376,3421,2022-01-31,Ear Infection,Brandon Glenn
+3377,3425,2022-05-21,Dental Cleaning,Joyce Miller
+3378,3426,2024-07-18,Injury Treatment,Bryan Weber
+3379,3426,2021-08-17,Ear Infection,Terrance Hunter
+3380,3426,2021-07-25,Dental Cleaning,Kristen Graham
+3381,3428,2024-04-19,Spay/Neuter Surgery,Angela Johnson
+3382,3428,2024-03-09,Ear Infection,Christopher Maldonado
+3383,3430,2021-08-18,Dental Cleaning,Wendy Kim
+3384,3432,2022-01-16,Blood Test,Jonathan Johnson
+3385,3432,2023-09-11,Ear Infection,Crystal Brown
+3386,3432,2022-12-22,Blood Test,Ryan Johnson
+3387,3433,2022-02-12,Injury Treatment,Destiny Moyer
+3388,3433,2024-05-21,Ear Infection,Philip Tran
+3389,3433,2022-04-08,Injury Treatment,Patricia Ortiz
+3390,3434,2021-10-30,Dental Cleaning,Dennis Jackson
+3391,3434,2021-05-11,Spay/Neuter Surgery,Joshua Mejia
+3392,3436,2024-06-11,Ear Infection,Austin Holmes
+3393,3436,2023-01-22,Surgery Follow-up,Mary Thornton
+3394,3436,2021-01-24,Injury Treatment,Lauren Patton
+3395,3437,2022-04-26,Skin Allergy Treatment,Andrew Calhoun
+3396,3437,2021-02-20,Ear Infection,April Mcmillan
+3397,3438,2024-09-25,Dental Cleaning,Lindsey Acosta
+3398,3440,2024-03-08,Skin Allergy Treatment,Cynthia Moore
+3399,3440,2023-11-07,Ear Infection,Jeanette Downs
+3400,3442,2023-11-28,Blood Test,William Smith
+3401,3442,2024-05-30,Injury Treatment,Shari Dixon
+3402,3443,2022-12-03,Vaccination,Sandra Santiago
+3403,3443,2024-05-28,Annual Checkup,Jennifer Middleton
+3404,3444,2023-08-16,Injury Treatment,Patricia Henderson
+3405,3445,2022-04-16,X-ray,John Griffith
+3406,3445,2022-08-28,Vaccination,Amy Houston
+3407,3446,2024-09-07,Annual Checkup,Zachary Wagner
+3408,3447,2023-08-03,Annual Checkup,Joseph Hall
+3409,3447,2024-10-17,Vaccination,April Ruiz
+3410,3449,2021-02-22,Injury Treatment,Amy Flores
+3411,3451,2024-11-09,Spay/Neuter Surgery,Lisa White
+3412,3452,2021-05-24,Vaccination,Laura Sandoval
+3413,3452,2023-12-20,X-ray,Nathaniel Moore
+3414,3452,2022-07-19,Vaccination,William Ruiz
+3415,3453,2024-02-02,Dental Cleaning,Mr. Jeffrey Stein
+3416,3456,2024-01-29,X-ray,Dawn Marshall
+3417,3456,2023-03-26,Annual Checkup,Sarah Whitney
+3418,3456,2024-01-03,Surgery Follow-up,William Ramos
+3419,3457,2023-07-22,Blood Test,Brittany Schwartz
+3420,3457,2023-07-28,Blood Test,Sarah Tanner
+3421,3457,2021-09-12,Blood Test,Mike Ball
+3422,3459,2021-12-21,Annual Checkup,David Hammond
+3423,3459,2021-01-12,Vaccination,Neil Hicks
+3424,3459,2021-08-02,Spay/Neuter Surgery,Nancy Petersen
+3425,3461,2022-11-19,Annual Checkup,Anthony Smith
+3426,3461,2024-03-18,Vaccination,Allison Kelly
+3427,3462,2024-04-02,X-ray,Heidi Duncan DVM
+3428,3462,2024-06-10,Blood Test,Kelly Lester
+3429,3463,2023-06-18,Annual Checkup,Daniel Taylor
+3430,3463,2023-11-15,Blood Test,Alyssa Mcknight
+3431,3465,2022-05-10,Ear Infection,Anne Smith
+3432,3465,2023-12-25,X-ray,Tracey Gordon
+3433,3465,2021-02-16,Injury Treatment,Corey Mullins
+3434,3467,2022-04-07,Skin Allergy Treatment,Kristi George
+3435,3467,2024-06-18,Vaccination,Sherri White
+3436,3469,2021-03-01,Skin Allergy Treatment,Brenda Ball
+3437,3469,2021-06-29,Skin Allergy Treatment,John Baker
+3438,3470,2024-03-31,Vaccination,Patricia Ortiz
+3439,3471,2021-05-30,Dental Cleaning,Anthony Valdez
+3440,3471,2021-02-07,Skin Allergy Treatment,Tina Johnson
+3441,3471,2023-01-23,Dental Cleaning,Erica Smith
+3442,3473,2022-05-31,Annual Checkup,Jenna Russo
+3443,3473,2021-04-26,Spay/Neuter Surgery,John Carpenter
+3444,3473,2021-07-20,Ear Infection,Heather Smith
+3445,3476,2021-08-25,Vaccination,Marie Rodriguez
+3446,3476,2023-01-31,Skin Allergy Treatment,Albert Martinez
+3447,3477,2021-06-17,X-ray,Shane Reed
+3448,3478,2023-09-28,Injury Treatment,Michael Hess
+3449,3478,2022-05-24,Blood Test,Michael Bryan
+3450,3478,2023-05-16,Blood Test,Lee Parker
+3451,3480,2021-08-29,Ear Infection,Lisa Perez
+3452,3480,2023-10-04,Dental Cleaning,Donna Jacobs
+3453,3480,2024-04-06,Blood Test,Brian Avila
+3454,3482,2022-05-20,X-ray,Katrina Evans
+3455,3483,2022-04-13,Surgery Follow-up,Melvin Garcia MD
+3456,3483,2023-08-04,Blood Test,Connie Glover
+3457,3485,2023-09-28,X-ray,Heather Gilmore
+3458,3486,2024-05-01,Surgery Follow-up,Jason Deleon
+3459,3486,2021-10-28,Annual Checkup,Edward Scott
+3460,3487,2023-04-23,Dental Cleaning,Shawn Ward
+3461,3488,2022-12-03,Surgery Follow-up,Wanda Gibson
+3462,3488,2024-08-09,Vaccination,Andrew Chavez
+3463,3490,2022-10-01,Skin Allergy Treatment,Emily Hunter
+3464,3490,2023-01-22,X-ray,Whitney Alexander
+3465,3490,2021-12-08,Annual Checkup,Joy Price
+3466,3491,2023-07-22,Surgery Follow-up,Kimberly Davis
+3467,3491,2024-01-03,Dental Cleaning,Kerry Patterson
+3468,3491,2023-01-09,Surgery Follow-up,Joyce Lowe
+3469,3492,2022-05-22,Skin Allergy Treatment,Melissa Glover
+3470,3492,2023-02-15,Skin Allergy Treatment,Jennifer Clark
+3471,3496,2024-07-29,Blood Test,Alicia Hill
+3472,3496,2021-05-08,Annual Checkup,Steven Russell
+3473,3496,2022-10-08,Dental Cleaning,Justin Hernandez
+3474,3497,2023-01-16,Dental Cleaning,Austin Mathis
+3475,3497,2021-02-21,Spay/Neuter Surgery,Zachary Richards
+3476,3497,2024-03-23,Dental Cleaning,Michael Dyer
+3477,3499,2021-04-11,Ear Infection,Justin Anderson
+3478,3500,2024-09-19,X-ray,Margaret Blair
+3479,3501,2022-07-05,Dental Cleaning,Michael Dunn
+3480,3503,2023-01-11,Annual Checkup,Samuel Weiss
+3481,3503,2021-01-04,Spay/Neuter Surgery,Wesley Ponce
+3482,3503,2022-03-20,Annual Checkup,Angela Martinez
+3483,3506,2024-08-12,Vaccination,Lynn Clark
+3484,3508,2021-08-17,Spay/Neuter Surgery,Brett Kane
+3485,3510,2023-12-06,Blood Test,Ivan Nielsen
+3486,3510,2024-08-20,Annual Checkup,Cynthia Martinez
+3487,3511,2022-05-12,Ear Infection,Jacob Hartman
+3488,3512,2022-10-02,Spay/Neuter Surgery,Hector Gill
+3489,3512,2022-06-29,Vaccination,Andrew Armstrong
+3490,3512,2023-05-30,Surgery Follow-up,Sylvia Cook
+3491,3514,2021-04-17,Skin Allergy Treatment,David Martinez
+3492,3514,2023-09-03,Annual Checkup,Candice Pena
+3493,3515,2021-10-24,Vaccination,Theresa Williams
+3494,3515,2023-05-20,X-ray,David Watson
+3495,3515,2022-08-10,Injury Treatment,Jacob White
+3496,3516,2021-12-22,Surgery Follow-up,Krystal Marquez
+3497,3518,2022-04-15,X-ray,Kelly Ford
+3498,3518,2024-07-08,Skin Allergy Treatment,Jonathan Porter
+3499,3518,2021-12-29,Ear Infection,Pamela Taylor
+3500,3521,2021-01-18,Blood Test,Gregory Baker
+3501,3521,2022-09-16,Injury Treatment,Dr. Brian Taylor MD
+3502,3522,2022-06-05,Blood Test,Erika Anderson
+3503,3522,2024-12-28,Dental Cleaning,Tammy Graham
+3504,3522,2021-05-11,Blood Test,Kimberly Bridges
+3505,3525,2023-09-07,Ear Infection,Gregory Smith
+3506,3525,2024-09-20,X-ray,Colleen Barker DVM
+3507,3526,2021-03-26,Spay/Neuter Surgery,Jamie Kennedy
+3508,3526,2021-08-18,Annual Checkup,Sarah Reed
+3509,3528,2024-06-16,Surgery Follow-up,Vanessa Le
+3510,3528,2024-06-21,Annual Checkup,Kim Case
+3511,3531,2022-01-04,Vaccination,Charles Cortez
+3512,3531,2023-09-28,Skin Allergy Treatment,Tracy Gonzales
+3513,3532,2021-07-23,Ear Infection,Michelle Boyer
+3514,3533,2024-08-15,Dental Cleaning,Sarah Hernandez
+3515,3533,2024-03-03,Skin Allergy Treatment,April Russell
+3516,3533,2024-05-09,Annual Checkup,Nathaniel Vega
+3517,3534,2021-05-05,Vaccination,Dawn Leonard
+3518,3534,2022-05-15,Blood Test,Sean Armstrong
+3519,3535,2024-06-06,Dental Cleaning,Christine Harris
+3520,3535,2023-03-07,Vaccination,Kayla Johnson
+3521,3535,2024-03-13,Injury Treatment,Erica Martinez
+3522,3541,2024-06-20,Dental Cleaning,Rebecca Johnson
+3523,3545,2023-09-10,Annual Checkup,Dawn Jackson
+3524,3545,2022-08-03,Skin Allergy Treatment,Nathaniel Green
+3525,3545,2024-05-18,Annual Checkup,Pamela Villegas DVM
+3526,3546,2024-03-08,Vaccination,Aaron Jackson
+3527,3546,2021-08-27,Annual Checkup,Kimberly Fisher
+3528,3549,2024-11-14,Injury Treatment,Benjamin Peterson
+3529,3550,2021-09-20,Dental Cleaning,Steven Turner
+3530,3550,2022-08-14,Dental Cleaning,Jennifer Coleman
+3531,3550,2022-09-11,Blood Test,Annette Wilson
+3532,3551,2021-04-17,Injury Treatment,Lisa Oliver
+3533,3551,2024-10-18,Injury Treatment,Martin Schneider
+3534,3551,2022-07-30,Skin Allergy Treatment,Jared Madden
+3535,3555,2022-01-14,Injury Treatment,Terri Garcia
+3536,3555,2023-02-04,Ear Infection,Steven Dalton
+3537,3557,2022-06-21,Blood Test,Peter Smith
+3538,3557,2024-08-27,Spay/Neuter Surgery,Michael Wagner
+3539,3557,2024-07-01,Surgery Follow-up,Dylan Lopez
+3540,3559,2023-07-17,Spay/Neuter Surgery,Nicholas Frye
+3541,3559,2024-10-22,Spay/Neuter Surgery,Christine Cross
+3542,3559,2022-10-04,Injury Treatment,Richard Morrison
+3543,3560,2024-06-17,Dental Cleaning,Keith Zavala
+3544,3560,2024-04-18,Vaccination,Jennifer Porter
+3545,3563,2022-01-10,Vaccination,Nicole Reyes
+3546,3563,2023-12-26,Spay/Neuter Surgery,Steven Burns
+3547,3563,2023-10-08,X-ray,Robin Mccarty
+3548,3564,2024-06-20,Surgery Follow-up,Andrew Owens
+3549,3564,2021-08-26,Annual Checkup,Alejandra Stone
+3550,3566,2024-07-09,Ear Infection,Olivia Howell
+3551,3566,2023-12-02,Blood Test,Gary Chambers
+3552,3567,2024-02-14,Skin Allergy Treatment,Todd Taylor
+3553,3567,2023-12-12,Surgery Follow-up,Franklin Luna
+3554,3569,2022-01-23,Skin Allergy Treatment,Sierra Johnson
+3555,3569,2024-01-29,X-ray,Stacy Miller
+3556,3571,2024-11-08,Dental Cleaning,Andrew Perez
+3557,3573,2024-02-25,Vaccination,Ryan Hanna
+3558,3575,2021-04-21,Dental Cleaning,Alex Barnes
+3559,3577,2023-01-17,Injury Treatment,Sara Gomez
+3560,3578,2022-05-09,Injury Treatment,Jonathan Roth
+3561,3578,2023-11-06,Skin Allergy Treatment,Brian Valdez
+3562,3578,2023-01-13,Annual Checkup,Nicholas Johnston
+3563,3584,2024-11-08,Skin Allergy Treatment,Amy Chavez
+3564,3587,2022-09-10,Injury Treatment,Jacob Zhang
+3565,3587,2023-03-10,Surgery Follow-up,Alexandra Phillips
+3566,3587,2021-12-02,Vaccination,Jennifer Jackson
+3567,3588,2024-03-18,Dental Cleaning,Robin Mckenzie
+3568,3588,2022-05-11,Annual Checkup,Teresa Mann
+3569,3589,2023-09-28,Annual Checkup,Austin Walker
+3570,3590,2023-03-27,Injury Treatment,John Wilson
+3571,3592,2021-12-22,Dental Cleaning,Kelly Mosley
+3572,3592,2023-10-12,Injury Treatment,Crystal Burke
+3573,3594,2021-10-10,Vaccination,Leah Ford
+3574,3594,2023-09-01,Spay/Neuter Surgery,Brenda Perez
+3575,3596,2024-10-11,Dental Cleaning,Christopher Hinton
+3576,3598,2022-04-07,Ear Infection,Caleb Sanders
+3577,3602,2024-05-16,X-ray,James Harvey
+3578,3602,2024-12-09,Vaccination,George Summers
+3579,3603,2023-11-13,Spay/Neuter Surgery,Anne Harper
+3580,3603,2022-01-08,Blood Test,William Chung
+3581,3603,2022-12-01,Blood Test,Christopher Torres
+3582,3604,2021-11-15,Blood Test,Jeremy Smith
+3583,3604,2024-04-27,Injury Treatment,Kelsey Curtis
+3584,3609,2021-05-25,Blood Test,Amber Brooks
+3585,3609,2024-03-30,Ear Infection,Christopher Wilkins
+3586,3611,2022-04-01,Spay/Neuter Surgery,Jason Scott
+3587,3611,2023-10-23,X-ray,Aaron Evans
+3588,3612,2022-01-17,X-ray,Terry Richardson
+3589,3614,2021-06-16,Annual Checkup,Collin Grant
+3590,3614,2023-10-19,Blood Test,Daniel Webb
+3591,3614,2024-11-18,Dental Cleaning,Paul Melton
+3592,3616,2021-12-19,Ear Infection,Maurice Parker
+3593,3616,2023-01-09,X-ray,Crystal Leach
+3594,3618,2022-04-20,Injury Treatment,Tina Avery
+3595,3619,2023-01-11,Spay/Neuter Surgery,Annette Miller
+3596,3619,2022-06-05,X-ray,Miss Catherine Armstrong
+3597,3622,2022-03-23,Injury Treatment,Teresa Zimmerman
+3598,3624,2021-10-15,Skin Allergy Treatment,Charles Lang
+3599,3625,2021-05-15,Dental Cleaning,Wendy Suarez
+3600,3625,2024-05-23,Vaccination,Henry Palmer
+3601,3627,2023-08-05,Dental Cleaning,Chad Hill
+3602,3627,2021-05-21,Blood Test,Ashley Campos
+3603,3628,2022-08-25,X-ray,Phillip Fisher
+3604,3628,2023-05-30,Annual Checkup,Erin Lam
+3605,3630,2023-02-07,Ear Infection,Kenneth Vasquez
+3606,3630,2023-02-03,X-ray,Johnny Calderon
+3607,3631,2021-08-19,Surgery Follow-up,Timothy Wood
+3608,3634,2021-08-11,Skin Allergy Treatment,Colin Carter
+3609,3635,2023-06-22,Vaccination,Cynthia Lopez
+3610,3635,2023-04-29,Vaccination,Angela Hodges
+3611,3637,2022-03-23,Spay/Neuter Surgery,James Montgomery
+3612,3637,2023-08-26,Ear Infection,Brian Robinson
+3613,3637,2021-12-07,Skin Allergy Treatment,Kelly Cherry
+3614,3642,2024-06-04,Spay/Neuter Surgery,Michael Dominguez
+3615,3642,2024-07-10,Surgery Follow-up,James Williams
+3616,3643,2022-09-15,Vaccination,Ethan Oconnor
+3617,3645,2024-08-04,Ear Infection,James Morrow
+3618,3645,2021-08-21,X-ray,Cheryl Davis
+3619,3645,2023-03-22,Injury Treatment,Nancy Webb
+3620,3646,2022-04-25,Surgery Follow-up,Eric Bradley
+3621,3646,2022-01-27,Blood Test,Anthony Crawford
+3622,3647,2023-09-24,Surgery Follow-up,Nathan Murphy
+3623,3649,2024-11-29,X-ray,John Green
+3624,3651,2024-12-31,Ear Infection,Jodi Hart
+3625,3651,2024-10-16,Ear Infection,Dillon Neal
+3626,3654,2021-04-14,Surgery Follow-up,Terry Turner
+3627,3657,2022-01-07,X-ray,Richard Todd
+3628,3658,2024-04-10,Blood Test,Erin Wilkerson
+3629,3663,2022-06-26,Vaccination,Ms. Laura Vazquez
+3630,3663,2021-12-02,Surgery Follow-up,Cynthia Knox
+3631,3665,2021-10-27,Dental Cleaning,Julie White
+3632,3665,2022-06-08,Vaccination,David Davis
+3633,3665,2022-11-04,Annual Checkup,Peggy Reyes
+3634,3671,2024-10-05,Injury Treatment,Tiffany Morales
+3635,3671,2022-06-06,Injury Treatment,Edward Wright
+3636,3672,2022-03-31,Surgery Follow-up,David Palmer
+3637,3677,2022-09-07,Blood Test,Steve Cordova
+3638,3677,2024-01-31,X-ray,Joseph Hammond
+3639,3682,2024-02-03,Dental Cleaning,Melinda Harris
+3640,3682,2021-09-24,Blood Test,Megan Thomas
+3641,3682,2021-01-15,Blood Test,Donald Watkins
+3642,3684,2024-05-21,Blood Test,Christian Stafford
+3643,3686,2024-12-15,Spay/Neuter Surgery,Gloria Brown
+3644,3686,2023-07-05,Dental Cleaning,Joshua Thomas
+3645,3688,2024-06-28,Dental Cleaning,Susan Zimmerman
+3646,3689,2023-03-07,Surgery Follow-up,Patrick Schmidt
+3647,3690,2022-04-26,Vaccination,Russell Velasquez
+3648,3692,2024-08-10,Injury Treatment,Jared Burnett
+3649,3693,2021-05-30,Dental Cleaning,Jason Lindsey
+3650,3694,2022-04-11,Skin Allergy Treatment,Curtis Larsen
+3651,3694,2022-01-19,X-ray,Cindy Thompson
+3652,3694,2024-10-10,Ear Infection,Cynthia Estes
+3653,3695,2022-08-30,Skin Allergy Treatment,Chelsea Mathis
+3654,3696,2024-02-19,Dental Cleaning,Lori Williams
+3655,3696,2022-03-09,X-ray,Sarah Blanchard
+3656,3696,2024-02-17,Surgery Follow-up,Marilyn Jones
+3657,3697,2024-05-04,Annual Checkup,Andre Romero
+3658,3697,2021-10-20,Spay/Neuter Surgery,Brian Lutz
+3659,3698,2021-04-21,Vaccination,Nathaniel Perez
+3660,3699,2023-04-28,X-ray,Travis Johnson
+3661,3699,2021-06-02,X-ray,Tara King
+3662,3700,2024-07-17,Surgery Follow-up,Michael Dominguez
+3663,3700,2023-05-29,Spay/Neuter Surgery,Susan Adams
+3664,3706,2021-08-06,Skin Allergy Treatment,Lorraine Buchanan
+3665,3707,2021-01-17,Blood Test,Nichole Williams
+3666,3708,2021-10-20,X-ray,Veronica Reynolds
+3667,3710,2024-04-06,Skin Allergy Treatment,Tracey Stone
+3668,3711,2021-09-01,Ear Infection,Tina Nielsen
+3669,3711,2024-12-17,Injury Treatment,Lisa Ellis
+3670,3711,2022-05-29,Vaccination,Samantha Gonzalez
+3671,3718,2022-09-15,Skin Allergy Treatment,Charles Barnes
+3672,3719,2022-09-30,Spay/Neuter Surgery,James Vasquez
+3673,3719,2021-12-06,Surgery Follow-up,Brent Olson
+3674,3719,2021-05-24,Injury Treatment,Jessica Sanders
+3675,3721,2024-05-07,X-ray,Alicia Benton
+3676,3722,2022-07-15,Skin Allergy Treatment,Mary Wolf
+3677,3722,2023-01-06,Ear Infection,Kelly Jones
+3678,3723,2023-01-03,Annual Checkup,Brianna Lee
+3679,3725,2023-05-22,Dental Cleaning,Nicholas Ballard
+3680,3725,2022-12-03,X-ray,Shawn Baker
+3681,3725,2023-05-14,Annual Checkup,Monica Brown
+3682,3728,2021-02-23,Injury Treatment,William Lam
+3683,3728,2024-09-01,Blood Test,Frances Cole
+3684,3729,2022-11-22,X-ray,Janice Gilmore
+3685,3729,2023-07-08,Surgery Follow-up,Bethany Morgan
+3686,3729,2021-07-01,Vaccination,John Williams
+3687,3730,2021-04-21,Vaccination,Carla Larsen
+3688,3730,2022-12-25,X-ray,Cory Walker
+3689,3730,2023-01-28,Surgery Follow-up,Travis Rodriguez
+3690,3731,2024-03-02,Vaccination,Aaron Lester
+3691,3731,2024-05-20,Skin Allergy Treatment,Sheila Mckee
+3692,3732,2022-05-19,Injury Treatment,Jessica Turner
+3693,3732,2022-06-09,Injury Treatment,Logan Gonzales
+3694,3732,2024-12-01,Dental Cleaning,Michelle West
+3695,3733,2022-04-13,Ear Infection,Samuel Green
+3696,3733,2023-05-22,Injury Treatment,Stephanie Thompson
+3697,3735,2021-03-30,X-ray,Linda Pierce
+3698,3735,2022-11-21,Dental Cleaning,Teresa Young
+3699,3738,2022-05-27,X-ray,Eric Parker MD
+3700,3738,2021-09-18,Surgery Follow-up,Stephanie Bennett
+3701,3738,2022-12-07,Spay/Neuter Surgery,Robert Mendez
+3702,3740,2023-07-08,Skin Allergy Treatment,Morgan Sanders
+3703,3742,2024-08-02,Dental Cleaning,Claudia Parker
+3704,3742,2022-11-19,X-ray,Heather Ritter
+3705,3745,2021-07-28,Ear Infection,Kevin Parker
+3706,3745,2024-12-23,Dental Cleaning,James Guzman
+3707,3745,2023-05-03,Spay/Neuter Surgery,Margaret Simmons
+3708,3746,2022-06-03,Injury Treatment,Ryan Weaver
+3709,3746,2024-07-08,Dental Cleaning,Juan Harris
+3710,3750,2021-05-03,Annual Checkup,Christina Jackson
+3711,3753,2024-04-04,Annual Checkup,Courtney Hamilton
+3712,3753,2024-04-08,Skin Allergy Treatment,Julie Oneill
+3713,3755,2024-01-25,Dental Cleaning,Marie Howard
+3714,3758,2021-12-21,Surgery Follow-up,Theresa Curry
+3715,3759,2023-10-01,Vaccination,Emily Freeman
+3716,3759,2022-07-28,Skin Allergy Treatment,Mr. Dennis Glover
+3717,3760,2021-02-17,Vaccination,Mark Giles
+3718,3760,2021-01-26,Blood Test,Raymond Mitchell
+3719,3766,2021-09-28,Blood Test,Stephen Sandoval
+3720,3766,2021-08-26,Skin Allergy Treatment,John Martin
+3721,3770,2021-08-20,Spay/Neuter Surgery,Jacob Clay
+3722,3770,2022-01-24,Surgery Follow-up,Brittney Thompson
+3723,3776,2023-10-15,Blood Test,Alyssa Young
+3724,3776,2023-10-22,Injury Treatment,Victoria Conley
+3725,3777,2023-08-02,Ear Infection,Christopher Calderon
+3726,3777,2023-04-09,X-ray,Howard Bautista
+3727,3777,2024-11-28,Spay/Neuter Surgery,Andrew White
+3728,3779,2024-03-05,Annual Checkup,Mark Soto
+3729,3779,2021-12-17,Skin Allergy Treatment,Kaitlyn Silva
+3730,3782,2023-06-16,Spay/Neuter Surgery,Walter Turner
+3731,3782,2022-08-16,Spay/Neuter Surgery,Jessica James
+3732,3784,2022-02-09,Surgery Follow-up,Sarah Scott
+3733,3784,2023-02-03,Spay/Neuter Surgery,John Williams
+3734,3784,2023-05-05,Surgery Follow-up,Rose Evans
+3735,3786,2024-02-01,X-ray,Carol Baker
+3736,3786,2024-09-17,X-ray,Jordan Hill
+3737,3786,2023-10-01,Skin Allergy Treatment,Wesley Allison
+3738,3789,2023-05-16,X-ray,Jennifer Porter
+3739,3789,2022-02-10,Injury Treatment,Lawrence Howard
+3740,3789,2024-03-16,Annual Checkup,Nicole Lyons
+3741,3790,2021-11-19,Injury Treatment,Jermaine Evans
+3742,3793,2021-09-14,Blood Test,Shirley Haynes
+3743,3793,2022-09-12,Injury Treatment,Brian Lane
+3744,3793,2023-07-08,Surgery Follow-up,Ryan Armstrong
+3745,3794,2021-01-05,Blood Test,David Cochran
+3746,3794,2021-01-03,Ear Infection,Joshua Parker
+3747,3797,2022-07-27,Ear Infection,James Owens
+3748,3800,2023-01-03,Vaccination,Adrian Howard
+3749,3800,2023-10-02,Vaccination,Greg Wells
+3750,3800,2021-03-20,Annual Checkup,Melissa Williams
+3751,3802,2023-09-08,Ear Infection,Samuel Lewis
+3752,3802,2021-11-25,Vaccination,Janice Allison
+3753,3802,2023-12-13,Skin Allergy Treatment,Steven Reed
+3754,3810,2021-06-18,Vaccination,Barbara Green
+3755,3810,2022-04-28,Skin Allergy Treatment,Michelle Stevens
+3756,3810,2021-09-10,Surgery Follow-up,Diana Valdez
+3757,3813,2021-01-02,Surgery Follow-up,Anthony Garcia
+3758,3813,2024-12-11,Injury Treatment,Deborah Rhodes
+3759,3814,2024-12-16,Spay/Neuter Surgery,Edward Taylor
+3760,3814,2023-08-29,X-ray,Luke West
+3761,3814,2023-08-16,Annual Checkup,Jillian Smith
+3762,3815,2021-12-14,Ear Infection,Christina Lee
+3763,3815,2024-07-20,Surgery Follow-up,Andrew Spence
+3764,3817,2022-01-02,Injury Treatment,Arthur Ball
+3765,3817,2023-06-19,Injury Treatment,Vanessa Yoder
+3766,3817,2021-07-04,Spay/Neuter Surgery,Lisa Farmer
+3767,3819,2023-05-19,Surgery Follow-up,Julie Smith
+3768,3819,2021-10-12,Ear Infection,Leah Ferguson
+3769,3821,2021-12-08,Spay/Neuter Surgery,Dr. Michelle Mckay
+3770,3821,2022-10-11,Blood Test,Kevin Garcia
+3771,3821,2022-12-07,Vaccination,Dylan Allen
+3772,3822,2021-06-08,X-ray,James Perry
+3773,3822,2023-04-13,Vaccination,Katherine Patel
+3774,3822,2023-02-13,Blood Test,Jennifer Lindsey
+3775,3823,2021-08-10,Ear Infection,Judy Walton
+3776,3824,2022-11-08,Dental Cleaning,William Ramirez
+3777,3824,2021-12-27,Annual Checkup,Cheryl Wheeler
+3778,3824,2023-10-15,Injury Treatment,Toni Williams
+3779,3825,2022-12-24,Skin Allergy Treatment,Stephanie Donovan
+3780,3825,2021-08-05,Ear Infection,Jessica Smith
+3781,3825,2024-08-16,Dental Cleaning,Angela Perez
+3782,3827,2023-02-10,Vaccination,Allison Mendez
+3783,3827,2023-09-29,Spay/Neuter Surgery,Alexander Adams
+3784,3828,2024-07-14,Blood Test,David Jones
+3785,3828,2023-01-24,Surgery Follow-up,Melinda Taylor
+3786,3829,2024-03-08,Injury Treatment,Andrew Perez
+3787,3829,2023-09-04,Spay/Neuter Surgery,Rebecca Anderson
+3788,3829,2022-06-25,X-ray,Brad Mathews
+3789,3831,2022-12-20,Surgery Follow-up,Patricia Williams
+3790,3831,2024-08-14,Blood Test,Charles Martinez
+3791,3836,2022-02-08,Blood Test,Rose Morgan
+3792,3836,2021-04-21,Dental Cleaning,Whitney Olson
+3793,3837,2022-12-06,Surgery Follow-up,Mary Guerrero MD
+3794,3838,2022-04-09,X-ray,Clinton Parker
+3795,3838,2024-08-24,Ear Infection,Rachel Hartman
+3796,3841,2022-08-03,Annual Checkup,William Baker
+3797,3841,2021-02-16,Dental Cleaning,Nancy Farley
+3798,3841,2022-05-10,Vaccination,Joseph Miller
+3799,3842,2023-01-22,Ear Infection,Vincent Stephens
+3800,3842,2023-07-07,Skin Allergy Treatment,Stephanie Nguyen
+3801,3843,2024-11-25,X-ray,Tracy Weber
+3802,3844,2021-09-18,Injury Treatment,Johnathan Harris
+3803,3844,2023-09-03,Annual Checkup,Margaret Roberts
+3804,3847,2024-04-04,Skin Allergy Treatment,Erik Mccall
+3805,3849,2021-01-20,Ear Infection,Tina Anderson
+3806,3851,2023-07-02,Spay/Neuter Surgery,Rebecca Thompson
+3807,3851,2021-06-09,X-ray,Harold Koch
+3808,3851,2023-03-11,X-ray,Tanya Durham
+3809,3854,2021-04-16,Ear Infection,Christopher Mendoza
+3810,3854,2022-01-27,Vaccination,Samuel Morton
+3811,3857,2021-01-06,Spay/Neuter Surgery,Renee Walker
+3812,3857,2023-04-20,Surgery Follow-up,Judith Caldwell
+3813,3857,2024-01-29,Injury Treatment,Daniel Fisher
+3814,3858,2024-06-18,X-ray,John Adams
+3815,3859,2024-02-24,Vaccination,Alexandra Baker
+3816,3859,2021-06-22,Vaccination,Robert Wright
+3817,3860,2021-12-03,Blood Test,Dale Myers
+3818,3862,2023-03-12,Skin Allergy Treatment,Sabrina Rubio
+3819,3862,2023-09-23,Annual Checkup,Jose Hall
+3820,3863,2022-05-11,Surgery Follow-up,George Blake
+3821,3864,2022-09-09,Injury Treatment,Linda Rios
+3822,3865,2023-09-21,Skin Allergy Treatment,Nicholas Reese
+3823,3867,2024-07-19,Spay/Neuter Surgery,Joshua Brooks
+3824,3867,2022-06-06,Dental Cleaning,Stephanie Black
+3825,3867,2022-07-13,Dental Cleaning,Tina Richard
+3826,3868,2021-12-20,X-ray,Robert Andrews
+3827,3868,2024-07-13,Ear Infection,Taylor Wilson
+3828,3869,2022-07-28,Skin Allergy Treatment,Heather Sullivan
+3829,3871,2024-01-27,Surgery Follow-up,Alyssa Simmons
+3830,3871,2023-07-17,X-ray,Carmen Miller
+3831,3871,2024-02-11,Dental Cleaning,Stephen Russell
+3832,3872,2024-12-25,Blood Test,Robert Hampton
+3833,3874,2021-07-17,Skin Allergy Treatment,Michael Allen
+3834,3874,2024-09-21,Surgery Follow-up,Claudia Nelson
+3835,3877,2021-04-11,Vaccination,Derrick Williams
+3836,3877,2022-07-25,Annual Checkup,Christian West
+3837,3877,2024-06-17,Vaccination,Antonio Delgado
+3838,3878,2023-03-08,Surgery Follow-up,Wyatt Reyes
+3839,3880,2022-10-02,Injury Treatment,Charles Thomas
+3840,3880,2023-04-08,Blood Test,Logan Brown
+3841,3881,2021-01-15,Surgery Follow-up,Dustin Rodriguez
+3842,3882,2021-05-13,Annual Checkup,Amber Olson
+3843,3882,2021-10-01,Ear Infection,Kristen Wood
+3844,3882,2024-10-27,Ear Infection,Melinda Olsen
+3845,3884,2021-06-09,Injury Treatment,Austin Turner
+3846,3884,2024-07-06,Spay/Neuter Surgery,Andrew Armstrong
+3847,3884,2021-06-10,Annual Checkup,Melvin Brown
+3848,3888,2024-06-22,Dental Cleaning,Ronnie Lopez
+3849,3889,2022-09-11,Vaccination,Christopher Johnson
+3850,3889,2022-01-19,Annual Checkup,John Olsen
