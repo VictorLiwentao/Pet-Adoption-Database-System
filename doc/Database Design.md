@@ -6,51 +6,60 @@
 ```
 CREATE TABLE User (
     UserID INT PRIMARY KEY,
-    Name VARCHAR(50),
-    Email VARCHAR(50) UNIQUE,
-    Password VARCHAR(100),
-    PhoneNumber VARCHAR(20)
+    Name VARCHAR(50) NOT NULL,
+    Email VARCHAR(50) NOT NULL,
+    Password VARCHAR(100) NOT NULL,
+    PhoneNumber VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE Shelter (
     ShelterID INT PRIMARY KEY,
-    Name VARCHAR(50),
-    Location VARCHAR(100),
+    Name VARCHAR(50) NOT NULL,
+    Location VARCHAR(100) NOT NULL,
     Email VARCHAR(50) UNIQUE,
-    PhoneNumber VARCHAR(20),
+    PhoneNumber VARCHAR(20) NOT NULL,
     UserID INT,
-    FOREIGN KEY (UserID) REFERENCES User(UserID)
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE
 );
 
 CREATE TABLE Pet (
     PetID INT PRIMARY KEY,
     ShelterID INT,
-    Name VARCHAR(50),
-    Type VARCHAR(20),
-    Breed VARCHAR(50),
-    Age INT,
-    Size VARCHAR(20),
-    Color VARCHAR(50),
-    Sex VARCHAR(10),
-    ImageURL VARCHAR(200),
-    DateOfIntake DATE,
-    FOREIGN KEY (ShelterID) REFERENCES Shelter(ShelterID),
-);
-
-CREATE TABLE Status (
-    StatusID INT PRIMARY KEY,
-    Label VARCHAR(20),
-    Description TEXT
+    Name VARCHAR(50) NOT NULL,
+    Type VARCHAR(20) NOT NULL,
+    Breed VARCHAR(50) NOT NULL,
+    Age INT NOT NULL,
+    Size VARCHAR(20) NOT NULL,
+    Color VARCHAR(50) NOT NULL,
+    Sex VARCHAR(10) NOT NULL,
+    DateOfIntake DATE NOT NULL,
+    FOREIGN KEY (ShelterID) REFERENCES Shelter(ShelterID) ON DELETE CASCADE
 );
 
 CREATE TABLE AdoptionRequest (
     RequestID INT PRIMARY KEY,
     UserID INT,
     PetID INT,
-    RequestDate DATE,
-    StatusID INT,
-    FOREIGN KEY (UserID) REFERENCES User(UserID),
-    FOREIGN KEY (PetID) REFERENCES Pet(PetID),
-    FOREIGN KEY (StatusID) REFERENCES Status(StatusID)
+    RequestDate DATE NOT NULL,
+    Status VARCHAR(20) NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (PetID) REFERENCES Pet(PetID) ON DELETE CASCADE
+);
+
+CREATE TABLE MedicalRecord (
+    RecordID INT PRIMARY KEY,
+    PetID INT,
+    Date DATE NOT NULL,
+    Description TEXT NOT NULL,
+    VetName VARCHAR(50) NOT NULL,
+    FOREIGN KEY (PetID) REFERENCES Pet(PetID) ON DELETE CASCADE
+);
+
+CREATE TABLE PastAdoptionRecord (
+    RecordID INT PRIMARY KEY,
+    UserID INT,
+    DateOfAdoption DATE NOT NULL,
+    PetType VARCHAR(20) NOT NULL,
+    FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE
 );
 ```
