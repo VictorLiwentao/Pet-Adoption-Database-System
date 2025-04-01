@@ -63,3 +63,26 @@ CREATE TABLE PastAdoptionRecord (
     FOREIGN KEY (UserID) REFERENCES User(UserID) ON DELETE CASCADE
 );
 ```
+All data in the data folder is added to the schema.
+
+![image](https://github.com/user-attachments/assets/ad753648-87a0-4411-8fed-366530d17c06)
+
+### Advanced SQL queries:
+## 1. 
+## Purpose of the Query
+The goal of this query is to determine how many adoption requests each shelter has received, by counting all the requests submitted for pets associated with each shelter.
+## Real-world Impact
+This query provides valuable operational insight for shelter management. It helps identify which shelters are attracting the most interest from potential adopters
+## SQL Concepts Used
+`Join Multiple Relations + Aggregation via GROUP BY`
+
+```
+SELECT s.Name AS ShelterName,s.Email,s.Location, COUNT(ar.RequestID) AS TotalRequests
+FROM Shelter s
+JOIN Pet p ON s.ShelterID = p.ShelterID
+JOIN AdoptionRequest ar ON p.PetID = ar.PetID
+GROUP BY s.ShelterID
+ORDER BY TotalRequests DESC;
+```
+## Result:
+![image](https://github.com/user-attachments/assets/730b1a7e-7fc5-4fd8-aaa7-55c63e0677a0)
