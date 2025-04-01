@@ -1,6 +1,8 @@
 # Database Design
 
 ## Part 1
+### Implementing the database tables locally
+![image](https://github.com/user-attachments/assets/92597562-5b5f-436f-b88b-68fd167987b5)
 
 ### DDL Commands
 ```
