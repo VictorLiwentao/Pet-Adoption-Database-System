@@ -75,7 +75,7 @@ The goal of this query is to determine how many adoption requests each shelter h
 This query provides valuable operational insight for shelter management. It helps identify which shelters are attracting the most interest from potential adopters
 ## SQL Concepts Used
 `Join Multiple Relations + Aggregation via GROUP BY`
-
+## SQL Code
 ```
 SELECT s.Name AS ShelterName,s.Email,s.Location, COUNT(ar.RequestID) AS TotalRequests
 FROM Shelter s
