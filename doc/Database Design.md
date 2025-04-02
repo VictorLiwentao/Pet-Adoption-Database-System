@@ -478,11 +478,15 @@ With Index idx_pet_type ON Pet(Type):
 ![a96102c6499f7df45fa12f6b02eb451](https://github.com/user-attachments/assets/af04a811-e83b-4753-8c46-be0a99b46fb3)
 With Index idx_shelter_location ON Shelter(Location):
 ![a88f2219aa4c24e1ded6282d5d97da3](https://github.com/user-attachments/assets/50c6ade3-2e40-499c-9b71-e1af766beb70)
+With Index idx_pet_type ON Pet(Type) & idx_shelter_location ON Shelter(Location):
+![426573a3ff9cdf0b5a35778c40a2b63](https://github.com/user-attachments/assets/edfe1f4f-17df-4008-97d7-ddf8764bcece)
+
+
 Default (no additional index): The query performs full table scans on the Pet and Shelter tables in both the UNION ALL branches. Filtering by Pet.Type is done without any supporting index, and aggregation is handled through temporary tables. The join between the subqueries (combined and avgData) relies on standard nested loop joins. As a result, execution cost remains high, with the main aggregation step in the outer query costing 846 and the Pet filtering costing 504.
 
 Design 1: CREATE INDEX idx_pet_type ON Pet(Type); This single-column index improves filtering on Pet.Type for the 'Turtle' branch. In the plan, the cost of the nested loop involving turtle-type pets drops to 1.07, and the specific filtering step on Pet.Type = 'Turtle' now has a reduced cost of 0.35. However, the 'Bird' branch still relies on full scans, and since Pet.Age and join columns are not indexed, aggregation and lookups remain costly.
 
-Design 2: CREATE INDEX idx_shelter_location ON Shelter(Location); This index targets the GROUP BY combined.Location and GROUP BY avgData.Location clauses. However, since the query does not filter by location and ShelterID is still the main join key, the optimizer does not significantly benefit from this index. The execution cost in major steps remains almost identical to the default. This shows that indexing on GROUP BY attributes alone, without filtering or join involvement, yields minimal performance gain.
+Design 2: CREATE INDEX idx_shelter_location ON Shelter(Location); This index targets the GROUP BY combined.Location and GROUP BY avgData.Location clauses.  This indexing has the same intention as Design 1. However, because the query still filter by ShelterID, and that the number of unique locations is nearly as high as the number of shelters, this index offers only minimal improvement. The main join still uses ShelterID (the primary key), so most cost-intensive steps remain unchanged compared to the default plan. The execution cost in major steps remains almost identical to the default. This shows that indexing on GROUP BY attributes alone, without filtering or join involvement, yields minimal performance gain.
 
 Design 3: CREATE INDEX idx_pet_type ON Pet(Type); + CREATE INDEX idx_shelter_location ON Shelter(Location); This combination improves both Pet filtering and potentially speeds up access to shelter locations during grouping. The 'Bird' and 'Turtle' branches both benefit from the Pet.Type index, and the optimizer uses index range scans with a cost of 0.132 for filtering (p.Type IN ('Bird','Turtle')). Aggregation cost on the avgData subquery also improves due to better access paths. Overall, the combined effect yields a notable cost reduction in filtering and aggregation compared to all prior versions.
 
