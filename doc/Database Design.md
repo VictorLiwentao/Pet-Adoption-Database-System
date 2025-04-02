@@ -236,18 +236,10 @@ ORDER BY stats.RejectedCount DESC;
 
 ### 6
 ### Purpose of the Query
-The goal of this query is to display how long each pet has been in the shelter and show the details of their most recent medical record (if any). It calculates the number of days each pet has stayed in the shelter and joins that with the latest veterinary record available for that pet.
+This query lists each pet in the shelter along with how many days they’ve been there, and it shows details from their most recent medical check-up, including the date, the type of medical care they received(description), and veterinarian’s name. Specifically, it calculates the days since each pet’s intake date to show which pets might need some promotions and retrieves the latest available veterinary record for quick reference for the shelter staff or potential adopter.
 
 ### Real-world Impact
-This query is highly useful for shelter staff and administrators because it:
-
-Helps identify pets that have been in the shelter the longest, who may need prioritization in marketing or adoption efforts.
-
-Displays each pet’s most recent medical history, allowing for quick access to important health information without manually browsing through multiple records.
-
-Supports veterinary planning and adoption readiness assessment, especially for animals with outdated or missing medical records.
-
-Can be used to create dashboards highlighting pets overdue for medical updates or shelter exit strategies.
+Shelter **staff can quickly spot pets who’ve stayed the longest — those who might need extra attention or more active promotion**. For example, if a dog has been at the shelter for months, the staff can prioritize featuring that dog on social media or adoption events. Additionally, the query makes it easy to check if pets have recent medical updates; for instance, it can quickly show if a cat hasn’t seen a vet recently, helping staff schedule needed care. Overall, this simplifies daily shelter operations by clearly showing who needs special attention, or a marketing boost to find a loving home sooner.
 
 ### SQL Concepts Used
 `Join Multiple Relations + Aggregation via GROUP BY + Subqueries that cannot be easily replaced by a join`
