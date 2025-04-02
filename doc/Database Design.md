@@ -122,17 +122,11 @@ P.S. Since only 15 rows are shown, the past adoption is only 1. The actual ascen
 
 ### 3.
 ### Purpose of the Query
-The goal of this query is to analyze the adoption demand for each type of pet in each shelter, by counting how many adoption requests were made for each pet type at every shelter.
+This query calculates the number of adoption requests received for each type of pet (e.g., dog, cat, bird) at each shelter. It shows shelters along with the pet types available there, and ranks them based on how many adoption requests each type has received.
+
 ### Real-world Impact
-This query helps shelter managers and system administrators:
+This query can **help shelters understand what kinds of animals they’re most known for based on adoption interest**. For example, if one shelter consistently receives more requests for rabbits than other types, it may indicate that the shelter is viewed as a go-to place for small animals. Another shelter might specialize in dogs, receiving the majority of dog-related adoption requests. This kind of insight can **help shelters embrace and build on their strengths**. Additionally, this query can **help staff decide how to allocate resources such as food and veterinary care**. For instance, a shelter with a high number of bird adoption requests may need more cage space and seed donations.
 
-Understand which types of pets are in higher demand within each shelter.
-
-Compare adoption interest across different shelters for targeted promotions (e.g., “Cats most requested at Shelter A”).
-
-Make data-driven decisions about resource allocation (e.g., space, food, medical care) depending on adoption demand by type.
-
-Identify opportunities for campaigns around under-requested pet types.
 ### SQL Concepts Used
 `Join Multiple Relations + Aggregation via GROUP BY`
 ### SQL Code
