@@ -102,7 +102,7 @@ ORDER BY TotalRequests DESC;
 This query selects each user’s ID and name from the database, counts how many pets they’ve adopted in the past, and also counts how many adoption requests they currently have submitted. It combines these counts to give a clear view of each user’s past adoption history and current adoption interest.
 
 ### Real-world Impact
-Shelters can use this information to spot their most active adopters and better understand user behavior. For instance, shelters might use these insights to reward loyal adopters, invite them to special events, or reach out for feedback. Additionally, users with a strong adoption history and active requests could receive more personalized attention, improving their adoption experience.
+Shelters can use this information to **spot their most active adopters** and **better understand user behavior**. For instance, shelters might **use these insights to reward loyal adopters**, **invite them to special events**, or **reach out for feedback**. Additionally, **users with a strong adoption history and active requests could receive more personalized attention**, **improving their adoption experience**.
 
 ### SQL Concepts Used
 `Join Multiple Relations + Aggregation via GROUP BY`
@@ -273,20 +273,10 @@ P.S. Because some pets may not have vaccination records, they are null. these ar
 
 ### 7.
 ### Purpose of the Query
-The purpose of this query is to analyze adoption demand and pet availability across shelter locations, specifically focusing on birds and turtles. It computes the total number of adoption requests, the average pet age, and the ratio of requests per pet in each location. By combining multiple subqueries using UNION ALL and joining with aggregate data, the query offers a location-level view of both demand (requests) and supply (pets), which helps evaluate shelter performance and species popularity.
+This query calculates, for each shelter location, the total number of adoption requests specifically for birds and turtles, along with the average age of these animals and the ratio of requests per available pet. To do this, the query first separately counts adoption requests for birds and turtles, combines those counts, and then joins this data with the average age and total number of pets at each shelter. This gives shelters a clear picture of how much demand exists compared to their supply for these specific animal types.
 
 ### Real-world Impact
-This query is particularly useful for animal shelter administrators and strategic planners who need insights into how well different locations are managing specific animal types. It enables stakeholders to:
-
-Identify locations with high adoption demand but potentially low pet availability.
-
-Detect species-specific trends, such as whether birds or turtles are receiving more attention.
-
-Assess whether shelters are oversubscribed or underutilized, based on the RequestPerPetRatio.
-
-Prioritize resource allocation, outreach, and animal care efforts based on adoption pressure.
-
-Make data-driven decisions on where to direct publicity or adopt-a-thon campaigns.
+Shelter managers and planners can use this query to **understand which locations see the highest adoption interest for birds and turtles** and **how well their supply meets this demand**. It can **highlight shelters that might have too few pets relative to adoption interest** or **identify those that may have too many pets with lower demand**. With this information, shelters can **prioritize which locations need more resources**, **plan targeted marketing campaigns**, or **organize adoption events focused on the most popular or underserved animal types**.
 
 
 ### SQL Concepts Used
