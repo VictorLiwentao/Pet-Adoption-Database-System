@@ -149,18 +149,11 @@ ORDER BY s.ShelterID, RequestsForType DESC;
 
 ### 4.
 ### Purpose of the Query
-The goal of this query is to identify shelters that currently have senior cats (age ≥ 10) or senior dogs (age > 8) available for adoption, and to rank these shelters by the number of such pets. Only pets not currently involved in pending or approved adoption requests are included.
+This query identifies shelters that currently have senior cats (10 years or older) or senior dogs (over 8 years old) available for adoption. It counts how many of these senior pets are at each shelter and ranks the shelters from highest to lowest. Pets that already have pending or approved adoption requests are excluded from this count.
 
 ### Real-world Impact
-This query is especially valuable for helping shelters promote the adoption of senior animals, who often face longer shelter stays. It allows:
+Shelters can use this data to **quickly spot older pets that typically wait longer for adoption and give them extra promotional support**. In particular, a shelter with many senior animals might run a special event or campaign specifically aimed at adopting older pets. Animal advocates and shelter managers can also use this information to **easily identify which shelters need the most help and direct their outreach and resources accordingly**. Additionally, this information can help shelter administrators **create dashboards that highlight older pets needing urgent adoption**, **making it easier to prioritize shelter resources effectively**.
 
-Animal welfare advocates to prioritize outreach to shelters with the largest number of senior pets.
-
-Shelters to identify surplus of elderly pets and create targeted campaigns (e.g., "Adopt a Senior Pet Week").
-
-System admins to generate real-time dashboards showing available high-priority animals (those aging and still unclaimed).
-
-It also supports humane decision-making by spotlighting pets who are most in need of placement.
 ### SQL Concepts Used
 `Join Multiple Relations + SET Operators + Aggregation via GROUP BY + Subqueries that cannot be easily replaced by a join`
 ### SQL Code
