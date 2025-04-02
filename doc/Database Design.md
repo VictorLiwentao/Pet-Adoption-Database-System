@@ -200,20 +200,10 @@ ORDER BY AvailablePetCount DESC;
 
 ### 5 
 ### Purpose of the Query
-The goal of this query is to identify users who exhibit potentially problematic adoption request behavior, such as submitting a high number of recent requests or having more rejected than approved requests overall. It also returns how many of their requests were approved and how many were rejected.
+This query identifies users who might have problematic behavior related to pet adoption requests. Specifically, it finds users who either submitted more than four adoption requests in the past 30 days or those whose overall adoption requests have more rejections than approvals. It lists each user’s contact details along with the count of their approved and rejected requests.
 
 ### Real-world Impact
-This query is valuable for platform administrators and shelter managers who want to:
-
-Detect users who may be abusing or misunderstanding the adoption request process.
-
-Flag accounts for review if the user is overly aggressive with requests (e.g., submitting > 4 in a month).
-
-Spot users who are consistently denied, which may indicate compatibility issues or system misuse.
-
-Provide customer support or educational outreach to users struggling to complete the adoption process.
-
-This can help maintain the integrity of the platform and improve the quality of the adoption matching system.
+Shelter staff or platform administrators can use this information to catch issues early — for example, **identifying users who might be making too many requests too quickly, possibly without carefully considering pets’ needs**. It also **highlights users who repeatedly face rejection**, which could **indicate confusion about adoption criteria or suggest potentially unsuitable adopters**. For instance, administrators can proactively reach out to these users to clarify adoption requirements, guide them toward a better understanding, or filter out homes that might not be safe or appropriate for the pets. This helps **keep the adoption system effective for the user that are looking for pets and safer for animals that are looking for home**.
 
 ### SQL Concepts Used
 `Join Multiple Relations + Aggregation via GROUP BY + Subqueries that cannot be easily replaced by a join`
