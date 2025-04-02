@@ -76,13 +76,11 @@ All data in the data folder is added to the schema.
 ### Purpose of the Query
 The goal of this query is to determine how many adoption requests each shelter has received, by counting all the requests submitted for pets associated with each shelter.
 ### Real-world Impact
-This query provides valuable operational insight for shelter management. It helps identify which shelters are attracting the most interest from potential adopters. Such data can be used to:
-
-Evaluate and improve marketing effectiveness
+It helps identify which shelters are attracting the most interest from potential adopters. Such data can be used to:
 
 Allocate resources more efficiently (e.g., staff, funding, veterinary care)
 
-Understand adoption demand patterns across locations
+Understand adoption demand patterns across different locations
 
 Recognize shelters that may need additional support due to low engagement
 ### SQL Concepts Used
@@ -110,7 +108,7 @@ Identify loyal or frequent adopters
 
 Target them for outreach, special events, or feedback
 
-Recognize users with ongoing interest who have a strong history of successful adoptions
+Recognize users who are insterested in and have a strong history of successful adoptions
 
 Provide a more personalized adoption experience
 ### SQL Concepts Used
@@ -141,7 +139,7 @@ Compare adoption interest across different shelters for targeted promotions (e.g
 
 Make data-driven decisions about resource allocation (e.g., space, food, medical care) depending on adoption demand by type.
 
-Identify opportunities for marketing campaigns or events around under-requested pet types.
+Identify opportunities for campaigns around under-requested pet types.
 ### SQL Concepts Used
 `Join Multiple Relations + Aggregation via GROUP BY`
 ### SQL Code
