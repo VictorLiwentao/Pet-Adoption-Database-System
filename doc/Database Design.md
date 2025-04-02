@@ -74,15 +74,11 @@ All data in the data folder is added to the schema.
 ## Advanced SQL queries:
 ### 1. 
 ### Purpose of the Query
-The goal of this query is to determine how many adoption requests each shelter has received, by counting all the requests submitted for pets associated with each shelter.
+This query counts the total number of adoption requests each shelter has received by joining the Shelter, Pet, and AdoptionRequest tables. It does this by finding all pets belonging to each shelter, then counting how many adoption requests have been made for those pets. The result shows the shelter’s name, email, location, and total number of requests, sorted from most to least.
+
 ### Real-world Impact
-It helps identify which shelters are attracting the most interest from potential adopters. Such data can be used to:
+This information **helps shelters and system admins see which locations are getting the most attention from potential adopters**. For example, if one shelter has significantly more adoption requests than others, it might indicate strong community engagement or effective outreach. On the flip side, **shelters with fewer requests might need more visibility or support**.
 
-Allocate resources more efficiently (e.g., staff, funding, veterinary care)
-
-Understand adoption demand patterns across different locations
-
-Recognize shelters that may need additional support due to low engagement
 ### SQL Concepts Used
 `Join Multiple Relations + Aggregation via GROUP BY`
 ### SQL Code
