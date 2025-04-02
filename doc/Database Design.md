@@ -2,6 +2,8 @@
 
 ## Part 1
 ### Implementing the database tables locally
+![image](https://github.com/user-attachments/assets/036ad3c1-6025-47c4-a942-2d903bc54d85)
+
 ![image](https://github.com/user-attachments/assets/92597562-5b5f-436f-b88b-68fd167987b5)
 
 ### DDL Commands
