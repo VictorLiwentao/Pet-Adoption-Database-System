@@ -99,18 +99,11 @@ ORDER BY TotalRequests DESC;
 
 ### 2.
 ### Purpose of the Query
-The goal of this query is to analyze user behavior by determining how many past adoptions and current adoption requests each user has made. It tracks both historical engagement (confirmed adoptions) and current interest (open requests), providing a dual-perspective view of user activity.
+This query selects each user’s ID and name from the database, counts how many pets they’ve adopted in the past, and also counts how many adoption requests they currently have submitted. It combines these counts to give a clear view of each user’s past adoption history and current adoption interest.
+
 ### Real-world Impact
-This query is useful for understanding the most active and engaged adopters.
-Shelters or administrators can use this data to:
+Shelters can use this information to spot their most active adopters and better understand user behavior. For instance, shelters might use these insights to reward loyal adopters, invite them to special events, or reach out for feedback. Additionally, users with a strong adoption history and active requests could receive more personalized attention, improving their adoption experience.
 
-Identify loyal or frequent adopters
-
-Target them for outreach, special events, or feedback
-
-Recognize users who are insterested in and have a strong history of successful adoptions
-
-Provide a more personalized adoption experience
 ### SQL Concepts Used
 `Join Multiple Relations + Aggregation via GROUP BY`
 ### SQL Code
