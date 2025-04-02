@@ -234,7 +234,7 @@ JOIN (
     GROUP BY UserID
     HAVING (SUM(CASE WHEN RequestDate >= DATE_SUB(CURDATE(), INTERVAL 30 DAY) THEN 1 ELSE 0 END) > 4)
         OR
-        (COUNT(*) >= 2AND SUM(CASE WHEN Status = 'Rejected' THEN 1 ELSE 0 END) > SUM(CASE WHEN Status = 'Approved' THEN 1 ELSE 0 END))
+        (COUNT(*) >= 2 AND SUM(CASE WHEN Status = 'Rejected' THEN 1 ELSE 0 END) > SUM(CASE WHEN Status = 'Approved' THEN 1 ELSE 0 END))
 ) AS stats ON u.UserID = stats.UserID
 ORDER BY stats.RejectedCount DESC;
 ```
@@ -278,8 +278,69 @@ ORDER BY DaysInShelter DESC, LatestRecordDate ASC;
 
 P.S. Because some pets may not have vaccination records, they are null. these are the first targets to be considered for needing vaccinations.
 
+### 7.
+### Purpose of the Query
+The purpose of this query is to analyze adoption demand and pet availability across shelter locations, specifically focusing on birds and turtles. It computes the total number of adoption requests, the average pet age, and the ratio of requests per pet in each location. By combining multiple subqueries using UNION ALL and joining with aggregate data, the query offers a location-level view of both demand (requests) and supply (pets), which helps evaluate shelter performance and species popularity.
+
+### Real-world Impact
+This query is particularly useful for animal shelter administrators and strategic planners who need insights into how well different locations are managing specific animal types. It enables stakeholders to:
+
+Identify locations with high adoption demand but potentially low pet availability.
+
+Detect species-specific trends, such as whether birds or turtles are receiving more attention.
+
+Assess whether shelters are oversubscribed or underutilized, based on the RequestPerPetRatio.
+
+Prioritize resource allocation, outreach, and animal care efforts based on adoption pressure.
+
+Make data-driven decisions on where to direct publicity or adopt-a-thon campaigns.
+
+
+### SQL Concepts Used
+`Join Multiple Relations + SET Operators + Aggregation via GROUP BY + Subqueries that cannot be easily replaced by a join`
+
+### SQL Code
+```
+SELECT p.PetID, p.Name AS PetName,p.DateOfIntake, DATEDIFF(CURDATE(), p.DateOfIntake) AS SELECT
+    combined.Location,
+    SUM(combined.TotalRequests) AS TotalRequests,
+    AVG(avgData.AvgPetAge) AS AvgPetAge,
+    SUM(combined.TotalRequests) / NULLIF(SUM(avgData.PetCount), 0) AS RequestPerPetRatio
+FROM (
+    SELECT s.ShelterID, s.Location, COUNT(ar.RequestID) AS TotalRequests
+    FROM Shelter s
+    JOIN Pet p ON s.ShelterID = p.ShelterID
+    JOIN AdoptionRequest ar ON p.PetID = ar.PetID
+    WHERE p.Type = 'Bird'
+    GROUP BY s.ShelterID, s.Location
+
+    UNION ALL
+
+    SELECT s.ShelterID, s.Location, COUNT(ar.RequestID) AS TotalRequests
+    FROM Shelter s
+    JOIN Pet p ON s.ShelterID = p.ShelterID
+    JOIN AdoptionRequest ar ON p.PetID = ar.PetID
+    WHERE p.Type = 'Turtle'
+    GROUP BY s.ShelterID, s.Location
+) AS combined
+JOIN (
+    SELECT s.ShelterID, s.Location, AVG(p.Age) AS AvgPetAge, COUNT(p.PetID) AS PetCount
+    FROM Shelter s
+    JOIN Pet p ON s.ShelterID = p.ShelterID
+    WHERE p.Type IN ('Bird','Turtle')
+    GROUP BY s.ShelterID, s.Location
+) AS avgData
+  ON combined.ShelterID = avgData.ShelterID
+GROUP BY combined.Location
+ORDER BY TotalRequests DESC;
+```
+### Result:
+![image](https://github.com/user-attachments/assets/399780c4-1443-4bff-988c-b620212f0e57)
+
+
+
 ## Part 2
-### Since the minimum requirement is 4 advanced queries. We are indexing with query 2 4 and 6.
+### Since the minimum requirement is 4 advanced queries. We are indexing with query 2 4 6 and 7.
 ### 2.
 
 Without Index
@@ -345,16 +406,6 @@ This confirms a trade-off: although this composite index helps complex queries w
 
 Justification: The covering index scan cost on past is minimally impacted by indexing unless the new index substantially changes clustering or access pattern. The stream results cost, however, is sensitive to the entire execution plan, including join order, join algorithm, and index presence across multiple tables. Adding idx_past_user did not reduce stream cost, and even slightly increased index scan cost — possibly due to the nature of the index or the storage engine’s access path decisions. Meanwhile, adding indexes to AdoptionRequest increased stream costs as the optimizer restructured the joins. Thus, for this query, indexing past.UserID offers minor benefits or even minor drawbacks, while indexing AdoptionRequest affects global plan structure — useful for filtered queries, but not necessarily optimal for simple aggregation.
 
-### 3. 
-Without Indexing: 1352
-![image](https://github.com/user-attachments/assets/1387af45-a1f7-4ba7-93cc-085787b0e525)
-With Indexing idx_adoption_pet: 1352
-![image](https://github.com/user-attachments/assets/d9feeb42-e459-4289-b9be-b671817e00c1)
-With Indexing idx_adoption_multi: 1352
-![image](https://github.com/user-attachments/assets/5f520d4c-29a1-4881-a07c-ba795f5776b3)
-With Indexing idx_adoption_shelter_type: 1352
-![image](https://github.com/user-attachments/assets/8552bb84-8417-4d91-88a6-989369be2e6d)
-
 ### 4.
 Without Index
 
@@ -388,7 +439,6 @@ Design 3: CREATE INDEX idx_pet_type ON Pet(Type); CREATE INDEX idx_Shelter_name 
 
 Justification: Among the three indexing strategies, Design 2 (idx_pet_type_age) is the most effective because it directly targets the most selective and frequently used filtering criteria in the query: Pet.Type and Pet.Age. This index reduces the number of scanned rows dramatically through an efficient index range scan, and it performs better than single-column indexes or unrelated composite indexes. While additional indexes like idx_ar_status or idx_Shelter_name contribute minor benefits, they don't address the primary performance bottleneck. This analysis shows the importance of designing compound indexes that match the query’s WHERE clause conditions as closely as possible.
 
-### 5.
 
 
 ### 6. 
@@ -413,3 +463,22 @@ Design 2: CREATE INDEX idx_mr_petid_maxdate ON MedicalRecord(PetID, Date); This 
 Design 3: CREATE INDEX idx_pet_petid ON Pet(PetID); CREATE INDEX idx_latestmr_petid ON MedicalRecord(PetID); Functionally identical to the first custom index but created under a different name to test consistency. Performance remained nearly the same, confirming that the structure of the index matters more than the label.
 
 Justification: Among all designs, the composite index (PetID, Date) consistently provided the best balance between efficient lookup and aggregation. It enabled covering index scans and skip scans, which reduced the overhead of joining and grouping in nested subqueries. This improvement is particularly noticeable given the relatively large size of the MedicalRecord table. Indexing PetID alone would not suffice because the optimizer would still need to search through all rows with the same PetID to find the max Date. Adding Date as a secondary column allows the optimizer to use tree-structured lookups and skip scans more effectively. This case highlights how a well-designed composite index can drastically reduce query cost and execution time in multi-level nested queries.
+
+
+### 7. 
+Without index:
+![68b4bd37eb8cb37283f6106eb685238](https://github.com/user-attachments/assets/f7e35cd4-9a0c-4ee4-91e9-765e1678cca4)
+With Index idx_pet_type ON Pet(Type):
+![a96102c6499f7df45fa12f6b02eb451](https://github.com/user-attachments/assets/af04a811-e83b-4753-8c46-be0a99b46fb3)
+With Index idx_shelter_location ON Shelter(Location):
+![a88f2219aa4c24e1ded6282d5d97da3](https://github.com/user-attachments/assets/50c6ade3-2e40-499c-9b71-e1af766beb70)
+Default (no additional index): The query performs full table scans on the Pet and Shelter tables in both the UNION ALL branches. Filtering by Pet.Type is done without any supporting index, and aggregation is handled through temporary tables. The join between the subqueries (combined and avgData) relies on standard nested loop joins. As a result, execution cost remains high, with the main aggregation step in the outer query costing 846 and the Pet filtering costing 504.
+
+Design 1: CREATE INDEX idx_pet_type ON Pet(Type); This single-column index improves filtering on Pet.Type for the 'Turtle' branch. In the plan, the cost of the nested loop involving turtle-type pets drops to 1.07, and the specific filtering step on Pet.Type = 'Turtle' now has a reduced cost of 0.35. However, the 'Bird' branch still relies on full scans, and since Pet.Age and join columns are not indexed, aggregation and lookups remain costly.
+
+Design 2: CREATE INDEX idx_shelter_location ON Shelter(Location); This index targets the GROUP BY combined.Location and GROUP BY avgData.Location clauses. However, since the query does not filter by location and ShelterID is still the main join key, the optimizer does not significantly benefit from this index. The execution cost in major steps remains almost identical to the default. This shows that indexing on GROUP BY attributes alone, without filtering or join involvement, yields minimal performance gain.
+
+Design 3: CREATE INDEX idx_pet_type ON Pet(Type); + CREATE INDEX idx_shelter_location ON Shelter(Location); This combination improves both Pet filtering and potentially speeds up access to shelter locations during grouping. The 'Bird' and 'Turtle' branches both benefit from the Pet.Type index, and the optimizer uses index range scans with a cost of 0.132 for filtering (p.Type IN ('Bird','Turtle')). Aggregation cost on the avgData subquery also improves due to better access paths. Overall, the combined effect yields a notable cost reduction in filtering and aggregation compared to all prior versions.
+
+Justification:
+Among the four designs, Design 3 (with idx_pet_type and idx_shelter_location) provides the most comprehensive performance improvement. While indexing Shelter.Location alone has little effect, combining it with Pet.Type allows both filtering and grouping operations to benefit. This leads to reduced cost in filtering individual pet types (cost 0.132) and optimized joins and aggregations. In contrast, Design 1 only helps with one branch of the union, and Design 2 doesn’t significantly influence performance. This demonstrates that multi-index strategies that align with both WHERE and GROUP BY clauses are more effective than isolated or misaligned indexes.
