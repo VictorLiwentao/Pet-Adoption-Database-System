@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Profile</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #222;
+    }
+    .top-bar button {
+      background-color: #444;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+    }
+    .pet-section {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .pet-image img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid white;
+    }
+    .pet-details {
+      flex: 1;
+    }
+    .pet-details h2 {
+      margin-bottom: 10px;
+    }
+    .record-section {
+      margin-top: 30px;
+    }
+    .record-section h3 {
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+    }
+    .record-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .record-table th, .record-table td {
+      border: 1px solid white;
+      padding: 8px;
+      text-align: left;
+    }
+    .record-table th {
+      background-color: #333;
+    }
+    .adopt-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .adopt-button:hover {
+      background-color: #45a049;
+    }
+    .adopt-button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    .message {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .success {
+      background-color: rgba(76, 175, 80, 0.3);
+      border: 1px solid #4CAF50;
+    }
+    .error {
+      background-color: rgba(244, 67, 54, 0.3);
+      border: 1px solid #F44336;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <button onclick="goBack()">Back to Search</button>
+    <h1>Pet Profile</h1>
+    <div></div>
+  </div>
+
+  <div class="container">
+    <div id="petContent">
+      <!-- Pet content will be loaded here -->
+    </div>
+
+    <div class="record-section">
+      <h3>Medical Records</h3>
+      <table class="record-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Vet Name</th>
+          </tr>
+        </thead>
+        <tbody id="medicalRecordsTableBody">
+          <!-- Medical records will be loaded here -->
+        </tbody>
+      </table>
+    </div>
+    
+    <button id="adoptButton" class="adopt-button">Request Adoption</button>
+    <div id="adoptMessage" class="message hidden"></div>
+  </div>
+
+  <script>
+    // Base API URL - change this to your server address
+    const API_BASE_URL = 'http://localhost:3000/api';
+    
+    // Check if user is logged in
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    // Get current pet ID from localStorage
+    const petId = localStorage.getItem('currentPetId');
+    
+    // DOM Elements
+    const petContent = document.getElementById('petContent');
+    const medicalRecordsTableBody = document.getElementById('medicalRecordsTableBody');
+    const adoptButton = document.getElementById('adoptButton');
+    const adoptMessage = document.getElementById('adoptMessage');
+    
+    // Handle adopt button click
+    adoptButton.addEventListener('click', async () => {
+      if (!currentUser) {
+        adoptMessage.textContent = 'Please login to request adoption';
+        adoptMessage.className = 'message error';
+        adoptMessage.classList.remove('hidden');
+        return;
+      }
+      
+      try {
+        const response = await fetch(`${API_BASE_URL}/adoption-requests`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            userId: currentUser.UserID,
+            petId: petId
+          })
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          adoptButton.disabled = true;
+          adoptMessage.textContent = 'Adoption request submitted successfully!';
+          adoptMessage.className = 'message success';
+          adoptMessage.classList.remove('hidden');
+        } else {
+          adoptMessage.textContent = data.error || 'Failed to submit adoption request';
+          adoptMessage.className = 'message error';
+          adoptMessage.classList.remove('hidden');
+        }
+      } catch (error) {
+        adoptMessage.textContent = 'Connection error. Please try again.';
+        adoptMessage.className = 'message error';
+        adoptMessage.classList.remove('hidden');
+      }
+    });
+    function getImageForType(type) {
+      const images = {
+        Dog: "Dog.jpg",
+        Cat: "Cat.jpg",
+        Hamster: "hamster.jpg",
+        Bird: "Bird.jpg",
+        Rabbit: "Rabbit.jpg"
+      };
+      return images[type] || "https://upload.wikimedia.org/wikipedia/commons/6/65/Question_mark_%28black%29.svg";
+    }
+    // Load pet details
+    async function loadPetDetails() {
+  if (!petId) {
+    petContent.innerHTML = '<p>No pet selected. Please go back to search page.</p>';
+    adoptButton.disabled = true;
+    return;
+  }
+  
+  try {
+    const response = await fetch(`${API_BASE_URL}/pets/${petId}`);
+    
+    if (!response.ok) {
+      petContent.innerHTML = '<p>Failed to load pet details. Please try again.</p>';
+      adoptButton.disabled = true;
+      return;
+    }
+    
+    const data = await response.json();
+    const pet = data.pet;
+    
+    // Get the appropriate image based on pet type
+    const imageUrl = getImageForType(pet.Type);
+    
+    // Update pet details - include Type in the info
+    petContent.innerHTML = `
+      <div class="pet-section">
+        <div class="pet-image">
+          <img src="${imageUrl}" alt="${pet.Name}" />
+        </div>
+        <div class="pet-details">
+          <h2>Name: ${pet.Name}</h2>
+          <p><strong>Pet ID:</strong> ${pet.PetID}</p>
+          <p><strong>Type:</strong> ${pet.Type}</p>
+          <p><strong>Breed:</strong> ${pet.Breed}</p>
+          <p><strong>Age:</strong> ${pet.Age} years</p>
+          <p><strong>Size:</strong> ${pet.Size}</p>
+          <p><strong>Color:</strong> ${pet.Color}</p>
+          <p><strong>Sex:</strong> ${pet.Sex}</p>
+          <p><strong>Date of Intake:</strong> ${new Date(pet.DateOfIntake).toLocaleDateString()}</p>
+        </div>
+      </div>
+    `;
+    
+    // Update medical records
+    medicalRecordsTableBody.innerHTML = '';
+    
+    if (data.medicalRecords.length === 0) {
+      medicalRecordsTableBody.innerHTML = '<tr><td colspan="3">No medical records found</td></tr>';
+    } else {
+      data.medicalRecords.forEach(record => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${new Date(record.Date).toLocaleDateString()}</td>
+          <td>${record.Description}</td>
+          <td>${record.VetName}</td>
+        `;
+        medicalRecordsTableBody.appendChild(row);
+      });
+    }
+  } catch (error) {
+    console.error('Error loading pet details:', error);
+    petContent.innerHTML = '<p>Error loading pet details. Please try again later.</p>';
+    adoptButton.disabled = true;
+  }
+}
+    
+    function goBack() {
+      window.location.href = 'searchPage.html';
+    }
+    
+    // Load pet details on page load
+    window.addEventListener('load', loadPetDetails);
+  </script>
+</body>
+</html>
