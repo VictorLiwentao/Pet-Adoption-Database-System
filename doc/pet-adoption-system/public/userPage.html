@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .top-bar {
+            background-color: #111;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .back-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        .profile-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+        .user-info {
+            flex: 1;
+            margin-right: 40px;
+        }
+        .user-info h2 {
+            margin-top: 0;
+        }
+        .adoption-requests {
+            flex: 1;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .adoption-requests h3 {
+            margin-top: 0;
+        }
+        .request-row {
+            background-color: #222;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .logout-button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .message {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <button class="back-button" onclick="goBack()">Back to Search</button>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </div>
+    <h1>User Profile</h1>
+    
+    <div id="profileContent">
+        <!-- Profile content will be loaded here -->
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:3000/api';
+    
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        const profileContent = document.getElementById('profileContent');
+    
+        function goBack() {
+            window.location.href = "searchPage.html";
+        }
+    
+        function logout() {
+            localStorage.removeItem('currentUser');
+            window.location.href = "searchPage.html";
+        }
+    
+        async function loadUserProfile() {
+            if (!currentUser) {
+                profileContent.innerHTML = '<p class="message">Please log in to view your profile</p>';
+                return;
+            }
+    
+            try {
+                const response = await fetch(`${API_BASE_URL}/users/${currentUser.UserID}`);
+                const data = await response.json();
+    
+                if (!response.ok) {
+                    profileContent.innerHTML = '<p class="message">Failed to load profile. Please try again.</p>';
+                    return;
+                }
+    
+                const user = data.user;
+                const requests = data.adoptionRequests;
+    
+                profileContent.innerHTML = `
+                    <div class="profile-container">
+                        <div class="user-info">
+                            <h2>Name: ${user.Name}</h2>
+                            <p>Email: ${user.Email}</p>
+                            <p>Phone: ${user.PhoneNumber}</p>
+                        </div>
+                        <div class="adoption-requests">
+                            <h3>Adoption Requests</h3>
+                            ${requests.length === 0 ? '<p>No requests yet</p>' : requests.map(r => `
+                                <div class="request-row">
+                                    <p><strong>Pet:</strong> ${r.PetName}</p>
+                                    <p><strong>Date:</strong> ${new Date(r.RequestDate).toLocaleDateString()}</p>
+                                    <p><strong>Status:</strong> ${r.Status}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            } catch (error) {
+                profileContent.innerHTML = '<p class="message">Error loading profile. Try again later.</p>';
+                console.error(error);
+            }
+        }
+    
+        // Call profile loading on page load
+        window.addEventListener('load', loadUserProfile);
+    </script>

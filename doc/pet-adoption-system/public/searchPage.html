@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Shelter Search</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hidden { display: none; }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Top Bar -->
+  <div class="flex justify-between items-center p-4 bg-gray-900 shadow">
+    <!-- Shelter Button (Left) -->
+    <div class="relative">
+      <button id="shelterButton" class="bg-gray-700 px-4 py-2 rounded hover:bg-gray-600">All Shelters</button>
+      <button id="resetShelterBtn" class="ml-2 bg-gray-700 px-4 py-2 rounded hover:bg-gray-600 hidden">Reset Filters</button>
+      <div id="shelterDropdown" class="hidden absolute bg-gray-800 p-4 mt-2 rounded shadow z-10 w-64">
+        <p id="shelterInfo" class="mb-2">Showing all shelters</p>
+        <input type="text" id="shelterId" placeholder="Enter Shelter ID" class="w-full px-2 py-1 mb-2 text-black rounded" />
+        <button id="searchShelterBtn" class="w-full bg-blue-600 py-1 rounded hover:bg-blue-500">Search</button>
+      </div>
+    </div>
+
+    <!-- Center Search Bar -->
+    <div>
+      <input id="searchInput" type="text" placeholder="Search by Name, Breed, or Pet ID" class="w-[400px] px-4 py-2 text-black rounded" />
+    </div>
+
+    <!-- Login / Sign In Button (Right) -->
+    <div>
+      <button id="loginBtn" class="bg-gray-700 px-4 py-2 rounded hover:bg-gray-600">Login / Sign Up</button>
+      <a id="profileLink" href="userPage.html" class="hidden bg-gray-700 px-4 py-2 rounded hover:bg-gray-600">My Profile</a>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="hidden fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50">
+    <div class="bg-white text-black p-6 rounded-lg w-80 relative">
+      <button id="closeModal" class="absolute top-2 right-2 text-black hover:text-red-600 text-xl">&times;</button>
+      <h2 class="text-xl font-semibold mb-4">Login / Sign Up</h2>
+      <div id="loginForm">
+        <input id="loginEmail" type="email" placeholder="Email" class="w-full mb-2 px-3 py-2 border rounded" />
+        <input id="loginPassword" type="password" placeholder="Password" class="w-full mb-4 px-3 py-2 border rounded" />
+        <button id="submitLogin" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-500">Login</button>
+        <p class="text-center mt-2">
+          <a id="showSignupBtn" href="#" class="text-blue-600">Don't have an account? Sign up</a>
+        </p>
+      </div>
+      <div id="signupForm" class="hidden">
+        <input id="signupName" type="text" placeholder="Your Name" class="w-full mb-2 px-3 py-2 border rounded" />
+        <input id="signupEmail" type="email" placeholder="Email" class="w-full mb-2 px-3 py-2 border rounded" />
+        <input id="signupPassword" type="password" placeholder="Password" class="w-full mb-2 px-3 py-2 border rounded" />
+        <input id="signupPhone" type="text" placeholder="Phone Number" class="w-full mb-4 px-3 py-2 border rounded" />
+        <button id="submitSignup" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-500">Sign Up</button>
+        <p class="text-center mt-2">
+          <a id="showLoginBtn" href="#" class="text-blue-600">Already have an account? Login</a>
+        </p>
+      </div>
+      <p id="authMessage" class="text-sm mt-2 text-center text-red-500 hidden"></p>
+    </div>
+  </div>
+
+  <!-- Animal Grid -->
+  <div id="petsContainer" class="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+
+  <!-- JS -->
+  <script>
+    const API_BASE_URL = 'http://localhost:3000/api';
+    const loginBtn = document.getElementById('loginBtn');
+    const profileLink = document.getElementById('profileLink');
+    const loginModal = document.getElementById('loginModal');
+    const closeModal = document.getElementById('closeModal');
+    const submitLogin = document.getElementById('submitLogin');
+    const submitSignup = document.getElementById('submitSignup');
+    const authMessage = document.getElementById('authMessage');
+    const showSignupBtn = document.getElementById('showSignupBtn');
+    const showLoginBtn = document.getElementById('showLoginBtn');
+    const shelterButton = document.getElementById('shelterButton');
+    const shelterDropdown = document.getElementById('shelterDropdown');
+    const shelterInfo = document.getElementById('shelterInfo');
+    const shelterIdInput = document.getElementById('shelterId');
+    const searchShelterBtn = document.getElementById('searchShelterBtn');
+    const resetShelterBtn = document.getElementById('resetShelterBtn');
+    const petsContainer = document.getElementById('petsContainer');
+
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (currentUser) {
+      loginBtn.classList.add('hidden');
+      profileLink.classList.remove('hidden');
+    }
+
+    // Shelter dropdown toggle
+    shelterButton.addEventListener('click', () => {
+      shelterDropdown.classList.toggle('hidden');
+    });
+
+    // Reset button functionality - show all shelters
+    resetShelterBtn.addEventListener('click', async () => {
+      resetShelterBtn.classList.add('hidden');
+      shelterButton.textContent = 'All Shelters';
+      shelterInfo.textContent = 'Showing all shelters';
+      await loadPets();
+    });
+
+    // Shelter search
+    searchShelterBtn.addEventListener('click', async () => {
+      const shelterId = shelterIdInput.value.trim();
+      if (!shelterId) return;
+
+      try {
+        const shelterRes = await fetch(`${API_BASE_URL}/shelters/${shelterId}`);
+        if (!shelterRes.ok) throw new Error("Shelter not found");
+        const shelter = await shelterRes.json();
+        
+        // Update shelter button text and show reset button
+        shelterButton.textContent = `Shelter: ${shelter.Name}`;
+        shelterInfo.textContent = `Address: ${shelter.Location}`;
+        resetShelterBtn.classList.remove('hidden');
+        shelterDropdown.classList.add('hidden');
+
+        const response = await fetch(`${API_BASE_URL}/pets/by-shelter/${shelterId}`);
+        const pets = await response.json();
+        renderPets(pets);
+      } catch (err) {
+        petsContainer.innerHTML = '<p class="col-span-4 text-center text-xl text-red-500">Error fetching shelter pets.</p>';
+        console.error(err);
+      }
+    });
+
+    function getImageForType(type) {
+      const images = {
+        Dog: "Dog.jpg",
+        Cat: "Cat.jpg",
+        Hamster: "hamster.jpg",
+        Bird: "Bird.jpg",
+        Rabbit: "Rabbit.jpg"
+      };
+      return images[type] || "https://upload.wikimedia.org/wikipedia/commons/6/65/Question_mark_%28black%29.svg";
+    }
+
+    function renderPets(pets) {
+      petsContainer.innerHTML = '';
+      if (pets.length === 0) {
+        petsContainer.innerHTML = '<p class="col-span-4 text-center text-xl">No pets found.</p>';
+        return;
+      }
+      pets.forEach(pet => {
+        const petCard = document.createElement('div');
+        petCard.className = 'bg-gray-800 p-4 rounded text-center shadow cursor-pointer hover:bg-gray-700';
+        const imgSrc = getImageForType(pet.Type);
+        petCard.innerHTML = `
+          <img src="${imgSrc}" class="rounded mx-auto h-40 w-full object-cover" />
+          <h3 class="mt-2 font-bold">${pet.Name}</h3>
+          <p>Type: ${pet.Type}</p>
+          <p>Breed: ${pet.Breed}</p>
+          <p>Age: ${pet.Age}</p>
+        `;
+        petCard.addEventListener('click', () => {
+          localStorage.setItem('currentPetId', pet.PetID);
+          window.location.href = 'petPage.html';
+        });
+        petsContainer.appendChild(petCard);
+      });
+    }
+
+    closeModal.addEventListener('click', () => {
+      loginModal.classList.add('hidden');
+      authMessage.classList.add('hidden');
+    });
+
+    loginBtn.addEventListener('click', () => {
+      loginModal.classList.remove('hidden');
+    });
+
+    showSignupBtn.addEventListener('click', e => {
+      e.preventDefault();
+      loginForm.classList.add('hidden');
+      signupForm.classList.remove('hidden');
+    });
+
+    showLoginBtn.addEventListener('click', e => {
+      e.preventDefault();
+      signupForm.classList.add('hidden');
+      loginForm.classList.remove('hidden');
+    });
+
+    submitLogin.addEventListener('click', async () => {
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+      try {
+        const response = await fetch(`${API_BASE_URL}/login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+        const data = await response.json();
+        if (response.ok) {
+          localStorage.setItem('currentUser', JSON.stringify(data.user));
+          loginBtn.classList.add('hidden');
+          profileLink.classList.remove('hidden');
+          loginModal.classList.add('hidden');
+        } else {
+          authMessage.textContent = data.error || 'Login failed';
+          authMessage.classList.remove('hidden');
+        }
+      } catch (error) {
+        authMessage.textContent = 'Connection error. Please try again.';
+        authMessage.classList.remove('hidden');
+      }
+    });
+
+    submitSignup.addEventListener('click', async () => {
+      const name = document.getElementById('signupName').value;
+      const email = document.getElementById('signupEmail').value;
+      const password = document.getElementById('signupPassword').value;
+      const phoneNumber = document.getElementById('signupPhone').value;
+      try {
+        const response = await fetch(`${API_BASE_URL}/users`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, password, phoneNumber })
+        });
+        const data = await response.json();
+        if (response.ok) {
+          const loginRes = await fetch(`${API_BASE_URL}/login`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password })
+          });
+          const loginData = await loginRes.json();
+          if (loginRes.ok) {
+            localStorage.setItem('currentUser', JSON.stringify(loginData.user));
+            loginBtn.classList.add('hidden');
+            profileLink.classList.remove('hidden');
+            loginModal.classList.add('hidden');
+          }
+        } else {
+          authMessage.textContent = data.error || 'Sign up failed';
+          authMessage.classList.remove('hidden');
+        }
+      } catch (error) {
+        authMessage.textContent = 'Connection error. Please try again.';
+        authMessage.classList.remove('hidden');
+      }
+    });
+
+    async function loadPets() {
+      try {
+        const response = await fetch(`${API_BASE_URL}/pets`);
+        const pets = await response.json();
+        renderPets(pets);
+      } catch (error) {
+        petsContainer.innerHTML = '<p class="col-span-4 text-center text-xl text-red-500">Error loading pets.</p>';
+      }
+    }
+
+    window.addEventListener('load', loadPets);
+    const searchInput = document.getElementById('searchInput');
+
+// Debounce function to prevent too many searches while typing
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
+// Search function to filter pets
+function searchPets(query) {
+  query = query.toLowerCase().trim();
+  
+  // If query is empty, show all pets
+  if (!query) {
+    loadPets();
+    return;
+  }
+  
+  // Filter the currently displayed pets
+  const petsCards = document.querySelectorAll('#petsContainer > div');
+  let matchFound = false;
+  
+  petsCards.forEach(card => {
+    const petName = card.querySelector('h3').textContent.toLowerCase();
+    const petText = card.textContent.toLowerCase();
+    const petBreed = petText.match(/breed: (.*)/i)?.[1] || '';
+    const petType = petText.match(/type: (.*)/i)?.[1] || '';
+    const petId = card.getAttribute('data-pet-id') || '';
+    
+    // Check if the pet matches the search criteria (now including type)
+    if (petName.includes(query) || 
+        petBreed.includes(query) || 
+        petType.includes(query) || 
+        petId.includes(query)) {
+      card.style.display = 'block';
+      matchFound = true;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+  
+  // Display message if no matches found
+  if (!matchFound) {
+    const noResultsMsg = document.createElement('p');
+    noResultsMsg.className = 'col-span-4 text-center text-xl';
+    noResultsMsg.id = 'noResultsMsg';
+    noResultsMsg.textContent = 'No pets found matching your search.';
+    
+    // Remove any existing message first
+    const existingMsg = document.getElementById('noResultsMsg');
+    if (existingMsg) existingMsg.remove();
+    
+    petsContainer.appendChild(noResultsMsg);
+  } else {
+    // Remove the no results message if it exists
+    const existingMsg = document.getElementById('noResultsMsg');
+    if (existingMsg) existingMsg.remove();
+  }
+}
+
+// Update the renderPets function to include pet ID as data attribute
+function renderPets(pets) {
+  petsContainer.innerHTML = '';
+  if (pets.length === 0) {
+    petsContainer.innerHTML = '<p class="col-span-4 text-center text-xl">No pets found.</p>';
+    return;
+  }
+  pets.forEach(pet => {
+    const petCard = document.createElement('div');
+    petCard.className = 'bg-gray-800 p-4 rounded text-center shadow cursor-pointer hover:bg-gray-700';
+    // Add pet ID as data attribute for searching
+    petCard.setAttribute('data-pet-id', pet.PetID);
+    
+    const imgSrc = getImageForType(pet.Type);
+    petCard.innerHTML = `
+      <img src="${imgSrc}" class="rounded mx-auto h-40 w-full object-cover" />
+      <h3 class="mt-2 font-bold">${pet.Name}</h3>
+      <p>Type: ${pet.Type}</p>
+      <p>Breed: ${pet.Breed}</p>
+      <p>Age: ${pet.Age}</p>
+    `;
+    petCard.addEventListener('click', () => {
+      localStorage.setItem('currentPetId', pet.PetID);
+      window.location.href = 'petPage.html';
+    });
+    petsContainer.appendChild(petCard);
+  });
+}
+
+// Add event listener to search input with debounce
+searchInput.addEventListener('input', debounce(function() {
+  searchPets(this.value);
+}, 300));
+
+// Add event listener for Enter key
+searchInput.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') {
+    searchPets(this.value);
+  }
+});
+  </script>
+</body>
+</html>
