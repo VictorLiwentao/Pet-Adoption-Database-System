@@ -254,7 +254,7 @@ These changes significantly expanded the platform's scope from the original prop
       
    Xin: One challenge I faced was in designing the animal shelter webpage was organizing a lot of information clearly. At first, the page looked messy. I solved it by using HTML sections like header, section, and footer. This made the website easier to read and helped users find information faster.
       
-   Wentao:
+  Victor: One challenge our team encountered was during indexing for query optimization. We were not familiar with working on SQL databases outside of the PrairieLearn environment. When we added indexes and other constraints, we discovered that removing or altering them during EXPLAIN ANALYZE testing was difficult, especially because certain indexes or foreign keys could not be dropped easily or caused dependency errors. Additionally, without careful reset control, old constraints could lead to misleading query plans or prevent the creation of new schema designs. Our solution was to create a reset script that would drop and recreate the database, then reload the schema and data. This allowed us to consistently restart from a clean state for each round of indexing and performance testing.
       
 ## Q8: Are there other things that changed comparing the final application with the original proposal?
 ###   A:
@@ -302,7 +302,7 @@ Xin: Front-end production and data screening
 
 Hanning: Data collection and organization, summarizing content.
 
-Wentao: Propose achievable functions and optimize the complexity.
+Victor: Propose achievable functions and optimize the query.
 
 We had very good communication, and everyone responded positively whenever a meeting was proposed. We have almost no barriers to communication.
 
