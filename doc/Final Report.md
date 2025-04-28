@@ -22,9 +22,7 @@
 ## 5. Q: Discuss what functionalities you added or removed. Why?
    A: 
    Functionalities Added:
-    Advanced Analytical Queries: As the project evolved, we added several advanced queries, such as identifying shelters specializing in certain pet types, spotting senior pets needing urgent adoption, and detecting users with problematic request patterns. These queries provides us more comprehensive insights of shelters and adoption requests.
-    
-    Detailed Pet Medical Record Tracking: We introduced a feature that shows how long each pet has been at the shelter and their latest medical visit details. This functionality helps prioritize animals needing urgent care or promotion.
+    Advanced Analytical Queries: As the project evolved, we added several advanced queries, such as identifying shelters specializing in certain pet types, spotting senior pets needing urgent adoption, and detecting users with problematic request patterns. These queries provides us more comprehensive insights of shelters and adoption requests. Detailed Pet Medical Record Tracking: We introduced a feature that shows how long each pet has been at the shelter and their latest medical visit details. This functionality helps prioritize animals needing urgent care or promotion.
     
    Functionalities Removed:
       
