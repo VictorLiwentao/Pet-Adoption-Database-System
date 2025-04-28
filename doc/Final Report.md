@@ -45,7 +45,7 @@
    
    Tongrui:
       
-   Xin:
+   Xin: One challenge I faced was in designing the animal shelter webpage was organizing a lot of information clearly. At first, the page looked messy. I solved it by using HTML sections like <header>, <section>, and <footer>. This made the website easier to read and helped users find information faster.
       
    Wentao:
       
