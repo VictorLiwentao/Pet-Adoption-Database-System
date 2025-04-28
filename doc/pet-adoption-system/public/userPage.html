@@ -68,6 +68,18 @@
             padding: 20px;
             font-size: 18px;
         }
+        .delete-btn {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    .delete-btn:hover {
+        background-color: #d32f2f;
+    }
     </style>
 </head>
 <body>
@@ -97,47 +109,62 @@
         }
     
         async function loadUserProfile() {
-            if (!currentUser) {
-                profileContent.innerHTML = '<p class="message">Please log in to view your profile</p>';
-                return;
-            }
-    
-            try {
-                const response = await fetch(`${API_BASE_URL}/users/${currentUser.UserID}`);
-                const data = await response.json();
-    
-                if (!response.ok) {
-                    profileContent.innerHTML = '<p class="message">Failed to load profile. Please try again.</p>';
-                    return;
-                }
-    
-                const user = data.user;
-                const requests = data.adoptionRequests;
-    
-                profileContent.innerHTML = `
-                    <div class="profile-container">
-                        <div class="user-info">
-                            <h2>Name: ${user.Name}</h2>
-                            <p>Email: ${user.Email}</p>
-                            <p>Phone: ${user.PhoneNumber}</p>
-                        </div>
-                        <div class="adoption-requests">
-                            <h3>Adoption Requests</h3>
-                            ${requests.length === 0 ? '<p>No requests yet</p>' : requests.map(r => `
-                                <div class="request-row">
-                                    <p><strong>Pet:</strong> ${r.PetName}</p>
-                                    <p><strong>Date:</strong> ${new Date(r.RequestDate).toLocaleDateString()}</p>
-                                    <p><strong>Status:</strong> ${r.Status}</p>
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
-            } catch (error) {
-                profileContent.innerHTML = '<p class="message">Error loading profile. Try again later.</p>';
-                console.error(error);
-            }
+    if (!currentUser) {
+        profileContent.innerHTML = '<p class="message">Please log in to view your profile</p>';
+        return;
+    }
+
+    try {
+        const response = await fetch(`${API_BASE_URL}/users/${currentUser.UserID}`);
+        const data = await response.json();
+
+        if (!response.ok) {
+            profileContent.innerHTML = '<p class="message">Failed to load profile. Please try again.</p>';
+            return;
         }
+
+        const user = data.user;
+        const requests = data.adoptionRequests;
+
+        profileContent.innerHTML = `
+            <div class="profile-container">
+                <div class="user-info">
+                    <h2>Name: ${user.Name}</h2>
+                    <p>Email: ${user.Email}</p>
+                    <p>Phone: ${user.PhoneNumber}</p>
+                </div>
+                <div class="adoption-requests">
+                    <h3>Adoption Requests</h3>
+                    ${requests.length === 0 ? '<p>No requests yet</p>' : requests.map(r => `
+                        <div class="request-row" data-request-id="${r.RequestID}">
+                            <p><strong>Pet:</strong> ${r.PetName}</p>
+                            <p><strong>Date:</strong> ${new Date(r.RequestDate).toLocaleDateString()}</p>
+                            <p><strong>Status:</strong> ${r.Status}</p>
+                            ${r.Status === 'Pending' ? 
+                                `<button class="delete-btn" onclick="deleteRequest(${r.RequestID})">Cancel Request</button>` 
+                                : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    } catch (error) {
+        profileContent.innerHTML = '<p class="message">Error loading profile. Try again later.</p>';
+        console.error(error);
+    }
+}
+
+// Add the deleteRequest function
+function deleteRequest(requestId) {
+    if (confirm('Are you sure you want to cancel this adoption request?')) {
+        // Find and remove the request element from the DOM
+        const requestElement = document.querySelector(`[data-request-id="${requestId}"]`);
+        if (requestElement) {
+            requestElement.remove();
+            alert('Request cancelled');
+        }
+    }
+}
     
         // Call profile loading on page load
         window.addEventListener('load', loadUserProfile);
