@@ -4,7 +4,8 @@
    A:
    
 ## 2. Q: Discuss what you think your application achieved or failed to achieve regarding its usefulness.
-   A: Our project aimed to build a pet adoption website that connects potential adopters with pets in shelters. First, the application allows users to easily browse pets available for adoption, submit adoption requests, and view their adoption history. Shelters can also view aggregated statistics about adoption activities, such as the number of requests they have received and the types of pets that are most popular. These features closely match the real-world needs of a pet adoption system: simplifying the adoption process for users while helping shelters manage their animals more effectively.
+   A: 
+   Our project aimed to build a pet adoption website that connects potential adopters with pets in shelters. First, the application allows users to easily browse pets available for adoption, submit adoption requests, and view their adoption history. Shelters can also view aggregated statistics about adoption activities, such as the number of requests they have received and the types of pets that are most popular. These features closely match the real-world needs of a pet adoption system: simplifying the adoption process for users while helping shelters manage their animals more effectively.
    
   Moreover, through the development of multiple advanced queries, our system provides shelters with valuable insights — such as identifying senior pets that need extra promotion, recognizing active adopters, and spotting users who may need additional guidance based on their adoption request history. These analytics make the application not just functional, but also strategic for improving adoption outcomes and shelter operations.
   
