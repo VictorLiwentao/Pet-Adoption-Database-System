@@ -34,5 +34,5 @@
    A: Adding personalized recommendations based on a user’s past adoption history or search behavior could greatly enhance user engagement. For example, if a user has previously adopted senior cats, the system could highlight available senior cats for them in the future.
       Another future improvement would be real-time status notifications. Currently, adoption request status changes are not actively pushed to users. Implementing notification systems (such as emails or in-app alerts) would make the platform feel more interactive and responsive.
 ## 10. Q: Describe the final division of labor and how well you managed teamwork.
-    A: 
+       A: 
 
