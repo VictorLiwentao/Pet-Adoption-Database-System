@@ -6,34 +6,170 @@
   <title>Animal Shelter Search</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .hidden { display: none; }
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .hidden {
+      display: none;
+    }
+    .pet-card {
+      background-color: #1a202c;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .pet-card:hover {
+      transform: translateY(-5px);
+    }
+    .pet-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .nav-button {
+      background-color: #2d3748;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+    .nav-button:hover {
+      background-color: #4a5568;
+    }
+    .feature-button {
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .recommended-btn {
+      background-color: #48bb78;
+      color: white;
+    }
+    .recommended-btn:hover {
+      background-color: #38a169;
+    }
+    .stats-btn {
+      background-color: #9f7aea;
+      color: white;
+    }
+    .stats-btn:hover {
+      background-color: #805ad5;
+    }
+    .filter-btn {
+      background-color: #2d3748;
+      color: white;
+      padding: 5px 10px;
+      margin: 0 5px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+    }
+    .filter-btn.active {
+      background-color: #4299e1;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+    }
+    .modal-content {
+      background-color: #1a202c;
+      margin: 5% auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 800px;
+      max-height: 85vh; /* Limit height */
+      overflow-y: auto; /* Enable scrolling */
+      border-radius: 8px;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover {
+      color: white;
+    }
   </style>
 </head>
-<body class="bg-black text-white font-sans">
+<body>
 
-  <!-- Top Bar -->
-  <div class="flex justify-between items-center p-4 bg-gray-900 shadow">
-    <!-- Shelter Button (Left) -->
+  <!-- Top Navigation Bar -->
+  <div class="flex justify-between items-center p-4 bg-gray-900">
+    <!-- Left: Shelter Button -->
     <div class="relative">
-      <button id="shelterButton" class="bg-gray-700 px-4 py-2 rounded hover:bg-gray-600">All Shelters</button>
-      <button id="resetShelterBtn" class="ml-2 bg-gray-700 px-4 py-2 rounded hover:bg-gray-600 hidden">Reset Filters</button>
+      <button id="shelterButton" class="nav-button">All Shelters</button>
       <div id="shelterDropdown" class="hidden absolute bg-gray-800 p-4 mt-2 rounded shadow z-10 w-64">
-        <p id="shelterInfo" class="mb-2">Showing all shelters</p>
-        <input type="text" id="shelterId" placeholder="Enter Shelter ID" class="w-full px-2 py-1 mb-2 text-black rounded" />
-        <button id="searchShelterBtn" class="w-full bg-blue-600 py-1 rounded hover:bg-blue-500">Search</button>
+        <p class="mb-2">Find a shelter by ID:</p>
+        <input id="shelterSearchInput" type="text" placeholder="Enter shelter ID" class="w-full px-2 py-1 mb-2 text-black rounded">
+        <div class="max-h-48 overflow-y-auto mb-2">
+          <ul id="shelterSearchResults" class="text-white">
+            <!-- Search results will appear here -->
+          </ul>
+        </div>
+        <select id="shelterSelect" class="w-full px-2 py-1 mb-2 text-black rounded">
+          <option value="">All Shelters</option>
+          <!-- Shelters will be loaded here -->
+        </select>
+        <button id="applyFilterBtn" class="w-full bg-blue-600 py-1 rounded hover:bg-blue-500">Apply Filter</button>
       </div>
     </div>
-
-    <!-- Center Search Bar -->
-    <div>
-      <input id="searchInput" type="text" placeholder="Search by Name, Breed, or Pet ID" class="w-[400px] px-4 py-2 text-black rounded" />
+    
+    <!-- Center: Search Bar -->
+    <div class="flex items-center">
+      <input id="searchInput" type="text" placeholder="Search by Name, Breed, or Pet ID" class="w-96 px-4 py-2 rounded-l text-black" />
+      <button id="searchBtn" class="bg-blue-600 px-4 py-2 rounded-r hover:bg-blue-500">Search</button>
     </div>
-
-    <!-- Login / Sign In Button (Right) -->
+    
+    <!-- Right: Login/Profile Button -->
     <div>
-      <button id="loginBtn" class="bg-gray-700 px-4 py-2 rounded hover:bg-gray-600">Login / Sign Up</button>
-      <a id="profileLink" href="userPage.html" class="hidden bg-gray-700 px-4 py-2 rounded hover:bg-gray-600">My Profile</a>
+      <button id="loginBtn" class="nav-button">Login / Sign Up</button>
+      <a id="profileLink" href="userPage.html" class="hidden nav-button">My Profile</a>
     </div>
+  </div>
+
+  <!-- Feature Buttons -->
+  <div class="flex justify-center mt-6 mb-4 gap-4">
+    <button id="recommendedPetsBtn" class="feature-button recommended-btn">View Recommended Pets</button>
+    <button id="seniorPetsBtn" class="feature-button bg-yellow-600 text-white hover:bg-yellow-700">Senior Pets Report</button>
+    <button id="adoptionStatsBtn" class="feature-button stats-btn">Adoption Statistics</button>
+  </div>
+
+  <!-- Filter Buttons -->
+  <div class="flex justify-center mb-8 gap-2">
+    <span class="self-center mr-2">Filter:</span>
+    <button class="filter-btn active" data-type="all">All</button>
+    <button class="filter-btn" data-type="Dog">Dogs</button>
+    <button class="filter-btn" data-type="Cat">Cats</button>
+    <button class="filter-btn" data-type="Rabbit">Rabbits</button>
+    <button class="filter-btn" data-type="Bird">Birds</button>
+    <button class="filter-btn" data-type="Hamster">Hamsters</button>
+    <button class="filter-btn" data-type="Other">Other</button>
+  </div>
+
+  <!-- Loading Indicator -->
+  <div id="loadingIndicator" class="hidden flex justify-center my-8">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+  </div>
+
+  <!-- Pet Cards Grid -->
+  <div id="petsContainer" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+    <!-- Pet cards will be loaded here dynamically -->
   </div>
 
   <!-- Login Modal -->
@@ -63,73 +199,394 @@
     </div>
   </div>
 
-  <!-- Animal Grid -->
-  <div id="petsContainer" class="p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+  <!-- Recommended Pets Modal -->
+  <div id="recommendedModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="text-xl font-bold mb-4">Recommended Pets For You</h2>
+      <div id="recommendedContent" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Recommended pets will be loaded here -->
+      </div>
+      <div class="mt-6">
+        <h3 class="text-lg font-semibold mb-2">Recommended Shelters</h3>
+        <div id="recommendedShelters" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Recommended shelters will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- JS -->
+  <!-- Adoption Statistics Modal -->
+  <div id="statisticsModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="text-xl font-bold mb-4">Adoption Statistics</h2>
+      <div id="statisticsContent">
+        <!-- Statistics will be loaded here -->
+      </div>
+    </div>
+  </div>
+
   <script>
+    // Base API URL - change this to your server address
     const API_BASE_URL = 'http://localhost:3000/api';
+    
+    // DOM Elements
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const petsContainer = document.getElementById('petsContainer');
+    const loadingIndicator = document.getElementById('loadingIndicator');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const recommendedPetsBtn = document.getElementById('recommendedPetsBtn');
+    const adoptionStatsBtn = document.getElementById('adoptionStatsBtn');
+    const recommendedModal = document.getElementById('recommendedModal');
+    const statisticsModal = document.getElementById('statisticsModal');
     const loginBtn = document.getElementById('loginBtn');
     const profileLink = document.getElementById('profileLink');
     const loginModal = document.getElementById('loginModal');
     const closeModal = document.getElementById('closeModal');
-    const submitLogin = document.getElementById('submitLogin');
-    const submitSignup = document.getElementById('submitSignup');
-    const authMessage = document.getElementById('authMessage');
+    const loginForm = document.getElementById('loginForm');
+    const signupForm = document.getElementById('signupForm');
     const showSignupBtn = document.getElementById('showSignupBtn');
     const showLoginBtn = document.getElementById('showLoginBtn');
+    const authMessage = document.getElementById('authMessage');
+    const submitLogin = document.getElementById('submitLogin');
+    const submitSignup = document.getElementById('submitSignup');
     const shelterButton = document.getElementById('shelterButton');
     const shelterDropdown = document.getElementById('shelterDropdown');
-    const shelterInfo = document.getElementById('shelterInfo');
-    const shelterIdInput = document.getElementById('shelterId');
-    const searchShelterBtn = document.getElementById('searchShelterBtn');
-    const resetShelterBtn = document.getElementById('resetShelterBtn');
-    const petsContainer = document.getElementById('petsContainer');
-
+    const shelterSearchInput = document.getElementById('shelterSearchInput');
+    const shelterSearchResults = document.getElementById('shelterSearchResults');
+    let searchTimeout;
+    // State variables
+    let currentFilter = 'all';
+    let currentSearchTerm = '';
+    
+    // Check if user is logged in
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
     if (currentUser) {
       loginBtn.classList.add('hidden');
       profileLink.classList.remove('hidden');
     }
-
-    // Shelter dropdown toggle
-    shelterButton.addEventListener('click', () => {
-      shelterDropdown.classList.toggle('hidden');
+    
+    // Event Listeners for modals
+    document.querySelectorAll('.close').forEach(closeBtn => {
+      closeBtn.addEventListener('click', function() {
+        document.querySelectorAll('.modal').forEach(modal => {
+          modal.style.display = 'none';
+        });
+      });
     });
-
-    // Reset button functionality - show all shelters
-    resetShelterBtn.addEventListener('click', async () => {
-      resetShelterBtn.classList.add('hidden');
-      shelterButton.textContent = 'All Shelters';
-      shelterInfo.textContent = 'Showing all shelters';
-      await loadPets();
+    
+    closeModal.addEventListener('click', () => {
+      loginModal.classList.add('hidden');
+      authMessage.classList.add('hidden');
     });
-
-    // Shelter search
-    searchShelterBtn.addEventListener('click', async () => {
-      const shelterId = shelterIdInput.value.trim();
-      if (!shelterId) return;
-
-      try {
-        const shelterRes = await fetch(`${API_BASE_URL}/shelters/${shelterId}`);
-        if (!shelterRes.ok) throw new Error("Shelter not found");
-        const shelter = await shelterRes.json();
-        
-        // Update shelter button text and show reset button
-        shelterButton.textContent = `Shelter: ${shelter.Name}`;
-        shelterInfo.textContent = `Address: ${shelter.Location}`;
-        resetShelterBtn.classList.remove('hidden');
-        shelterDropdown.classList.add('hidden');
-
-        const response = await fetch(`${API_BASE_URL}/pets/by-shelter/${shelterId}`);
-        const pets = await response.json();
-        renderPets(pets);
-      } catch (err) {
-        petsContainer.innerHTML = '<p class="col-span-4 text-center text-xl text-red-500">Error fetching shelter pets.</p>';
-        console.error(err);
+    
+    window.addEventListener('click', function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
       }
     });
 
+    // Login/Signup functionality
+    loginBtn.addEventListener('click', () => {
+      loginModal.classList.remove('hidden');
+    });
+    
+    showSignupBtn.addEventListener('click', e => {
+      e.preventDefault();
+      loginForm.classList.add('hidden');
+      signupForm.classList.remove('hidden');
+    });
+    
+    showLoginBtn.addEventListener('click', e => {
+      e.preventDefault();
+      signupForm.classList.add('hidden');
+      loginForm.classList.remove('hidden');
+    });
+    
+    submitLogin.addEventListener('click', async () => {
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+      
+      try {
+        const response = await fetch(`${API_BASE_URL}/login`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, password })
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          localStorage.setItem('currentUser', JSON.stringify(data.user));
+          loginBtn.classList.add('hidden');
+          profileLink.classList.remove('hidden');
+          loginModal.classList.add('hidden');
+          authMessage.textContent = 'Login successful!';
+          authMessage.classList.remove('text-red-500');
+          authMessage.classList.add('text-green-500');
+        } else {
+          authMessage.textContent = data.error || 'Login failed';
+          authMessage.classList.add('text-red-500');
+          authMessage.classList.remove('hidden');
+        }
+      } catch (error) {
+        authMessage.textContent = 'Connection error. Please try again.';
+        authMessage.classList.add('text-red-500');
+        authMessage.classList.remove('hidden');
+      }
+    });
+    
+    submitSignup.addEventListener('click', async () => {
+      const name = document.getElementById('signupName').value;
+      const email = document.getElementById('signupEmail').value;
+      const password = document.getElementById('signupPassword').value;
+      const phoneNumber = document.getElementById('signupPhone').value;
+      
+      try {
+        const response = await fetch(`${API_BASE_URL}/users`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, password, phoneNumber })
+        });
+        
+        const data = await response.json();
+        
+        if (response.ok) {
+          const loginRes = await fetch(`${API_BASE_URL}/login`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, password })
+          });
+          
+          const loginData = await loginRes.json();
+          
+          if (loginRes.ok) {
+            localStorage.setItem('currentUser', JSON.stringify(loginData.user));
+            loginBtn.classList.add('hidden');
+            profileLink.classList.remove('hidden');
+            loginModal.classList.add('hidden');
+          }
+        } else {
+          authMessage.textContent = data.error || 'Sign up failed';
+          authMessage.classList.add('text-red-500');
+          authMessage.classList.remove('hidden');
+        }
+      } catch (error) {
+        authMessage.textContent = 'Connection error. Please try again.';
+        authMessage.classList.add('text-red-500');
+        authMessage.classList.remove('hidden');
+      }
+    });
+    
+    // Search functionality
+    searchBtn.addEventListener('click', function() {
+      currentSearchTerm = searchInput.value.trim();
+      loadPets();
+    });
+    
+    searchInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        currentSearchTerm = searchInput.value.trim();
+        loadPets();
+      }
+    });
+    
+    // Filter functionality
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        // Update active button
+        filterButtons.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Set filter
+        currentFilter = this.getAttribute('data-type');
+        loadPets();
+      });
+    });
+    
+    // Shelter dropdown functionality
+    shelterButton.addEventListener('click', () => {
+      shelterDropdown.classList.toggle('hidden');
+      if (!shelterDropdown.classList.contains('hidden')) {
+    // Reset search when opening dropdown
+    shelterSearchInput.value = '';
+    shelterSearchResults.innerHTML = '';
+    // Focus on the search input for immediate typing
+    setTimeout(() => shelterSearchInput.focus(), 100);
+  }
+    });
+    function setupShelterSearch() {
+  shelterSearchInput.addEventListener('input', function() {
+    const searchTerm = this.value.trim();
+    
+    // Clear previous results
+    shelterSearchResults.innerHTML = '';
+    
+    // Clear any pending timeout
+    clearTimeout(searchTimeout);
+    
+    if (searchTerm.length === 0) {
+      return; // Don't search for empty terms
+    }
+    
+    // Add loading indicator
+    shelterSearchResults.innerHTML = '<li class="py-1 px-2">Searching...</li>';
+    
+    // Debounce the search to avoid too many requests
+    searchTimeout = setTimeout(async () => {
+      try {
+        // For shelter ID search, we'll filter the shelters client-side from the full list
+        const response = await fetch(`${API_BASE_URL}/shelters`);
+        
+        if (!response.ok) {
+          throw new Error(`Server error: ${response.status}`);
+        }
+        
+        const allShelters = await response.json();
+        
+        // Filter shelters by ID match
+        const matchingShelters = allShelters.filter(shelter => 
+          shelter.ShelterID.toString().includes(searchTerm)
+        );
+        
+        // Clear loading indicator
+        shelterSearchResults.innerHTML = '';
+        
+        // Display matching results
+        if (!matchingShelters || matchingShelters.length === 0) {
+          shelterSearchResults.innerHTML = '<li class="py-1 px-2">No shelters found</li>';
+        } else {
+          matchingShelters.forEach(shelter => {
+            const li = document.createElement('li');
+            li.className = 'py-1 px-2 hover:bg-gray-700 cursor-pointer rounded';
+            li.textContent = `ID: ${shelter.ShelterID} - ${shelter.Name} (${shelter.PetCount || 0} pets)`;
+            
+            // When a shelter is clicked, update the UI and load pets
+            li.addEventListener('click', function() {
+              // Update UI to show shelter ID
+              shelterButton.textContent = `Shelter ID: ${shelter.ShelterID}`;
+              
+              // Load pets from this shelter
+              loadPetsByShelter(shelter.ShelterID);
+              
+              // Hide the dropdown
+              shelterDropdown.classList.add('hidden');
+            });
+            
+            shelterSearchResults.appendChild(li);
+          });
+        }
+      } catch (error) {
+        console.error('Error searching shelters:', error);
+        shelterSearchResults.innerHTML = 
+          '<li class="py-1 px-2 text-red-500">Error searching shelters. Please try again.</li>';
+      }
+    }, 300);
+  });
+  
+  // Add event listeners for dropdown visibility
+  document.addEventListener('click', function(event) {
+    if (!shelterDropdown.contains(event.target) && !shelterButton.contains(event.target)) {
+      shelterDropdown.classList.add('hidden');
+    }
+  });
+}
+    // Load shelters for dropdown
+    async function loadShelters() {
+  try {
+    const response = await fetch(`${API_BASE_URL}/shelters`);
+    const shelters = await response.json();
+    
+    const shelterSelect = document.getElementById('shelterSelect');
+    shelterSelect.innerHTML = '<option value="">All Shelters</option>';
+    
+    shelters.forEach(shelter => {
+      const option = document.createElement('option');
+      option.value = shelter.ShelterID;
+      option.textContent = `${shelter.Name} (${shelter.PetCount} pets)`;
+      shelterSelect.appendChild(option);
+    });
+
+    // Set up shelter search after loading all shelters
+    setupShelterSearch();
+  } catch (error) {
+    console.error('Error loading shelters:', error);
+  }
+}
+    
+    // Apply shelter filter
+    document.getElementById('applyFilterBtn').addEventListener('click', () => {
+      const shelterId = document.getElementById('shelterSelect').value;
+      
+      if (shelterId) {
+        // Update UI
+        shelterButton.textContent = `Shelter: ${shelterSelect.options[shelterSelect.selectedIndex].textContent.split('(')[0].trim()}`;
+        
+        // Call specific endpoint for shelter filtering
+        loadPetsByShelter(shelterId);
+      } else {
+        shelterButton.textContent = 'All Shelters';
+        loadPets(); // Load all pets
+      }
+      
+      shelterDropdown.classList.add('hidden');
+    });
+    
+    // Load pets by shelter ID
+    async function loadPetsByShelter(shelterId) {
+      try {
+        loadingIndicator.classList.remove('hidden');
+        petsContainer.innerHTML = '';
+        
+        const response = await fetch(`${API_BASE_URL}/pets/by-shelter/${shelterId}`);
+        const pets = await response.json();
+        
+        displayPets(pets);
+      } catch (error) {
+        console.error('Error loading shelter pets:', error);
+        petsContainer.innerHTML = '<p class="col-span-4 text-center text-xl text-red-500">Error loading pets from this shelter. Please try again later.</p>';
+      } finally {
+        loadingIndicator.classList.add('hidden');
+      }
+    }
+    
+    // Load pets function
+    async function loadPets() {
+      try {
+        loadingIndicator.classList.remove('hidden');
+        petsContainer.innerHTML = '';
+        
+        // Build query parameters
+        let url = `${API_BASE_URL}/pets`;
+        const params = [];
+        
+        if (currentSearchTerm) {
+          params.push(`keyword=${encodeURIComponent(currentSearchTerm)}`);
+        }
+        
+        if (currentFilter && currentFilter !== 'all') {
+          params.push(`type=${encodeURIComponent(currentFilter)}`);
+        }
+        
+        if (params.length > 0) {
+          url += `?${params.join('&')}`;
+        }
+        
+        const response = await fetch(url);
+        const pets = await response.json();
+        
+        displayPets(pets);
+      } catch (error) {
+        console.error('Error loading pets:', error);
+        petsContainer.innerHTML = '<p class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 text-center text-xl text-red-500">Error loading pets. Please try again later.</p>';
+      } finally {
+        loadingIndicator.classList.add('hidden');
+      }
+    }
+    
+    // Image helper function
     function getImageForType(type) {
       const images = {
         Dog: "Dog.jpg",
@@ -140,227 +597,303 @@
       };
       return images[type] || "https://upload.wikimedia.org/wikipedia/commons/6/65/Question_mark_%28black%29.svg";
     }
-
-    function renderPets(pets) {
-      petsContainer.innerHTML = '';
+    
+    // Display pets helper function
+    function displayPets(pets) {
       if (pets.length === 0) {
-        petsContainer.innerHTML = '<p class="col-span-4 text-center text-xl">No pets found.</p>';
+        petsContainer.innerHTML = '<p class="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 text-center text-xl">No pets found matching your criteria</p>';
         return;
       }
+      
+      petsContainer.innerHTML = '';
+      
       pets.forEach(pet => {
         const petCard = document.createElement('div');
-        petCard.className = 'bg-gray-800 p-4 rounded text-center shadow cursor-pointer hover:bg-gray-700';
-        const imgSrc = getImageForType(pet.Type);
+        petCard.className = 'pet-card';
+        petCard.setAttribute('data-pet-id', pet.PetID);
+        
+        // Use the getImageForType function
+        const imageUrl = getImageForType(pet.Type);
+        
         petCard.innerHTML = `
-          <img src="${imgSrc}" class="rounded mx-auto h-40 w-full object-cover" />
-          <h3 class="mt-2 font-bold">${pet.Name}</h3>
-          <p>Type: ${pet.Type}</p>
-          <p>Breed: ${pet.Breed}</p>
-          <p>Age: ${pet.Age}</p>
+          <img src="${imageUrl}" alt="${pet.Name}" />
+          <div class="p-4 text-center">
+            <h3 class="font-bold text-xl mb-1">${pet.Name}</h3>
+            <p class="mb-1">Type: ${pet.Type}</p>
+            <p class="mb-1">Breed: ${pet.Breed}</p>
+            <p>Age: ${pet.Age}</p>
+          </div>
         `;
+        
         petCard.addEventListener('click', () => {
+          // Store pet ID in localStorage and navigate to pet page
           localStorage.setItem('currentPetId', pet.PetID);
           window.location.href = 'petPage.html';
         });
+        
         petsContainer.appendChild(petCard);
       });
     }
-
-    closeModal.addEventListener('click', () => {
-      loginModal.classList.add('hidden');
-      authMessage.classList.add('hidden');
-    });
-
-    loginBtn.addEventListener('click', () => {
-      loginModal.classList.remove('hidden');
-    });
-
-    showSignupBtn.addEventListener('click', e => {
-      e.preventDefault();
-      loginForm.classList.add('hidden');
-      signupForm.classList.remove('hidden');
-    });
-
-    showLoginBtn.addEventListener('click', e => {
-      e.preventDefault();
-      signupForm.classList.add('hidden');
-      loginForm.classList.remove('hidden');
-    });
-
-    submitLogin.addEventListener('click', async () => {
-      const email = document.getElementById('loginEmail').value;
-      const password = document.getElementById('loginPassword').value;
-      try {
-        const response = await fetch(`${API_BASE_URL}/login`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email, password })
-        });
-        const data = await response.json();
-        if (response.ok) {
-          localStorage.setItem('currentUser', JSON.stringify(data.user));
-          loginBtn.classList.add('hidden');
-          profileLink.classList.remove('hidden');
-          loginModal.classList.add('hidden');
-        } else {
-          authMessage.textContent = data.error || 'Login failed';
-          authMessage.classList.remove('hidden');
-        }
-      } catch (error) {
-        authMessage.textContent = 'Connection error. Please try again.';
-        authMessage.classList.remove('hidden');
+    
+    // Recommended Pets functionality
+    recommendedPetsBtn.addEventListener('click', async function() {
+      if (!currentUser) {
+        alert('Please log in to see recommended pets');
+        return;
       }
-    });
-
-    submitSignup.addEventListener('click', async () => {
-      const name = document.getElementById('signupName').value;
-      const email = document.getElementById('signupEmail').value;
-      const password = document.getElementById('signupPassword').value;
-      const phoneNumber = document.getElementById('signupPhone').value;
+      
       try {
-        const response = await fetch(`${API_BASE_URL}/users`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, email, password, phoneNumber })
-        });
+        loadingIndicator.classList.remove('hidden');
+        
+        // Call the stored procedure through API
+        const response = await fetch(`${API_BASE_URL}/pets/suitable?userId=${currentUser.UserID}`);
         const data = await response.json();
-        if (response.ok) {
-          const loginRes = await fetch(`${API_BASE_URL}/login`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, password })
+        
+        // Display recommended pets
+        const recommendedContent = document.getElementById('recommendedContent');
+        recommendedContent.innerHTML = '';
+        
+        if (!data.pets || data.pets.length === 0) {
+          recommendedContent.innerHTML = '<p class="col-span-3 text-center">No recommended pets found based on your preferences</p>';
+        } else {
+          // Limit to 5 pets
+          const petsToShow = data.pets.slice(0, 5);
+          
+          petsToShow.forEach(pet => {
+            // Use the getImageForType function
+            const imageUrl = getImageForType(pet.Type);
+            
+            // Add match score if available
+            const matchScore = pet.MatchScore ? 
+              `<div class="bg-green-600 text-white py-1 px-2 rounded-full text-sm mb-2 mx-auto w-max">Match: ${pet.MatchScore}%</div>` : '';
+            
+            const petCard = document.createElement('div');
+            petCard.className = 'pet-card';
+            petCard.innerHTML = `
+              <img src="${imageUrl}" alt="${pet.Name}" />
+              <div class="p-4 text-center">
+                ${matchScore}
+                <h3 class="font-bold text-xl mb-1">${pet.Name}</h3>
+                <p class="mb-1">Type: ${pet.Type}</p>
+                <p class="mb-1">Breed: ${pet.Breed}</p>
+                <p>Age: ${pet.Age}</p>
+              </div>
+            `;
+            
+            petCard.addEventListener('click', () => {
+              localStorage.setItem('currentPetId', pet.PetID);
+              window.location.href = 'petPage.html';
+              recommendedModal.style.display = 'none';
+            });
+            
+            recommendedContent.appendChild(petCard);
           });
-          const loginData = await loginRes.json();
-          if (loginRes.ok) {
-            localStorage.setItem('currentUser', JSON.stringify(loginData.user));
-            loginBtn.classList.add('hidden');
-            profileLink.classList.remove('hidden');
-            loginModal.classList.add('hidden');
+          
+          // Add a message if there were more than 5 pets
+          if (data.pets.length > 5) {
+            const moreMessage = document.createElement('div');
+            moreMessage.className = 'col-span-3 text-center mt-4';
+            moreMessage.innerHTML = `<p>Showing top 5 matches out of ${data.pets.length} recommended pets</p>`;
+            recommendedContent.appendChild(moreMessage);
           }
-        } else {
-          authMessage.textContent = data.error || 'Sign up failed';
-          authMessage.classList.remove('hidden');
         }
+        
+        // Display recommended shelters
+        const recommendedShelters = document.getElementById('recommendedShelters');
+        recommendedShelters.innerHTML = '';
+        
+        if (data.recommendedShelters && data.recommendedShelters.length > 0) {
+          data.recommendedShelters.forEach(shelter => {
+            const shelterCard = document.createElement('div');
+            shelterCard.className = 'bg-gray-800 p-4 rounded';
+            shelterCard.innerHTML = `
+              <h3 class="font-bold text-lg">${shelter.ShelterName}</h3>
+              <p>Location: ${shelter.Location}</p>
+              <p>Available pets: ${shelter.PetCount}</p>
+            `;
+            recommendedShelters.appendChild(shelterCard);
+          });
+        } else {
+          recommendedShelters.innerHTML = '<p>No recommended shelters available</p>';
+        }
+        
+        // Show the modal with proper scrolling
+        recommendedModal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
       } catch (error) {
-        authMessage.textContent = 'Connection error. Please try again.';
-        authMessage.classList.remove('hidden');
+        console.error('Error loading recommended pets:', error);
+        alert('Error loading recommended pets. Please try again later.');
+      } finally {
+        loadingIndicator.classList.add('hidden');
       }
     });
-
-    async function loadPets() {
-      try {
-        const response = await fetch(`${API_BASE_URL}/pets`);
-        const pets = await response.json();
-        renderPets(pets);
-      } catch (error) {
-        petsContainer.innerHTML = '<p class="col-span-4 text-center text-xl text-red-500">Error loading pets.</p>';
-      }
-    }
-
-    window.addEventListener('load', loadPets);
-    const searchInput = document.getElementById('searchInput');
-
-// Debounce function to prevent too many searches while typing
-function debounce(func, wait) {
-  let timeout;
-  return function(...args) {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => func.apply(this, args), wait);
-  };
-}
-
-// Search function to filter pets
-function searchPets(query) {
-  query = query.toLowerCase().trim();
-  
-  // If query is empty, show all pets
-  if (!query) {
-    loadPets();
-    return;
-  }
-  
-  // Filter the currently displayed pets
-  const petsCards = document.querySelectorAll('#petsContainer > div');
-  let matchFound = false;
-  
-  petsCards.forEach(card => {
-    const petName = card.querySelector('h3').textContent.toLowerCase();
-    const petText = card.textContent.toLowerCase();
-    const petBreed = petText.match(/breed: (.*)/i)?.[1] || '';
-    const petType = petText.match(/type: (.*)/i)?.[1] || '';
-    const petId = card.getAttribute('data-pet-id') || '';
     
-    // Check if the pet matches the search criteria (now including type)
-    if (petName.includes(query) || 
-        petBreed.includes(query) || 
-        petType.includes(query) || 
-        petId.includes(query)) {
-      card.style.display = 'block';
-      matchFound = true;
-    } else {
-      card.style.display = 'none';
-    }
-  });
-  
-  // Display message if no matches found
-  if (!matchFound) {
-    const noResultsMsg = document.createElement('p');
-    noResultsMsg.className = 'col-span-4 text-center text-xl';
-    noResultsMsg.id = 'noResultsMsg';
-    noResultsMsg.textContent = 'No pets found matching your search.';
+    // Senior Pets Report functionality
+    document.getElementById('seniorPetsBtn').addEventListener('click', async function() {
+  try {
+    loadingIndicator.classList.remove('hidden');
     
-    // Remove any existing message first
-    const existingMsg = document.getElementById('noResultsMsg');
-    if (existingMsg) existingMsg.remove();
+    const response = await fetch(`${API_BASE_URL}/senior-pets-report`);
+    const shelterData = await response.json(); // Will be an array, possibly empty
     
-    petsContainer.appendChild(noResultsMsg);
-  } else {
-    // Remove the no results message if it exists
-    const existingMsg = document.getElementById('noResultsMsg');
-    if (existingMsg) existingMsg.remove();
-  }
-}
-
-// Update the renderPets function to include pet ID as data attribute
-function renderPets(pets) {
-  petsContainer.innerHTML = '';
-  if (pets.length === 0) {
-    petsContainer.innerHTML = '<p class="col-span-4 text-center text-xl">No pets found.</p>';
-    return;
-  }
-  pets.forEach(pet => {
-    const petCard = document.createElement('div');
-    petCard.className = 'bg-gray-800 p-4 rounded text-center shadow cursor-pointer hover:bg-gray-700';
-    // Add pet ID as data attribute for searching
-    petCard.setAttribute('data-pet-id', pet.PetID);
-    
-    const imgSrc = getImageForType(pet.Type);
-    petCard.innerHTML = `
-      <img src="${imgSrc}" class="rounded mx-auto h-40 w-full object-cover" />
-      <h3 class="mt-2 font-bold">${pet.Name}</h3>
-      <p>Type: ${pet.Type}</p>
-      <p>Breed: ${pet.Breed}</p>
-      <p>Age: ${pet.Age}</p>
+    // Create modal content regardless of whether data was returned
+    const modalContent = document.createElement('div');
+    modalContent.className = 'modal-content';
+    modalContent.innerHTML = `
+      <span class="close">&times;</span>
+      <h2 class="text-xl font-bold mb-4">Senior Pets Needing Adoption</h2>
+      <p class="mb-4">This report shows shelters with senior cats (10+ years) and dogs (8+ years) that need adoption.</p>
+      
+      <div id="seniorPetsContent">
+        ${shelterData.length === 0 ? 
+          '<p class="text-center py-4">No senior pets currently available for adoption.</p>' :
+          `<table class="w-full border-collapse">
+            <thead>
+              <tr class="bg-gray-700">
+                <th class="p-3 text-left">Shelter</th>
+                <th class="p-3 text-left">Pet Type</th>
+                <th class="p-3 text-left">Number Available</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${shelterData.map(shelter => `
+                <tr class="border-t border-gray-600 hover:bg-gray-700">
+                  <td class="p-3">${shelter.ShelterName}</td>
+                  <td class="p-3">${shelter.PetType}</td>
+                  <td class="p-3">${shelter.AvailablePetCount}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>`
+        }
+      </div>
     `;
-    petCard.addEventListener('click', () => {
-      localStorage.setItem('currentPetId', pet.PetID);
-      window.location.href = 'petPage.html';
+    
+    // Create modal container
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.style.display = 'block';
+    modal.appendChild(modalContent);
+    
+    // Add close functionality
+    const closeBtn = modalContent.querySelector('.close');
+    closeBtn.addEventListener('click', function() {
+      document.body.removeChild(modal);
+      document.body.style.overflow = '';
     });
-    petsContainer.appendChild(petCard);
-  });
-}
-
-// Add event listener to search input with debounce
-searchInput.addEventListener('input', debounce(function() {
-  searchPets(this.value);
-}, 300));
-
-// Add event listener for Enter key
-searchInput.addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') {
-    searchPets(this.value);
+    
+    // Add modal to body
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+    
+  } catch (error) {
+    // Even if there's an error, show a modal with no error message
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.style.display = 'block';
+    
+    const modalContent = document.createElement('div');
+    modalContent.className = 'modal-content';
+    modalContent.innerHTML = `
+      <span class="close">&times;</span>
+      <h2 class="text-xl font-bold mb-4">Senior Pets Needing Adoption</h2>
+      <p class="mb-4">This report shows shelters with senior cats (10+ years) and dogs (8+ years) that need adoption.</p>
+      <p class="text-center py-4">No senior pets currently available for adoption.</p>
+    `;
+    
+    modal.appendChild(modalContent);
+    
+    // Add close functionality
+    const closeBtn = modalContent.querySelector('.close');
+    closeBtn.addEventListener('click', function() {
+      document.body.removeChild(modal);
+      document.body.style.overflow = '';
+    });
+    
+    document.body.appendChild(modal);
+    document.body.style.overflow = 'hidden';
+  } finally {
+    loadingIndicator.classList.add('hidden');
   }
 });
+    
+    // Adoption Statistics functionality
+    adoptionStatsBtn.addEventListener('click', async function() {
+    try {
+      loadingIndicator.classList.remove('hidden');
+      
+      // Load statistics data from the server
+      const response = await fetch(`${API_BASE_URL}/statistics`);
+      const stats = await response.json();
+      
+      const statisticsContent = document.getElementById('statisticsContent');
+      
+      if (!stats || stats.length === 0) {
+        statisticsContent.innerHTML = '<p class="text-center">No adoption statistics available yet</p>';
+      } else {
+        // Create table
+        const table = document.createElement('table');
+        table.className = 'w-full border-collapse';
+        
+        // Table header with Shelter ID column
+        const thead = document.createElement('thead');
+        thead.innerHTML = `
+          <tr class="bg-gray-700">
+            <th class="p-3 text-left">Shelter ID</th>
+            <th class="p-3 text-left">Shelter</th>
+            <th class="p-3 text-left">Pet Type</th>
+            <th class="p-3 text-left">Total Adoptions</th>
+            <th class="p-3 text-left">Total Requests</th>
+            <th class="p-3 text-left">Last Updated</th>
+          </tr>
+        `;
+        table.appendChild(thead);
+        
+        // Table body
+        const tbody = document.createElement('tbody');
+        stats.forEach(stat => {
+          const row = document.createElement('tr');
+          row.className = 'border-t border-gray-600 hover:bg-gray-700';
+          row.innerHTML = `
+            <td class="p-3">${stat.ShelterID || 'N/A'}</td>
+            <td class="p-3">${stat.ShelterName}</td>
+            <td class="p-3">${stat.PetType}</td>
+            <td class="p-3">${stat.TotalAdoptions}</td>
+            <td class="p-3">${stat.TotalRequests}</td>
+            <td class="p-3">${new Date(stat.LastUpdated).toLocaleString()}</td>
+          `;
+          tbody.appendChild(row);
+        });
+        table.appendChild(tbody);
+        statisticsContent.innerHTML = '';
+        statisticsContent.appendChild(table);
+      }
+      
+      // Show the modal
+      statisticsModal.style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    } catch (error) {
+      console.error('Error loading statistics:', error);
+      alert('Error loading adoption statistics. Please try again later.');
+    } finally {
+      loadingIndicator.classList.add('hidden');
+    }
+});
+    
+    // Initialize the page
+    window.addEventListener('load', function() {
+      loadPets();
+      loadShelters(); // Load shelter data for dropdown
+      
+      // Set up login/profile based on user status
+      if (currentUser) {
+        loginBtn.classList.add('hidden');
+        profileLink.classList.remove('hidden');
+      } else {
+        loginBtn.classList.remove('hidden');
+        profileLink.classList.add('hidden');
+      }
+    });
   </script>
 </body>
 </html>
