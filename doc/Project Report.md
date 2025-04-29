@@ -105,20 +105,24 @@ What it does: Highlights older animals that typically wait several times longer 
 Why we added it: To give extra visibility to a vulnerable population and help these pets find homes more quickly.
 
 3.	Adoption Statistics Dashboard
-	What it does: Presents shelters with metrics on adoption rates, processing times, and pet popularity.
-	Why we added it: To enable data-driven decision-making, boost transparency, and allow shelters to identify areas for improvement.
+
+What it does: Presents shelters with metrics on adoption rates, processing times, and pet popularity.
+Why we added it: To enable data-driven decision-making, boost transparency, and allow shelters to identify areas for improvement.
 
 5.	Complete Application Status Tracking
-	What it does: Lets users follow their adoption requests from submission through approval or rejection.
-	Why we added it: To remove uncertainty, keep adopters informed, and reduce frustration or abandonment of requests.
+   
+What it does: Lets users follow their adoption requests from submission through approval or rejection.
+Why we added it: To remove uncertainty, keep adopters informed, and reduce frustration or abandonment of requests.
 
-6.	Shelter Search and Filtering
-	What it does: Enables users to find shelters by ID and filter available pets by shelter.
-	Why we added it: To support location-based preferences and allow adopters to target specific shelters.
+7.	Shelter Search and Filtering
+   
+What it does: Enables users to find shelters by ID and filter available pets by shelter.
+Why we added it: To support location-based preferences and allow adopters to target specific shelters.
 
 Functionalities Removed:
 
 1.	Simple Email Contact Form
+   
 What it was: A free-form form for general inquiries.
 Why we removed it: We replaced it with a structured adoption-request system to standardize communication, improve tracking, and set clear expectations for both adopters and shelters.
 
