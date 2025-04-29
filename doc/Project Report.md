@@ -3,35 +3,14 @@
 ## Q1:Please list out changes in the directions of your project if the final project is different from your original proposal (based on your stage 1 proposal submission).
 ### A:
    
-The final pet adoption platform appears to have evolved significantly from the original proposal while maintaining the core mission of connecting adopters with shelter animals. Here are the key differences:
+Our final pet adoption platform ended up evolving quite a bit from what we originally proposed, although the core mission, connecting adopters with shelter animals — stayed the same. In the beginning, our plan was to build a basic application focused on simple pet browsing and favorites functionality. However, as we got deeper into development, we realized there were more meaningful features we could add to make the platform genuinely useful for both adopters and shelters.
 
-Enhanced Functionality: The final project implemented advanced features beyond the basic CRUD operations mentioned in the proposal. Specifically, added:
+One major shift was the addition of a personalized pet recommendation system. This wasn’t part of our original idea, but after working with the data, it became clear that matching users to pets based on compatibility would make the adoption process more efficient and rewarding. We also introduced a senior pets report feature to highlight older animals who often have a harder time finding homes, and an adoption statistics dashboard to provide shelters and users with real insights into adoption trends.
 
-Personalized pet recommendation system that matches users with compatible pets
-Senior pets report feature highlighting older animals that often face longer shelter stays
-Adoption statistics dashboard providing data-driven insights for shelters and adopters
+On the technical side, the project became more complex than we first expected. We moved beyond simple features like a favorites list and a basic image carousel, adding real-time integration with multiple shelters, advanced filtering and search options, user account management with adoption request tracking, and analytics tools for shelters. This also led us to redesign the database, expanding it to include interconnected tables for users, pets, shelters, medical records, and adoption requests to better support the new features.
 
+Overall, while our original proposal focused mainly on browsing and basic queries, the final product turned into a adoption management platform. We try to model real challenges faced by adopters and shelters, and the improvements we made along the way helped create a much more impactful application than we initially envisioned.
 
-Technical Sophistication: The original proposal mentioned only basic features like a "Favorite Pets List" and "Simple Image Carousel," while the final implementation includes more sophisticated elements:
-
-Integration with multiple shelters in real-time
-Advanced filtering and search capabilities
-User account management with adoption request tracking
-Data analytics for adoption trends
-
-
-Database Structure: The final project implements a more complex database structure than initially proposed, with interconnected tables for users, shelters, pets, medical records, and adoption requests.
-User Experience: The final implementation features a more comprehensive user journey with personalized dashboards, recommendation algorithms, and status tracking for adoption requests.
-Scope Expansion: While the original proposal focused mainly on browsing and basic inquiries, the final project addresses the entire adoption ecosystem including:
-
-Shelter management features
-Analytics for operational insights
-Specialized visibility for overlooked pets (seniors)
-Complete adoption request workflow
-
-
-
-The original proposal presented a simpler concept focused on pet browsing and basic communication, while the final implementation delivers a comprehensive platform that addresses pain points for all stakeholders in the adoption process through intelligent matching, data insights, and specialized features for overlooked animals.
    
 ## Q2: Discuss what you think your application achieved or failed to achieve regarding its usefulness.
 ###   A: 
