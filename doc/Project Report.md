@@ -142,11 +142,7 @@ These changes reflect our move from a basic browsing app to a full adoption ecos
     
    Triggers automate important background tasks. For instance, when a new adoption request is inserted, a trigger can automatically update related status fields without requiring extra logic in the frontend application. We used triggers to automate updates in our adoption statistics. When a new adoption request is created, a trigger automatically increments the total requests counter. Similarly, when a request’s status changes to “Approved,” another trigger updates the total adoptions count or inserts a new statistics record if necessary.
     
-   Overall, these advanced concepts ensure that:
-   1. Data quality is enforced at the database level.
-	2.	Operations (like requests plus availability updates) remain atomic and reliable.
-	3.	Routine maintenance (updating counters, generating reports) is automated, keeping application code simpler.
-	4.	Complex queries live in reusable procedures, boosting performance and maintainability.
+Overall, the advanced database programs we built make a real difference in how the application runs. The FindSeniorPetsNeedingAdoption procedure gives shelters an easy way to pull a list of older pets that still need homes, which saves them time and helps them focus their promotions where it matters most. The ProcessAdoptionRequest procedure handles adoption approvals safely inside a transaction: it updates the adoption request, checks that no other approvals already exist, rejects other pending requests for the same pet, and records the adoption in the history, and all automatically. This keeps everything consistent without needing the frontend to constantly double-check. Our triggers like AfterNewAdoptionRequest and AfterAdoptionStatusChange keep adoption statistics up to date in real time without any extra manual updates. And by using transactions to group important actions like submitting a request and marking a pet unavailable, we make sure users always see accurate, consistent information. All of these programs work together to make the application faster, more reliable, and much easier to manage.
     
 ## Q7: Each team member should describe one technical challenge that the team encountered.  This should be sufficiently detailed such that another future team could use this as helpful advice if they were to start a similar project or where to maintain your project. 
 ###   A: 
