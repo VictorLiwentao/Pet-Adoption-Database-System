@@ -17,7 +17,7 @@ Overall, while our original proposal focused mainly on browsing and basic querie
 
 Our project was about building a pet adoption website to help connect people looking to adopt with animals in shelters. We made it simple for users to browse available pets, submit adoption requests, and keep track of their past adoptions. Shelters can also benefit by viewing important statistics about their adoption activity, like which pets are most popular and how many adoption requests they’re receiving. We designed these features with real-world needs in mind, aiming to make adoption easier for adopters and help shelters manage their animals better.
 
-We also developed some useful analytics features, such as highlighting older pets who often struggle to get adopted, recognizing the most active adopters, and identifying users who might need extra assistance during the adoption process. These analytical tools go beyond just basic functionality—they help shelters strategically improve adoption outcomes and manage operations more effectively.
+We also developed some useful analytics features, such as highlighting older pets who often struggle to get adopted, recognizing the most active adopters, and identifying users who might need extra assistance during the adoption process. These analytical tools go beyond just basic functionality as they help shelters strategically improve adoption outcomes and manage operations more effectively.
 
 Still, there’s room for improvement. Right now, the application doesn’t have real-time notifications, meaning users aren’t immediately informed when something changes with their adoption requests. Adding live updates or direct communication features could make the app more engaging and practical.
 
@@ -73,140 +73,50 @@ By developing a more robust data model than initially proposed, the application 
 ###   A:
 
    
-Relationship Implementation
+In transitioning from our original ER diagram to the final implementation, we made several notable changes. Initially, the ER diagram included theoretical relationships, such as one-to-many and optional-to-many, but in practice, we had to explicitly implement these relationships using foreign keys and proper MySQL constraints, including CASCADE operations to ensure referential integrity during deletions.
 
-Original design: Showed theoretical relationships (1→*, 0→*, etc.)
-Final implementation: Actually implemented these relationships through foreign keys and proper MySQL constraints
-The implementation includes CASCADE operations for deletions to maintain referential integrity
+We also added several features that weren’t anticipated in the original design. For instance, functionalities like senior pet reporting and detailed adoption statistics required additional tables and more complex queries. These enhancements went beyond basic table structures, necessitating modifications to better capture relevant data for these reports.
 
+Another significant update involved user management. The original design only accounted for basic user attributes, but in our final implementation, we included authentication and session handling. This meant integrating extra fields and logic into our database and application code to manage user state effectively.
 
-Additional Tracking Mechanisms
+Similarly, our approach to shelter management became more advanced. Initially, the database structure simply linked pets to shelters, but in the final version, we expanded this to support detailed filtering, reporting, and analytics. This allowed shelters to gain deeper insights into their operations and adoption trends.
 
-The final implementation added query functionality for reporting on senior pets and adoption statistics that weren't explicitly mentioned in the original ER diagram
-These features required additional query logic beyond the basic table structure
-
-
-User Management
-
-Original design: Basic user attributes
-Final implementation: Added authentication and session management through the web interface
-This necessitated additional application logic to handle user state
-
-
-Shelter Management
-
-Original design: Simple shelter-to-pet relationship
-Final implementation: Added filtering, reporting, and analytics for shelters
-The final database supports more complex queries about shelter performance
-
-
-
-Why These Changes Were Made
-
-Practical Implementation Needs
-
-The theoretical ER diagram needed to be adapted to work with real-world web application requirements
-The server.js implementation shows how these relationships needed to function in practice
-
-
-Feature Enhancement
-
-As you developed the unique features like recommendation systems and senior pet reporting, the database design needed to accommodate these specialized queries
-The implementation demonstrates how the base schema supported these advanced features
-
-
-User Experience Considerations
-
-The final implementation had to support a more robust user journey as shown in the HTML files
-This required adding functionality beyond what was initially modeled in the ER diagram
-
-
-
-More Suitable Design Assessment
-The final implementation appears more suitable for several reasons:
-
-Flexibility
-
-Using VARCHAR instead of ENUMs for status fields provides more adaptability as requirements change
-The implementation includes more comprehensive queries that can extract deeper insights
-
-
-Full Feature Support
-
-The final design supports all the specialized features (recommendations, senior pet reporting, statistics) that make your application unique
-These features required more sophisticated data relationships than initially modeled
-
-
-Real-world Usability
-
-The implementation includes practical considerations like error handling, transaction management, and proper indexing that theoretical ER diagrams often overlook
-The server-side implementation shows how these tables actually need to interact in a live environment
-
-
-Scalability
-
-The final design uses connection pooling and proper query optimization
-This makes it more suitable for handling real-world load compared to the theoretical design
-
-
+These adjustments were primarily driven by practical considerations. The original ER diagram, while useful conceptually, wasn’t sufficient to support all the advanced functionalities we wanted to include. As we developed features like the recommendation system and senior pet visibility, the database schema naturally evolved to support these specialized queries.
 
 The most significant improvement in the final design is how it enables the specialized features (recommendations, senior pet visibility, statistics) that differentiate your platform from similar solutions. These required a more thoughtful implementation than what was initially modeled in the ER diagram, demonstrating how database design evolves alongside feature development.
+
+Overall, the final design proved to be much more suitable for several reasons. It provided greater flexibility—such as using VARCHAR rather than ENUMs for status fields—which allows easier adaptation as requirements change. Additionally, the final implementation supported specialized features that distinguish our application from others. We also prioritized real-world usability by incorporating proper indexing, error handling, and transaction management, which theoretical diagrams often overlook. Lastly, the final structure was designed for scalability, using strategies like connection pooling and optimized queries, better preparing the system for real-world workloads. 
+
+
+
+
 ## Q5: Discuss what functionalities you added or removed. Why?
 ###   A: 
 
-Functionalities Added
-
-Personalized Pet Recommendation System
-
-This sophisticated matching algorithm connects users with compatible pets based on their profile data
-Why added: To solve the "adoption paradox" where too many choices overwhelm potential adopters, leading to decision paralysis
-This enhances the user experience by presenting tailored options instead of forcing users to sift through hundreds of listings
-
-
-Senior Pets Report Feature
-
-Specialized visibility for older animals that typically wait 3-4 times longer for adoption
-Why added: To address a significant gap in the adoption ecosystem by highlighting a vulnerable population
-This creates opportunities for these often-overlooked animals and connects them with adopters who might specifically prefer mature pets
-
-
-Adoption Statistics Dashboard
-
-Provides transparency into adoption rates, processing times, and shelter performance
-Why added: To bring data-driven insights to the adoption process, benefiting shelters with operational metrics and giving adopters confidence through transparency
-This creates accountability in the system and helps shelters identify improvement opportunities
-
-
-Complete Application Status Tracking
-
-Allows users to monitor their adoption requests from submission to approval/rejection
-Why added: To eliminate uncertainty in the adoption process and keep users engaged
-This reduces applicant frustration and abandonment by providing visibility into request status
-
-
-Shelter Search and Filtering
-
-Enhanced functionality to find shelters by ID and filter pets by shelter
-Why added: To enable more targeted searching based on location preferences
-This helps users who might prefer to adopt from specific organizations or locations
-
-
+Functionalities Added:
+	1.	Personalized Pet Recommendation System
+	What it does: Matches users with compatible pets based on their profile data.
+	Why we added it: To combat choice overload and guide adopters toward pets they’re more likely to connect with, reducing decision paralysis and improving user satisfaction.
+	2.	Senior Pets Report Feature
+	•	What it does: Highlights older animals that typically wait several times longer for adoption.
+	•	Why we added it: To give extra visibility to a vulnerable population and help these pets find homes more quickly.
+	3.	Adoption Statistics Dashboard
+	•	What it does: Presents shelters with metrics on adoption rates, processing times, and pet popularity.
+	•	Why we added it: To enable data-driven decision-making, boost transparency, and allow shelters to identify areas for improvement.
+	4.	Complete Application Status Tracking
+	•	What it does: Lets users follow their adoption requests from submission through approval or rejection.
+	•	Why we added it: To remove uncertainty, keep adopters informed, and reduce frustration or abandonment of requests.
+	5.	Shelter Search and Filtering
+	•	What it does: Enables users to find shelters by ID and filter available pets by shelter.
+	•	Why we added it: To support location-based preferences and allow adopters to target specific shelters.
 
 Functionalities Removed:
+	1.	Simple Email Contact Form
+	•	What it was: A free-form form for general inquiries.
+	•	Why we removed it: We replaced it with a structured adoption-request system to standardize communication, improve tracking, and set clear expectations for both adopters and shelters.
 
-Simple Email Contact Form
-
-The original proposal mentioned a basic email contact form, but this was replaced with the more structured adoption request system
-Why removed: The direct adoption request system provides better tracking and standardization than free-form email inquiries
-This structured approach creates clearer expectations and more consistent communication
-
-Rationale for These Changes
-The functionality changes reflect a shift from a simple pet browsing platform to a comprehensive adoption ecosystem that addresses the needs of all stakeholders:
-
-User-Centered Design: The added recommendation system and status tracking create a more personalized, engaging experience that guides users through the adoption journey.
-Social Impact: Features like the Senior Pets Report demonstrate a commitment to animal welfare beyond just facilitating adoptions.
-Data-Driven Approach: The statistics dashboard and enhanced filtering represent a more sophisticated understanding of how data can improve the adoption ecosystem.
-Complete Adoption Lifecycle: Rather than just connecting adopters with pets, the final implementation supports the entire process from discovery to completed adoption.
+Rationale:
+These changes reflect our move from a basic browsing app to a full adoption ecosystem. By adding personalization (recommendations, senior reports), transparency (dashboards, status tracking), and targeted search, we addressed real challenges faced by adopters and shelters. Removing the email form in favor of a formal request workflow further enhanced consistency and accountability throughout the adoption process.
 
 These changes significantly expanded the platform's scope from the original proposal, creating a more robust solution that addresses deeper challenges in pet adoption than just pet discovery.
       
