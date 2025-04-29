@@ -94,31 +94,30 @@ Overall, the final design proved to be much more suitable for several reasons. I
 ###   A: 
 
 Functionalities Added:
-	1.	Personalized Pet Recommendation System
+	A1.	Personalized Pet Recommendation System
 	What it does: Matches users with compatible pets based on their profile data.
 	Why we added it: To combat choice overload and guide adopters toward pets they’re more likely to connect with, reducing decision paralysis and improving user satisfaction.
-	2.	Senior Pets Report Feature
-	•	What it does: Highlights older animals that typically wait several times longer for adoption.
-	•	Why we added it: To give extra visibility to a vulnerable population and help these pets find homes more quickly.
-	3.	Adoption Statistics Dashboard
-	•	What it does: Presents shelters with metrics on adoption rates, processing times, and pet popularity.
-	•	Why we added it: To enable data-driven decision-making, boost transparency, and allow shelters to identify areas for improvement.
+	A2.	Senior Pets Report Feature
+		What it does: Highlights older animals that typically wait several times longer for adoption.
+		Why we added it: To give extra visibility to a vulnerable population and help these pets find homes more quickly.
+	A3.	Adoption Statistics Dashboard
+		What it does: Presents shelters with metrics on adoption rates, processing times, and pet popularity.
+		Why we added it: To enable data-driven decision-making, boost transparency, and allow shelters to identify areas for improvement.
 	4.	Complete Application Status Tracking
-	•	What it does: Lets users follow their adoption requests from submission through approval or rejection.
-	•	Why we added it: To remove uncertainty, keep adopters informed, and reduce frustration or abandonment of requests.
+		What it does: Lets users follow their adoption requests from submission through approval or rejection.
+		Why we added it: To remove uncertainty, keep adopters informed, and reduce frustration or abandonment of requests.
 	5.	Shelter Search and Filtering
-	•	What it does: Enables users to find shelters by ID and filter available pets by shelter.
-	•	Why we added it: To support location-based preferences and allow adopters to target specific shelters.
+	What it does: Enables users to find shelters by ID and filter available pets by shelter.
+	Why we added it: To support location-based preferences and allow adopters to target specific shelters.
 
 Functionalities Removed:
 	1.	Simple Email Contact Form
-	•	What it was: A free-form form for general inquiries.
-	•	Why we removed it: We replaced it with a structured adoption-request system to standardize communication, improve tracking, and set clear expectations for both adopters and shelters.
+	What it was: A free-form form for general inquiries.
+	Why we removed it: We replaced it with a structured adoption-request system to standardize communication, improve tracking, and set clear expectations for both adopters and shelters.
 
 Rationale:
 These changes reflect our move from a basic browsing app to a full adoption ecosystem. By adding personalization (recommendations, senior reports), transparency (dashboards, status tracking), and targeted search, we addressed real challenges faced by adopters and shelters. Removing the email form in favor of a formal request workflow further enhanced consistency and accountability throughout the adoption process.
 
-These changes significantly expanded the platform's scope from the original proposal, creating a more robust solution that addresses deeper challenges in pet adoption than just pet discovery.
       
 ## Q6: Explain how you think your advanced database programs complement your application.
 ###   A: 
