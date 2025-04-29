@@ -109,12 +109,12 @@ Why we added it: To give extra visibility to a vulnerable population and help th
 What it does: Presents shelters with metrics on adoption rates, processing times, and pet popularity.
 Why we added it: To enable data-driven decision-making, boost transparency, and allow shelters to identify areas for improvement.
 
-5.	Complete Application Status Tracking
+4.	Complete Application Status Tracking
    
 What it does: Lets users follow their adoption requests from submission through approval or rejection.
 Why we added it: To remove uncertainty, keep adopters informed, and reduce frustration or abandonment of requests.
 
-7.	Shelter Search and Filtering
+5.	Shelter Search and Filtering
    
 What it does: Enables users to find shelters by ID and filter available pets by shelter.
 Why we added it: To support location-based preferences and allow adopters to target specific shelters.
@@ -136,13 +136,17 @@ These changes reflect our move from a basic browsing app to a full adoption ecos
    Our advanced database programs — including transactions, stored procedures, triggers, and constraints — were designed to enhance the completeness and usability of our pet adoption application.
    Constraints (such as primary keys, foreign keys, and attribute-level checks) ensure that the database always maintains valid and consistent data. For example, by enforcing relationships between users, shelters, pets, and adoption requests, we prevent invalid or orphaned records that could confuse users.
     
-   Transactions allow us to group multiple operations together safely, guaranteeing that key activities — such as submitting an adoption request and updating pet availability — are completed reliably. 
+   Transactions allow us to group multiple operations together safely, guaranteeing that key activities such as submitting an adoption request and updating pet availability are completed reliably. When a user submits an adoption request and the system updates the pet’s availability, we wrap those steps in a single transaction. That way, either both changes succeed or both fail, so we never end up with a “ghost” request or a pet left incorrectly marked as available.
    
-   Stored procedures improve the efficiency and reusability of complex operations, such as generating reports on shelter adoption rates or filtering senior pets needing promotion.
+   Stored procedures improve the efficiency and reusability of complex operations, such as generating reports on shelter adoption rates or filtering senior pets needing promotion. For example, our FindSeniorPetsNeedingAdoption routine lets us quickly generate a list of older animals with no pending or approved requests, so shelters can immediately focus promotion efforts where it’s most needed. Another example is the FindSuitablePets procedure bundles complex search logic—by type, age, size, and medical history—into one call, keeping our application code clean and letting us tweak search criteria in one place without hunting through the backend.
     
-   Triggers automate important background tasks. For instance, when a new adoption request is inserted, a trigger can automatically update related status fields without requiring extra logic in the frontend application. This reduces manual work, ensures consistency, and helps maintain smooth real-time operations.
+   Triggers automate important background tasks. For instance, when a new adoption request is inserted, a trigger can automatically update related status fields without requiring extra logic in the frontend application. We used triggers to automate updates in our adoption statistics. When a new adoption request is created, a trigger automatically increments the total requests counter. Similarly, when a request’s status changes to “Approved,” another trigger updates the total adoptions count or inserts a new statistics record if necessary.
     
-   Overall, these advanced database features complement our application by ensuring data quality, improving operational reliability, automating routine maintenance tasks, and providing faster, more scalable backend processing to support user interactions.
+   Overall, these advanced concepts ensure that:
+   1. Data quality is enforced at the database level.
+	2.	Operations (like requests plus availability updates) remain atomic and reliable.
+	3.	Routine maintenance (updating counters, generating reports) is automated, keeping application code simpler.
+	4.	Complex queries live in reusable procedures, boosting performance and maintainability.
     
 ## Q7: Each team member should describe one technical challenge that the team encountered.  This should be sufficiently detailed such that another future team could use this as helpful advice if they were to start a similar project or where to maintain your project. 
 ###   A: 
@@ -168,29 +172,11 @@ Animal Categorization - The implementation includes more specific animal categor
 ## Q9: Describe future work that you think, other than the interface, that the application can improve on.
 ###   A: 
 
-Technical Enhancements
+Looking ahead, there are several areas where our platform could grow beyond its current feature set. First, adding a real time notification system would transform the adoption experience by immediately alerting users to status changes, appointment reminders, or new matches by keeping them engaged and informed at every step. Behind the scenes, we’d build a lightweight API so shelters can bulk upload and update pet records in one go, rather than relying on manual edits. Over time, we also envision incorporating some machine learning image recognition methods to automatically tagging pets’ photos with breed, size, and color details would speed up data entry and make search results more accurate.
 
-Implement real-time notification system for adoption status updates
-Develop an API for shelters to bulk upload/update pet data
-Add machine learning-based image recognition to identify pet features from photos
+On the analytics side, we plan to develop predictive models that recommend which pets are most likely to be adopted soon, and to visualize adoption patterns with geographic heat maps and seasonal trend analyses. These insights would help shelters prioritize outreach and allocate resources more effectively. We’d also extend our data tools with a post-adoption follow-up system, checking in with adopters to track pet welfare and gather feedback for continuous improvement.
 
-Functional Improvements
-
-Create a pet behavior assessment system to improve matching accuracy
-Implement a follow-up system to track post-adoption pet welfare
-Add a foster program management module alongside adoption
-
-Data Analytics
-
-Develop predictive models for adoption likelihood based on pet attributes
-Create geographic heat maps showing adoption rates by location
-Implement seasonal trend analysis to optimize marketing efforts
-
-Integration Opportunities
-
-Connect with veterinary service providers for seamless medical record transfer
-Integrate with pet supply retailers for new adopter discount programs
-Add calendar synchronization for shelter visits and adoption events
+Finally, integration with external partners could elevate our platform into a true ecosystem rather than just a listing site. Syncing medical records with veterinary clinics, offering new-adopter discount codes from pet retailers, and pushing event schedules directly into users’ calendars would all weave the application more tightly into the day-to-day operations of shelters and the lives of adopters. Together, these enhancements would turn our project into a fully rounded, data-driven adoption management solution.
       
 ## Q10: Describe the final division of labor and how well you managed teamwork.
 ###  A: 
