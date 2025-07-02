@@ -66,41 +66,7 @@ A full-stack web application that connects adopters with shelter pets, streamlin
 README.md                    ← this file
 
 
-⸻
-
-🚀 Getting Started
-	1.	Clone & Install
-
-git clone https://github.com/your-username/pet-adoption-system.git
-cd pet-adoption-system/server
-npm install
-
-
-	2.	Database Setup
-	•	Create a MySQL database (e.g. pet_adoption).
-	•	Import CSV files into corresponding tables.
-	•	Run SQL scripts in /server:
-
-SOURCE AdoptionTrigger.sql;
-SOURCE FindSeniorPets.sql;
-SOURCE FindSuitablePets.sql;
-SOURCE ProcessAdoption.sql;
-
-
-	3.	Run the Server
-
-node server.js
-
-Open /public/searchPage.html in your browser to begin.
-
-⸻
-
-⚙️ Usage
-	•	Browse Pets: /public/searchPage.html
-	•	View Profile & Favorite: /public/petPage.html
-	•	Sign Up / Track Requests: /public/userPage.html
-
-⸻
+---
 
 📄 License
 
