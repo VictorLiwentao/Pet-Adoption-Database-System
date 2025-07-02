@@ -1,17 +1,101 @@
-# sp25-cs411-team071-GoodGPA
-# TeamID-SampleProject
-This is a template for CS411 project repository. Please make sure that your title follows the convention: [TeamID]-[YourTeamName]. All TeamID should have a three digit coding (i.e. if you are team 20, you should have `team020` as your ID.). You should also make sure that your url for this repository is [sp25-cs411-team000-teamname.git] so TAs can correctly clone your repository and keep them up-to-date.
+Pet Adoption System
 
-Once you setup your project, please remember to submit your team formation to the team form.
+A full-stack web application that connects adopters with shelter pets, streamlining search, favorites, adoption requests, and data-driven insights.
 
-## Permission
-You should make sure you allow TAs to access your repository. You can add TA(s) as a collaborator to your repository.
+⸻
 
-## Preparing for your release
-Eash submission should be in it's own [release](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases). Release are specific freezes to your repository. You should submit your commit hash on canvas or google sheet. When tagging your stage, please use the tag `stage.x` where x is the number to represent the stage.
+🔍 Features
+	•	Advanced Search & Filter
+Search by species, breed, age, size, color, medical status, shelter location, and more.
+	•	Favorites & Recommendations
+Save favorite pets and receive personalized suggestions based on user profiles.
+	•	Adoption Workflow
+Submit, track, and manage adoption requests with clear status updates.
+	•	Senior Pets Spotlight
+Automatically highlight older animals in need of extra visibility.
+	•	Analytics Dashboard
+Real-time metrics: request volume, popular breeds, time-to-adopt, and shelter performance.
+	•	Automated Data Integrity
+ACID transactions, triggers, and stored procedures ensure consistency and up-to-the-second statistics.
 
-## Keeping things up-to-date
-You should make sure you keep your project root files up-to-date. Information for each file/folders are explained.
+⸻
 
-## Code Contribution
-Individual code contribution will be used to evaluate individual contribution to the project.
+🛠 Tech Stack
+
+Layer	Technology
+Backend API	Node.js · Express.js
+Database	MySQL (InnoDB)
+Frontend	HTML · Tailwind CSS · Vanilla JS
+DB Automation	Stored Procedures · Triggers
+Data Import	CSV seed scripts → MySQL
+
+
+⸻
+
+📁 Repository Structure
+
+/data
+  ├─ pet_data.csv            ← seed data for pets  
+  ├─ shelter_data.csv        ← seed data for shelters  
+  └─ user_data.csv           ← seed data for adopters  
+
+/public
+  ├─ images/                 ← pet photos (Dog.jpg, Cat.jpg, etc.)  
+  ├─ searchPage.html         ← browse & filter UI  
+  ├─ petPage.html            ← detailed pet profile & “favorite” button  
+  └─ userPage.html           ← sign-up, login & request tracker  
+
+/server
+  ├─ server.js               ← Express routes & middleware  
+  ├─ AdoptionTrigger.sql     ← trigger to sync pet availability  
+  ├─ FindSeniorPets.sql      ← procedure for senior-pet reports  
+  ├─ FindSuitablePets.sql    ← procedure for advanced search logic  
+  └─ ProcessAdoption.sql     ← transaction procedure for adoption requests  
+
+/doc
+  ├─ Database Design.md      ← ER diagram & schema notes  
+  ├─ Project Proposal.md     ← initial scope & feature list  
+  └─ Project Report.md       ← final outcomes & reflections  
+
+README.md                    ← this file
+
+
+⸻
+
+🚀 Getting Started
+	1.	Clone & Install
+
+git clone https://github.com/your-username/pet-adoption-system.git
+cd pet-adoption-system/server
+npm install
+
+
+	2.	Database Setup
+	•	Create a MySQL database (e.g. pet_adoption).
+	•	Import CSV files into corresponding tables.
+	•	Run SQL scripts in /server:
+
+SOURCE AdoptionTrigger.sql;
+SOURCE FindSeniorPets.sql;
+SOURCE FindSuitablePets.sql;
+SOURCE ProcessAdoption.sql;
+
+
+	3.	Run the Server
+
+node server.js
+
+Open /public/searchPage.html in your browser to begin.
+
+⸻
+
+⚙️ Usage
+	•	Browse Pets: /public/searchPage.html
+	•	View Profile & Favorite: /public/petPage.html
+	•	Sign Up / Track Requests: /public/userPage.html
+
+⸻
+
+📄 License
+
+Released under the MIT License.
