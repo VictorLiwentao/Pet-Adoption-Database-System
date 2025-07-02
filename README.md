@@ -4,33 +4,39 @@ A full-stack web application that connects adopters with shelter pets, streamlin
 
 ⸻
 
-🔍 Features
-	•	Advanced Search & Filter
-Search by species, breed, age, size, color, medical status, shelter location, and more.
-	•	Favorites & Recommendations
-Save favorite pets and receive personalized suggestions based on user profiles.
-	•	Adoption Workflow
-Submit, track, and manage adoption requests with clear status updates.
-	•	Senior Pets Spotlight
-Automatically highlight older animals in need of extra visibility.
-	•	Analytics Dashboard
-Real-time metrics: request volume, popular breeds, time-to-adopt, and shelter performance.
-	•	Automated Data Integrity
-ACID transactions, triggers, and stored procedures ensure consistency and up-to-the-second statistics.
+## 🔍 Features
 
-⸻
+- **Advanced Search & Filter**  
+  Search by species, breed, age, size, color, medical status, shelter location, and more.
 
-🛠 Tech Stack
+- **Favorites & Recommendations**  
+  Save favorite pets and receive personalized suggestions based on user profiles.
 
-Layer	Technology
-Backend API	Node.js · Express.js
-Database	MySQL (InnoDB)
-Frontend	HTML · Tailwind CSS · Vanilla JS
-DB Automation	Stored Procedures · Triggers
-Data Import	CSV seed scripts → MySQL
+- **Adoption Workflow**  
+  Submit, track, and manage adoption requests with clear status updates.
 
+- **Senior Pets Spotlight**  
+  Automatically highlight older animals in need of extra visibility.
 
-⸻
+- **Analytics Dashboard**  
+  Real-time metrics: request volume, popular breeds, time-to-adopt, and shelter performance.
+
+- **Automated Data Integrity**  
+  ACID transactions, triggers, and stored procedures ensure consistency and up-to-the-second statistics.
+  
+---
+
+## 🛠 Tech Stack
+
+| Layer         | Technology                        |
+| ------------- | --------------------------------- |
+| Backend API   | Node.js · Express.js              |
+| Database      | MySQL (InnoDB)                    |
+| Frontend      | HTML · Tailwind CSS · Vanilla JS  |
+| DB Automation | Stored Procedures · Triggers      |
+| Data Import   | CSV seed scripts → MySQL          |
+
+---
 
 📁 Repository Structure
 
